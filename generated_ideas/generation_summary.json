@@ -1,0 +1,27 @@
+{
+  "generation_timestamp": "2025-10-16T15:10:34.494218",
+  "research_call_length": 2437,
+  "available_models": [
+    "gpt-4",
+    "gemini-1.5-flash"
+  ],
+  "total_responses": 1,
+  "models_used": [
+    "gemini-1.5-flash"
+  ],
+  "templates_used": [
+    "single_scientist"
+  ],
+  "sessions": [
+    {
+      "session_id": "gemini-1.5-flash_single_scientist",
+      "model_name": "gemini-1.5-flash",
+      "template_name": "single_scientist",
+      "timestamp": "2025-10-16T15:10:34.493172",
+      "ideas_length": 52,
+      "word_count": 8,
+      "temperature": 0,
+      "max_tokens": 5000
+    }
+  ]
+}
