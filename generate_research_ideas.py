@@ -27,12 +27,16 @@ class ResearchIdeaGenerator:
     def __init__(self, config_path: str = "config.env", prompt_template: str = "single_scientist"):
         """Initialize the generator"""
         self.ai_interface = AIModelsInterface(config_path, prompt_template)
+        self.prompt_template = prompt_template
         self.output_dir = Path("generated_ideas")
         self.output_dir.mkdir(exist_ok=True)
         
-        # Create subdirectories for organization
-        (self.output_dir / "raw_responses").mkdir(exist_ok=True)
-        (self.output_dir / "processed_ideas").mkdir(exist_ok=True)
+        # Create subdirectories for organization with template-based folders
+        self.template_dir = self.output_dir / prompt_template
+        self.template_dir.mkdir(exist_ok=True)
+        
+        (self.template_dir / "raw_responses").mkdir(exist_ok=True)
+        (self.template_dir / "processed_ideas").mkdir(exist_ok=True)
 
     
     def load_research_call(self, file_path: str) -> str:
@@ -118,8 +122,8 @@ class ResearchIdeaGenerator:
             })
         
         # Save to file
-        filename = f"research_ideas_{session_id}_{timestamp}.json"
-        filepath = self.output_dir / "raw_responses" / filename
+        filename = f"{session_id}_ideas.json"
+        filepath = self.template_dir / "raw_responses" / filename
         
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(raw_data, f, indent=2, ensure_ascii=False)
@@ -179,8 +183,8 @@ class ResearchIdeaGenerator:
                 logger.error(f"Error processing ideas for session {session_id}: {e}")
         
         # Save consolidated file
-        filename = f"processed_ideas_{session_id}_{timestamp}.json"
-        filepath = self.output_dir / "processed_ideas" / filename
+        filename = f"{session_id}_ideas.json"
+        filepath = self.template_dir / "processed_ideas" / filename
         
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(consolidated_data, f, indent=2, ensure_ascii=False)
@@ -231,7 +235,7 @@ class ResearchIdeaGenerator:
             summary['sessions'].append(session_summary)
         
         # Save summary
-        summary_file = self.output_dir / "generation_summary.json"
+        summary_file = self.template_dir / "generation_summary.json"
         with open(summary_file, 'w', encoding='utf-8') as f:
             json.dump(summary, f, indent=2, ensure_ascii=False)
         
@@ -239,7 +243,7 @@ class ResearchIdeaGenerator:
     
     def _create_ideas_summary(self):
         """Create a consolidated summary of all processed ideas"""
-        processed_ideas_dir = self.output_dir / "processed_ideas"
+        processed_ideas_dir = self.template_dir / "processed_ideas"
         
         if not processed_ideas_dir.exists():
             logger.warning("No processed ideas directory found")
@@ -310,7 +314,7 @@ class ResearchIdeaGenerator:
             ideas_summary['templates'][template_name] += 1
         
         # Save consolidated summary
-        summary_file = self.output_dir / "processed_ideas" / "all_ideas_summary.json"
+        summary_file = self.template_dir / "processed_ideas" / "all_ideas_summary.json"
         with open(summary_file, 'w', encoding='utf-8') as f:
             json.dump(ideas_summary, f, indent=2, ensure_ascii=False)
         
@@ -327,7 +331,7 @@ def main():
                        default='single_scientist',
                        help='Prompt template to use (default:   single_scientist)')
     parser.add_argument('--models', '-m', nargs='+',
-                       help='Specific models to use (e.g., gpt-4 gemini-1.5-flash-002)')
+                       help='Specific models to use (e.g., gpt-4 gemini-2.5-flash)')
     parser.add_argument('--temperature', type=float, default=0,
                        help='Temperature for generation (default: 0)')
     parser.add_argument('--list-models', action='store_true',
@@ -387,7 +391,7 @@ def main():
     )
     
     logger.info("Research idea generation completed!")
-    logger.info(f"Results saved in: {generator.output_dir}")
+    logger.info(f"Results saved in: {generator.template_dir}")
 
 if __name__ == "__main__":
     main()

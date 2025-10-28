@@ -12,7 +12,7 @@ import logging
 
 # AI Model imports
 import openai
-import google.generativeai as genai
+from google import genai
 import anthropic
 import groq
 from dashscope import Generation
@@ -81,11 +81,11 @@ class AIModelsInterface:
             self.models['gpt-4'] = self._call_openai
             logger.info("OpenAI GPT-4 initialized")
         
-        # Google Gemini (temporarily disabled due to model name issues)
-        # if self.google_key:
-        #     genai.configure(api_key=self.google_key)
-        #     self.models['gemini-1.5-flash-002'] = self._call_gemini
-        #     logger.info("Google Gemini initialized")
+        # Google Gemini
+        if self.google_key:
+            self.gemini_client = genai.Client(api_key=self.google_key)
+            self.models['gemini-2.5-pro'] = self._call_gemini
+            logger.info("Google Gemini initialized")
         
         # Anthropic Claude
         # if self.anthropic_key:
@@ -120,54 +120,20 @@ class AIModelsInterface:
             return f"Error: {str(e)}"
     
     def _call_gemini(self, prompt: str, **kwargs) -> str:
-        """Call Google Gemini with fallback models"""
-        # Try different Gemini models in order of preference
-        models_to_try = ['gemini-1.5-flash-002', 'gemini-1.5-pro-002', 'gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-1.0-pro']
-        
-        for model_name in models_to_try:
-            try:
-                logger.info(f"Trying Gemini model: {model_name}")
-                model = genai.GenerativeModel(model_name)
-                response = model.generate_content(
-                    prompt,
-                    generation_config=genai.types.GenerationConfig(
-                        temperature=kwargs.get('temperature', 0),
-                        max_output_tokens=kwargs.get('max_tokens', 5000)
-                    )
-                )
-                
-                # Check if response is valid
-                if response.candidates and len(response.candidates) > 0:
-                    candidate = response.candidates[0]
-                    if candidate.finish_reason == 1:  # STOP - normal completion
-                        logger.info(f"Successfully used {model_name}")
-                        return response.text
-                    elif candidate.finish_reason == 2:  # MAX_TOKENS
-                        logger.warning(f"{model_name} response truncated due to max tokens")
-                        return response.text
-                    elif candidate.finish_reason == 3:  # SAFETY
-                        logger.warning(f"{model_name} response blocked by safety filters, trying next model")
-                        continue
-                    elif candidate.finish_reason == 4:  # RECITATION
-                        logger.warning(f"{model_name} response blocked due to recitation, trying next model")
-                        continue
-                    else:
-                        logger.warning(f"{model_name} response has finish_reason: {candidate.finish_reason}")
-                        if response.text:
-                            return response.text
-                        else:
-                            continue
-                else:
-                    logger.warning(f"No candidates in {model_name} response, trying next model")
-                    continue
-                    
-            except Exception as e:
-                logger.warning(f"Error with {model_name}: {e}, trying next model")
-                continue
-        
-        # If all models failed
-        logger.error("All Gemini models failed")
-        return "Error: All Gemini models failed to generate response"
+        """Call Google Gemini"""
+        try:
+            response = self.gemini_client.models.generate_content(
+                model='gemini-2.5-pro',
+                contents=[prompt],
+                config={
+                    'response_mime_type': 'application/json',
+                    'temperature': kwargs.get('temperature', 0)
+                }
+            )
+            return response.text
+        except Exception as e:
+            logger.error(f"Gemini error: {e}")
+            return f"Error: {str(e)}"
     
     # def _call_claude(self, prompt: str, **kwargs) -> str:
     #     """Call Anthropic Claude"""
@@ -221,8 +187,8 @@ class AIModelsInterface:
         # Use specified template or current default
         template_name = prompt_template or self.current_template
         
-        # Create the prompt using the specified template with research call
-        prompt = self.prompt_manager.format_prompt(template_name, {'research_call': research_call})
+        # Use the new consolidated template system
+        prompt = self.prompt_manager.format_prompt('generate_ideas', {'research_call': research_call}, template_name)
         
         # Call the model
         raw_response = self.models[model_name](prompt, **kwargs)

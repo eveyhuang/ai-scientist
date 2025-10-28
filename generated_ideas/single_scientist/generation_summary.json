@@ -1,0 +1,38 @@
+{
+  "generation_timestamp": "2025-10-27T14:58:01.489201",
+  "research_call_length": 2437,
+  "available_models": [
+    "gpt-4",
+    "gemini-2.5-pro"
+  ],
+  "total_responses": 2,
+  "models_used": [
+    "gemini-2.5-pro",
+    "gpt-4"
+  ],
+  "templates_used": [
+    "single_scientist"
+  ],
+  "sessions": [
+    {
+      "session_id": "gpt-4_single_scientist",
+      "model_name": "gpt-4",
+      "template_name": "single_scientist",
+      "timestamp": "2025-10-27T14:57:03.854111",
+      "ideas_length": 6196,
+      "word_count": 785,
+      "temperature": 0,
+      "max_tokens": 5000
+    },
+    {
+      "session_id": "gemini-2.5-pro_single_scientist",
+      "model_name": "gemini-2.5-pro",
+      "template_name": "single_scientist",
+      "timestamp": "2025-10-27T14:58:01.483900",
+      "ideas_length": 18124,
+      "word_count": 2361,
+      "temperature": 0,
+      "max_tokens": 5000
+    }
+  ]
+}
