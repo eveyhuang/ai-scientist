@@ -89,51 +89,70 @@ Ensure the JSON is properly formatted and valid.
             name="Generate Research Proposals",
             description="Generate comprehensive research proposals with configurable role perspective",
             template="""
-You are {role_description} writing a comprehensive research proposal. Based on the provided research idea, create a full proposal with the following sections:
+You are {role_description} writing a comprehensive research proposal based on the provided title and abstract, ensuring it aligns with the research call requirements.
 
-RESEARCH IDEA:
+TASK: Generate a research proposal based on the provided research title and abstract.
+
+RESEARCH CALL:
+{research_call}
+
+RESEARCH IDEA TO EXPAND INTO A PROPOSAL:
 Title: {title}
 Abstract: {abstract}
 
-TASK:
-Generate a comprehensive research proposal that includes:
+Create a comprehensive research proposal that is to the highest standard for writing quality, concreteness, coherence, logic, and scientific rigor. 
+It should include these section and meet the minimum word counts for each section:
 
-1. BACKGROUND AND SIGNIFICANCE (300-400 words)
-   - Context and current state of the field
+1. BACKGROUND AND SIGNIFICANCE (600-800 words)
+   - Comprehensive context and current state of the field
+   - Detailed literature review of relevant work
    - Key gaps and limitations in current knowledge
    - Why this research is important and timely
 
-2. RESEARCH QUESTIONS AND HYPOTHESES (200-300 words)
-   - Specific research questions to be addressed
-   - Testable hypotheses
-   - Expected outcomes
+2. RESEARCH QUESTIONS AND HYPOTHESES (600-800 words)
+   - Specific, detailed research questions to be addressed
+   - Testable hypotheses with clear predictions
+   - Expected outcomes and deliverables
+   - How hypotheses will be tested and validated
 
-3. METHODS AND APPROACH (400-500 words)
-   - Data sources and datasets to be used
-   - Analytical methods and computational approaches
-   - Experimental design (if applicable)
-   - Timeline and milestones
+3. METHODS AND APPROACH (800-1000 words)
+   - Detailed data sources and datasets to be used
+   - Comprehensive analytical methods and computational approaches
+   - Experimental design (if applicable) with controls and replicates
+   - Timeline and milestones with specific deliverables
+   - Statistical analysis plans (if applicable)
 
-4. EXPECTED OUTCOMES AND IMPACT (200-300 words)
-   - Intended contributions to the field
+4. EXPECTED OUTCOMES AND IMPACT (600-800 words)
+   - Detailed intended contributions to the field
    - Broader impacts and applications
-   - Potential for follow-up research
+   - Potential for follow-up research and collaborations
+   - Dissemination plans and publication strategy
+   - Long-term vision and sustainability
 
-IMPORTANT: Format your response as a valid JSON object with the following structure:
+5. BUDGET AND RESOURCES (400-600 words)
+   - Detailed budget breakdown by category
+
+RESPONSE FORMAT: Return ONLY this JSON structure with no additional text:
+
 {{
   "proposal": {{
-    "title": {title},
-    "abstract": {abstract},
-    "background_and_significance": "Background section...",
-    "research_questions_and_hypotheses": "Research questions section...",
-    "methods_and_approach": "Methods section...",
-    "expected_outcomes_and_impact": "Outcomes section..."
+    "title": "{title}",
+    "abstract": "{abstract}",
+    "background_and_significance": "Comprehensive background section...",
+    "research_questions_and_hypotheses": "Detailed research questions section...",
+    "methods_and_approach": "Comprehensive methods section...",
+    "expected_outcomes_and_impact": "Detailed outcomes section...",
+    "budget_and_resources": "Detailed budget section..."
   }}
 }}
 
-Ensure the JSON is properly formatted and valid.
+IMPORTANT: 
+- Generate ONLY the proposal JSON above
+- Do NOT include research ideas, additional explanations, or any other content
+- Each section must meet the expectation of your role and be substantial, detailed, coherent, logical, and meet the specified word counts.
+- Ensure the JSON is properly formatted and valid
 """,
-            parameters=['title', 'abstract', 'role_description']
+            parameters=['title', 'abstract', 'role_description', 'research_call']
         )
 
         return templates

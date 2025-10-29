@@ -160,7 +160,8 @@ class ResearchIdeaGenerator:
                         'metadata': {
                             'temperature': response.metadata.get('temperature', 'unknown'),
                             'max_tokens': response.metadata.get('max_tokens', 'unknown'),
-                            'parsed_successfully': response.metadata.get('parsed_successfully', False)
+                            'parsed_successfully': response.metadata.get('parsed_successfully', False),
+                            'research_call': response.metadata.get('research_call', '')
                         },
                         'research_ideas': []
                     }

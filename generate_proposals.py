@@ -32,7 +32,19 @@ class ProposalGenerator:
         
         # Initialize prompt manager for proposal templates
         self.prompt_manager = PromptManager()
+        
+        # Load the research call from the original proposals file
+        self.research_call = self._load_research_call()
     
+    def _load_research_call(self) -> str:
+        """Load the research call from the original proposals file"""
+        try:
+            with open("human-proposals-y1.json", 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                return data.get('call', '')
+        except Exception as e:
+            logger.error(f"Error loading research call: {e}")
+            return ''
     
     def load_ideas_from_template(self, template_name: str) -> List[Dict[str, Any]]:
         """Load all research ideas from a specific template folder"""
@@ -89,7 +101,8 @@ class ProposalGenerator:
             'generate_proposals',
             {
                 'title': idea['title'],
-                'abstract': idea['abstract']
+                'abstract': idea['abstract'],
+                'research_call': self.research_call
             },
             template_name  # Use template_name as the role
         )
@@ -99,7 +112,7 @@ class ProposalGenerator:
             response = self.ai_interface.generate_research_ideas(
                 research_call=proposal_prompt,
                 model_name=model_name,
-                prompt_template="standard_extension"  # Use a simple template for proposal generation
+                prompt_template="generate_proposals"  # Use the proposals template
             )
             
             # Parse the JSON response
@@ -138,38 +151,65 @@ class ProposalGenerator:
             logger.warning(f"No ideas found for template: {template_name}")
             return
         
-        # Limit number of proposals if specified
-        if max_proposals:
-            ideas = ideas[:max_proposals]
+        # Group ideas by model to ensure consistency
+        ideas_by_model = {}
+        for idea in ideas:
+            model = idea.get('model_name', 'unknown')
+            if model not in ideas_by_model:
+                ideas_by_model[model] = []
+            ideas_by_model[model].append(idea)
         
-        logger.info(f"Generating {len(ideas)} proposals...")
+        logger.info(f"Found ideas from models: {list(ideas_by_model.keys())}")
         
-        # Generate proposals
-        proposals = []
-        for i, idea in enumerate(ideas, 1):
-            logger.info(f"Generating proposal {i}/{len(ideas)}: {idea['title'][:50]}...")
+        # If specific model requested, only process ideas from that model
+        if model_name:
+            if model_name not in ideas_by_model:
+                logger.warning(f"No ideas found for model {model_name}. Available models: {list(ideas_by_model.keys())}")
+                return
+            ideas_by_model = {model_name: ideas_by_model[model_name]}
+        
+        # Process each model separately
+        all_proposals = []
+        for model, model_ideas in ideas_by_model.items():
+            logger.info(f"Processing {len(model_ideas)} ideas from model: {model}")
             
-            proposal = self.generate_proposal(idea, template_name, model_name)
-            proposals.append(proposal)
+            # Limit number of proposals if specified
+            if max_proposals:
+                model_ideas = model_ideas[:max_proposals]
+            
+            # Generate proposals using the same model that generated the ideas
+            proposals = []
+            for i, idea in enumerate(model_ideas, 1):
+                logger.info(f"Generating proposal {i}/{len(model_ideas)}: {idea['title'][:50]}...")
+                
+                proposal = self.generate_proposal(idea, template_name, model)  # Use same model
+                proposals.append(proposal)
+            
+            # Save proposals for this model
+            self._save_proposals(proposals, template_name, model)
+            all_proposals.extend(proposals)
         
-        # Save proposals
-        self._save_proposals(proposals, template_name)
-        
-        logger.info(f"Generated {len(proposals)} proposals for {template_name}")
+        logger.info(f"Generated {len(all_proposals)} total proposals for {template_name}")
     
-    def _save_proposals(self, proposals: List[Dict[str, Any]], template_name: str):
+    def _save_proposals(self, proposals: List[Dict[str, Any]], template_name: str, model_name: str = None):
         """Save generated proposals to JSON file"""
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        timestamp = datetime.now().strftime("%Y%m%d")
         
         # Create proposals directory
         proposals_dir = self.base_dir / template_name / "proposals"
         proposals_dir.mkdir(exist_ok=True)
         
-        # Save proposals
-        filename = f"proposals_{template_name}_{timestamp}.json"
+        # Get model name from first proposal if not provided
+        if model_name is None:
+            model_name = proposals[0].get('model_name', 'unknown') if proposals else 'unknown'
+        
+        # Save proposals with same session ID format as generate_research_ideas.py
+        session_id = f"{model_name}_{template_name}"
+        filename = f"proposals_{session_id}_{timestamp}.json"
         filepath = proposals_dir / filename
         
         proposals_data = {
+            'session_id': session_id,
             'template_name': template_name,
             'generation_timestamp': datetime.now().isoformat(),
             'total_proposals': len(proposals),
@@ -192,6 +232,12 @@ class ProposalGenerator:
                 templates.append(item.name)
         
         return templates
+    
+    def list_available_models_for_template(self, template_name: str) -> List[str]:
+        """List all models that have generated ideas for a specific template"""
+        ideas = self.load_ideas_from_template(template_name)
+        models = list(set(idea.get('model_name', 'unknown') for idea in ideas))
+        return models
 
 def main():
     """Main function to run proposal generation"""
@@ -215,7 +261,8 @@ def main():
         templates = generator.list_available_templates()
         print("Available templates:")
         for template in templates:
-            print(f"  - {template}")
+            models = generator.list_available_models_for_template(template)
+            print(f"  - {template} (models: {', '.join(models)})")
         return
     
     # Process specific template

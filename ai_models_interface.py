@@ -108,6 +108,7 @@ class AIModelsInterface:
         """Call OpenAI GPT-4"""
         try:
             client = openai.OpenAI(api_key=self.openai_key)
+            
             response = client.chat.completions.create(
                 model="gpt-4",
                 messages=[{"role": "user", "content": prompt}],
@@ -188,7 +189,22 @@ class AIModelsInterface:
         template_name = prompt_template or self.current_template
         
         # Use the new consolidated template system
-        prompt = self.prompt_manager.format_prompt('generate_ideas', {'research_call': research_call}, template_name)
+        # If prompt_template is a template name (like 'generate_proposals'), use it directly
+        # If it's a role name (like 'single_scientist'), use it as role for 'generate_ideas'
+        if prompt_template in ['generate_ideas', 'generate_proposals']:
+            template_name_to_use = prompt_template
+            role_to_use = 'single_scientist'  # Default role
+        else:
+            template_name_to_use = 'generate_ideas'  # Default template
+            role_to_use = prompt_template  # Use as role
+        
+        # For proposal generation, we need to extract title and abstract from the research_call
+        if template_name_to_use == 'generate_proposals':
+            # The research_call contains the formatted prompt, we need to extract the actual data
+            # This is a bit hacky, but we'll pass the research_call as the prompt directly
+            prompt = research_call
+        else:
+            prompt = self.prompt_manager.format_prompt(template_name_to_use, {'research_call': research_call}, role_to_use)
         
         # Call the model
         raw_response = self.models[model_name](prompt, **kwargs)
@@ -216,6 +232,9 @@ class AIModelsInterface:
     
     def _parse_json_response(self, raw_response: str) -> str:
         """Parse JSON response from AI model, return structured data or raw response if parsing fails"""
+        logger.info(f"Raw response length: {len(raw_response)} characters")
+        logger.info(f"Raw response preview: {raw_response[:200]}...")
+        
         try:
             # Try to extract JSON from the response
             response_text = raw_response.strip()
@@ -225,17 +244,29 @@ class AIModelsInterface:
                 parsed_data = json.loads(response_text)
                 return json.dumps(parsed_data, indent=2, ensure_ascii=False)
             else:
-                # Try to find JSON within the response
+                # Try to find the first complete JSON object
                 start_idx = response_text.find('{')
-                end_idx = response_text.rfind('}')
-                if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
-                    json_str = response_text[start_idx:end_idx+1]
-                    parsed_data = json.loads(json_str)
-                    return json.dumps(parsed_data, indent=2, ensure_ascii=False)
-                else:
-                    # Return raw response if no JSON found
-                    logger.warning("No valid JSON found in response, returning raw text")
-                    return raw_response
+                if start_idx != -1:
+                    # Find the matching closing brace for the first JSON object
+                    brace_count = 0
+                    end_idx = start_idx
+                    for i, char in enumerate(response_text[start_idx:], start_idx):
+                        if char == '{':
+                            brace_count += 1
+                        elif char == '}':
+                            brace_count -= 1
+                            if brace_count == 0:
+                                end_idx = i
+                                break
+                    
+                    if end_idx > start_idx:
+                        json_str = response_text[start_idx:end_idx+1]
+                        parsed_data = json.loads(json_str)
+                        return json.dumps(parsed_data, indent=2, ensure_ascii=False)
+                
+                # Return raw response if no JSON found
+                logger.warning("No valid JSON found in response, returning raw text")
+                return raw_response
                     
         except json.JSONDecodeError as e:
             logger.warning(f"Failed to parse JSON response: {e}")
