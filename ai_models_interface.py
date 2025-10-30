@@ -179,6 +179,28 @@ class AIModelsInterface:
     #         logger.error(f"Qwen error: {e}")
     #         return f"Error: {str(e)}"
     
+    def generate_content(self, prompt: str, model_name: str = 'gemini-2.5-pro', **kwargs) -> str:
+        """
+        Generate content using a specific model with a given prompt.
+        This is a simpler method for direct prompt-to-response generation.
+        
+        Args:
+            prompt: The prompt text to send to the model
+            model_name: The model to use (default: gemini-2.5-pro)
+            **kwargs: Additional parameters (temperature, max_tokens, etc.)
+        
+        Returns:
+            The generated text response
+        """
+        if model_name not in self.models:
+            available_models = list(self.models.keys())
+            raise ValueError(f"Model '{model_name}' not available. Available models: {available_models}")
+        
+        # Call the model directly
+        response = self.models[model_name](prompt, **kwargs)
+        
+        return response
+    
     def generate_research_ideas(self, research_call: str, model_name: str, 
                                prompt_template: str = None, **kwargs) -> AIResponse:
         """Generate research ideas based on the research call using a specific model"""
@@ -189,14 +211,18 @@ class AIModelsInterface:
         template_name = prompt_template or self.current_template
         
         # Use the new consolidated template system
-        # If prompt_template is a template name (like 'generate_proposals'), use it directly
+        # If template_name is a template name (like 'generate_ideas', 'generate_ideas_no_role', 'generate_proposals', 'generate_proposals_no_role'), use it directly
         # If it's a role name (like 'single_scientist'), use it as role for 'generate_ideas'
-        if prompt_template in ['generate_ideas', 'generate_proposals']:
-            template_name_to_use = prompt_template
-            role_to_use = 'single_scientist'  # Default role
+        if template_name in ['generate_ideas', 'generate_ideas_no_role', 'generate_proposals', 'generate_proposals_no_role']:
+            template_name_to_use = template_name
+            # For templates ending in _no_role, don't use any role
+            if template_name.endswith('_no_role'):
+                role_to_use = None
+            else:
+                role_to_use = 'single_scientist'  # Default role
         else:
             template_name_to_use = 'generate_ideas'  # Default template
-            role_to_use = prompt_template  # Use as role
+            role_to_use = template_name  # Use as role
         
         # For proposal generation, we need to extract title and abstract from the research_call
         if template_name_to_use == 'generate_proposals':

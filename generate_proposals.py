@@ -85,9 +85,20 @@ class ProposalGenerator:
     
     def generate_proposal(self, idea: Dict[str, Any], template_name: str, model_name: str = None) -> Dict[str, Any]:
         """Generate a full proposal for a single research idea"""
-        # Validate that template_name is a valid role
-        if template_name not in self.prompt_manager.get_available_roles():
-            raise ValueError(f"Invalid role '{template_name}'. Available: {self.prompt_manager.get_available_roles()}")
+        # Determine if this template uses roles or is a no-role template
+        available_roles = self.prompt_manager.get_available_roles()
+        
+        # Check if template_name is a valid role or a special template
+        if template_name == 'generate_ideas_no_role':
+            # Use the no-role proposals template
+            proposals_template_name = 'generate_proposals_no_role'
+            role_to_use = None
+        elif template_name in available_roles:
+            # Use the regular proposals template with the specified role
+            proposals_template_name = 'generate_proposals'
+            role_to_use = template_name
+        else:
+            raise ValueError(f"Invalid template '{template_name}'. Available roles: {available_roles}, or use 'generate_ideas_no_role'")
         
         # Use specified model or default to first available
         if model_name is None:
@@ -98,13 +109,13 @@ class ProposalGenerator:
         
         # Format the proposal template with the idea using PromptManager
         proposal_prompt = self.prompt_manager.format_prompt(
-            'generate_proposals',
+            proposals_template_name,
             {
                 'title': idea['title'],
                 'abstract': idea['abstract'],
                 'research_call': self.research_call
             },
-            template_name  # Use template_name as the role
+            role_to_use  # Pass None for no-role templates, otherwise pass the role
         )
         
         # Generate the proposal
@@ -112,7 +123,7 @@ class ProposalGenerator:
             response = self.ai_interface.generate_research_ideas(
                 research_call=proposal_prompt,
                 model_name=model_name,
-                prompt_template="generate_proposals"  # Use the proposals template
+                prompt_template=proposals_template_name  # Use the appropriate proposals template
             )
             
             # Parse the JSON response
