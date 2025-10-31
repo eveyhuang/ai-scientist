@@ -125,7 +125,7 @@ class ProposalEvaluator:
     def create_single_evaluation_prompt(self,
                                        proposal: Dict[str, Any],
                                        evaluation_template: str,
-                                       role_description: str) -> str:
+                                       role_description: str = None) -> str:
         """Create an evaluation prompt for a single proposal"""
         
         # Map user-friendly template names to template keys in PromptManager
@@ -156,15 +156,20 @@ class ProposalEvaluator:
         proposal_abstract = proposal.get('abstract', 'N/A')
         proposal_full = proposal.get('full_draft', '')
         
-        # Format the prompt
-        prompt = template.format(
-            research_call=self.research_call,
-            proposal_id=proposal_id,
-            proposal_title=proposal_title,
-            proposal_abstract=proposal_abstract,
-            proposal_full=proposal_full,
-            role_description=role_description
-        )
+        # Format the prompt (only include role_description if provided)
+        format_kwargs = {
+            'research_call': self.research_call,
+            'proposal_id': proposal_id,
+            'proposal_title': proposal_title,
+            'proposal_abstract': proposal_abstract,
+            'proposal_full': proposal_full
+        }
+        
+        # Only add role_description if provided and template requires it
+        if role_description and 'role_description' in template:
+            format_kwargs['role_description'] = role_description
+        
+        prompt = template.format(**format_kwargs)
         
         return prompt
     
@@ -222,7 +227,7 @@ class ProposalEvaluator:
     def evaluate_single_proposal(self,
                                 proposal: Dict[str, Any],
                                 evaluation_template: str = "comprehensive",
-                                role_description: str = "expert scientific reviewer",
+                                role_description: str = None,
                                 evaluator_model: str = "gemini-2.5-pro") -> Dict[str, Any]:
         """Evaluate a single proposal"""
         
@@ -582,12 +587,23 @@ class ProposalEvaluator:
     def save_evaluations(self, 
                         evaluations: List[Dict[str, Any]],
                         evaluation_type: str,
-                        output_filename: str = None):
+                        output_filename: str = None,
+                        evaluation_templates: List[str] = None):
         """Save evaluation results to a JSON file"""
         
         if output_filename is None:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            output_filename = f"evaluations_{evaluation_type}_{timestamp}.json"
+            # Include evaluation template(s) in filename
+            if evaluation_templates and len(evaluation_templates) > 0:
+                # For single template, use its name
+                if len(evaluation_templates) == 1:
+                    template_str = evaluation_templates[0]
+                # For multiple templates, use "multi" or list first few
+                else:
+                    template_str = "multi"
+                output_filename = f"evaluations_{evaluation_type}_{template_str}_{timestamp}.json"
+            else:
+                output_filename = f"evaluations_{evaluation_type}_{timestamp}.json"
         
         output_path = self.evaluations_dir / output_filename
         
@@ -595,6 +611,7 @@ class ProposalEvaluator:
         evaluations_dict = {
             "metadata": {
                 "evaluation_type": evaluation_type,
+                "evaluation_templates": evaluation_templates if evaluation_templates else [],
                 "total_evaluations": len(evaluations),
                 "generation_timestamp": datetime.now().isoformat(),
             },
@@ -694,8 +711,8 @@ def main():
     parser.add_argument(
         "--template",
         type=str,
-        default="single_scientist",
-        help="Filter AI proposals by template/role (single, group, group_int)"
+        default=None,
+        help="Filter AI proposals by template/role (e.g., 'generate_ideas_no_role', 'single', 'group', 'group_int'). Default: None (all templates)"
     )
     parser.add_argument(
         "--ai-model",
@@ -718,8 +735,8 @@ def main():
     parser.add_argument(
         "--roles",
         nargs="+",
-        default=["expert scientific reviewer"],
-        help="Role descriptions for evaluators (single mode only)"
+        default=None,
+        help="Role descriptions for evaluators (single mode only). Default: None (no role description)"
     )
     parser.add_argument(
         "--source",
@@ -805,7 +822,7 @@ def main():
         
         # Load proposals from CSV with filters
         who_filter = None if args.source == "both" else args.source
-        role_filter = args.template if args.template != "single_scientist" else None
+        role_filter = args.template
         model_filter = args.ai_model
         
         proposals = evaluator.load_proposals(
@@ -837,13 +854,13 @@ def main():
         elif args.compare_type == "ai-ai":
             proposals_1 = evaluator.load_proposals(
                 who="ai",
-                role=args.template if args.template != "single_scientist" else None,
+                role=args.template,
                 model=args.ai_model,
                 max_proposals=args.max_proposals
             )
             proposals_2 = evaluator.load_proposals(
                 who="ai",
-                role=args.template if args.template != "single_scientist" else None,
+                role=args.template,
                 model=args.ai_model,
                 max_proposals=args.max_proposals
             )
@@ -851,7 +868,7 @@ def main():
             proposals_1 = evaluator.load_proposals(who="human", max_proposals=args.max_proposals)
             proposals_2 = evaluator.load_proposals(
                 who="ai",
-                role=args.template if args.template != "single_scientist" else None,
+                role=args.template,
                 model=args.ai_model,
                 max_proposals=args.max_proposals
             )
@@ -864,7 +881,7 @@ def main():
             checkpoint_interval=args.checkpoint_interval,
             resume_from_checkpoint=not args.no_resume,
             comparison_type=args.compare_type,
-            proposal_role=args.template if args.template != "single_scientist" else None,
+            proposal_role=args.template,
             proposal_ai_model=args.ai_model
         )
         
@@ -874,7 +891,8 @@ def main():
     evaluator.save_evaluations(
         evaluations=all_evaluations,
         evaluation_type=evaluation_type,
-        output_filename=args.output
+        output_filename=args.output,
+        evaluation_templates=args.eval_templates
     )
     
     # Generate and save summary report

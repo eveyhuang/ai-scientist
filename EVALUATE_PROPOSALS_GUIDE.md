@@ -4,6 +4,8 @@
 
 `evaluate_proposals.py` is a comprehensive tool for evaluating research proposals using AI-powered evaluation prompts. It supports both **single proposal evaluation** and **pairwise proposal comparison**, with multiple evaluation templates and configurable evaluator perspectives.
 
+> **🎯 Default Behavior:** Evaluations run **without role descriptions** for unbiased assessment. Role descriptions (`--roles`) are **optional** and should only be used when you specifically need perspective-based evaluations.
+
 ## Table of Contents
 1. [Quick Start](#quick-start)
 2. [Evaluation Modes](#evaluation-modes)
@@ -255,9 +257,11 @@ python evaluate_proposals.py \
 
 ## Available Role Descriptions
 
-Use `--roles` flag with single proposal evaluation to specify the perspective of the evaluator:
+**Default:** None (no role description - provides unbiased evaluation)
 
-1. **"expert scientific reviewer"** (default)
+Use `--roles` flag with single proposal evaluation to **optionally** specify the perspective of the evaluator:
+
+1. **"expert scientific reviewer"**
    - General expert perspective
    - Balanced evaluation across all criteria
 
@@ -328,7 +332,7 @@ python evaluate_proposals.py \
 |----------|---------|-------------|
 | `--evaluator-model` | `gemini-2.5-pro` | AI model to use for evaluation |
 | `--eval-templates` | varies by mode | Evaluation templates to use (can specify multiple for single mode) |
-| `--roles` | `["expert scientific reviewer"]` | Role descriptions for evaluators (single mode only, can specify multiple) |
+| `--roles` | `None` | Role descriptions for evaluators (single mode only, optional, can specify multiple) |
 
 ### Output Arguments
 
@@ -350,14 +354,17 @@ python evaluate_proposals.py \
 ### Basic Single Proposal Evaluation
 
 ```bash
-# Evaluate all proposals with default comprehensive template
+# Evaluate all proposals with default comprehensive template (no role bias)
 python evaluate_proposals.py --mode single
 
-# Evaluate only human proposals
+# Evaluate only human proposals (no role bias)
 python evaluate_proposals.py --mode single --source human
 
-# Evaluate only AI proposals
+# Evaluate only AI proposals (no role bias)
 python evaluate_proposals.py --mode single --source ai
+
+# Evaluate with a specific role perspective (optional)
+python evaluate_proposals.py --mode single --roles "expert scientific reviewer"
 ```
 
 ### Multiple Evaluation Templates
@@ -375,10 +382,15 @@ python evaluate_proposals.py \
   --eval-templates comprehensive strengths_weaknesses innovation_assessment alignment_with_call human_criteria
 ```
 
-### Multiple Role Perspectives
+### Multiple Role Perspectives (Optional)
 
 ```bash
-# Evaluate from multiple perspectives
+# Default: Evaluate without role bias
+python evaluate_proposals.py \
+  --mode single \
+  --eval-templates comprehensive
+
+# Optional: Evaluate from multiple perspectives
 python evaluate_proposals.py \
   --mode single \
   --eval-templates comprehensive \
@@ -563,7 +575,7 @@ python evaluate_proposals.py \
 
 ### Combining Templates for Different Purposes
 
-**For Initial Screening:**
+**For Initial Screening (no role bias):**
 ```bash
 python evaluate_proposals.py \
   --mode single \
@@ -571,7 +583,14 @@ python evaluate_proposals.py \
   --source both
 ```
 
-**For Detailed Review:**
+**For Detailed Review (no role bias - recommended):**
+```bash
+python evaluate_proposals.py \
+  --mode single \
+  --eval-templates comprehensive strengths_weaknesses human_criteria
+```
+
+**For Detailed Review with Multiple Perspectives (optional):**
 ```bash
 python evaluate_proposals.py \
   --mode single \
@@ -579,7 +598,14 @@ python evaluate_proposals.py \
   --roles "expert scientific reviewer" "program officer evaluating grant applications"
 ```
 
-**For Innovation Focus:**
+**For Innovation Focus (no role bias):**
+```bash
+python evaluate_proposals.py \
+  --mode single \
+  --eval-templates innovation_assessment
+```
+
+**For Innovation Focus with Perspectives (optional):**
 ```bash
 python evaluate_proposals.py \
   --mode single \
@@ -664,12 +690,13 @@ The script loads proposals from `all_proposals_combined.csv` (or custom CSV spec
 
 1. **Start Small**: Use `--max-proposals 5` for testing before full runs
 2. **List Options First**: Always run `--list-templates` and `--list-roles` to see available options
-3. **Meaningful Output Names**: Use `--output` with descriptive names for different evaluation runs
-4. **Multiple Perspectives**: Use multiple `--roles` to get diverse feedback
-5. **Template Combinations**: Combine templates for comprehensive analysis
-6. **Monitor Progress**: Check logs for evaluation progress and any errors
-7. **Save Outputs**: Store evaluation results for future analysis
-8. **Version Control**: Keep track of which proposals and templates were used
+3. **No Role Bias (Recommended)**: By default, evaluations run without role descriptions for unbiased assessment
+4. **Use Roles Sparingly**: Only add `--roles` if you specifically need perspective-based evaluations
+5. **Meaningful Output Names**: Use `--output` with descriptive names for different evaluation runs
+6. **Template Combinations**: Combine templates for comprehensive analysis
+7. **Monitor Progress**: Check logs for evaluation progress and any errors
+8. **Save Outputs**: Store evaluation results for future analysis
+9. **Version Control**: Keep track of which proposals and templates were used
 
 ---
 
@@ -686,7 +713,8 @@ The script loads proposals from `all_proposals_combined.csv` (or custom CSV spec
 1. `proposal_overlap` - 5 dimensions comparing two proposals (0-4 scale)
 
 ### Total Possible Combinations
-- Single mode: 5 templates × 9 roles = 45 evaluation perspectives per proposal
+- Single mode: 5 templates (with optional 9 role perspectives = 45 combinations if roles used)
+- **Recommended**: Use without roles for unbiased evaluation
 - Pairwise mode: 1 template for comparing any two proposals
 
 ---

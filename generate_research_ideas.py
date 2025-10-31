@@ -328,9 +328,9 @@ def main():
     # Parse command line arguments
     parser = argparse.ArgumentParser(description='Generate research ideas using AI models')
     parser.add_argument('--template', '-t', 
-                       choices=['single_scientist', 'groups_of_scientists', 'groups_of_interdisciplinary_scientists', 'generate_ideas_no_role'],
-                       default='single_scientist',
-                       help='Prompt template to use (default: single_scientist). Use generate_ideas_no_role for ideas without role description')
+                        choices=['single_scientist', 'groups_of_scientists', 'groups_of_interdisciplinary_scientists', 'generate_ideas_no_role'],
+                        default='generate_ideas_no_role',
+                        help='Prompt template to use (default: generate_ideas_no_role). Use generate_ideas_no_role for ideas without role description')
     parser.add_argument('--models', '-m', nargs='+',
                        help='Specific models to use (e.g., gpt-4 gemini-2.5-flash)')
     parser.add_argument('--temperature', type=float, default=0,

@@ -66,6 +66,9 @@ class ProposalSimilarityAnalyzer:
         # Load OpenAI API key for embeddings
         self._load_openai_config(config_path)
         
+        # Cache for embeddings to avoid redundant API calls
+        self.embedding_cache = {}
+        
         logger.info("ProposalSimilarityAnalyzer initialized")
     
     def _load_openai_config(self, config_path: str):
@@ -162,17 +165,23 @@ class ProposalSimilarityAnalyzer:
             logger.error(f"Error computing TF-IDF similarity: {e}")
             return 0.0
     
-    def get_openai_embedding(self, text: str, model: str = "text-embedding-3-small") -> List[float]:
+    def get_openai_embedding(self, text: str, proposal_id: str = None, model: str = "text-embedding-3-small") -> List[float]:
         """
-        Get OpenAI embedding for a text
+        Get OpenAI embedding for a text (with caching)
         
         Args:
             text: Text to embed
+            proposal_id: Unique ID for caching
             model: OpenAI embedding model
         
         Returns:
             Embedding vector
         """
+        # Check cache first
+        if proposal_id and proposal_id in self.embedding_cache:
+            logger.debug(f"Using cached embedding for {proposal_id}")
+            return self.embedding_cache[proposal_id]
+        
         try:
             client = openai.OpenAI(api_key=self.openai_key)
             
@@ -186,18 +195,26 @@ class ProposalSimilarityAnalyzer:
                 model=model
             )
             
-            return response.data[0].embedding
+            embedding = response.data[0].embedding
+            
+            # Cache the result
+            if proposal_id:
+                self.embedding_cache[proposal_id] = embedding
+            
+            return embedding
         except Exception as e:
             logger.error(f"Error getting OpenAI embedding: {e}")
             return None
     
-    def compute_embedding_similarity(self, text1: str, text2: str) -> float:
+    def compute_embedding_similarity(self, text1: str, text2: str, proposal_1_id: str = None, proposal_2_id: str = None) -> float:
         """
         Compute embedding-based cosine similarity between two texts
         
         Args:
             text1: First text
             text2: Second text
+            proposal_1_id: ID for caching
+            proposal_2_id: ID for caching
         
         Returns:
             Cosine similarity score (0-1), or None if embeddings unavailable
@@ -206,9 +223,9 @@ class ProposalSimilarityAnalyzer:
             return None
         
         try:
-            # Get embeddings
-            emb1 = self.get_openai_embedding(text1)
-            emb2 = self.get_openai_embedding(text2)
+            # Get embeddings (with caching)
+            emb1 = self.get_openai_embedding(text1, proposal_1_id)
+            emb2 = self.get_openai_embedding(text2, proposal_2_id)
             
             if emb1 is None or emb2 is None:
                 return None
@@ -392,8 +409,8 @@ class ProposalSimilarityAnalyzer:
         tfidf_sim = self.compute_tfidf_similarity(text1, text2)
         logger.info(f"  TF-IDF similarity: {tfidf_sim:.4f}")
         
-        # Compute embedding similarity
-        embedding_sim = self.compute_embedding_similarity(text1, text2)
+        # Compute embedding similarity (with caching)
+        embedding_sim = self.compute_embedding_similarity(text1, text2, proposal_1_id, proposal_2_id)
         if embedding_sim is not None:
             logger.info(f"  Embedding similarity: {embedding_sim:.4f}")
         
@@ -430,20 +447,29 @@ class ProposalSimilarityAnalyzer:
     def analyze_all_pairs(self,
                          proposals_1: List[Dict[str, Any]],
                          proposals_2: List[Dict[str, Any]],
-                         comparison_type: str = "human-ai") -> List[Dict[str, Any]]:
+                         comparison_type: str = "human-ai",
+                         checkpoint_interval: int = 50,
+                         resume_from_checkpoint: bool = True,
+                         role_filter: str = None,
+                         model_filter: str = None) -> List[Dict[str, Any]]:
         """
-        Analyze similarity for all pairs of proposals
+        Analyze similarity for all pairs of proposals (with checkpointing)
         
         Args:
             proposals_1: First set of proposals
             proposals_2: Second set of proposals
             comparison_type: Type of comparison ('human-human', 'human-ai', 'ai-ai')
+            checkpoint_interval: Save progress every N analyses
+            resume_from_checkpoint: Resume from last checkpoint if available
+            role_filter: Role filter for checkpoint naming
+            model_filter: Model filter for checkpoint naming
         
         Returns:
             List of all similarity analysis results
         """
         logger.info(f"Analyzing {len(proposals_1)} x {len(proposals_2)} proposal pairs")
         logger.info(f"Comparison type: {comparison_type}")
+        logger.info(f"Embedding cache size: {len(self.embedding_cache)} proposals")
         
         # Generate all combinations with indices for tracking
         all_pairs = list(itertools.product(enumerate(proposals_1), enumerate(proposals_2)))
@@ -456,42 +482,138 @@ class ProposalSimilarityAnalyzer:
         
         logger.info(f"Total analyses (excluding self-comparisons): {total_analyses}")
         
-        all_results = []
-        current = 0
+        # Setup checkpoint file
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        checkpoint_parts = [f"checkpoint_similarity_{comparison_type}"]
+        if role_filter:
+            checkpoint_parts.append(role_filter)
+        if model_filter:
+            model_short = model_filter.split('-')[0]
+            checkpoint_parts.append(f"genby_{model_short}")
+        checkpoint_parts.append(timestamp)
+        checkpoint_file = self.results_dir / ("_".join(checkpoint_parts) + ".json")
         
-        for (i1, prop_1), (i2, prop_2) in all_pairs:
-            # Skip self-comparisons
-            if prop_1.get('proposal_id') == prop_2.get('proposal_id'):
-                continue
+        # Try to resume from checkpoint
+        all_results = []
+        completed_pairs = set()
+        start_index = 0
+        
+        if resume_from_checkpoint:
+            # Build glob pattern for finding matching checkpoints
+            glob_parts = [f"checkpoint_similarity_{comparison_type}"]
+            if role_filter:
+                glob_parts.append(role_filter)
+            if model_filter:
+                model_short = model_filter.split('-')[0]
+                glob_parts.append(f"genby_{model_short}")
+            glob_pattern = "_".join(glob_parts) + "_*.json"
             
-            current += 1
-            logger.info(f"Processing analysis {current}/{total_analyses}")
-            
-            try:
-                result = self.analyze_proposal_pair(prop_1, prop_2)
-                all_results.append(result)
-            except Exception as e:
-                logger.error(f"Error analyzing pair {current}/{total_analyses}: {e}")
-                error_result = {
-                    'proposal_1_id': prop_1.get('proposal_id', 'unknown'),
-                    'proposal_2_id': prop_2.get('proposal_id', 'unknown'),
-                    'error': str(e),
-                    'timestamp': datetime.now().isoformat()
-                }
-                all_results.append(error_result)
+            checkpoint_files = sorted(self.results_dir.glob(glob_pattern))
+            if checkpoint_files:
+                latest_checkpoint = checkpoint_files[-1]
+                try:
+                    with open(latest_checkpoint, 'r', encoding='utf-8') as f:
+                        checkpoint_data = json.load(f)
+                        all_results = checkpoint_data.get('results', [])
+                        completed_pairs = set(checkpoint_data.get('completed_pairs', []))
+                        # Load embedding cache
+                        self.embedding_cache = checkpoint_data.get('embedding_cache', {})
+                        start_index = len(all_results)
+                        checkpoint_file = latest_checkpoint  # Continue using same file
+                        logger.info(f"Resuming from checkpoint: {latest_checkpoint}")
+                        logger.info(f"Already completed: {len(all_results)}/{total_analyses} analyses")
+                        logger.info(f"Loaded {len(self.embedding_cache)} cached embeddings")
+                except Exception as e:
+                    logger.warning(f"Could not load checkpoint: {e}. Starting fresh.")
+        
+        current = len(all_results)
+        
+        try:
+            for (i1, prop_1), (i2, prop_2) in all_pairs:
+                # Skip self-comparisons
+                if prop_1.get('proposal_id') == prop_2.get('proposal_id'):
+                    continue
+                
+                # Skip if already completed
+                pair_key = f"{prop_1.get('proposal_id')}_{prop_2.get('proposal_id')}"
+                if pair_key in completed_pairs:
+                    continue
+                
+                current += 1
+                logger.info(f"Processing analysis {current}/{total_analyses}")
+                
+                try:
+                    result = self.analyze_proposal_pair(prop_1, prop_2)
+                    all_results.append(result)
+                    completed_pairs.add(pair_key)
+                except Exception as e:
+                    logger.error(f"Error analyzing pair {current}/{total_analyses}: {e}")
+                    error_result = {
+                        'proposal_1_id': prop_1.get('proposal_id', 'unknown'),
+                        'proposal_2_id': prop_2.get('proposal_id', 'unknown'),
+                        'error': str(e),
+                        'timestamp': datetime.now().isoformat()
+                    }
+                    all_results.append(error_result)
+                    completed_pairs.add(pair_key)
+                
+                # Save checkpoint at regular intervals
+                if current % checkpoint_interval == 0 or current == total_analyses:
+                    self._save_checkpoint(checkpoint_file, all_results, list(completed_pairs))
+                    logger.info(f"Checkpoint saved: {len(all_results)} analyses completed, {len(self.embedding_cache)} embeddings cached")
+        
+        except KeyboardInterrupt:
+            logger.warning("Analysis interrupted by user. Saving checkpoint...")
+            self._save_checkpoint(checkpoint_file, all_results, list(completed_pairs))
+            logger.info(f"Progress saved. Completed {len(all_results)}/{total_analyses} analyses")
+            raise
+        
+        except Exception as e:
+            logger.error(f"Unexpected error during analysis: {e}")
+            self._save_checkpoint(checkpoint_file, all_results, list(completed_pairs))
+            logger.info(f"Emergency checkpoint saved. Completed {len(all_results)}/{total_analyses} analyses")
+            raise
         
         logger.info(f"Completed {len(all_results)} similarity analyses")
+        logger.info(f"Final embedding cache size: {len(self.embedding_cache)} proposals")
         return all_results
+    
+    def _save_checkpoint(self, checkpoint_file: Path, results: List[Dict[str, Any]], completed_pairs: List[str]):
+        """Save checkpoint to file"""
+        checkpoint_data = {
+            'timestamp': datetime.now().isoformat(),
+            'total_analyses': len(results),
+            'completed_pairs': completed_pairs,
+            'embedding_cache': self.embedding_cache,  # Save embedding cache
+            'results': results
+        }
+        
+        with open(checkpoint_file, 'w', encoding='utf-8') as f:
+            json.dump(checkpoint_data, f, indent=2, ensure_ascii=False)
+        
+        logger.info(f"Checkpoint saved to {checkpoint_file}")
     
     def save_results(self, 
                     results: List[Dict[str, Any]],
                     comparison_type: str,
-                    output_filename: str = None):
+                    output_filename: str = None,
+                    role_filter: str = None,
+                    model_filter: str = None):
         """Save similarity analysis results to a JSON file"""
         
         if output_filename is None:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            output_filename = f"similarity_{comparison_type}_{timestamp}.json"
+            # Build descriptive filename
+            filename_parts = ["similarity", comparison_type]
+            
+            if role_filter:
+                filename_parts.append(role_filter)
+            if model_filter:
+                model_short = model_filter.split('-')[0]
+                filename_parts.append(f"genby_{model_short}")
+            
+            filename_parts.append(timestamp)
+            output_filename = "_".join(filename_parts) + ".json"
         
         output_path = self.results_dir / output_filename
         
@@ -577,8 +699,8 @@ def main():
     parser.add_argument(
         "--template",
         type=str,
-        default="single_scientist",
-        help="Filter AI proposals by template/role"
+        default=None,
+        help="Filter AI proposals by template/role (e.g., 'generate_ideas_no_role', 'single', 'group', 'group_int'). Default: None (all templates)"
     )
     parser.add_argument(
         "--max-proposals",
@@ -607,13 +729,13 @@ def main():
     elif args.compare_type == "ai-ai":
         proposals_1 = analyzer.load_proposals(
             who="ai",
-            role=args.template if args.template != "single_scientist" else None,
+            role=args.template,
             model=args.ai_model,
             max_proposals=args.max_proposals
         )
         proposals_2 = analyzer.load_proposals(
             who="ai",
-            role=args.template if args.template != "single_scientist" else None,
+            role=args.template,
             model=args.ai_model,
             max_proposals=args.max_proposals
         )
@@ -621,23 +743,29 @@ def main():
         proposals_1 = analyzer.load_proposals(who="human", max_proposals=args.max_proposals)
         proposals_2 = analyzer.load_proposals(
             who="ai",
-            role=args.template if args.template != "single_scientist" else None,
+            role=args.template,
             model=args.ai_model,
             max_proposals=args.max_proposals
         )
     
-    # Perform similarity analysis
+    # Perform similarity analysis (with checkpointing and caching)
     all_results = analyzer.analyze_all_pairs(
         proposals_1=proposals_1,
         proposals_2=proposals_2,
-        comparison_type=args.compare_type
+        comparison_type=args.compare_type,
+        checkpoint_interval=50,
+        resume_from_checkpoint=True,
+        role_filter=args.template,
+        model_filter=args.ai_model
     )
     
-    # Save results
+    # Save results with role and model info for better filename
     analyzer.save_results(
         results=all_results,
         comparison_type=args.compare_type,
-        output_filename=args.output
+        output_filename=args.output,
+        role_filter=args.template,
+        model_filter=args.ai_model
     )
     
     logger.info(f"Similarity analysis complete!")

@@ -90,12 +90,10 @@ class ProposalGenerator:
         
         # Check if template_name is a valid role or a special template
         if template_name == 'generate_ideas_no_role':
-            # Use the no-role proposals template
-            proposals_template_name = 'generate_proposals_no_role'
+            # No role - use unified template with None
             role_to_use = None
         elif template_name in available_roles:
-            # Use the regular proposals template with the specified role
-            proposals_template_name = 'generate_proposals'
+            # Use the unified template with the specified role
             role_to_use = template_name
         else:
             raise ValueError(f"Invalid template '{template_name}'. Available roles: {available_roles}, or use 'generate_ideas_no_role'")
@@ -108,14 +106,15 @@ class ProposalGenerator:
             model_name = available_models[0]
         
         # Format the proposal template with the idea using PromptManager
+        # Always use 'generate_proposals' - it now handles both with-role and no-role cases
         proposal_prompt = self.prompt_manager.format_prompt(
-            proposals_template_name,
+            'generate_proposals',
             {
                 'title': idea['title'],
                 'abstract': idea['abstract'],
                 'research_call': self.research_call
             },
-            role_to_use  # Pass None for no-role templates, otherwise pass the role
+            role_to_use  # Pass None for no-role, or the role name
         )
         
         # Generate the proposal
@@ -123,7 +122,7 @@ class ProposalGenerator:
             response = self.ai_interface.generate_research_ideas(
                 research_call=proposal_prompt,
                 model_name=model_name,
-                prompt_template=proposals_template_name  # Use the appropriate proposals template
+                prompt_template='generate_proposals'  # Always use the unified template
             )
             
             # Parse the JSON response
@@ -253,8 +252,9 @@ class ProposalGenerator:
 def main():
     """Main function to run proposal generation"""
     parser = argparse.ArgumentParser(description='Generate full research proposals from research ideas')
-    parser.add_argument('--template', '-t', 
-                       help='Template name to process (e.g., single_scientist, groups_of_scientists)')
+    parser.add_argument('--template', '-t',
+                       default='generate_ideas_no_role',
+                       help='Template name to process (default: generate_ideas_no_role). Options: single_scientist, groups_of_scientists, groups_of_interdisciplinary_scientists, generate_ideas_no_role')
     parser.add_argument('--model', '-m',
                        help='AI model to use for proposal generation')
     parser.add_argument('--max-proposals', type=int,
@@ -276,27 +276,12 @@ def main():
             print(f"  - {template} (models: {', '.join(models)})")
         return
     
-    # Process specific template
-    if args.template:
-        generator.generate_proposals_for_template(
-            args.template, 
-            args.model, 
-            args.max_proposals
-        )
-    else:
-        # Process all available templates
-        templates = generator.list_available_templates()
-        if not templates:
-            logger.error("No templates found. Run with --list-templates to see available options.")
-            return
-        
-        logger.info(f"Processing all templates: {templates}")
-        for template in templates:
-            generator.generate_proposals_for_template(
-                template, 
-                args.model, 
-                args.max_proposals
-            )
+    # Process the specified template (now has default)
+    generator.generate_proposals_for_template(
+        args.template, 
+        args.model, 
+        args.max_proposals
+    )
 
 if __name__ == "__main__":
     main()

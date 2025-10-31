@@ -1,5 +1,7 @@
 # Evaluate Proposals - Quick Reference Card
 
+> **Note:** By default, evaluations run **without role descriptions** for unbiased assessment. Use `--roles` only if you need perspective-based evaluations.
+
 ## 🚀 Common Commands
 
 ```bash
@@ -16,8 +18,11 @@ python evaluate_proposals.py --mode pairwise --compare-type human-ai
 # Multiple templates
 python evaluate_proposals.py --mode single --eval-templates comprehensive human_criteria innovation_assessment
 
-# Multiple roles
+# With role descriptions (optional)
 python evaluate_proposals.py --mode single --roles "expert scientific reviewer" "interdisciplinary scientist"
+
+# Without role (default - no bias)
+python evaluate_proposals.py --mode single --eval-templates comprehensive
 
 # Filter by source
 python evaluate_proposals.py --mode single --source human  # or: ai, both
@@ -39,8 +44,11 @@ python evaluate_proposals.py --mode single --max-proposals 5
 ### Pairwise Comparison
 - `proposal_overlap` - 5 dimensions (0-4 scale) comparing two proposals
 
-## 👤 Available Roles (for single mode)
-- `expert scientific reviewer` (default)
+## 👤 Available Roles (for single mode - OPTIONAL)
+**Default:** None (no role description - unbiased evaluation)
+
+If you want to add role perspective, use `--roles`:
+- `expert scientific reviewer`
 - `program officer evaluating grant applications`
 - `interdisciplinary scientist`
 - `data science expert`
@@ -86,12 +94,18 @@ See `EVALUATE_PROPOSALS_GUIDE.md` for complete documentation with detailed examp
 
 ## 🔄 Typical Workflows
 
-### Initial Screening
+### Initial Screening (no role bias)
 ```bash
 python evaluate_proposals.py --mode single --eval-templates alignment_with_call --source both
 ```
 
-### Detailed Review
+### Detailed Review (no role bias)
+```bash
+python evaluate_proposals.py --mode single \
+  --eval-templates comprehensive human_criteria
+```
+
+### Detailed Review with Multiple Perspectives (optional)
 ```bash
 python evaluate_proposals.py --mode single \
   --eval-templates comprehensive human_criteria \

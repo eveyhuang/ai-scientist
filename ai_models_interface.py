@@ -211,9 +211,10 @@ class AIModelsInterface:
         template_name = prompt_template or self.current_template
         
         # Use the new consolidated template system
-        # If template_name is a template name (like 'generate_ideas', 'generate_ideas_no_role', 'generate_proposals', 'generate_proposals_no_role'), use it directly
+        # If template_name is a template name (like 'generate_ideas', 'generate_ideas_no_role', 'generate_proposals'), use it directly
         # If it's a role name (like 'single_scientist'), use it as role for 'generate_ideas'
-        if template_name in ['generate_ideas', 'generate_ideas_no_role', 'generate_proposals', 'generate_proposals_no_role']:
+        # Note: 'generate_proposals' now handles both with-role and no-role cases via role_prefix parameter
+        if template_name in ['generate_ideas', 'generate_ideas_no_role', 'generate_proposals']:
             template_name_to_use = template_name
             # For templates ending in _no_role, don't use any role
             if template_name.endswith('_no_role'):
