@@ -1,0 +1,64 @@
+======================================================================
+EVALUATION SUMMARY STATISTICS
+Evaluation Type: pairwise_ai-ai
+======================================================================
+
+Research Question / Aims:
+  Mean score: 0.61
+  Median score: 1.00
+  Std dev: 0.53
+  Min: 0, Max: 2
+  Score distribution:
+    Score 0:  37 ( 41.1%)
+    Score 1:  51 ( 56.7%)
+    Score 2:   2 (  2.2%)
+    Score 3:   0 (  0.0%)
+    Score 4:   0 (  0.0%)
+
+Data / Empirical Context:
+  Mean score: 0.62
+  Median score: 0.00
+  Std dev: 0.86
+  Min: 0, Max: 4
+  Score distribution:
+    Score 0:  53 ( 58.9%)
+    Score 1:  21 ( 23.3%)
+    Score 2:  14 ( 15.6%)
+    Score 3:   1 (  1.1%)
+    Score 4:   1 (  1.1%)
+
+Methods / Design:
+  Mean score: 1.48
+  Median score: 2.00
+  Std dev: 0.98
+  Min: 0, Max: 3
+  Score distribution:
+    Score 0:  25 ( 27.8%)
+    Score 1:   4 (  4.4%)
+    Score 2:  54 ( 60.0%)
+    Score 3:   7 (  7.8%)
+    Score 4:   0 (  0.0%)
+
+Intended Contribution / Outcomes:
+  Mean score: 0.54
+  Median score: 0.00
+  Std dev: 0.88
+  Min: 0, Max: 3
+  Score distribution:
+    Score 0:  62 ( 68.9%)
+    Score 1:  10 ( 11.1%)
+    Score 2:  15 ( 16.7%)
+    Score 3:   3 (  3.3%)
+    Score 4:   0 (  0.0%)
+
+Resources / Timing / Artifacts:
+  Mean score: 2.56
+  Median score: 3.00
+  Std dev: 0.84
+  Min: 1, Max: 4
+  Score distribution:
+    Score 0:   0 (  0.0%)
+    Score 1:  17 ( 18.9%)
+    Score 2:  10 ( 11.1%)
+    Score 3:  59 ( 65.6%)
+    Score 4:   4 (  4.4%)
