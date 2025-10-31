@@ -165,10 +165,20 @@ class ProposalCombiner:
         
         all_ai_proposals = []
         
-        # Iterate through all template types
+        # Iterate through all template types (including those in role_mapping)
         for template_name in self.role_mapping.keys():
             template_proposals = self.load_ai_proposals_from_template(template_name)
             all_ai_proposals.extend(template_proposals)
+        
+        # Also check for other template folders not in role_mapping
+        if self.base_dir.exists():
+            for template_dir in self.base_dir.iterdir():
+                if template_dir.is_dir() and template_dir.name not in self.role_mapping.keys():
+                    # Check if it has proposals
+                    if (template_dir / "proposals").exists():
+                        logger.info(f"Found additional template: {template_dir.name}")
+                        template_proposals = self.load_ai_proposals_from_template(template_dir.name)
+                        all_ai_proposals.extend(template_proposals)
         
         logger.info(f"Loaded total of {len(all_ai_proposals)} AI proposals")
         return all_ai_proposals

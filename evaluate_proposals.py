@@ -397,7 +397,9 @@ class ProposalEvaluator:
                           evaluator_model: str = "gemini-2.5-pro",
                           checkpoint_interval: int = 10,
                           resume_from_checkpoint: bool = True,
-                          comparison_type: str = "human-ai") -> List[Dict[str, Any]]:
+                          comparison_type: str = "human-ai",
+                          proposal_role: str = None,
+                          proposal_ai_model: str = None) -> List[Dict[str, Any]]:
         """
         Evaluate all pairs of proposals (e.g., for overlap comparison)
         
@@ -408,6 +410,9 @@ class ProposalEvaluator:
             evaluator_model: Model to use for evaluation
             checkpoint_interval: Save progress every N evaluations (default: 10)
             resume_from_checkpoint: Resume from last checkpoint if available (default: True)
+            comparison_type: Type of comparison (human-human, ai-ai, human-ai)
+            proposal_role: Role filter used for proposals (for checkpoint naming)
+            proposal_ai_model: AI model filter used for proposals (for checkpoint naming)
         
         Returns:
             List of all evaluation results
@@ -427,19 +432,40 @@ class ProposalEvaluator:
         logger.info(f"Evaluator model: {evaluator_model}")
         logger.info(f"Total comparisons (excluding self-comparisons): {total_evaluations}")
         
-        # Setup checkpoint file with comparison type and model in name
+        # Setup checkpoint file with comparison type, role, proposal AI model, and evaluator model
         # Extract short model name (e.g., "gemini" from "gemini-2.5-pro", "gpt" from "gpt-4")
-        model_short = evaluator_model.split('-')[0]
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        checkpoint_file = self.evaluations_dir / f"checkpoint_{comparison_type}_{model_short}_{timestamp}.json"
+        evaluator_short = evaluator_model.split('-')[0]
         
-        # Try to resume from checkpoint (only matching comparison type and model)
+        # Build checkpoint filename with all distinguishing parameters
+        checkpoint_parts = [f"checkpoint_{comparison_type}"]
+        if proposal_role:
+            checkpoint_parts.append(proposal_role)
+        if proposal_ai_model:
+            proposal_model_short = proposal_ai_model.split('-')[0]
+            checkpoint_parts.append(f"genby_{proposal_model_short}")
+        checkpoint_parts.append(f"eval_{evaluator_short}")
+        
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        checkpoint_name = "_".join(checkpoint_parts) + f"_{timestamp}.json"
+        checkpoint_file = self.evaluations_dir / checkpoint_name
+        
+        # Try to resume from checkpoint (only matching comparison type, role, and models)
         all_evaluations = []
         completed_pairs = set()
         start_index = 0
         
         if resume_from_checkpoint:
-            checkpoint_files = sorted(self.evaluations_dir.glob(f"checkpoint_{comparison_type}_{model_short}_*.json"))
+            # Build glob pattern for finding matching checkpoints
+            glob_parts = [f"checkpoint_{comparison_type}"]
+            if proposal_role:
+                glob_parts.append(proposal_role)
+            if proposal_ai_model:
+                proposal_model_short = proposal_ai_model.split('-')[0]
+                glob_parts.append(f"genby_{proposal_model_short}")
+            glob_parts.append(f"eval_{evaluator_short}")
+            glob_pattern = "_".join(glob_parts) + "_*.json"
+            
+            checkpoint_files = sorted(self.evaluations_dir.glob(glob_pattern))
             if checkpoint_files:
                 latest_checkpoint = checkpoint_files[-1]
                 try:
@@ -837,7 +863,9 @@ def main():
             evaluator_model=args.evaluator_model,
             checkpoint_interval=args.checkpoint_interval,
             resume_from_checkpoint=not args.no_resume,
-            comparison_type=args.compare_type
+            comparison_type=args.compare_type,
+            proposal_role=args.template if args.template != "single_scientist" else None,
+            proposal_ai_model=args.ai_model
         )
         
         evaluation_type = f"pairwise_{args.compare_type}"

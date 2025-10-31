@@ -1,0 +1,58 @@
+{
+  "timestamp": "2025-10-31T11:24:27.357526",
+  "comparison_type": "ai-ai",
+  "evaluator_model": "gemini-2.5-pro",
+  "total_evaluations": 1,
+  "completed_pairs": [
+    "0_1"
+  ],
+  "evaluations": [
+    {
+      "evaluation_id": "ai_generate_ideas_no_role_gpt_01_vs_ai_generate_ideas_no_role_gpt_02_proposal_overlap_20251031_112415",
+      "proposal_1_id": "ai_generate_ideas_no_role_gpt_01",
+      "proposal_2_id": "ai_generate_ideas_no_role_gpt_02",
+      "proposal_1_title": "Synthesis of Molecular Data for Cancer Cell Evolution",
+      "proposal_2_title": "Cross-Disciplinary Analysis of Neurodegenerative Diseases",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_ideas_no_role",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "proposal_overlap",
+      "timestamp": "2025-10-31T11:24:15.525089",
+      "evaluation_response": {
+        "comparison": {
+          "proposal_1_id": "ai_generate_ideas_no_role_gpt_01",
+          "proposal_2_id": "ai_generate_ideas_no_role_gpt_02",
+          "dimensions": [
+            {
+              "dimension": "Research Question / Aims",
+              "score": 1,
+              "justification": "Both proposals aim to synthesize molecular data to understand disease, but they focus on entirely different biological domains: cancer evolution versus neurodegeneration."
+            },
+            {
+              "dimension": "Data / Empirical Context",
+              "score": 0,
+              "justification": "The proposals target completely different disease contexts (cancer vs. neurodegeneration) and will therefore use distinct, non-overlapping patient datasets."
+            },
+            {
+              "dimension": "Methods / Design",
+              "score": 2,
+              "justification": "Both proposals employ a similar high-level computational data synthesis approach, but the specific analytical tools and models will differ due to the distinct biological questions and data types."
+            },
+            {
+              "dimension": "Intended Contribution / Outcomes",
+              "score": 0,
+              "justification": "The proposals aim to contribute novel insights to two entirely separate fields of study, cancer biology and neurodegenerative disease research, respectively."
+            },
+            {
+              "dimension": "Resources / Timing / Artifacts",
+              "score": 2,
+              "justification": "Both proposals request an identical budget ($500k) and timeline (3 years) and require similar computational resources, though the specific scientific expertise of the collaborators differs."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
