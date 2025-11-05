@@ -48,7 +48,7 @@ class ProposalEvaluator:
         """Initialize the proposal evaluator"""
         self.ai_interface = AIModelsInterface(config_path)
         self.prompt_manager = PromptManager()
-        self.evaluations_dir = Path("evaluations")
+        self.evaluations_dir = Path("qualitative_evaluation")
         self.evaluations_dir.mkdir(exist_ok=True)
         
         # Load proposals from CSV
@@ -441,6 +441,20 @@ class ProposalEvaluator:
         # Extract short model name (e.g., "gemini" from "gemini-2.5-pro", "gpt" from "gpt-4")
         evaluator_short = evaluator_model.split('-')[0]
         
+        # Create subfolder for checkpoints (same structure as final results)
+        subfolder_parts = ["pairwise", comparison_type]
+        if evaluation_template:
+            subfolder_parts.append(evaluation_template)
+        if proposal_role:
+            subfolder_parts.append(proposal_role)
+        if proposal_ai_model:
+            proposal_model_short = proposal_ai_model.split('-')[0]
+            subfolder_parts.append(f"genby_{proposal_model_short}")
+        
+        subfolder_name = "_".join(subfolder_parts)
+        checkpoint_dir = self.evaluations_dir / subfolder_name
+        checkpoint_dir.mkdir(parents=True, exist_ok=True)
+        
         # Build checkpoint filename with all distinguishing parameters
         checkpoint_parts = [f"checkpoint_{comparison_type}"]
         if proposal_role:
@@ -452,7 +466,7 @@ class ProposalEvaluator:
         
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         checkpoint_name = "_".join(checkpoint_parts) + f"_{timestamp}.json"
-        checkpoint_file = self.evaluations_dir / checkpoint_name
+        checkpoint_file = checkpoint_dir / checkpoint_name
         
         # Try to resume from checkpoint (only matching comparison type, role, and models)
         all_evaluations = []
@@ -460,7 +474,7 @@ class ProposalEvaluator:
         start_index = 0
         
         if resume_from_checkpoint:
-            # Build glob pattern for finding matching checkpoints
+            # Build glob pattern for finding matching checkpoints in the subfolder
             glob_parts = [f"checkpoint_{comparison_type}"]
             if proposal_role:
                 glob_parts.append(proposal_role)
@@ -470,7 +484,7 @@ class ProposalEvaluator:
             glob_parts.append(f"eval_{evaluator_short}")
             glob_pattern = "_".join(glob_parts) + "_*.json"
             
-            checkpoint_files = sorted(self.evaluations_dir.glob(glob_pattern))
+            checkpoint_files = sorted(checkpoint_dir.glob(glob_pattern))
             if checkpoint_files:
                 latest_checkpoint = checkpoint_files[-1]
                 try:
@@ -588,9 +602,48 @@ class ProposalEvaluator:
                         evaluations: List[Dict[str, Any]],
                         evaluation_type: str,
                         output_filename: str = None,
-                        evaluation_templates: List[str] = None):
-        """Save evaluation results to a JSON file"""
+                        evaluation_templates: List[str] = None,
+                        proposal_role: str = None,
+                        proposal_ai_model: str = None):
+        """Save evaluation results to a JSON file in organized subfolders"""
         
+        # Create subfolder name based on evaluation parameters
+        subfolder_parts = []
+        
+        # Extract mode and comparison type from evaluation_type
+        # e.g., "single_human", "pairwise_human-ai"
+        if "single" in evaluation_type:
+            subfolder_parts.append("single")
+            # Add source type (human, ai, both)
+            source = evaluation_type.replace("single_", "")
+            if source:
+                subfolder_parts.append(source)
+        elif "pairwise" in evaluation_type:
+            subfolder_parts.append("pairwise")
+            # Add comparison type
+            comp_type = evaluation_type.replace("pairwise_", "")
+            if comp_type:
+                subfolder_parts.append(comp_type)
+        
+        # Add template name(s)
+        if evaluation_templates and len(evaluation_templates) > 0:
+            if len(evaluation_templates) == 1:
+                subfolder_parts.append(evaluation_templates[0])
+            else:
+                subfolder_parts.append("multi")
+        
+        # Add AI model if specified (for AI proposals)
+        if proposal_role:
+            subfolder_parts.append(proposal_role)
+        if proposal_ai_model:
+            model_short = proposal_ai_model.split('-')[0]
+            subfolder_parts.append(f"genby_{model_short}")
+        
+        subfolder_name = "_".join(subfolder_parts)
+        output_dir = self.evaluations_dir / subfolder_name
+        output_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Generate filename if not provided
         if output_filename is None:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             # Include evaluation template(s) in filename
@@ -605,13 +658,15 @@ class ProposalEvaluator:
             else:
                 output_filename = f"evaluations_{evaluation_type}_{timestamp}.json"
         
-        output_path = self.evaluations_dir / output_filename
+        output_path = output_dir / output_filename
         
-        # Create evaluations dict
+        # Create evaluations dict with enhanced metadata
         evaluations_dict = {
             "metadata": {
                 "evaluation_type": evaluation_type,
                 "evaluation_templates": evaluation_templates if evaluation_templates else [],
+                "proposal_role": proposal_role,
+                "proposal_ai_model": proposal_ai_model,
                 "total_evaluations": len(evaluations),
                 "generation_timestamp": datetime.now().isoformat(),
             },
@@ -892,12 +947,42 @@ def main():
         evaluations=all_evaluations,
         evaluation_type=evaluation_type,
         output_filename=args.output,
-        evaluation_templates=args.eval_templates
+        evaluation_templates=args.eval_templates,
+        proposal_role=args.template,
+        proposal_ai_model=args.ai_model
     )
     
-    # Generate and save summary report
+    # Generate and save summary report (in the same subfolder as evaluations)
     summary = evaluator.generate_summary_report(all_evaluations)
-    summary_path = evaluator.evaluations_dir / f"summary_{evaluation_type}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
+    
+    # Determine the correct subfolder (same logic as save_evaluations)
+    subfolder_parts = []
+    if "single" in evaluation_type:
+        subfolder_parts.append("single")
+        source = evaluation_type.replace("single_", "")
+        if source:
+            subfolder_parts.append(source)
+    elif "pairwise" in evaluation_type:
+        subfolder_parts.append("pairwise")
+        comp_type = evaluation_type.replace("pairwise_", "")
+        if comp_type:
+            subfolder_parts.append(comp_type)
+    
+    if args.eval_templates and len(args.eval_templates) > 0:
+        if len(args.eval_templates) == 1:
+            subfolder_parts.append(args.eval_templates[0])
+        else:
+            subfolder_parts.append("multi")
+    
+    if args.template:
+        subfolder_parts.append(args.template)
+    if args.ai_model:
+        model_short = args.ai_model.split('-')[0]
+        subfolder_parts.append(f"genby_{model_short}")
+    
+    subfolder_name = "_".join(subfolder_parts)
+    summary_dir = evaluator.evaluations_dir / subfolder_name
+    summary_path = summary_dir / f"summary_{evaluation_type}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
     with open(summary_path, 'w', encoding='utf-8') as f:
         f.write(summary)
     

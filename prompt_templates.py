@@ -52,35 +52,35 @@ class PromptManager:
             name="Generate Research Ideas",
             description="Generate innovative research ideas with configurable role perspective",
             template="""
-            You are {role_description}, you are tasked with generating innovative research ideas based on the following research call.
+You are {role_description}, you are tasked with generating innovative research ideas based on the following research call.
 
-            RESEARCH CALL:
-            {research_call}
+RESEARCH CALL:
+{research_call}
 
-            TASK:
-            Based on this research call, generate the most innovative and impactful 10 research ideas that address the goals 
-            and objectives outlined in the call and align with the funding organization's mission
+TASK:
+Based on this research call, generate the most innovative and impactful 10 research ideas that address the goals 
+and objectives outlined in the call and align with the funding organization's mission
 
-            For each idea, provide:
-            - A clear, concise title
-            - An abstract (250-500 words)
+For each idea, provide:
+- A clear, concise title
+- An abstract (250-500 words)
 
-            IMPORTANT: Format your response as a valid JSON object with the following structure:
-            {{
-            "research_ideas": [
-                {{
-                "title": "Research Idea Title",
-                "abstract": "Detailed abstract of the research idea..."
-                }},
-                {{
-                "title": "Another Research Idea Title", 
-                "abstract": "Detailed abstract of this research idea..."
-                }}
-            ]
-            }}
+IMPORTANT: Format your response as a valid JSON object with the following structure:
+{{
+  "research_ideas": [
+    {{
+      "title": "Research Idea Title",
+      "abstract": "Detailed abstract of the research idea..."
+    }},
+    {{
+      "title": "Another Research Idea Title", 
+      "abstract": "Detailed abstract of this research idea..."
+    }}
+  ]
+}}
 
-            Ensure the JSON is properly formatted and valid.
-            """,
+Ensure the JSON is properly formatted and valid.
+""",
             parameters=['research_call', 'role_description']
         )
 
@@ -737,7 +737,7 @@ class PromptManager:
             Provide ONLY the JSON output above with no additional text before or after.""",
                         parameters=['research_call', 'proposal_id', 'proposal_title',  'proposal_abstract', 
                                 'proposal_full']
-                    )
+        )
 
         return templates
     

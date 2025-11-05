@@ -1,0 +1,86 @@
+======================================================================
+SIMILARITY METRICS SUMMARY STATISTICS
+======================================================================
+
+TF-IDF Cosine Similarity:
+  Mean: 0.3689
+  Median: 0.3490
+  Std dev: 0.0621
+  Min: 0.2796, Max: 0.5628
+  Range: 0.2833
+  Percentiles: 25th=0.3223, 50th=0.3490, 75th=0.4084
+
+Embedding Similarity (OpenAI):
+  Mean: 0.8603
+  Median: 0.8552
+  Std dev: 0.0328
+  Min: 0.7973, Max: 0.9330
+  Range: 0.1357
+  Percentiles: 25th=0.8321, 50th=0.8552, 75th=0.8881
+
+Keyword Jaccard Similarity:
+  Mean: 0.1726
+  Median: 0.1429
+  Std dev: 0.0521
+  Min: 0.1111, Max: 0.2903
+  Range: 0.1792
+  Percentiles: 25th=0.1429, 50th=0.1429, 75th=0.2121
+
+Topic Similarity (LDA):
+  Mean: 0.0668
+  Median: 0.0234
+  Std dev: 0.2013
+  Min: 0.0214, Max: 1.0000
+  Range: 0.9786
+  Percentiles: 25th=0.0229, 50th=0.0234, 75th=0.0242
+
+======================================================================
+HIGH SIMILARITY PAIRS (Top 10% for each metric)
+======================================================================
+
+TF-IDF Cosine Similarity (threshold >= 0.4429):
+  ai_generate_ideas_no_role_gemini_09 vs ai_generate_ideas_no_role_gemini_05: 0.5628
+  ai_generate_ideas_no_role_gemini_05 vs ai_generate_ideas_no_role_gemini_09: 0.5628
+  ai_generate_ideas_no_role_gemini_03 vs ai_generate_ideas_no_role_gemini_04: 0.5130
+  ai_generate_ideas_no_role_gemini_04 vs ai_generate_ideas_no_role_gemini_03: 0.5130
+  ai_generate_ideas_no_role_gemini_06 vs ai_generate_ideas_no_role_gemini_01: 0.4899
+  ai_generate_ideas_no_role_gemini_01 vs ai_generate_ideas_no_role_gemini_06: 0.4899
+  ai_generate_ideas_no_role_gemini_10 vs ai_generate_ideas_no_role_gemini_03: 0.4706
+  ai_generate_ideas_no_role_gemini_03 vs ai_generate_ideas_no_role_gemini_10: 0.4706
+  ai_generate_ideas_no_role_gemini_01 vs ai_generate_ideas_no_role_gemini_02: 0.4429
+
+Embedding Similarity (OpenAI) (threshold >= 0.9089):
+  ai_generate_ideas_no_role_gemini_03 vs ai_generate_ideas_no_role_gemini_10: 0.9330
+  ai_generate_ideas_no_role_gemini_10 vs ai_generate_ideas_no_role_gemini_03: 0.9330
+  ai_generate_ideas_no_role_gemini_02 vs ai_generate_ideas_no_role_gemini_05: 0.9135
+  ai_generate_ideas_no_role_gemini_05 vs ai_generate_ideas_no_role_gemini_02: 0.9135
+  ai_generate_ideas_no_role_gemini_05 vs ai_generate_ideas_no_role_gemini_09: 0.9107
+  ai_generate_ideas_no_role_gemini_09 vs ai_generate_ideas_no_role_gemini_05: 0.9107
+  ai_generate_ideas_no_role_gemini_02 vs ai_generate_ideas_no_role_gemini_06: 0.9106
+  ai_generate_ideas_no_role_gemini_06 vs ai_generate_ideas_no_role_gemini_02: 0.9106
+  ai_generate_ideas_no_role_gemini_05 vs ai_generate_ideas_no_role_gemini_06: 0.9089
+  ai_generate_ideas_no_role_gemini_06 vs ai_generate_ideas_no_role_gemini_05: 0.9089
+
+Keyword Jaccard Similarity (threshold >= 0.2500):
+  ai_generate_ideas_no_role_gemini_01 vs ai_generate_ideas_no_role_gemini_02: 0.2903
+  ai_generate_ideas_no_role_gemini_02 vs ai_generate_ideas_no_role_gemini_01: 0.2903
+  ai_generate_ideas_no_role_gemini_03 vs ai_generate_ideas_no_role_gemini_10: 0.2903
+  ai_generate_ideas_no_role_gemini_05 vs ai_generate_ideas_no_role_gemini_07: 0.2903
+  ai_generate_ideas_no_role_gemini_05 vs ai_generate_ideas_no_role_gemini_09: 0.2903
+  ai_generate_ideas_no_role_gemini_07 vs ai_generate_ideas_no_role_gemini_05: 0.2903
+  ai_generate_ideas_no_role_gemini_09 vs ai_generate_ideas_no_role_gemini_05: 0.2903
+  ai_generate_ideas_no_role_gemini_10 vs ai_generate_ideas_no_role_gemini_03: 0.2903
+  ai_generate_ideas_no_role_gemini_03 vs ai_generate_ideas_no_role_gemini_04: 0.2500
+  ai_generate_ideas_no_role_gemini_04 vs ai_generate_ideas_no_role_gemini_03: 0.2500
+
+Topic Similarity (LDA) (threshold >= 0.0251):
+  ai_generate_ideas_no_role_gemini_03 vs ai_generate_ideas_no_role_gemini_10: 1.0000
+  ai_generate_ideas_no_role_gemini_10 vs ai_generate_ideas_no_role_gemini_03: 1.0000
+  ai_generate_ideas_no_role_gemini_01 vs ai_generate_ideas_no_role_gemini_10: 1.0000
+  ai_generate_ideas_no_role_gemini_10 vs ai_generate_ideas_no_role_gemini_01: 1.0000
+  ai_generate_ideas_no_role_gemini_03 vs ai_generate_ideas_no_role_gemini_08: 0.0252
+  ai_generate_ideas_no_role_gemini_08 vs ai_generate_ideas_no_role_gemini_03: 0.0252
+  ai_generate_ideas_no_role_gemini_04 vs ai_generate_ideas_no_role_gemini_08: 0.0252
+  ai_generate_ideas_no_role_gemini_08 vs ai_generate_ideas_no_role_gemini_04: 0.0252
+  ai_generate_ideas_no_role_gemini_04 vs ai_generate_ideas_no_role_gemini_10: 0.0251
+  ai_generate_ideas_no_role_gemini_10 vs ai_generate_ideas_no_role_gemini_04: 0.0251

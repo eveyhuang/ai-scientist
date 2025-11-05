@@ -32,7 +32,7 @@ plt.rcParams['font.size'] = 10
 class ResultVisualizer:
     """Visualize evaluation and similarity analysis results"""
     
-    def __init__(self, output_dir: str = "visuals"):
+    def __init__(self, output_dir: str = "reports"):
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(exist_ok=True)
         logger.info(f"Output directory: {self.output_dir}")
@@ -56,15 +56,12 @@ class ResultVisualizer:
         
         logger.info(f"Loaded {len(evaluations)} evaluations (type: {eval_type})")
         
-        # Create subfolder based on evaluation metadata if not custom
-        if custom_subfolder is None:
-            subfolder = self._generate_eval_subfolder_name(evaluations, eval_type)
-        else:
-            subfolder = custom_subfolder
+        # Use the directory of the input file as output directory
+        input_path = Path(evaluation_file)
         
-        # Update output directory to include subfolder
+        # Update output directory to the same directory as input file
         original_output_dir = self.output_dir
-        self.output_dir = self.output_dir / subfolder
+        self.output_dir = input_path.parent
         self.output_dir.mkdir(parents=True, exist_ok=True)
         logger.info(f"Creating visualizations in: {self.output_dir}")
         
@@ -151,15 +148,12 @@ class ResultVisualizer:
         similarity_df = pd.read_csv(similarity_file)
         logger.info(f"Loaded {len(similarity_df)} similarity comparisons")
         
-        # Create subfolder based on filename if not custom
-        if custom_subfolder is None:
-            subfolder = self._generate_sim_subfolder_name(similarity_file)
-        else:
-            subfolder = custom_subfolder
+        # Use the directory of the input file as output directory
+        input_path = Path(similarity_file)
         
-        # Update output directory to include subfolder
+        # Update output directory to the same directory as input file
         original_output_dir = self.output_dir
-        self.output_dir = self.output_dir / subfolder
+        self.output_dir = input_path.parent
         self.output_dir.mkdir(parents=True, exist_ok=True)
         logger.info(f"Creating visualizations in: {self.output_dir}")
         

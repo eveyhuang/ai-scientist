@@ -1,0 +1,64 @@
+======================================================================
+EVALUATION SUMMARY STATISTICS
+Evaluation Type: pairwise_human-human
+======================================================================
+
+Research Question / Aims:
+  Mean score: 0.37
+  Median score: 0.00
+  Std dev: 0.48
+  Min: 0, Max: 1
+  Score distribution:
+    Score 0:  69 ( 62.7%)
+    Score 1:  41 ( 37.3%)
+    Score 2:   0 (  0.0%)
+    Score 3:   0 (  0.0%)
+    Score 4:   0 (  0.0%)
+
+Data / Empirical Context:
+  Mean score: 0.30
+  Median score: 0.00
+  Std dev: 0.50
+  Min: 0, Max: 2
+  Score distribution:
+    Score 0:  79 ( 71.8%)
+    Score 1:  29 ( 26.4%)
+    Score 2:   2 (  1.8%)
+    Score 3:   0 (  0.0%)
+    Score 4:   0 (  0.0%)
+
+Methods / Design:
+  Mean score: 1.15
+  Median score: 2.00
+  Std dev: 0.92
+  Min: 0, Max: 2
+  Score distribution:
+    Score 0:  39 ( 35.5%)
+    Score 1:  15 ( 13.6%)
+    Score 2:  56 ( 50.9%)
+    Score 3:   0 (  0.0%)
+    Score 4:   0 (  0.0%)
+
+Intended Contribution / Outcomes:
+  Mean score: 0.30
+  Median score: 0.00
+  Std dev: 0.58
+  Min: 0, Max: 2
+  Score distribution:
+    Score 0:  84 ( 76.4%)
+    Score 1:  19 ( 17.3%)
+    Score 2:   7 (  6.4%)
+    Score 3:   0 (  0.0%)
+    Score 4:   0 (  0.0%)
+
+Resources / Timing / Artifacts:
+  Mean score: 1.31
+  Median score: 1.00
+  Std dev: 0.52
+  Min: 1, Max: 3
+  Score distribution:
+    Score 0:   0 (  0.0%)
+    Score 1:  79 ( 71.8%)
+    Score 2:  28 ( 25.5%)
+    Score 3:   3 (  2.7%)
+    Score 4:   0 (  0.0%)

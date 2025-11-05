@@ -1,0 +1,87 @@
+======================================================================
+SIMILARITY METRICS SUMMARY STATISTICS
+======================================================================
+
+TF-IDF Cosine Similarity:
+  Mean: 0.1329
+  Median: 0.1301
+  Std dev: 0.0822
+  Min: 0.0000, Max: 0.3282
+  Range: 0.3282
+  Percentiles: 25th=0.0864, 50th=0.1301, 75th=0.1919
+
+Embedding Similarity (OpenAI):
+  Mean: 0.7345
+  Median: 0.7440
+  Std dev: 0.0552
+  Min: 0.6016, Max: 0.8263
+  Range: 0.2247
+  Percentiles: 25th=0.7001, 50th=0.7440, 75th=0.7752
+
+Keyword Jaccard Similarity:
+  Mean: 0.0542
+  Median: 0.0526
+  Std dev: 0.0410
+  Min: 0.0000, Max: 0.1765
+  Range: 0.1765
+  Percentiles: 25th=0.0256, 50th=0.0526, 75th=0.0811
+
+Topic Similarity (LDA):
+  Mean: 0.0985
+  Median: 0.0279
+  Std dev: 0.2525
+  Min: 0.0241, Max: 1.0000
+  Range: 0.9759
+  Percentiles: 25th=0.0262, 50th=0.0279, 75th=0.0298
+
+======================================================================
+HIGH SIMILARITY PAIRS (Top 10% for each metric)
+======================================================================
+
+TF-IDF Cosine Similarity (threshold >= 0.2483):
+  human_4 vs human_2: 0.3282
+  human_2 vs human_4: 0.3282
+  human_11 vs human_5: 0.2872
+  human_5 vs human_11: 0.2872
+  human_6 vs human_11: 0.2816
+  human_11 vs human_6: 0.2816
+  human_11 vs human_12: 0.2780
+  human_12 vs human_11: 0.2780
+  human_5 vs human_6: 0.2619
+  human_6 vs human_5: 0.2619
+
+Embedding Similarity (OpenAI) (threshold >= 0.8051):
+  human_11 vs human_12: 0.8263
+  human_12 vs human_11: 0.8263
+  human_6 vs human_9: 0.8153
+  human_9 vs human_6: 0.8153
+  human_6 vs human_7: 0.8148
+  human_7 vs human_6: 0.8148
+  human_4 vs human_9: 0.8109
+  human_9 vs human_4: 0.8109
+  human_12 vs human_7: 0.8066
+  human_7 vs human_12: 0.8066
+
+Keyword Jaccard Similarity (threshold >= 0.1111):
+  human_11 vs human_6: 0.1765
+  human_6 vs human_11: 0.1765
+  human_11 vs human_5: 0.1429
+  human_2 vs human_4: 0.1429
+  human_4 vs human_2: 0.1429
+  human_5 vs human_11: 0.1429
+  human_5 vs human_6: 0.1429
+  human_6 vs human_5: 0.1429
+  human_1 vs human_10: 0.1111
+  human_1 vs human_4: 0.1111
+
+Topic Similarity (LDA) (threshold >= 0.0313):
+  human_6 vs human_7: 1.0000
+  human_7 vs human_6: 1.0000
+  human_1 vs human_11: 1.0000
+  human_11 vs human_1: 1.0000
+  human_11 vs human_6: 1.0000
+  human_6 vs human_11: 1.0000
+  human_4 vs human_7: 1.0000
+  human_7 vs human_4: 1.0000
+  human_12 vs human_2: 0.0315
+  human_2 vs human_12: 0.0315

@@ -252,7 +252,7 @@ class ProposalGenerator:
 def main():
     """Main function to run proposal generation"""
     parser = argparse.ArgumentParser(description='Generate full research proposals from research ideas')
-    parser.add_argument('--template', '-t',
+    parser.add_argument('--template', '-t', 
                        default='generate_ideas_no_role',
                        help='Template name to process (default: generate_ideas_no_role). Options: single_scientist, groups_of_scientists, groups_of_interdisciplinary_scientists, generate_ideas_no_role')
     parser.add_argument('--model', '-m',
@@ -277,11 +277,11 @@ def main():
         return
     
     # Process the specified template (now has default)
-    generator.generate_proposals_for_template(
-        args.template, 
-        args.model, 
-        args.max_proposals
-    )
+        generator.generate_proposals_for_template(
+            args.template, 
+                args.model, 
+                args.max_proposals
+            )
 
 if __name__ == "__main__":
     main()

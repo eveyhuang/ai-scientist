@@ -1,0 +1,326 @@
+{
+  "field_mapping": {
+    "overall_score": {
+      "field1": "overall_score",
+      "field2": "overall_score"
+    },
+    "alignment_with_call": {
+      "field1": "alignment_with_call",
+      "field2": "alignment_with_call"
+    },
+    "collaborative_approach": {
+      "field1": "collaborative_approach",
+      "field2": "collaborative_approach"
+    },
+    "data_synthesis_approach": {
+      "field1": "data_synthesis_approach",
+      "field2": "data_synthesis_approach"
+    },
+    "feasibility": {
+      "field1": "feasibility",
+      "field2": "feasibility"
+    },
+    "impact": {
+      "field1": "impact",
+      "field2": "impact"
+    },
+    "innovation": {
+      "field1": "innovation",
+      "field2": "innovation"
+    },
+    "methodology": {
+      "field1": "methodology",
+      "field2": "methodology"
+    },
+    "open_science_commitment": {
+      "field1": "open_science_commitment",
+      "field2": "open_science_commitment"
+    },
+    "scientific_merit": {
+      "field1": "scientific_merit",
+      "field2": "scientific_merit"
+    },
+    "training_opportunities": {
+      "field1": "training_opportunities",
+      "field2": "training_opportunities"
+    }
+  },
+  "overall_comparison": {
+    "group1": {
+      "mean": 3.5,
+      "median": 3.5999999999999996,
+      "std": 1.389433811230126,
+      "min": 2.0,
+      "max": 4.9,
+      "count": 20
+    },
+    "group2": {
+      "mean": 4.283333333333334,
+      "median": 4.45,
+      "std": 0.4839859752538541,
+      "min": 3.3,
+      "max": 4.8,
+      "count": 12
+    },
+    "t_test": {
+      "statistic": -1.8753449202997987,
+      "p_value": 0.07050846591204941,
+      "significant": false
+    },
+    "mannwhitney": {
+      "statistic": 117.5,
+      "p_value": 0.9375521250876652,
+      "significant": false
+    },
+    "effect_size": {
+      "cohens_d": -0.684779143967285,
+      "interpretation": "medium"
+    }
+  },
+  "field_comparison": {
+    "overall_score": {
+      "group1": {
+        "mean": 3.5,
+        "median": 3.5999999999999996,
+        "std": 1.389433811230126,
+        "count": 20
+      },
+      "group2": {
+        "mean": 4.283333333333334,
+        "median": 4.45,
+        "std": 0.4839859752538541,
+        "count": 12
+      },
+      "field1": "overall_score",
+      "field2": "overall_score",
+      "mannwhitney": {
+        "p_value": 0.9375521250876652,
+        "significant": false
+      }
+    },
+    "alignment_with_call": {
+      "group1": {
+        "mean": 3.85,
+        "median": 4.0,
+        "std": 1.2258187382102494,
+        "count": 20
+      },
+      "group2": {
+        "mean": 4.75,
+        "median": 5.0,
+        "std": 0.621581560508061,
+        "count": 12
+      },
+      "field1": "alignment_with_call",
+      "field2": "alignment_with_call",
+      "mannwhitney": {
+        "p_value": 0.037404174239605785,
+        "significant": true
+      }
+    },
+    "collaborative_approach": {
+      "group1": {
+        "mean": 3.15,
+        "median": 3.0,
+        "std": 1.5652475842498528,
+        "count": 20
+      },
+      "group2": {
+        "mean": 3.9166666666666665,
+        "median": 4.0,
+        "std": 1.1645001528813148,
+        "count": 12
+      },
+      "field1": "collaborative_approach",
+      "field2": "collaborative_approach",
+      "mannwhitney": {
+        "p_value": 0.17550688500329137,
+        "significant": false
+      }
+    },
+    "data_synthesis_approach": {
+      "group1": {
+        "mean": 3.25,
+        "median": 3.5,
+        "std": 1.8317377426626162,
+        "count": 20
+      },
+      "group2": {
+        "mean": 4.75,
+        "median": 5.0,
+        "std": 0.45226701686664544,
+        "count": 12
+      },
+      "field1": "data_synthesis_approach",
+      "field2": "data_synthesis_approach",
+      "mannwhitney": {
+        "p_value": 0.050284565932819006,
+        "significant": false
+      }
+    },
+    "feasibility": {
+      "group1": {
+        "mean": 2.9,
+        "median": 3.5,
+        "std": 1.2096106376585989,
+        "count": 20
+      },
+      "group2": {
+        "mean": 3.75,
+        "median": 4.0,
+        "std": 0.45226701686664544,
+        "count": 12
+      },
+      "field1": "feasibility",
+      "field2": "feasibility",
+      "mannwhitney": {
+        "p_value": 0.05840324782147825,
+        "significant": false
+      }
+    },
+    "impact": {
+      "group1": {
+        "mean": 3.85,
+        "median": 4.0,
+        "std": 1.2258187382102494,
+        "count": 20
+      },
+      "group2": {
+        "mean": 5.0,
+        "median": 5.0,
+        "std": 0.0,
+        "count": 12
+      },
+      "field1": "impact",
+      "field2": "impact",
+      "mannwhitney": {
+        "p_value": 0.00449198094350412,
+        "significant": true
+      }
+    },
+    "innovation": {
+      "group1": {
+        "mean": 3.4,
+        "median": 3.5,
+        "std": 1.6670175069329816,
+        "count": 20
+      },
+      "group2": {
+        "mean": 4.833333333333333,
+        "median": 5.0,
+        "std": 0.3892494720807615,
+        "count": 12
+      },
+      "field1": "innovation",
+      "field2": "innovation",
+      "mannwhitney": {
+        "p_value": 0.025147317695723426,
+        "significant": true
+      }
+    },
+    "methodology": {
+      "group1": {
+        "mean": 3.1,
+        "median": 3.0,
+        "std": 1.8890264827766652,
+        "count": 20
+      },
+      "group2": {
+        "mean": 4.166666666666667,
+        "median": 4.0,
+        "std": 0.7177405625652734,
+        "count": 12
+      },
+      "field1": "methodology",
+      "field2": "methodology",
+      "mannwhitney": {
+        "p_value": 0.31794036939916825,
+        "significant": false
+      }
+    },
+    "open_science_commitment": {
+      "group1": {
+        "mean": 3.95,
+        "median": 4.5,
+        "std": 1.190974832912761,
+        "count": 20
+      },
+      "group2": {
+        "mean": 4.333333333333333,
+        "median": 5.0,
+        "std": 0.9847319278346618,
+        "count": 12
+      },
+      "field1": "open_science_commitment",
+      "field2": "open_science_commitment",
+      "mannwhitney": {
+        "p_value": 0.4316354238504554,
+        "significant": false
+      }
+    },
+    "scientific_merit": {
+      "group1": {
+        "mean": 3.5,
+        "median": 3.5,
+        "std": 1.538967528127731,
+        "count": 20
+      },
+      "group2": {
+        "mean": 4.75,
+        "median": 5.0,
+        "std": 0.621581560508061,
+        "count": 12
+      },
+      "field1": "scientific_merit",
+      "field2": "scientific_merit",
+      "mannwhitney": {
+        "p_value": 0.023737526157894952,
+        "significant": true
+      }
+    },
+    "training_opportunities": {
+      "group1": {
+        "mean": 3.65,
+        "median": 4.0,
+        "std": 1.4244112357114613,
+        "count": 20
+      },
+      "group2": {
+        "mean": 2.5833333333333335,
+        "median": 3.0,
+        "std": 1.164500152881315,
+        "count": 12
+      },
+      "field1": "training_opportunities",
+      "field2": "training_opportunities",
+      "mannwhitney": {
+        "p_value": 0.0510213807363118,
+        "significant": false
+      }
+    }
+  },
+  "model_comparison": {
+    "group1": {
+      "gpt-4": {
+        "mean": 2.1499999999999995,
+        "median": 2.1500000000000004,
+        "std": 0.15092308563562357,
+        "count": 10
+      },
+      "gemini-2.5-pro": {
+        "mean": 4.85,
+        "median": 4.85,
+        "std": 0.05270462766947327,
+        "count": 10
+      }
+    },
+    "group2": {
+      "human": {
+        "mean": 4.283333333333334,
+        "median": 4.45,
+        "std": 0.4839859752538541,
+        "count": 12
+      }
+    }
+  }
+}

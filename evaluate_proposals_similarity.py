@@ -53,7 +53,7 @@ class ProposalSimilarityAnalyzer:
         self.proposals_df = None
         self._load_proposals_from_csv()
         
-        self.results_dir = Path("similarity_analysis")
+        self.results_dir = Path("semantic_similarity")
         self.results_dir.mkdir(exist_ok=True)
         
         # Initialize TF-IDF vectorizer
@@ -330,6 +330,9 @@ class ProposalSimilarityAnalyzer:
         """
         Compute topic overlap between two texts using LDA
         
+        NOTE: To ensure symmetry, we always use consistent ordering
+        (alphabetically sorted texts) so that compare(A,B) == compare(B,A)
+        
         Args:
             text1: First text
             text2: Second text
@@ -339,8 +342,13 @@ class ProposalSimilarityAnalyzer:
             Dictionary with topic overlap information
         """
         try:
-            # Perform topic modeling on both texts
-            lda, tfidf_matrix = self.perform_topic_modeling([text1, text2], n_topics)
+            # Sort texts to ensure consistent ordering for symmetric results
+            # This ensures that (text1, text2) and (text2, text1) produce the same topics
+            texts_sorted = sorted([text1, text2], key=lambda x: hash(x))
+            text1_is_first = (texts_sorted[0] == text1)
+            
+            # Perform topic modeling on both texts (in consistent order)
+            lda, tfidf_matrix = self.perform_topic_modeling(texts_sorted, n_topics)
             
             if lda is None:
                 return {'error': 'Topic modeling failed'}
@@ -348,8 +356,16 @@ class ProposalSimilarityAnalyzer:
             # Get topic distributions for each text
             topic_dist = lda.transform(tfidf_matrix)
             
+            # Extract distributions based on original order
+            if text1_is_first:
+                dist1, dist2 = topic_dist[0], topic_dist[1]
+            else:
+                dist1, dist2 = topic_dist[1], topic_dist[0]
+            
             # Compute cosine similarity between topic distributions
-            topic_similarity = cosine_similarity(topic_dist[0:1], topic_dist[1:2])[0][0]
+            dist1_reshaped = dist1.reshape(1, -1)
+            dist2_reshaped = dist2.reshape(1, -1)
+            topic_similarity = cosine_similarity(dist1_reshaped, dist2_reshaped)[0][0]
             
             # Get top words for each topic
             feature_names = self.tfidf_vectorizer.get_feature_names_out()
@@ -364,8 +380,8 @@ class ProposalSimilarityAnalyzer:
             
             return {
                 'topic_similarity': float(topic_similarity),
-                'proposal_1_topic_distribution': topic_dist[0].tolist(),
-                'proposal_2_topic_distribution': topic_dist[1].tolist(),
+                'proposal_1_topic_distribution': dist1.tolist(),
+                'proposal_2_topic_distribution': dist2.tolist(),
                 'topics': topics
             }
         except Exception as e:
@@ -599,8 +615,22 @@ class ProposalSimilarityAnalyzer:
                     output_filename: str = None,
                     role_filter: str = None,
                     model_filter: str = None):
-        """Save similarity analysis results to a JSON file"""
+        """Save similarity analysis results to a JSON file in organized subfolders"""
         
+        # Create subfolder name based on comparison parameters
+        subfolder_parts = ["similarity", comparison_type]
+        
+        if role_filter:
+            subfolder_parts.append(role_filter)
+        if model_filter:
+            model_short = model_filter.split('-')[0]
+            subfolder_parts.append(f"genby_{model_short}")
+        
+        subfolder_name = "_".join(subfolder_parts)
+        output_dir = self.results_dir / subfolder_name
+        output_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Generate filename if not provided
         if output_filename is None:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             # Build descriptive filename
@@ -615,12 +645,14 @@ class ProposalSimilarityAnalyzer:
             filename_parts.append(timestamp)
             output_filename = "_".join(filename_parts) + ".json"
         
-        output_path = self.results_dir / output_filename
+        output_path = output_dir / output_filename
         
-        # Create results dict
+        # Create results dict with metadata including filters
         results_dict = {
             "metadata": {
                 "comparison_type": comparison_type,
+                "role_filter": role_filter,
+                "model_filter": model_filter,
                 "total_analyses": len(results),
                 "generation_timestamp": datetime.now().isoformat(),
                 "methods": {
@@ -640,7 +672,7 @@ class ProposalSimilarityAnalyzer:
         
         # Also save as CSV for easy viewing
         csv_filename = output_filename.replace('.json', '.csv')
-        csv_path = self.results_dir / csv_filename
+        csv_path = output_dir / csv_filename
         self._save_results_csv(results, csv_path)
     
     def _save_results_csv(self, results: List[Dict[str, Any]], csv_path: Path):

@@ -1,0 +1,350 @@
+{
+  "field_mapping": {
+    "overall_score": {
+      "field1": "overall_score",
+      "field2": "overall_score"
+    },
+    "data_identification": {
+      "field1": "data_identification",
+      "field2": "data_identification"
+    },
+    "data_sources_and_limitations": {
+      "field1": "data_sources_and_limitations",
+      "field2": "data_sources_and_limitations"
+    },
+    "feasibility": {
+      "field1": "feasibility",
+      "field2": "feasibility"
+    },
+    "novelty_significance": {
+      "field1": "novelty_significance",
+      "field2": "novelty_significance"
+    },
+    "open_science_commitment": {
+      "field1": "open_science_commitment",
+      "field2": "open_science_commitment"
+    },
+    "open_science_compliance": {
+      "field1": "open_science_compliance",
+      "field2": "open_science_compliance"
+    },
+    "relevance_to_emergent_phenomena": {
+      "field1": "relevance_to_emergent_phenomena",
+      "field2": "relevance_to_emergent_phenomena"
+    },
+    "rigor_of_approach": {
+      "field1": "rigor_of_approach",
+      "field2": "rigor_of_approach"
+    },
+    "scientific_merit_and_innovation": {
+      "field1": "scientific_merit_and_innovation",
+      "field2": "scientific_merit_and_innovation"
+    },
+    "scope_timeline": {
+      "field1": "scope_timeline",
+      "field2": "scope_timeline"
+    },
+    "synthesis_focus": {
+      "field1": "synthesis_focus",
+      "field2": "synthesis_focus"
+    }
+  },
+  "overall_comparison": {
+    "group1": {
+      "mean": 3.5099999999999993,
+      "median": 3.65,
+      "std": 1.2434671392183185,
+      "min": 1.9,
+      "max": 4.8,
+      "count": 20
+    },
+    "group2": {
+      "mean": 3.9666666666666663,
+      "median": 4.25,
+      "std": 0.5646130345536479,
+      "min": 3.0,
+      "max": 4.6,
+      "count": 12
+    },
+    "t_test": {
+      "statistic": -1.1945211658988746,
+      "p_value": 0.24163323997259487,
+      "significant": false
+    },
+    "mannwhitney": {
+      "statistic": 118.0,
+      "p_value": 0.9532297801398051,
+      "significant": false
+    },
+    "effect_size": {
+      "cohens_d": -0.43617745865345625,
+      "interpretation": "small"
+    }
+  },
+  "field_comparison": {
+    "overall_score": {
+      "group1": {
+        "mean": 3.5099999999999993,
+        "median": 3.65,
+        "std": 1.2434671392183185,
+        "count": 20
+      },
+      "group2": {
+        "mean": 3.9666666666666663,
+        "median": 4.25,
+        "std": 0.5646130345536479,
+        "count": 12
+      },
+      "field1": "overall_score",
+      "field2": "overall_score",
+      "mannwhitney": {
+        "p_value": 0.9532297801398051,
+        "significant": false
+      }
+    },
+    "data_identification": {
+      "group1": {
+        "mean": 3.0,
+        "median": 3.5,
+        "std": 1.7471781760734562,
+        "count": 20
+      },
+      "group2": {
+        "mean": 3.8333333333333335,
+        "median": 4.0,
+        "std": 0.7177405625652734,
+        "count": 12
+      },
+      "field1": "data_identification",
+      "field2": "data_identification",
+      "mannwhitney": {
+        "p_value": 0.3455001996140722,
+        "significant": false
+      }
+    },
+    "data_sources_and_limitations": {
+      "group1": {
+        "mean": 4.0,
+        "median": 4.25,
+        "std": 0.8735890880367281,
+        "count": 20
+      },
+      "group2": {
+        "mean": 4.416666666666667,
+        "median": 4.5,
+        "std": 0.35887028128263676,
+        "count": 12
+      },
+      "field1": "data_sources_and_limitations",
+      "field2": "data_sources_and_limitations",
+      "mannwhitney": {
+        "p_value": 0.3455001996140722,
+        "significant": false
+      }
+    },
+    "feasibility": {
+      "group1": {
+        "mean": 2.8,
+        "median": 3.0,
+        "std": 1.2814465510343749,
+        "count": 20
+      },
+      "group2": {
+        "mean": 3.3333333333333335,
+        "median": 3.5,
+        "std": 0.7784989441615231,
+        "count": 12
+      },
+      "field1": "feasibility",
+      "field2": "feasibility",
+      "mannwhitney": {
+        "p_value": 0.32290228073769334,
+        "significant": false
+      }
+    },
+    "novelty_significance": {
+      "group1": {
+        "mean": 3.55,
+        "median": 4.0,
+        "std": 1.5719582155957414,
+        "count": 20
+      },
+      "group2": {
+        "mean": 4.583333333333333,
+        "median": 5.0,
+        "std": 0.5149286505444373,
+        "count": 12
+      },
+      "field1": "novelty_significance",
+      "field2": "novelty_significance",
+      "mannwhitney": {
+        "p_value": 0.14337777162341397,
+        "significant": false
+      }
+    },
+    "open_science_commitment": {
+      "group1": {
+        "mean": 3.6,
+        "median": 4.0,
+        "std": 1.465390194130093,
+        "count": 20
+      },
+      "group2": {
+        "mean": 3.75,
+        "median": 4.0,
+        "std": 1.2154310870109943,
+        "count": 12
+      },
+      "field1": "open_science_commitment",
+      "field2": "open_science_commitment",
+      "mannwhitney": {
+        "p_value": 0.9833880229124687,
+        "significant": false
+      }
+    },
+    "open_science_compliance": {
+      "group1": {
+        "mean": 3.6,
+        "median": 4.0,
+        "std": 1.465390194130093,
+        "count": 20
+      },
+      "group2": {
+        "mean": 3.75,
+        "median": 4.0,
+        "std": 1.2154310870109943,
+        "count": 12
+      },
+      "field1": "open_science_compliance",
+      "field2": "open_science_compliance",
+      "mannwhitney": {
+        "p_value": 0.9833880229124687,
+        "significant": false
+      }
+    },
+    "relevance_to_emergent_phenomena": {
+      "group1": {
+        "mean": 4.0,
+        "median": 5.0,
+        "std": 1.1697953037312037,
+        "count": 20
+      },
+      "group2": {
+        "mean": 4.333333333333333,
+        "median": 5.0,
+        "std": 0.9847319278346618,
+        "count": 12
+      },
+      "field1": "relevance_to_emergent_phenomena",
+      "field2": "relevance_to_emergent_phenomena",
+      "mannwhitney": {
+        "p_value": 0.529440900775934,
+        "significant": false
+      }
+    },
+    "rigor_of_approach": {
+      "group1": {
+        "mean": 3.2,
+        "median": 3.0,
+        "std": 1.7947291248483566,
+        "count": 20
+      },
+      "group2": {
+        "mean": 4.083333333333333,
+        "median": 4.0,
+        "std": 0.6685579234215215,
+        "count": 12
+      },
+      "field1": "rigor_of_approach",
+      "field2": "rigor_of_approach",
+      "mannwhitney": {
+        "p_value": 0.42990786806927705,
+        "significant": false
+      }
+    },
+    "scientific_merit_and_innovation": {
+      "group1": {
+        "mean": 3.5900000000000007,
+        "median": 3.7,
+        "std": 1.4461928240074096,
+        "count": 20
+      },
+      "group2": {
+        "mean": 4.3500000000000005,
+        "median": 4.7,
+        "std": 0.608276253029822,
+        "count": 12
+      },
+      "field1": "scientific_merit_and_innovation",
+      "field2": "scientific_merit_and_innovation",
+      "mannwhitney": {
+        "p_value": 0.6037050471165615,
+        "significant": false
+      }
+    },
+    "scope_timeline": {
+      "group1": {
+        "mean": 2.8,
+        "median": 3.0,
+        "std": 1.2814465510343749,
+        "count": 20
+      },
+      "group2": {
+        "mean": 3.3333333333333335,
+        "median": 3.5,
+        "std": 0.7784989441615231,
+        "count": 12
+      },
+      "field1": "scope_timeline",
+      "field2": "scope_timeline",
+      "mannwhitney": {
+        "p_value": 0.32290228073769334,
+        "significant": false
+      }
+    },
+    "synthesis_focus": {
+      "group1": {
+        "mean": 5.0,
+        "median": 5.0,
+        "std": 0.0,
+        "count": 20
+      },
+      "group2": {
+        "mean": 5.0,
+        "median": 5.0,
+        "std": 0.0,
+        "count": 12
+      },
+      "field1": "synthesis_focus",
+      "field2": "synthesis_focus",
+      "mannwhitney": {
+        "p_value": 1.0,
+        "significant": false
+      }
+    }
+  },
+  "model_comparison": {
+    "group1": {
+      "gpt-4": {
+        "mean": 2.31,
+        "median": 2.3,
+        "std": 0.23309511649396117,
+        "count": 10
+      },
+      "gemini-2.5-pro": {
+        "mean": 4.71,
+        "median": 4.75,
+        "std": 0.0994428926011754,
+        "count": 10
+      }
+    },
+    "group2": {
+      "human": {
+        "mean": 3.9666666666666663,
+        "median": 4.25,
+        "std": 0.5646130345536479,
+        "count": 12
+      }
+    }
+  }
+}
