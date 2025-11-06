@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
 """
 Evaluate textual similarity and topic overlap between research proposals.
-Uses embeddings, cosine similarity, and topic modeling to analyze proposal pairs.
+Uses local embeddings (Nomic-Embed), cosine similarity, and topic modeling to analyze proposal pairs.
+
+Features:
+- Local embedding generation using Nomic-Embed (supports 8192 tokens, runs locally)
+- TF-IDF similarity analysis
+- Keyword and topic overlap detection (LDA)
+- Caching for efficient repeated analysis
 """
 
 import json
@@ -18,7 +24,7 @@ import itertools
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.decomposition import LatentDirichletAllocation
-import openai
+from sentence_transformers import SentenceTransformer
 
 # Configure logging
 logging.basicConfig(
@@ -47,7 +53,7 @@ class SimilarityResult:
 class ProposalSimilarityAnalyzer:
     """Analyze textual similarity and topic overlap between proposals"""
     
-    def __init__(self, config_path: str = "config.env", proposals_csv: str = "all_proposals_combined.csv"):
+    def __init__(self, config_path: str = "config.env", proposals_csv: str = "all_proposals_combined_no_role.csv"):
         """Initialize the similarity analyzer"""
         self.proposals_csv = proposals_csv
         self.proposals_df = None
@@ -63,33 +69,18 @@ class ProposalSimilarityAnalyzer:
             ngram_range=(1, 2)
         )
         
-        # Load OpenAI API key for embeddings
-        self._load_openai_config(config_path)
+        # Load Nomic-Embed model for local embeddings
+        logger.info("Loading Nomic-Embed model (this may take a moment on first run)...")
+        self.embedding_model = SentenceTransformer(
+            'nomic-ai/nomic-embed-text-v1.5',
+            trust_remote_code=True
+        )
+        logger.info("Nomic-Embed model loaded successfully")
         
-        # Cache for embeddings to avoid redundant API calls
+        # Cache for embeddings to avoid redundant computations
         self.embedding_cache = {}
         
         logger.info("ProposalSimilarityAnalyzer initialized")
-    
-    def _load_openai_config(self, config_path: str):
-        """Load OpenAI API key from config file"""
-        import os
-        self.openai_key = os.getenv('OPENAI_API_KEY')
-        
-        if os.path.exists(config_path):
-            with open(config_path, 'r') as f:
-                for line in f:
-                    if '=' in line and not line.startswith('#'):
-                        key, value = line.strip().split('=', 1)
-                        value = value.strip().strip('"').strip("'")
-                        if key == 'OPENAI_API_KEY' and not self.openai_key:
-                            self.openai_key = value
-        
-        if self.openai_key:
-            openai.api_key = self.openai_key
-            logger.info("OpenAI API key loaded for embeddings")
-        else:
-            logger.warning("OpenAI API key not found. Embedding similarity will be skipped.")
     
     def _load_proposals_from_csv(self):
         """Load all proposals from the combined CSV file"""
@@ -165,14 +156,13 @@ class ProposalSimilarityAnalyzer:
             logger.error(f"Error computing TF-IDF similarity: {e}")
             return 0.0
     
-    def get_openai_embedding(self, text: str, proposal_id: str = None, model: str = "text-embedding-3-small") -> List[float]:
+    def get_embedding(self, text: str, proposal_id: str = None) -> List[float]:
         """
-        Get OpenAI embedding for a text (with caching)
+        Get local embedding for a text using Nomic-Embed (with caching)
         
         Args:
             text: Text to embed
             proposal_id: Unique ID for caching
-            model: OpenAI embedding model
         
         Returns:
             Embedding vector
@@ -183,32 +173,37 @@ class ProposalSimilarityAnalyzer:
             return self.embedding_cache[proposal_id]
         
         try:
-            client = openai.OpenAI(api_key=self.openai_key)
-            
-            # Truncate text if too long (max 8191 tokens for embedding models)
-            max_length = 30000  # Approximate character limit
+            # Nomic-Embed supports up to 8192 tokens (~6000 words, ~30000 chars)
+            max_length = 30000
             if len(text) > max_length:
+                logger.warning(f"Text truncated from {len(text)} to {max_length} characters")
                 text = text[:max_length]
             
-            response = client.embeddings.create(
-                input=text,
-                model=model
+            # Add task prefix for Nomic-Embed (improves performance)
+            prefixed_text = f"search_document: {text}"
+            
+            # Generate embedding (normalized by default with Nomic-Embed)
+            embedding = self.embedding_model.encode(
+                prefixed_text,
+                convert_to_numpy=True,
+                normalize_embeddings=True
             )
             
-            embedding = response.data[0].embedding
+            # Convert to list for JSON serialization
+            embedding_list = embedding.tolist()
             
             # Cache the result
             if proposal_id:
-                self.embedding_cache[proposal_id] = embedding
+                self.embedding_cache[proposal_id] = embedding_list
             
-            return embedding
+            return embedding_list
         except Exception as e:
-            logger.error(f"Error getting OpenAI embedding: {e}")
+            logger.error(f"Error generating embedding: {e}")
             return None
     
     def compute_embedding_similarity(self, text1: str, text2: str, proposal_1_id: str = None, proposal_2_id: str = None) -> float:
         """
-        Compute embedding-based cosine similarity between two texts
+        Compute embedding-based cosine similarity between two texts using local embeddings
         
         Args:
             text1: First text
@@ -219,13 +214,10 @@ class ProposalSimilarityAnalyzer:
         Returns:
             Cosine similarity score (0-1), or None if embeddings unavailable
         """
-        if not self.openai_key:
-            return None
-        
         try:
             # Get embeddings (with caching)
-            emb1 = self.get_openai_embedding(text1, proposal_1_id)
-            emb2 = self.get_openai_embedding(text2, proposal_2_id)
+            emb1 = self.get_embedding(text1, proposal_1_id)
+            emb2 = self.get_embedding(text2, proposal_2_id)
             
             if emb1 is None or emb2 is None:
                 return None

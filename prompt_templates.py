@@ -121,6 +121,53 @@ Ensure the JSON is properly formatted and valid.
             parameters=['research_call']
         )
 
+        # Template 1c: Generate Diverse Research Ideas (Different from Existing Ideas)
+        templates['generate_diverse_ideas'] = PromptTemplate(
+            name="Generate Diverse Research Ideas",
+            description="Generate innovative research ideas that are different from a provided list of existing ideas",
+            template="""
+            Generate innovative research ideas based on the following research call.
+            
+            RESEARCH CALL:
+            {research_call}
+            
+            EXISTING IDEAS TO AVOID:
+            Below is a list of research ideas that have already been generated. Your task is to create NEW ideas 
+            that are substantially different from these existing ones. Do NOT simply rephrase or make minor variations 
+            of these ideas. Instead, explore different angles, methodologies, research questions, or application domains.
+            
+            {existing_ideas}
+            
+            TASK:
+            Based on this research call, generate 10 NEW and innovative research ideas that:
+            1. Address the goals and objectives outlined in the call
+            2. Align with the funding organization's mission
+            3. Are SUBSTANTIALLY DIFFERENT from the existing ideas listed above
+            
+            For each NEW idea, provide:
+            - A clear, concise title that is distinct from existing titles
+            - An abstract (250-500 words) that clearly differentiates it from existing ideas
+            
+            IMPORTANT: Format your response as a valid JSON object with the following structure:
+            {{
+            "research_ideas": [
+                {{
+                "title": "Novel Research Idea Title",
+                "abstract": "Detailed abstract explaining how this idea differs from existing ideas and addresses the research call..."
+                }},
+                {{
+                "title": "Another Novel Research Idea Title", 
+                "abstract": "Detailed abstract explaining the unique approach and contribution of this idea..."
+                }}
+            ]
+            }}
+            
+            Ensure the JSON is properly formatted and valid.
+            DO NOT include any ideas that are too similar to the existing ideas provided above.
+            """,
+            parameters=['research_call', 'existing_ideas']
+        )
+
         # Template 2: Research Proposals Generation (with optional role)
         templates['generate_proposals'] = PromptTemplate(
             name="Generate Research Proposals",

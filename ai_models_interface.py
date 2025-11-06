@@ -14,8 +14,12 @@ import logging
 import openai
 from google import genai
 import anthropic
-import groq
+# X.AI SDK imports
+from xai_sdk import Client
+from xai_sdk.chat import user, system
 from dashscope import Generation
+# LangChain for NCEMS API (llama-4-scout)
+from langchain_community.chat_models import ChatLiteLLM
 
 # Import prompt templates
 from prompt_templates import PromptManager
@@ -48,8 +52,10 @@ class AIModelsInterface:
         # Try to load from environment first
         self.openai_key = os.getenv('OPENAI_API_KEY')
         self.google_key = os.getenv('GOOGLE_API_KEY')
-        # self.anthropic_key = os.getenv('ANTHROPIC_API_KEY')
-        # self.groq_key = os.getenv('GROQ_API_KEY')
+        self.xai_key = os.getenv('XAI_API_KEY')
+        self.ncems_api_key = os.getenv('NCEMS_API_KEY')
+        self.ncems_api_url = os.getenv('NCEMS_API_URL')
+        self.anthropic_key = os.getenv('ANTHROPIC_API_KEY')
         # self.dashscope_key = os.getenv('DASHSCOPE_API_KEY')
         
         # Load from config file if environment variables not set
@@ -64,10 +70,14 @@ class AIModelsInterface:
                             self.openai_key = value
                         elif key == 'GOOGLE_API_KEY' and not self.google_key:
                             self.google_key = value
-                        # elif key == 'ANTHROPIC_API_KEY' and not self.anthropic_key:
-                        #     self.anthropic_key = value
-                        # elif key == 'GROQ_API_KEY' and not self.groq_key:
-                        #     self.groq_key = value
+                        elif key == 'XAI_API_KEY' and not self.xai_key:
+                            self.xai_key = value
+                        elif key == 'NCEMS_API_KEY' and not self.ncems_api_key:
+                            self.ncems_api_key = value
+                        elif key == 'NCEMS_API_URL' and not self.ncems_api_url:
+                            self.ncems_api_url = value
+                        elif key == 'ANTHROPIC_API_KEY' and not self.anthropic_key:
+                            self.anthropic_key = value
                         # elif key == 'DASHSCOPE_API_KEY' and not self.dashscope_key:
                         #     self.dashscope_key = value
     
@@ -88,21 +98,48 @@ class AIModelsInterface:
             logger.info("Google Gemini initialized")
         
         # Anthropic Claude
-        # if self.anthropic_key:
-        #     self.anthropic_client = anthropic.Anthropic(api_key=self.anthropic_key)
-        #     self.models['claude-3'] = self._call_claude
-        #     logger.info("Anthropic Claude initialized")
+        if self.anthropic_key:
+            self.anthropic_client = anthropic.Anthropic(api_key=self.anthropic_key)
+            self.models['claude-sonnet-4-5'] = self._call_claude
+            logger.info("Anthropic Claude initialized")
         
-        # # Grok
-        # if self.groq_key:
-        #     self.groq_client = groq.Groq(api_key=self.groq_key)
-        #     self.models['grok'] = self._call_groq
-        #     logger.info("Grok initialized")
+        # X.AI Grok (uses xai_sdk)
+        if self.xai_key:
+            self.xai_client = Client(
+                api_key=self.xai_key,
+                timeout=3600  # Longer timeout for reasoning models
+            )
+            self.models['grok-4'] = self._call_grok
+            logger.info("X.AI Grok-4 initialized")
         
-        # # Qwen (via DashScope)
-        # if self.dashscope_key:
-        #     self.models['qwen'] = self._call_qwen
-        #     logger.info("Qwen initialized")
+        # NCEMS API models (via LiteLLM)
+        if self.ncems_api_key and self.ncems_api_url:
+            # Llama-4-Scout
+            self.llama_client = ChatLiteLLM(
+                model="litellm_proxy/js2/llama-4-scout",
+                api_key=self.ncems_api_key,
+                api_base=self.ncems_api_url
+            )
+            self.models['llama-4-scout'] = self._call_llama
+            logger.info("NCEMS Llama-4-Scout initialized")
+
+            # Qwen-2.5
+            self.qwen_client = ChatLiteLLM(
+                model="litellm_proxy/anvilgpt/qwen2.5:7b",
+                api_key=self.ncems_api_key,
+                api_base=self.ncems_api_url
+            )
+            self.models['qwen-2.5'] = self._call_qwen
+            logger.info("NCEMS Qwen-2.5 initialized")
+
+            # DeepSeek-R1
+            self.deepseek_client = ChatLiteLLM(
+                model="litellm_proxy/js2/DeepSeek-R1",
+                api_key=self.ncems_api_key,
+                api_base=self.ncems_api_url
+            )
+            self.models['deepseek-r1'] = self._call_deepseek
+            logger.info("NCEMS DeepSeek-R1 initialized")
     
     def _call_openai(self, prompt: str, **kwargs) -> str:
         """Call OpenAI GPT-4"""
@@ -136,33 +173,84 @@ class AIModelsInterface:
             logger.error(f"Gemini error: {e}")
             return f"Error: {str(e)}"
     
-    # def _call_claude(self, prompt: str, **kwargs) -> str:
-    #     """Call Anthropic Claude"""
-    #     try:
-    #         response = self.anthropic_client.messages.create(
-    #             model="claude-3-sonnet-20240229",
-    #             max_tokens=kwargs.get('max_tokens', 2000),
-    #             temperature=kwargs.get('temperature', 0.7),
-    #             messages=[{"role": "user", "content": prompt}]
-    #         )
-    #         return response.content[0].text
-    #     except Exception as e:
-    #         logger.error(f"Claude error: {e}")
-    #         return f"Error: {str(e)}"
+    def _call_claude(self, prompt: str, **kwargs) -> str:
+        """Call Anthropic Claude Sonnet 4.5"""
+        try:
+            response = self.anthropic_client.messages.create(
+                model="claude-sonnet-4-5",  # Official model ID for Claude Sonnet 4.5
+                max_tokens=kwargs.get('max_tokens', 8192),  # Required parameter; max is 8192
+                temperature=kwargs.get('temperature', 0),
+                messages=[{"role": "user", "content": prompt}]
+            )
+            return response.content[0].text
+        except Exception as e:
+            logger.error(f"Claude error: {e}")
+            return f"Error: {str(e)}"
     
-    # def _call_groq(self, prompt: str, **kwargs) -> str:
-    #     """Call Grok"""
-    #     try:
-    #         response = self.groq_client.chat.completions.create(
-    #             model="llama3-8b-8192",
-    #             messages=[{"role": "user", "content": prompt}],
-    #             temperature=kwargs.get('temperature', 0.7),
-    #             max_tokens=kwargs.get('max_tokens', 2000)
-    #         )
-    #         return response.choices[0].message.content
-    #     except Exception as e:
-    #         logger.error(f"Grok error: {e}")
-    #         return f"Error: {str(e)}"
+    def _call_grok(self, prompt: str, **kwargs) -> str:
+        """Call X.AI Grok-4 using xai_sdk"""
+        try:
+            # Create a new chat session
+            chat = self.xai_client.chat.create(model="grok-4")
+            
+            # Add system message
+            chat.append(system("You are Grok, a highly intelligent, helpful AI assistant."))
+            
+            # Add user prompt
+            chat.append(user(prompt))
+            
+            # Sample response
+            response = chat.sample()
+            
+            return response.content
+        except Exception as e:
+            logger.error(f"X.AI Grok-4 error: {e}")
+            return f"Error: {str(e)}"
+    
+    def _call_llama(self, prompt: str, **kwargs) -> str:
+        """Call NCEMS llama-4-scout via LiteLLM"""
+        try:
+            # LangChain's ChatLiteLLM uses the invoke method
+            response = self.llama_client.invoke(prompt)
+            
+            # Extract content from response
+            if hasattr(response, 'content'):
+                return response.content
+            else:
+                return str(response)
+        except Exception as e:
+            logger.error(f"NCEMS Llama-4-Scout error: {e}")
+            return f"Error: {str(e)}"
+    
+    def _call_qwen(self, prompt: str, **kwargs) -> str:
+        """Call NCEMS Qwen-2.5 via LiteLLM"""
+        try:
+            # LangChain's ChatLiteLLM uses the invoke method
+            response = self.qwen_client.invoke(prompt)
+            
+            # Extract content from response
+            if hasattr(response, 'content'):
+                return response.content
+            else:
+                return str(response)
+        except Exception as e:
+            logger.error(f"NCEMS Qwen-2.5 error: {e}")
+            return f"Error: {str(e)}"
+    
+    def _call_deepseek(self, prompt: str, **kwargs) -> str:
+        """Call NCEMS DeepSeek-R1 via LiteLLM"""
+        try:
+            # LangChain's ChatLiteLLM uses the invoke method
+            response = self.deepseek_client.invoke(prompt)
+            
+            # Extract content from response
+            if hasattr(response, 'content'):
+                return response.content
+            else:
+                return str(response)
+        except Exception as e:
+            logger.error(f"NCEMS DeepSeek-R1 error: {e}")
+            return f"Error: {str(e)}"
     
     # def _call_qwen(self, prompt: str, **kwargs) -> str:
     #     """Call Qwen via DashScope"""

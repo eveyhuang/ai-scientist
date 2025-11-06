@@ -2,7 +2,7 @@
 openai>=1.0.0
 google-generativeai>=0.3.0
 anthropic>=0.7.0
-groq>=0.4.0
+xai-sdk
 dashscope>=1.14.0  # For Qwen
 
 # Data processing and analysis

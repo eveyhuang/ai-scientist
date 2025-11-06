@@ -1,13 +1,19 @@
 #!/usr/bin/env python3
 """
-Combine all human and AI-generated proposals into a single dataframe.
+Combine all human and AI-generated proposals into a single CSV file.
 Creates a unified dataset with proposal_id, role, who (human/ai), model, title, abstract, authors, and full_draft.
+
+Supports proposals from:
+- Human proposals (human-proposals-y1.json)
+- AI proposals from generate_ideas_no_role template
+- AI proposals from generate_diverse_ideas template
 """
 
 import json
-import pandas as pd
+import csv
 from pathlib import Path
 from typing import List, Dict, Any
+from collections import Counter
 import logging
 
 # Setup logging
@@ -26,10 +32,10 @@ class ProposalCombiner:
         self.proposals = []
         
         # Map template names to role types
+        # For generate_ideas_no_role and generate_diverse_ideas, use the template name as the role
         self.role_mapping = {
-            'single_scientist': 'single',
-            'groups_of_scientists': 'group',
-            'groups_of_interdisciplinary_scientists': 'group_int'
+            'generate_ideas_no_role': 'generate_ideas_no_role',
+            'generate_diverse_ideas': 'generate_diverse_ideas'
         }
     
     def load_human_proposals(self) -> List[Dict[str, Any]]:
@@ -84,6 +90,9 @@ class ProposalCombiner:
         logger.info(f"Found {len(proposal_files)} proposal files for template '{template_name}'")
         
         all_proposals = []
+        # Track used IDs to prevent duplicates
+        used_ids = set()
+        
         for proposal_file in proposal_files:
             try:
                 with open(proposal_file, 'r', encoding='utf-8') as f:
@@ -112,6 +121,15 @@ class ProposalCombiner:
                         # Create simplified ID: ai_{role}_{model_short}_{num}
                         model_short = proposal.get('model_name', model_name).split('-')[0]  # e.g., "gemini" or "gpt"
                         simplified_id = f"ai_{role}_{model_short}_{idea_num}"
+                        
+                        # If ID already exists, append a counter to make it unique
+                        original_id = simplified_id
+                        counter = 1
+                        while simplified_id in used_ids:
+                            counter += 1
+                            simplified_id = f"{original_id}_{counter}"
+                        
+                        used_ids.add(simplified_id)
                         
                         processed_proposal = {
                             'proposal_id': simplified_id,
@@ -152,39 +170,31 @@ class ProposalCombiner:
         sections = []
         for section_key in section_order:
             if section_key in proposal_dict and isinstance(proposal_dict[section_key], str):
+                # Remove line breaks from section content
+                section_content = proposal_dict[section_key].replace('\n', ' ')
                 # Format section header (skip title and abstract as they're in separate columns)
                 if section_key not in ['title', 'abstract']:
                     section_header = section_key.replace('_', ' ').title()
-                    sections.append(f"{section_header}\n\n{proposal_dict[section_key]}")
+                    sections.append(f"{section_header}\n\n{section_content}")
         
         return '\n\n'.join(sections)
     
     def load_all_ai_proposals(self) -> List[Dict[str, Any]]:
-        """Load all AI proposals from all template folders"""
-        logger.info("Loading AI proposals from all templates...")
+        """Load AI proposals from specified template folders only"""
+        logger.info("Loading AI proposals from specified templates...")
         
         all_ai_proposals = []
         
-        # Iterate through all template types (including those in role_mapping)
+        # Only load templates explicitly defined in role_mapping
         for template_name in self.role_mapping.keys():
             template_proposals = self.load_ai_proposals_from_template(template_name)
             all_ai_proposals.extend(template_proposals)
         
-        # Also check for other template folders not in role_mapping
-        if self.base_dir.exists():
-            for template_dir in self.base_dir.iterdir():
-                if template_dir.is_dir() and template_dir.name not in self.role_mapping.keys():
-                    # Check if it has proposals
-                    if (template_dir / "proposals").exists():
-                        logger.info(f"Found additional template: {template_dir.name}")
-                        template_proposals = self.load_ai_proposals_from_template(template_dir.name)
-                        all_ai_proposals.extend(template_proposals)
-        
         logger.info(f"Loaded total of {len(all_ai_proposals)} AI proposals")
         return all_ai_proposals
     
-    def combine_all_proposals(self) -> pd.DataFrame:
-        """Combine all human and AI proposals into a single dataframe"""
+    def combine_all_proposals(self) -> List[Dict[str, Any]]:
+        """Combine all human and AI proposals into a single list"""
         logger.info("Combining all proposals...")
         
         # Load human proposals
@@ -198,11 +208,42 @@ class ProposalCombiner:
         
         logger.info(f"Total proposals: {len(all_proposals)} ({len(human_proposals)} human + {len(ai_proposals)} AI)")
         
-        # Create dataframe
-        df = pd.DataFrame(all_proposals)
+        # Add some statistics
+        logger.info("\n=== Dataset Statistics ===")
+        logger.info(f"Total proposals: {len(all_proposals)}")
         
-        # Reorder columns for better readability
-        column_order = [
+        who_counts = Counter(p['who'] for p in all_proposals)
+        logger.info(f"\nBy source (who):")
+        for key, count in who_counts.items():
+            logger.info(f"  {key}: {count}")
+        
+        role_counts = Counter(p['role'] for p in all_proposals)
+        logger.info(f"\nBy role:")
+        for key, count in role_counts.items():
+            logger.info(f"  {key}: {count}")
+        
+        model_counts = Counter(p['model'] for p in all_proposals)
+        logger.info(f"\nBy model:")
+        for key, count in model_counts.items():
+            logger.info(f"  {key}: {count}")
+        
+        return all_proposals
+    
+    def _clean_text_field(self, text: Any) -> str:
+        """Remove newlines and clean text for CSV export"""
+        if text is None:
+            return ''
+        if not isinstance(text, str):
+            return str(text)
+        # Replace all newlines with spaces
+        return text.replace('\n', ' ').replace('\r', ' ')
+    
+    def save_to_csv(self, proposals: List[Dict[str, Any]], output_filename: str = "all_proposals_combined_no_role.csv"):
+        """Save proposals to CSV file with proper quoting for special characters"""
+        output_path = Path(output_filename)
+        
+        # Define column order
+        fieldnames = [
             'proposal_id',
             'who',
             'role',
@@ -215,27 +256,31 @@ class ProposalCombiner:
             'ranking'
         ]
         
-        df = df[column_order]
+        # Clean all text fields to remove newlines
+        cleaned_proposals = []
+        for proposal in proposals:
+            cleaned_proposal = {}
+            for key, value in proposal.items():
+                if isinstance(value, str):
+                    cleaned_proposal[key] = self._clean_text_field(value)
+                else:
+                    cleaned_proposal[key] = value
+            cleaned_proposals.append(cleaned_proposal)
         
-        # Add some statistics
-        logger.info("\n=== Dataset Statistics ===")
-        logger.info(f"Total proposals: {len(df)}")
-        logger.info(f"\nBy source (who):")
-        logger.info(df['who'].value_counts().to_string())
-        logger.info(f"\nBy role:")
-        logger.info(df['role'].value_counts().to_string())
-        logger.info(f"\nBy model:")
-        logger.info(df['model'].value_counts().to_string())
+        # Write CSV with proper quoting
+        with open(output_path, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(
+                f,
+                fieldnames=fieldnames,
+                quoting=csv.QUOTE_ALL,  # Quote all fields
+                doublequote=True,       # Escape quotes by doubling them
+                lineterminator='\n'      # Use Unix-style line endings
+            )
+            writer.writeheader()
+            writer.writerows(cleaned_proposals)
         
-        return df
-    
-    def save_to_csv(self, df: pd.DataFrame, output_filename: str = "all_proposals_combined.csv"):
-        """Save dataframe to CSV file"""
-        output_path = Path(output_filename)
-        
-        df.to_csv(output_path, index=False, encoding='utf-8')
         logger.info(f"\n✓ Saved combined proposals to {output_path}")
-        logger.info(f"  - Shape: {df.shape[0]} rows × {df.shape[1]} columns")
+        logger.info(f"  - Rows: {len(proposals)}")
         logger.info(f"  - File size: {output_path.stat().st_size / 1024:.2f} KB")
 
 
@@ -249,8 +294,8 @@ def main():
     parser.add_argument(
         "--output",
         type=str,
-        default="all_proposals_combined.csv",
-        help="Output CSV filename (default: all_proposals_combined.csv)"
+        default="all_proposals_combined_no_role.csv",
+        help="Output CSV filename (default: all_proposals_combined_no_role.csv)"
     )
     parser.add_argument(
         "--show-sample",
@@ -264,15 +309,16 @@ def main():
     combiner = ProposalCombiner()
     
     # Combine all proposals
-    df = combiner.combine_all_proposals()
+    proposals = combiner.combine_all_proposals()
     
     # Show sample if requested
     if args.show_sample:
         print("\n=== Sample Rows ===")
-        print(df[['proposal_id', 'who', 'role', 'model', 'title']].head(10).to_string())
+        for i, p in enumerate(proposals[:10], 1):
+            print(f"{i}. {p['proposal_id']:50s} | {p['who']:8s} | {p['role']:25s} | {p['model']:20s} | {p['title'][:50]}")
     
     # Save to CSV
-    combiner.save_to_csv(df, args.output)
+    combiner.save_to_csv(proposals, args.output)
 
 
 if __name__ == "__main__":

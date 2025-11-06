@@ -87,7 +87,7 @@ class EvaluationScoreComparator:
             first_eval = self.data1['evaluations'][0]
             template1 = first_eval.get('evaluation_template', 'unknown')
         else:
-            template1 = templates1[0] if templates1 else 'unknown'
+        template1 = templates1[0] if templates1 else 'unknown'
         
         templates2 = self.metadata2.get('evaluation_templates', None)
         if templates2 is None and self.data2.get('evaluations'):
@@ -95,7 +95,7 @@ class EvaluationScoreComparator:
             first_eval = self.data2['evaluations'][0]
             template2 = first_eval.get('evaluation_template', 'unknown')
         else:
-            template2 = templates2[0] if templates2 else 'unknown'
+        template2 = templates2[0] if templates2 else 'unknown'
         
         # Shorten template names for cleaner directory names
         template1_short = template1.replace('_', '-')[:15]
@@ -119,7 +119,7 @@ class EvaluationScoreComparator:
             first_eval = self.data1['evaluations'][0]
             template1 = first_eval.get('evaluation_template', 'unknown')
         else:
-            template1 = templates1[0] if templates1 else 'unknown'
+        template1 = templates1[0] if templates1 else 'unknown'
         
         templates2 = self.metadata2.get('evaluation_templates', None)
         if templates2 is None and self.data2.get('evaluations'):
@@ -127,7 +127,7 @@ class EvaluationScoreComparator:
             first_eval = self.data2['evaluations'][0]
             template2 = first_eval.get('evaluation_template', 'unknown')
         else:
-            template2 = templates2[0] if templates2 else 'unknown'
+        template2 = templates2[0] if templates2 else 'unknown'
         
         # Shorten template names
         template1_short = template1.replace('_', '-')[:15]
