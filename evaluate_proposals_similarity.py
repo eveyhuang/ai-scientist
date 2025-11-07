@@ -380,6 +380,27 @@ class ProposalSimilarityAnalyzer:
             logger.error(f"Error computing topic overlap: {e}")
             return {'error': str(e)}
     
+    def _clean_text(self, text: Any) -> str:
+        """
+        Clean text field, handling NaN and empty values
+        
+        Args:
+            text: Text to clean (may be str, NaN, None, etc.)
+        
+        Returns:
+            Cleaned string (empty string if invalid)
+        """
+        # Handle NaN values (pandas reads empty CSV cells as NaN)
+        if pd.isna(text):
+            return ''
+        
+        # Convert to string if not already
+        if not isinstance(text, str):
+            return str(text)
+        
+        # Return stripped text
+        return text.strip()
+    
     def analyze_proposal_pair(self, 
                              proposal_1: Dict[str, Any],
                              proposal_2: Dict[str, Any]) -> Dict[str, Any]:
@@ -400,13 +421,13 @@ class ProposalSimilarityAnalyzer:
         
         logger.info(f"Analyzing similarity: '{proposal_1_title}' vs '{proposal_2_title}'")
         
-        # Get full texts
-        text1 = proposal_1.get('full_draft', '')
-        text2 = proposal_2.get('full_draft', '')
+        # Get full texts and clean them (handles NaN values)
+        text1 = self._clean_text(proposal_1.get('full_draft', ''))
+        text2 = self._clean_text(proposal_2.get('full_draft', ''))
         
         # Skip if either text is empty
         if not text1 or not text2:
-            logger.warning(f"Skipping pair {proposal_1_id} vs {proposal_2_id}: Empty text")
+            logger.warning(f"Skipping pair {proposal_1_id} vs {proposal_2_id}: Empty text (text1 len={len(text1)}, text2 len={len(text2)})")
             return {
                 'proposal_1_id': proposal_1_id,
                 'proposal_2_id': proposal_2_id,
@@ -649,7 +670,7 @@ class ProposalSimilarityAnalyzer:
                 "generation_timestamp": datetime.now().isoformat(),
                 "methods": {
                     "tfidf": "TF-IDF based cosine similarity",
-                    "embeddings": "OpenAI text-embedding-3-small",
+                    "embeddings": "Nomic-Embed",
                     "keywords": "TF-IDF top-20 keywords with Jaccard similarity",
                     "topics": "Latent Dirichlet Allocation (LDA) with 5 topics"
                 }
@@ -704,7 +725,7 @@ def main():
     parser.add_argument(
         "--csv",
         type=str,
-        default="all_proposals_combined.csv",
+        default="all_proposals_combined_no_role.csv",
         help="Path to combined proposals CSV file"
     )
     parser.add_argument(

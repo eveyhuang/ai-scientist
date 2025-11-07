@@ -131,6 +131,10 @@ class ProposalCombiner:
                         
                         used_ids.add(simplified_id)
                         
+                        # Warn if full_draft is empty
+                        if not full_draft or not full_draft.strip():
+                            logger.warning(f"Proposal {simplified_id} has empty full_draft")
+                        
                         processed_proposal = {
                             'proposal_id': simplified_id,
                             'role': role,
