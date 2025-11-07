@@ -1,0 +1,689 @@
+{
+  "metadata": {
+    "comparison_type": "ai-ai",
+    "role_filter": "generate_ideas_no_role",
+    "model_filter": "llama-4-scout",
+    "total_analyses": 90,
+    "generation_timestamp": "2025-11-07T11:37:54.979067",
+    "methods": {
+      "tfidf": "TF-IDF based cosine similarity",
+      "embeddings": "Nomic-Embed",
+      "keywords": "TF-IDF top-20 keywords with Jaccard similarity",
+      "topics": "Latent Dirichlet Allocation (LDA) with 5 topics"
+    }
+  },
+  "results": [
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_01",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_02",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_01",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_03",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_01",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_04",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_01",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_05",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_01",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_06",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_01",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_07",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_01",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_08",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_01",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_09",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_01",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_10",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_02",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_01",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_02",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_03",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_02",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_04",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_02",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_05",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_02",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_06",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_02",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_07",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_02",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_08",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_02",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_09",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_02",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_10",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_03",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_01",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_03",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_02",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_03",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_04",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_03",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_05",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_03",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_06",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_03",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_07",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_03",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_08",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_03",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_09",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_03",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_10",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_04",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_01",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_04",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_02",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_04",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_03",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_04",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_05",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_04",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_06",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_04",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_07",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_04",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_08",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_04",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_09",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_04",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_10",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_05",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_01",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_05",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_02",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_05",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_03",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_05",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_04",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_05",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_06",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_05",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_07",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_05",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_08",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_05",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_09",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_05",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_1_title": "Machine Learning for Predicting Protein Function from Sequence and Structure",
+      "proposal_2_title": "Community-Scale Identification of Non-Coding RNAs in Human Diseases",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-07T11:37:54.961972",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.16823406027128215,
+        "embedding_cosine_similarity": 0.7319537827254181,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "functional"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "features",
+            "function",
+            "function prediction",
+            "including",
+            "integration",
+            "learning",
+            "learning models",
+            "machine",
+            "machine learning",
+            "models"
+          ],
+          "proposal_2_unique": [
+            "analysis",
+            "associated",
+            "associated ncrnas",
+            "budget",
+            "computational",
+            "disease",
+            "disease associated",
+            "diseases",
+            "expression",
+            "functional roles"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.025838443022539515,
+          "proposal_1_topic_distribution": [
+            0.012879811336041462,
+            0.012824242973928306,
+            0.012824242977579833,
+            0.9486474597361696,
+            0.01282424297628079
+          ],
+          "proposal_2_topic_distribution": [
+            0.9549918076215537,
+            0.011246282389314573,
+            0.011246282395796664,
+            0.011269345190412342,
+            0.011246282402922626
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "ncrnas",
+                "disease",
+                "expression",
+                "associated",
+                "diseases"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "using",
+                "000",
+                "potential functional",
+                "months",
+                "identify"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "using",
+                "000",
+                "potential functional",
+                "months",
+                "identify"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "protein",
+                "function",
+                "data",
+                "protein function",
+                "learning"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "using",
+                "000",
+                "potential functional",
+                "months",
+                "identify"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_06",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_01",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_06",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_02",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_06",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_03",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_06",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_04",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_06",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_05",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_06",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_07",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_06",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_08",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_06",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_09",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_06",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_10",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_07",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_01",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_07",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_02",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_07",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_03",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_07",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_04",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_07",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_05",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_07",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_06",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_07",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_08",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_07",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_09",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_07",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_10",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_08",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_01",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_08",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_02",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_08",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_03",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_08",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_04",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_08",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_05",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_08",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_06",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_08",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_07",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_08",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_09",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_08",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_10",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_09",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_01",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_09",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_02",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_09",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_03",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_09",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_04",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_09",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_05",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_09",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_06",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_09",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_07",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_09",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_08",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_09",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_10",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_01",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_02",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_03",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_04",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_05",
+      "proposal_1_title": "Community-Scale Identification of Non-Coding RNAs in Human Diseases",
+      "proposal_2_title": "Machine Learning for Predicting Protein Function from Sequence and Structure",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-07T11:37:54.977293",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.16823406027128238,
+        "embedding_cosine_similarity": 0.7319537827254181,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "functional"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "analysis",
+            "associated",
+            "associated ncrnas",
+            "budget",
+            "computational",
+            "disease",
+            "disease associated",
+            "diseases",
+            "expression",
+            "functional roles"
+          ],
+          "proposal_2_unique": [
+            "features",
+            "function",
+            "function prediction",
+            "including",
+            "integration",
+            "learning",
+            "learning models",
+            "machine",
+            "machine learning",
+            "models"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.025838443022539515,
+          "proposal_1_topic_distribution": [
+            0.9549918076215537,
+            0.011246282389314573,
+            0.011246282395796664,
+            0.011269345190412342,
+            0.011246282402922626
+          ],
+          "proposal_2_topic_distribution": [
+            0.012879811336041462,
+            0.012824242973928306,
+            0.012824242977579833,
+            0.9486474597361696,
+            0.01282424297628079
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "ncrnas",
+                "disease",
+                "expression",
+                "associated",
+                "diseases"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "using",
+                "000",
+                "potential functional",
+                "months",
+                "identify"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "using",
+                "000",
+                "potential functional",
+                "months",
+                "identify"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "protein",
+                "function",
+                "data",
+                "protein function",
+                "learning"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "using",
+                "000",
+                "potential functional",
+                "months",
+                "identify"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_06",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_07",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_08",
+      "error": "Empty text in one or both proposals"
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_09",
+      "error": "Empty text in one or both proposals"
+    }
+  ]
+}
