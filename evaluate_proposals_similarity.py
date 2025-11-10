@@ -12,6 +12,7 @@ Features:
 
 import json
 import logging
+import os
 import numpy as np
 import pandas as pd
 from pathlib import Path
@@ -95,7 +96,8 @@ class ProposalSimilarityAnalyzer:
                       who: str = None,
                       role: str = None, 
                       model: str = None,
-                      max_proposals: int = None) -> List[Dict[str, Any]]:
+                      max_proposals: int = None,
+                      proposal_ids: List[str] = None) -> List[Dict[str, Any]]:
         """
         Load proposals from the combined CSV with optional filters
         
@@ -104,6 +106,7 @@ class ProposalSimilarityAnalyzer:
             role: Filter by role ('human', 'single', 'group', 'group_int')
             model: Filter by model name
             max_proposals: Maximum number of proposals to return
+            proposal_ids: Filter by specific proposal IDs
         
         Returns:
             List of proposal dictionaries
@@ -115,12 +118,16 @@ class ProposalSimilarityAnalyzer:
         df = self.proposals_df.copy()
         
         # Apply filters
-        if who:
-            df = df[df['who'] == who]
-        if role:
-            df = df[df['role'] == role]
-        if model:
-            df = df[df['model'] == model]
+        if proposal_ids:
+            df = df[df['proposal_id'].isin(proposal_ids)]
+            logger.info(f"Filtering by {len(proposal_ids)} specific proposal IDs")
+        else:
+            if who:
+                df = df[df['who'] == who]
+            if role:
+                df = df[df['role'] == role]
+            if model:
+                df = df[df['model'] == model]
         
         # Limit number of proposals
         if max_proposals:
@@ -129,9 +136,46 @@ class ProposalSimilarityAnalyzer:
         # Convert to list of dictionaries
         proposals = df.to_dict('records')
         
-        logger.info(f"Loaded {len(proposals)} proposals with filters: who={who}, role={role}, model={model}")
+        if proposal_ids:
+            logger.info(f"Loaded {len(proposals)} proposals from specified IDs")
+        else:
+            logger.info(f"Loaded {len(proposals)} proposals with filters: who={who}, role={role}, model={model}")
         
         return proposals
+    
+    def load_proposal_ids_from_json(self, json_file: str) -> List[str]:
+        """
+        Load proposal IDs from a JSON file
+        
+        Args:
+            json_file: Path to JSON file containing proposal IDs
+        
+        Returns:
+            List of proposal IDs
+        """
+        try:
+            with open(json_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            # Try different possible field names
+            if 'selected_proposals' in data:
+                proposal_ids = data['selected_proposals']
+            elif 'proposal_ids' in data:
+                proposal_ids = data['proposal_ids']
+            elif 'proposals' in data:
+                proposal_ids = data['proposals']
+            elif isinstance(data, list):
+                proposal_ids = data
+            else:
+                logger.error(f"Could not find proposal IDs in JSON file. Expected 'selected_proposals', 'proposal_ids', or 'proposals' field")
+                return []
+            
+            logger.info(f"Loaded {len(proposal_ids)} proposal IDs from {json_file}")
+            return proposal_ids
+        
+        except Exception as e:
+            logger.error(f"Error loading proposal IDs from JSON: {e}")
+            return []
     
     def compute_tfidf_similarity(self, text1: str, text2: str) -> float:
         """
@@ -630,35 +674,42 @@ class ProposalSimilarityAnalyzer:
                     model_filter: str = None):
         """Save similarity analysis results to a JSON file in organized subfolders"""
         
-        # Create subfolder name based on comparison parameters
-        subfolder_parts = ["similarity", comparison_type]
-        
-        if role_filter:
-            subfolder_parts.append(role_filter)
-        if model_filter:
-            model_short = model_filter.split('-')[0]
-            subfolder_parts.append(f"genby_{model_short}")
-        
-        subfolder_name = "_".join(subfolder_parts)
-        output_dir = self.results_dir / subfolder_name
-        output_dir.mkdir(parents=True, exist_ok=True)
-        
-        # Generate filename if not provided
-        if output_filename is None:
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            # Build descriptive filename
-            filename_parts = ["similarity", comparison_type]
+        # Check if output_filename is a full path
+        if output_filename and (os.path.sep in output_filename or os.path.altsep and os.path.altsep in output_filename):
+            # It's a full path, use it directly
+            output_path = Path(output_filename)
+            output_dir = output_path.parent
+            output_dir.mkdir(parents=True, exist_ok=True)
+        else:
+            # Create subfolder name based on comparison parameters
+            subfolder_parts = ["similarity", comparison_type]
             
             if role_filter:
-                filename_parts.append(role_filter)
+                subfolder_parts.append(role_filter)
             if model_filter:
                 model_short = model_filter.split('-')[0]
-                filename_parts.append(f"genby_{model_short}")
+                subfolder_parts.append(f"genby_{model_short}")
             
-            filename_parts.append(timestamp)
-            output_filename = "_".join(filename_parts) + ".json"
-        
-        output_path = output_dir / output_filename
+            subfolder_name = "_".join(subfolder_parts)
+            output_dir = self.results_dir / subfolder_name
+            output_dir.mkdir(parents=True, exist_ok=True)
+            
+            # Generate filename if not provided
+            if output_filename is None:
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                # Build descriptive filename
+                filename_parts = ["similarity", comparison_type]
+                
+                if role_filter:
+                    filename_parts.append(role_filter)
+                if model_filter:
+                    model_short = model_filter.split('-')[0]
+                    filename_parts.append(f"genby_{model_short}")
+                
+                filename_parts.append(timestamp)
+                output_filename = "_".join(filename_parts) + ".json"
+            
+            output_path = output_dir / output_filename
         
         # Create results dict with metadata including filters
         results_dict = {
@@ -684,8 +735,7 @@ class ProposalSimilarityAnalyzer:
         logger.info(f"Saved {len(results)} similarity analyses to {output_path}")
         
         # Also save as CSV for easy viewing
-        csv_filename = output_filename.replace('.json', '.csv')
-        csv_path = output_dir / csv_filename
+        csv_path = output_path.with_suffix('.csv')
         self._save_results_csv(results, csv_path)
     
     def _save_results_csv(self, results: List[Dict[str, Any]], csv_path: Path):
@@ -759,45 +809,93 @@ def main():
         default=None,
         help="Output filename for results"
     )
+    parser.add_argument(
+        "--proposals-json",
+        type=str,
+        default=None,
+        help="Path to JSON file containing specific proposal IDs to analyze (looks for 'selected_proposals' field)"
+    )
     
     args = parser.parse_args()
     
     # Initialize analyzer
     analyzer = ProposalSimilarityAnalyzer(proposals_csv=args.csv)
     
+    # Check if JSON file with proposal IDs is provided
+    proposal_ids = None
+    json_output_path = None
+    if args.proposals_json:
+        logger.info(f"Loading proposal IDs from JSON: {args.proposals_json}")
+        proposal_ids = analyzer.load_proposal_ids_from_json(args.proposals_json)
+        if not proposal_ids:
+            logger.error("No proposal IDs loaded from JSON file. Exiting.")
+            return
+        
+        # Determine output path based on input JSON location
+        if not args.output:
+            input_path = Path(args.proposals_json)
+            output_filename = f"similarity_{input_path.stem}.json"
+            json_output_path = input_path.parent / output_filename
+            logger.info(f"Output will be saved to: {json_output_path}")
+    
     # Load proposals based on comparison type
     logger.info(f"Starting similarity analysis: {args.compare_type}")
     
-    if args.compare_type == "human-human":
-        proposals_1 = analyzer.load_proposals(who="human", max_proposals=args.max_proposals)
-        proposals_2 = analyzer.load_proposals(who="human", max_proposals=args.max_proposals)
-    elif args.compare_type == "ai-ai":
-        proposals_1 = analyzer.load_proposals(
-            who="ai",
-            role=args.template,
-            model=args.ai_model,
-            max_proposals=args.max_proposals
-        )
-        proposals_2 = analyzer.load_proposals(
-            who="ai",
-            role=args.template,
-            model=args.ai_model,
-            max_proposals=args.max_proposals
-        )
-    else:  # human-ai
-        proposals_1 = analyzer.load_proposals(who="human", max_proposals=args.max_proposals)
-        proposals_2 = analyzer.load_proposals(
-            who="ai",
-            role=args.template,
-            model=args.ai_model,
-            max_proposals=args.max_proposals
-        )
+    if proposal_ids:
+        # If JSON file provided, load only those specific proposals
+        logger.info("Using proposals from JSON file for analysis")
+        proposals_1 = analyzer.load_proposals(proposal_ids=proposal_ids)
+        proposals_2 = analyzer.load_proposals(proposal_ids=proposal_ids)
+        
+        # Auto-detect comparison type based on loaded proposals
+        if proposals_1:
+            who_types = set(p.get('who') for p in proposals_1)
+            if len(who_types) == 1:
+                if 'human' in who_types:
+                    detected_type = "human-human"
+                else:
+                    detected_type = "ai-ai"
+            else:
+                detected_type = "human-ai"
+            
+            logger.info(f"Auto-detected comparison type from JSON proposals: {detected_type}")
+            comparison_type = detected_type
+        else:
+            comparison_type = args.compare_type
+    else:
+        # Use the command-line comparison type
+        comparison_type = args.compare_type
+        
+        if args.compare_type == "human-human":
+            proposals_1 = analyzer.load_proposals(who="human", max_proposals=args.max_proposals)
+            proposals_2 = analyzer.load_proposals(who="human", max_proposals=args.max_proposals)
+        elif args.compare_type == "ai-ai":
+            proposals_1 = analyzer.load_proposals(
+                who="ai",
+                role=args.template,
+                model=args.ai_model,
+                max_proposals=args.max_proposals
+            )
+            proposals_2 = analyzer.load_proposals(
+                who="ai",
+                role=args.template,
+                model=args.ai_model,
+                max_proposals=args.max_proposals
+            )
+        else:  # human-ai
+            proposals_1 = analyzer.load_proposals(who="human", max_proposals=args.max_proposals)
+            proposals_2 = analyzer.load_proposals(
+                who="ai",
+                role=args.template,
+                model=args.ai_model,
+                max_proposals=args.max_proposals
+            )
     
     # Perform similarity analysis (with checkpointing and caching)
     all_results = analyzer.analyze_all_pairs(
         proposals_1=proposals_1,
         proposals_2=proposals_2,
-        comparison_type=args.compare_type,
+        comparison_type=comparison_type,
         checkpoint_interval=50,
         resume_from_checkpoint=True,
         role_filter=args.template,
@@ -805,10 +903,13 @@ def main():
     )
     
     # Save results with role and model info for better filename
+    # Use json_output_path if it was set (when --proposals-json was provided)
+    output_to_use = str(json_output_path) if json_output_path else args.output
+    
     analyzer.save_results(
         results=all_results,
-        comparison_type=args.compare_type,
-        output_filename=args.output,
+        comparison_type=comparison_type,
+        output_filename=output_to_use,
         role_filter=args.template,
         model_filter=args.ai_model
     )
