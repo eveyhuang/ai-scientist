@@ -1,0 +1,140 @@
+{
+  "selected_proposals": [
+    "ai_generate_ideas_no_role_gpt_08",
+    "ai_generate_diverse_ideas_claude_03",
+    "ai_generate_diverse_ideas_gpt_05",
+    "ai_generate_diverse_ideas_llama_08_2",
+    "ai_generate_diverse_ideas_gpt_04",
+    "ai_generate_ideas_no_role_qwen_04",
+    "ai_generate_diverse_ideas_llama_04_2",
+    "ai_generate_ideas_no_role_llama_10",
+    "ai_generate_ideas_no_role_qwen_09",
+    "ai_generate_diverse_ideas_llama_01",
+    "ai_generate_diverse_ideas_gpt_06"
+  ],
+  "selection_info": {
+    "selected_proposals": [
+      "ai_generate_ideas_no_role_gpt_08",
+      "ai_generate_diverse_ideas_claude_03",
+      "ai_generate_diverse_ideas_gpt_05",
+      "ai_generate_diverse_ideas_llama_08_2",
+      "ai_generate_diverse_ideas_gpt_04",
+      "ai_generate_ideas_no_role_qwen_04",
+      "ai_generate_diverse_ideas_llama_04_2",
+      "ai_generate_ideas_no_role_llama_10",
+      "ai_generate_ideas_no_role_qwen_09",
+      "ai_generate_diverse_ideas_llama_01",
+      "ai_generate_diverse_ideas_gpt_06"
+    ],
+    "n_selected": 11,
+    "criterion": "min",
+    "metric": "embedding_similarity",
+    "selection_history": [
+      {
+        "iteration": 0,
+        "selected": "ai_generate_ideas_no_role_gpt_08",
+        "score": 0.5157909507260123
+      },
+      {
+        "iteration": 0,
+        "selected": "ai_generate_diverse_ideas_claude_03",
+        "score": 0.5157909507260123
+      },
+      {
+        "iteration": 1,
+        "selected": "ai_generate_diverse_ideas_gpt_05",
+        "score": 0.3690835849861327,
+        "min_distance": 0.3690835849861327,
+        "max_distance": 0.4823663896315781,
+        "avg_distance": 0.42572498730885533
+      },
+      {
+        "iteration": 2,
+        "selected": "ai_generate_diverse_ideas_llama_08_2",
+        "score": 0.3517856779335756,
+        "min_distance": 0.3517856779335756,
+        "max_distance": 0.45231338575594393,
+        "avg_distance": 0.39331464091628554
+      },
+      {
+        "iteration": 3,
+        "selected": "ai_generate_diverse_ideas_gpt_04",
+        "score": 0.3171726181749711,
+        "min_distance": 0.3171726181749711,
+        "max_distance": 0.42481936333352155,
+        "avg_distance": 0.35112367041220677
+      },
+      {
+        "iteration": 4,
+        "selected": "ai_generate_ideas_no_role_qwen_04",
+        "score": 0.30480057751759404,
+        "min_distance": 0.30480057751759404,
+        "max_distance": 0.45527610200355606,
+        "avg_distance": 0.356372554362428
+      },
+      {
+        "iteration": 5,
+        "selected": "ai_generate_diverse_ideas_llama_04_2",
+        "score": 0.30198540991413836,
+        "min_distance": 0.30198540991413836,
+        "max_distance": 0.4824194026240429,
+        "avg_distance": 0.3504510810101397
+      },
+      {
+        "iteration": 6,
+        "selected": "ai_generate_ideas_no_role_llama_10",
+        "score": 0.2884457575777122,
+        "min_distance": 0.2884457575777122,
+        "max_distance": 0.46975590330023487,
+        "avg_distance": 0.32286089709387694
+      },
+      {
+        "iteration": 7,
+        "selected": "ai_generate_ideas_no_role_qwen_09",
+        "score": 0.28435728653191883,
+        "min_distance": 0.28435728653191883,
+        "max_distance": 0.48433315358388374,
+        "avg_distance": 0.33243698301315744
+      },
+      {
+        "iteration": 8,
+        "selected": "ai_generate_diverse_ideas_llama_01",
+        "score": 0.2737118483281964,
+        "min_distance": 0.2737118483281964,
+        "max_distance": 0.4624913782447255,
+        "avg_distance": 0.3259970149571678
+      },
+      {
+        "iteration": 9,
+        "selected": "ai_generate_diverse_ideas_gpt_06",
+        "score": 0.2609075566094906,
+        "min_distance": 0.2609075566094906,
+        "max_distance": 0.45652905421964973,
+        "avg_distance": 0.32317836656744636
+      }
+    ],
+    "pairwise_distance_stats": {
+      "mean": 0.3440277769393774,
+      "std": 0.06485835601113132,
+      "min": 0.2609075566094906,
+      "max": 0.5157909507260123,
+      "median": 0.3213484863210021,
+      "n_pairs": 110
+    }
+  },
+  "baseline_stats": {
+    "mean": 0.23858544473724153,
+    "std": 0.044869645971500324,
+    "min": 0.0628013255300487,
+    "max": 0.32772603676526313,
+    "percentiles": {
+      "p5": 0.16733792829825972,
+      "p25": 0.2124215940731292,
+      "p50": 0.2472284857230594,
+      "p75": 0.2741945571801281,
+      "p95": 0.29848456657966943
+    }
+  },
+  "improvement_over_baseline_pct": 44.19478829408954,
+  "z_score": 2.34997022862871
+}
