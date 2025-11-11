@@ -103,7 +103,7 @@ class ProposalSimilarityAnalyzer:
         
         Args:
             who: Filter by source ('human' or 'ai')
-            role: Filter by role ('human', 'single', 'group', 'group_int')
+            role: Filter by role (e.g., 'human-y1', 'human-y2', 'generate_ideas_no_role', 'generate_diverse_ideas')
             model: Filter by model name
             max_proposals: Maximum number of proposals to return
             proposal_ids: Filter by specific proposal IDs
@@ -712,7 +712,7 @@ def main():
         "--template",
         type=str,
         default=None,
-        help="Filter AI proposals by template/role (e.g., 'generate_ideas_no_role', 'single', 'group', 'group_int'). Default: None (all templates)"
+        help="Filter proposals by template/role. For AI: 'generate_ideas_no_role', 'generate_diverse_ideas'. For human: 'human-y1', 'human-y2'. Default: None (all proposals)"
     )
     parser.add_argument(
         "--max-proposals",
@@ -802,8 +802,16 @@ def main():
         comparison_type = args.compare_type
         
         if args.compare_type == "human-human":
-            proposals_1 = analyzer.load_proposals(who="human", max_proposals=args.max_proposals)
-            proposals_2 = analyzer.load_proposals(who="human", max_proposals=args.max_proposals)
+            proposals_1 = analyzer.load_proposals(
+                who="human",
+                role=args.template,
+                max_proposals=args.max_proposals
+            )
+            proposals_2 = analyzer.load_proposals(
+                who="human",
+                role=args.template,
+                max_proposals=args.max_proposals
+            )
         elif args.compare_type == "ai-ai":
             proposals_1 = analyzer.load_proposals(
                 who="ai",

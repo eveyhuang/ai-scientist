@@ -39,38 +39,58 @@ class ProposalCombiner:
         }
     
     def load_human_proposals(self) -> List[Dict[str, Any]]:
-        """Load human proposals from human-proposals-y1.json"""
+        """Load human proposals from all JSON files in human-proposals directory"""
         logger.info("Loading human proposals...")
         
-        try:
-            with open("human-proposals-y1.json", 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                human_proposals = data.get('proposals', [])
-            
-            logger.info(f"Loaded {len(human_proposals)} human proposals")
-            
-            # Process human proposals
-            processed = []
-            for i, proposal in enumerate(human_proposals, 1):
-                processed_proposal = {
-                    'proposal_id': f"human_{proposal.get('proposal_id', i)}",
-                    'role': 'human',
-                    'who': 'human',
-                    'model': 'human',
-                    'title': proposal.get('proposal_title', ''),
-                    'abstract': proposal.get('abstract', ''),
-                    'authors': '; '.join(proposal.get('authors', [])),
-                    'full_draft': proposal.get('full_draft', ''),
-                    'proposal_status': proposal.get('proposal_status', ''),
-                    'ranking': proposal.get('ranking', None)
-                }
-                processed.append(processed_proposal)
-            
-            return processed
-            
-        except Exception as e:
-            logger.error(f"Error loading human proposals: {e}")
+        human_proposals_dir = Path("human-proposals")
+        
+        if not human_proposals_dir.exists():
+            logger.error(f"Human proposals directory not found: {human_proposals_dir}")
             return []
+        
+        # Find all JSON files in the directory
+        proposal_files = sorted(human_proposals_dir.glob("human-proposals-*.json"))
+        
+        if not proposal_files:
+            logger.warning(f"No human proposal files found in {human_proposals_dir}")
+            return []
+        
+        logger.info(f"Found {len(proposal_files)} human proposal files")
+        
+        all_processed = []
+        
+        for proposal_file in proposal_files:
+            try:
+                # Extract year identifier from filename (e.g., "y1" from "human-proposals-y1.json")
+                year_id = proposal_file.stem.replace('human-proposals-', '')  # e.g., "y1", "y2"
+                
+                with open(proposal_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    human_proposals = data.get('proposals', [])
+                
+                logger.info(f"Loaded {len(human_proposals)} proposals from {proposal_file.name} ({year_id})")
+                
+                # Process proposals from this file
+                for i, proposal in enumerate(human_proposals, 1):
+                    processed_proposal = {
+                        'proposal_id': f"human-{year_id}_{proposal.get('proposal_id', i)}",
+                        'role': f'human-{year_id}',
+                        'who': 'human',
+                        'model': f'human-{year_id}',
+                        'title': proposal.get('proposal_title', ''),
+                        'abstract': proposal.get('abstract', ''),
+                        'authors': '; '.join(proposal.get('authors', [])),
+                        'full_draft': proposal.get('full_draft', ''),
+                        'proposal_status': proposal.get('proposal_status', ''),
+                        'ranking': proposal.get('ranking', None)
+                    }
+                    all_processed.append(processed_proposal)
+                
+            except Exception as e:
+                logger.error(f"Error loading proposals from {proposal_file}: {e}")
+        
+        logger.info(f"Total human proposals loaded: {len(all_processed)}")
+        return all_processed
     
     def load_ai_proposals_from_template(self, template_name: str) -> List[Dict[str, Any]]:
         """Load AI proposals from a specific template folder"""
@@ -242,7 +262,7 @@ class ProposalCombiner:
         # Replace all newlines with spaces
         return text.replace('\n', ' ').replace('\r', ' ')
     
-    def save_to_csv(self, proposals: List[Dict[str, Any]], output_filename: str = "all_proposals_combined_no_role.csv"):
+    def save_to_csv(self, proposals: List[Dict[str, Any]], output_filename: str = "all_proposals_combined_no_role_y1y2.csv"):
         """Save proposals to CSV file with proper quoting for special characters"""
         output_path = Path(output_filename)
         
