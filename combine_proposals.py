@@ -306,6 +306,40 @@ class ProposalCombiner:
         logger.info(f"\n✓ Saved combined proposals to {output_path}")
         logger.info(f"  - Rows: {len(proposals)}")
         logger.info(f"  - File size: {output_path.stat().st_size / 1024:.2f} KB")
+    
+    def save_to_json(self, proposals: List[Dict[str, Any]], output_filename: str = "all_proposals_combined_no_role_y1y2.json"):
+        """Save proposals to JSON file"""
+        output_path = Path(output_filename)
+        
+        # Clean all text fields to remove newlines (same as CSV)
+        cleaned_proposals = []
+        for proposal in proposals:
+            cleaned_proposal = {}
+            for key, value in proposal.items():
+                if isinstance(value, str):
+                    cleaned_proposal[key] = self._clean_text_field(value)
+                else:
+                    cleaned_proposal[key] = value
+            cleaned_proposals.append(cleaned_proposal)
+        
+        # Create JSON structure with metadata
+        output_data = {
+            "metadata": {
+                "total_proposals": len(cleaned_proposals),
+                "human_proposals": sum(1 for p in cleaned_proposals if p.get('who') == 'human'),
+                "ai_proposals": sum(1 for p in cleaned_proposals if p.get('who') == 'ai'),
+                "roles": list(set(p.get('role') for p in cleaned_proposals)),
+                "models": list(set(p.get('model') for p in cleaned_proposals))
+            },
+            "proposals": cleaned_proposals
+        }
+        
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(output_data, f, indent=2, ensure_ascii=False)
+        
+        logger.info(f"\n✓ Saved combined proposals to {output_path}")
+        logger.info(f"  - Proposals: {len(cleaned_proposals)}")
+        logger.info(f"  - File size: {output_path.stat().st_size / 1024:.2f} KB")
 
 
 def main():
@@ -343,6 +377,10 @@ def main():
     
     # Save to CSV
     combiner.save_to_csv(proposals, args.output)
+    
+    # Save to JSON (same base name with .json extension)
+    json_output = args.output.replace('.csv', '.json')
+    combiner.save_to_json(proposals, json_output)
 
 
 if __name__ == "__main__":
