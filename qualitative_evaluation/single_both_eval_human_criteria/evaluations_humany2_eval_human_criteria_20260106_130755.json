@@ -1,0 +1,916 @@
+{
+  "metadata": {
+    "evaluation_type": "single_both",
+    "evaluation_templates": [
+      "eval_human_criteria"
+    ],
+    "proposal_role": null,
+    "proposal_ai_model": null,
+    "total_evaluations": 11,
+    "generation_timestamp": "2026-01-06T13:07:55.967920"
+  },
+  "evaluations": [
+    {
+      "evaluation_id": "1_eval_human_criteria_20260106_130339",
+      "proposal_id": "1",
+      "proposal_title": "Emergent Order Parameters of Allostery: An AI Framework for Predicting and Engineering Protein Regulation",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-06T13:03:39.132807",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "1",
+          "criteria_scores": [
+            {
+              "category": "Scientific Merit and Innovation",
+              "subcriteria": [
+                {
+                  "criterion": "Relevance to Emergent Phenomena",
+                  "score": 5,
+                  "justification": "The proposal directly addresses allostery, a classic example of an emergent property where long-range communication arises from local interactions within a protein, making it exceptionally relevant to the call's focus."
+                },
+                {
+                  "criterion": "Novelty & Significance",
+                  "score": 5,
+                  "justification": "The goal to create a universal, quantitative, and predictive framework for allostery using physics-informed 'order parameters' is groundbreaking and could transform how protein regulation is understood and engineered."
+                },
+                {
+                  "criterion": "Rigor of Approach",
+                  "score": 4,
+                  "justification": "The methodology integrating MD simulations, DMS data, and machine learning is state-of-the-art and logical, though the inclusion of new experimental work is a concern given the call's constraints."
+                }
+              ],
+              "category_average": 4.7
+            },
+            {
+              "category": "Feasibility",
+              "subcriteria": [
+                {
+                  "criterion": "Scope & Timeline",
+                  "score": 4,
+                  "justification": "The project is ambitious but the timeline is well-structured into logical phases, and the reliance on existing databases and distributed computing makes the challenging goals realistic."
+                }
+              ],
+              "category_average": 4.0
+            },
+            {
+              "category": "Data Sources and Limitations",
+              "subcriteria": [
+                {
+                  "criterion": "Synthesis Focus",
+                  "score": 2,
+                  "justification": "While the core of the project is data synthesis, the proposal explicitly includes the generation of new experimental data for validation, which directly contradicts the funding call's strict 'no new experimental data' rule."
+                },
+                {
+                  "criterion": "Data Identification",
+                  "score": 4,
+                  "justification": "The proposal clearly identifies specific public data repositories (MaveDB, MDRepo, MDVerse) and outlines a plan for cases where data is missing, demonstrating a thoughtful approach to data sourcing."
+                }
+              ],
+              "category_average": 3.0
+            },
+            {
+              "category": "Open Science Compliance",
+              "subcriteria": [
+                {
+                  "criterion": "Open Science Commitment",
+                  "score": 4,
+                  "justification": "The proposal demonstrates a strong commitment by planning to release open-source tools ('AllosteryMap') and curated datasets to the public, aligning well with the call's principles."
+                }
+              ],
+              "category_average": 4.0
+            }
+          ],
+          "overall_rating": {
+            "final_numeric_score": 3.9,
+            "narrative_summary": "This proposal presents a scientifically exceptional and highly innovative project to define a universal, quantitative theory of allostery, a key emergent phenomenon in biology. The approach of synthesizing molecular dynamics, deep mutational scanning, and evolutionary data through a physics-informed AI framework is powerful and has transformative potential. The collaborative team is well-suited for this interdisciplinary challenge, and the commitment to open science is commendable.\n\nThe proposal's most significant weakness is its non-compliance with a core tenet of the funding call. The inclusion of a plan to 'experimentally test' designs by generating new mutagenesis and biophysical data directly violates the RFP's explicit prohibition on new experimental data generation. This misalignment with the synthesis-only focus of the funding mechanism is a major flaw. To be successful, the proposal must be revised to eliminate the new experimental work and instead focus entirely on synthesis, for example by validating predictions against held-out public datasets."
+          }
+        }
+      }
+    },
+    {
+      "evaluation_id": "2_eval_human_criteria_20260106_130407",
+      "proposal_id": "2",
+      "proposal_title": "From Protein Knots to Pierced Lassos: Unraveling the Evolutionary Origin of Complex Topologies",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-06T13:04:07.298551",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "2",
+          "criteria_scores": [
+            {
+              "category": "Scientific Merit and Innovation",
+              "subcriteria": [
+                {
+                  "criterion": "Relevance to Emergent Phenomena",
+                  "score": 5,
+                  "justification": "The emergence of complex 3D protein topology from a 1D sequence over evolutionary time is a direct and explicit investigation of mesoscale emergent phenomena."
+                },
+                {
+                  "criterion": "Novelty & Significance",
+                  "score": 5,
+                  "justification": "The project's large-scale, integrative phylogenetic approach to pinpoint the origin of diverse protein entanglements is groundbreaking and has transformative potential for understanding protein evolution."
+                },
+                {
+                  "criterion": "Rigor of Approach",
+                  "score": 5,
+                  "justification": "The methodology is exceptionally detailed, citing specific databases, tools, and a logical phased approach, with well-justified computational plans for ancestral state reconstruction."
+                }
+              ],
+              "category_average": 5.0
+            },
+            {
+              "category": "Feasibility",
+              "subcriteria": [
+                {
+                  "criterion": "Scope & Timeline",
+                  "score": 4,
+                  "justification": "The scope is ambitious but the two-year timeline is well-structured with clear milestones and a realistic request for resources, making it achievable."
+                }
+              ],
+              "category_average": 4.0
+            },
+            {
+              "category": "Data Sources and Limitations",
+              "subcriteria": [
+                {
+                  "criterion": "Synthesis Focus",
+                  "score": 5,
+                  "justification": "This is an exemplary synthesis project that exclusively and comprehensively integrates a wide array of existing, publicly available datasets without generating new experimental data."
+                },
+                {
+                  "criterion": "Data Identification",
+                  "score": 5,
+                  "justification": "The proposal provides an exhaustive list of well-chosen public data sources and implicitly acknowledges limitations by proposing computational modeling to fill data gaps."
+                }
+              ],
+              "category_average": 5.0
+            },
+            {
+              "category": "Open Science Compliance",
+              "subcriteria": [
+                {
+                  "criterion": "Open Science Commitment",
+                  "score": 4,
+                  "justification": "The proposal aligns with open science principles by using public data and aiming for publications, but it would be stronger with an explicit plan for sharing code and workflows."
+                }
+              ],
+              "category_average": 4.0
+            }
+          ],
+          "overall_rating": {
+            "final_numeric_score": 4.5,
+            "narrative_summary": "This is an outstanding proposal that perfectly aligns with the funding call's mission. Its central scientific question—unraveling the evolutionary origins of complex protein topologies—is highly innovative and directly addresses emergent phenomena in biosciences. The proposed approach is exceptionally rigorous, demonstrating a deep understanding of the available data sources and the computational methods required for a large-scale synthesis project. The justification for a collaborative working group and the need for NCEMS resources is clear and compelling, making this a model for data synthesis research.\n\nA minor area for improvement is the explicit articulation of its open science plan; while the project's nature is inherently open, a dedicated statement on sharing code, workflows, and derived data would strengthen it further. The scope is ambitious, but the detailed planning and resource requests suggest the team is well-prepared to tackle the challenge. Overall, this project has a high potential for significant impact and is strongly recommended for funding."
+          }
+        }
+      }
+    },
+    {
+      "evaluation_id": "3_eval_human_criteria_20260106_130431",
+      "proposal_id": "3",
+      "proposal_title": "Deciphering systemic biological networks through AI-driven multi-omic integration",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-06T13:04:31.791756",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "3",
+          "criteria_scores": [
+            {
+              "category": "Scientific Merit and Innovation",
+              "subcriteria": [
+                {
+                  "criterion": "Relevance to Emergent Phenomena",
+                  "score": 5,
+                  "justification": "The proposal directly addresses how systemic physiological function emerges from the coordinated communication between multiple organs, which is an exemplary case of mesoscale emergent phenomena."
+                },
+                {
+                  "criterion": "Novelty & Significance",
+                  "score": 5,
+                  "justification": "The project is groundbreaking in its aim to create a 'digital twin rat' by integrating a uniquely comprehensive multi-omic dataset, which has transformative potential for understanding systemic biology."
+                },
+                {
+                  "criterion": "Rigor of Approach",
+                  "score": 2,
+                  "justification": "The methodology is severely flawed by proposing a feedback loop with the digital twin to guide new in vivo experiments, which directly violates the funding call's explicit prohibition on generating new data."
+                }
+              ],
+              "category_average": 4.0
+            },
+            {
+              "category": "Feasibility",
+              "subcriteria": [
+                {
+                  "criterion": "Scope & Timeline",
+                  "score": 2,
+                  "justification": "The goal of creating a 'complete map' of interactions between 18 organs within two years is overly ambitious and raises significant concerns about the project's feasibility."
+                }
+              ],
+              "category_average": 2.0
+            },
+            {
+              "category": "Data Sources and Limitations",
+              "subcriteria": [
+                {
+                  "criterion": "Synthesis Focus",
+                  "score": 5,
+                  "justification": "The project is an exemplary synthesis effort, as it is built exclusively around the integration and analysis of a large, existing, publicly available dataset (MoTrPAC)."
+                },
+                {
+                  "criterion": "Data Identification",
+                  "score": 3,
+                  "justification": "The proposal clearly identifies the primary dataset (MoTrPAC) but fails to discuss any of its potential limitations, such as being restricted to a single species and perturbation."
+                }
+              ],
+              "category_average": 4.0
+            },
+            {
+              "category": "Open Science Compliance",
+              "subcriteria": [
+                {
+                  "criterion": "Open Science Commitment",
+                  "score": 1,
+                  "justification": "The proposal completely fails to address the open science requirement, with no mention of plans for making data, code, or workflows publicly available."
+                }
+              ],
+              "category_average": 1.0
+            }
+          ],
+          "overall_rating": {
+            "final_numeric_score": 2.8,
+            "narrative_summary": "This proposal addresses a highly significant and innovative question that is exceptionally well-aligned with the call's focus on emergent phenomena. The plan to leverage the comprehensive MoTrPAC dataset with advanced AI modeling to create a 'digital twin' is potentially transformative. The rationale for a collaborative, interdisciplinary working group is also strong and fits the funding mechanism perfectly.\n\nHowever, the proposal is undermined by several critical weaknesses. A major flaw is the description of a methodology that involves guiding new in vivo experiments, which directly contradicts the core 'synthesis-only' requirement of the funding call. Furthermore, the scope is overly ambitious for the proposed timeline, and the complete omission of any commitment to open science principles is a disqualifying oversight given the call's explicit requirements. While the scientific idea is exciting, these fundamental issues with the proposed execution and adherence to the call's guidelines make it unsuitable for funding in its current form."
+          }
+        }
+      }
+    },
+    {
+      "evaluation_id": "4_eval_human_criteria_20260106_130457",
+      "proposal_id": "4",
+      "proposal_title": "Conserved Disorder: Learning Sequence Conservation from Functional Constraints in Intrinsically Disordered Regions",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-06T13:04:57.329937",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "4",
+          "criteria_scores": [
+            {
+              "category": "Scientific Merit and Innovation",
+              "subcriteria": [
+                {
+                  "criterion": "Relevance to Emergent Phenomena",
+                  "score": 5,
+                  "justification": "The proposal explicitly frames its central question—how conserved function arises from rapidly evolving, flexible sequences—as an emergent property at the mesoscale, directly aligning with the funding call's core focus."
+                },
+                {
+                  "criterion": "Novelty & Significance",
+                  "score": 5,
+                  "justification": "The project addresses a major unsolved problem in protein science with a groundbreaking approach that synthesizes diverse data types (evolutionary, functional, structural) to create a novel framework and public resource for understanding IDR function."
+                },
+                {
+                  "criterion": "Rigor of Approach",
+                  "score": 5,
+                  "justification": "The methodology is exceptionally rigorous, supported by strong preliminary data, a multi-pronged analytical strategy (sequence, simulation, machine learning), and a well-considered plan with alternative data sources."
+                }
+              ],
+              "category_average": 5.0
+            },
+            {
+              "category": "Feasibility",
+              "subcriteria": [
+                {
+                  "criterion": "Scope & Timeline",
+                  "score": 4,
+                  "justification": "The scope is ambitious, particularly the large-scale molecular dynamics simulations, but the phased 2-year timeline is logical and well-planned, making the goals realistic with the requested NCEMS support."
+                }
+              ],
+              "category_average": 4.0
+            },
+            {
+              "category": "Data Sources and Limitations",
+              "subcriteria": [
+                {
+                  "criterion": "Synthesis Focus",
+                  "score": 5,
+                  "justification": "This is an exemplary synthesis project that exclusively integrates multiple, distinct, publicly available datasets without generating any new experimental data, perfectly matching the call's requirements."
+                },
+                {
+                  "criterion": "Data Identification",
+                  "score": 5,
+                  "justification": "The proposal provides a comprehensive list of primary data sources and demonstrates excellent foresight by identifying numerous alternative sources to mitigate potential gaps or limitations."
+                }
+              ],
+              "category_average": 5.0
+            },
+            {
+              "category": "Open Science Compliance",
+              "subcriteria": [
+                {
+                  "criterion": "Open Science Commitment",
+                  "score": 5,
+                  "justification": "The commitment to open science is exemplary, with clear plans to produce a publicly accessible database and an open platform using NCEMS infrastructure, ensuring community access and reproducibility."
+                }
+              ],
+              "category_average": 5.0
+            }
+          ],
+          "overall_rating": {
+            "final_numeric_score": 4.8,
+            "narrative_summary": "This is an outstanding proposal that is exceptionally well-aligned with the funding call's mission. It addresses a significant and fundamental question regarding emergent function in intrinsically disordered regions through a highly innovative and rigorous data synthesis approach. The project's strengths include its clear focus on synthesis, strong preliminary data, a multidisciplinary team, and an exemplary commitment to open science principles by creating a valuable public resource.\n\nThe primary area for consideration is the ambitious scope, particularly the plan to conduct molecular dynamics simulations on approximately 1,500 sequences. While the timeline is well-structured and the resource request is justified, this large computational component represents the main feasibility risk. However, the overall quality of the proposal, its direct relevance to the funding mechanism, and its potential for transformative impact on the field strongly recommend it for funding."
+          }
+        }
+      }
+    },
+    {
+      "evaluation_id": "5_eval_human_criteria_20260106_130525",
+      "proposal_id": "5",
+      "proposal_title": "Integrative Multi-Omics Synthesis to Identify Shared Molecular Mechanisms of Mammalian Hibernation",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-06T13:05:25.514210",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "5",
+          "criteria_scores": [
+            {
+              "category": "Scientific Merit and Innovation",
+              "subcriteria": [
+                {
+                  "criterion": "Relevance to Emergent Phenomena",
+                  "score": 4,
+                  "justification": "The proposal addresses hibernation as a complex physiological state that emerges from the coordinated regulation of molecular and cellular networks, which is highly relevant to the call's focus."
+                },
+                {
+                  "criterion": "Novelty & Significance",
+                  "score": 5,
+                  "justification": "The project is groundbreaking in its plan to develop and apply novel phylogenetic comparative methods to synthesize disparate transcriptomic datasets, addressing a long-standing question in a transformative way."
+                },
+                {
+                  "criterion": "Rigor of Approach",
+                  "score": 5,
+                  "justification": "The methodology is exceptionally rigorous, combining established best practices for data processing with a well-defined plan to develop and validate a novel bivariate model tailored to the research question."
+                }
+              ],
+              "category_average": 4.7
+            },
+            {
+              "category": "Feasibility",
+              "subcriteria": [
+                {
+                  "criterion": "Scope & Timeline",
+                  "score": 3,
+                  "justification": "The scope is ambitious for a two-year timeline, particularly the development and validation of a novel computational model, which presents a significant risk of delays."
+                }
+              ],
+              "category_average": 3.0
+            },
+            {
+              "category": "Data Sources and Limitations",
+              "subcriteria": [
+                {
+                  "criterion": "Synthesis Focus",
+                  "score": 5,
+                  "justification": "This is an exemplary synthesis project that exclusively uses existing, publicly available data, perfectly aligning with the core mission of the funding call."
+                },
+                {
+                  "criterion": "Data Identification",
+                  "score": 5,
+                  "justification": "The proposal comprehensively identifies data sources and thoughtfully addresses key limitations, such as data sparsity across tissues, by designing its core methodology to overcome this specific challenge."
+                }
+              ],
+              "category_average": 5.0
+            },
+            {
+              "category": "Open Science Compliance",
+              "subcriteria": [
+                {
+                  "criterion": "Open Science Commitment",
+                  "score": 4,
+                  "justification": "The proposal demonstrates a strong commitment by planning to release open-source software and a curated dataset, although a more detailed data management and reproducibility plan could be included."
+                }
+              ],
+              "category_average": 4.0
+            }
+          ],
+          "overall_rating": {
+            "final_numeric_score": 4.2,
+            "narrative_summary": "This is an outstanding proposal with exceptional scientific merit and a perfect alignment with the funding call's focus on data synthesis. The central idea of developing a novel phylogenetic framework to identify conserved molecular mechanisms of hibernation is highly innovative and has transformative potential. The project is an exemplary synthesis effort, leveraging public data to address a fundamental question, and the rationale for a collaborative working group and NCEMS support is compelling and well-articulated.\n\nThe primary weakness lies in the ambitious timeline. Developing, validating, and applying a novel statistical model while also curating and processing numerous heterogeneous datasets within two years is a significant challenge. The proposal would be strengthened by acknowledging this risk more directly and perhaps outlining contingency plans or a more phased approach to the model development to ensure project milestones are met."
+          }
+        }
+      }
+    },
+    {
+      "evaluation_id": "6_eval_human_criteria_20260106_130550",
+      "proposal_id": "6",
+      "proposal_title": "Revealing the Ontology of Allostery through Community-Scale Synthesis",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-06T13:05:50.729081",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "6",
+          "criteria_scores": [
+            {
+              "category": "Scientific Merit and Innovation",
+              "subcriteria": [
+                {
+                  "criterion": "Relevance to Emergent Phenomena",
+                  "score": 5,
+                  "justification": "The proposal directly addresses allostery, a classic example of an emergent property where local perturbations cause long-range functional effects not predictable from individual components."
+                },
+                {
+                  "criterion": "Novelty & Significance",
+                  "score": 5,
+                  "justification": "The approach is groundbreaking; creating a comparative database of allosteric vs. non-allosteric proteins addresses a major, long-standing gap and has transformative potential for understanding and engineering protein regulation."
+                },
+                {
+                  "criterion": "Rigor of Approach",
+                  "score": 5,
+                  "justification": "The methodology is exceptionally rigorous, combining a clever strategy to define non-allostery (domain insertion) with a powerful, multi-pronged suite of established and cutting-edge computational analysis tools."
+                }
+              ],
+              "category_average": 5.0
+            },
+            {
+              "category": "Feasibility",
+              "subcriteria": [
+                {
+                  "criterion": "Scope & Timeline",
+                  "score": 4,
+                  "justification": "The scope is ambitious for a two-year project, but the timeline is well-structured and logical; success is achievable but will require efficient execution and strong support from NCEMS staff as planned."
+                }
+              ],
+              "category_average": 4.0
+            },
+            {
+              "category": "Data Sources and Limitations",
+              "subcriteria": [
+                {
+                  "criterion": "Synthesis Focus",
+                  "score": 5,
+                  "justification": "This is an exemplary synthesis project that exclusively uses existing public data, focusing entirely on the integration and analysis of disparate datasets to generate new knowledge."
+                },
+                {
+                  "criterion": "Data Identification",
+                  "score": 5,
+                  "justification": "The proposal comprehensively identifies multiple relevant data sources and provides a thorough, insightful analysis of the key limitation—the lack of negative controls—proposing a thoughtful workaround."
+                }
+              ],
+              "category_average": 5.0
+            },
+            {
+              "category": "Open Science Compliance",
+              "subcriteria": [
+                {
+                  "criterion": "Open Science Commitment",
+                  "score": 5,
+                  "justification": "The commitment is exemplary, with a clear plan to make the primary data product, the 'augmented allosterome database', publicly available through specified platforms, fully aligning with the call's principles."
+                }
+              ],
+              "category_average": 5.0
+            }
+          ],
+          "overall_rating": {
+            "final_numeric_score": 4.8,
+            "narrative_summary": "This is an outstanding proposal that is exceptionally well-aligned with the funding call's mission. Its primary strength lies in its highly innovative and significant goal: to create the first large-scale comparative dataset of allosteric versus non-allosteric proteins. This approach directly addresses a fundamental gap in molecular science and has the potential to transform our understanding of protein regulation. The project is a model for data synthesis, leverages a truly multidisciplinary team, presents a rigorous and multifaceted analytical plan, and demonstrates a clear commitment to open science by planning to release the curated database as a community resource.\n\nThe only minor concern is the ambitious scope of curating and analyzing approximately 50 protein families within a two-year timeframe. However, the detailed timeline, the clever proxy for defining non-allostery, and the well-justified request for NCEMS staff support suggest the project is well-planned and highly feasible. Overall, this proposal is of the highest caliber and represents an exciting opportunity to make a major advance in understanding a key emergent property in biology."
+          }
+        }
+      }
+    },
+    {
+      "evaluation_id": "7_eval_human_criteria_20260106_130613",
+      "proposal_id": "7",
+      "proposal_title": "SynEvo: Discovering Evolutionary Principles of Molecular Organization through Cross-Species Data Synthesis",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-06T13:06:13.220371",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "7",
+          "criteria_scores": [
+            {
+              "category": "Scientific Merit and Innovation",
+              "subcriteria": [
+                {
+                  "criterion": "Relevance to Emergent Phenomena",
+                  "score": 5,
+                  "justification": "The proposal directly targets the 'mesoscale'—how molecular components organize into adaptive networks—which is a core example of emergent phenomena in cellular biology."
+                },
+                {
+                  "criterion": "Novelty & Significance",
+                  "score": 5,
+                  "justification": "The integration of population genetics with mechanistically-constrained machine learning to uncover cross-species evolutionary principles is a groundbreaking approach with transformative potential for evolutionary systems biology."
+                },
+                {
+                  "criterion": "Rigor of Approach",
+                  "score": 5,
+                  "justification": "The methodology is exceptionally rigorous, combining interpretable machine learning with established mechanistic models (GEMs, MIREN) and includes a multi-faceted validation plan with clear quantitative success metrics."
+                }
+              ],
+              "category_average": 5.0
+            },
+            {
+              "category": "Feasibility",
+              "subcriteria": [
+                {
+                  "criterion": "Scope & Timeline",
+                  "score": 5,
+                  "justification": "The two-year timeline is well-structured with clear, logical milestones, and the inclusion of a detailed risk mitigation and contingency plan makes the ambitious goals highly feasible."
+                }
+              ],
+              "category_average": 5.0
+            },
+            {
+              "category": "Data Sources and Limitations",
+              "subcriteria": [
+                {
+                  "criterion": "Synthesis Focus",
+                  "score": 5,
+                  "justification": "This is an exemplary synthesis project that exclusively uses existing, publicly available data and proposes a comprehensive plan for their integration and harmonization."
+                },
+                {
+                  "criterion": "Data Identification",
+                  "score": 5,
+                  "justification": "The proposal provides a comprehensive list of specific data sources and thoughtfully acknowledges potential limitations, such as data sparsity, with a clear mitigation strategy."
+                }
+              ],
+              "category_average": 5.0
+            },
+            {
+              "category": "Open Science Compliance",
+              "subcriteria": [
+                {
+                  "criterion": "Open Science Commitment",
+                  "score": 5,
+                  "justification": "The commitment to open science is exemplary, with detailed plans to release all workflows, models, and the final 'SynEvo Atlas' as FAIR-compliant, version-controlled, and publicly accessible resources."
+                }
+              ],
+              "category_average": 5.0
+            }
+          ],
+          "overall_rating": {
+            "final_numeric_score": 5.0,
+            "narrative_summary": "This is an outstanding proposal that perfectly aligns with the funding call's mission to support community-scale data synthesis addressing emergent phenomena. Its key strength lies in the highly innovative and rigorous approach of integrating population genetics with mechanistically-constrained machine learning to uncover fundamental evolutionary principles of molecular organization. The project is exceptionally well-planned, with a clear focus on synthesis, a realistic timeline with contingencies, a strong interdisciplinary team, and an exemplary commitment to producing open, reusable scientific products.\n\nThere are no significant weaknesses in this proposal. It is a model for the type of transformative, synthesis-driven research the NCEMS program aims to catalyze. The project is poised to make a significant conceptual and computational contribution to evolutionary systems biology, with broad impacts on human health and vector biology."
+          }
+        }
+      }
+    },
+    {
+      "evaluation_id": "8_eval_human_criteria_20260106_130639",
+      "proposal_id": "8",
+      "proposal_title": "A Unified Framework for Analyses of Proteome Turnover Dynamics",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-06T13:06:39.432747",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "8",
+          "criteria_scores": [
+            {
+              "category": "Scientific Merit and Innovation",
+              "subcriteria": [
+                {
+                  "criterion": "Relevance to Emergent Phenomena",
+                  "score": 5,
+                  "justification": "The proposal directly addresses proteome homeostasis, a key emergent property arising from the collective dynamics of protein synthesis and degradation, which is central to the funding call's focus."
+                },
+                {
+                  "criterion": "Novelty & Significance",
+                  "score": 5,
+                  "justification": "The project is groundbreaking in its aim to create the first harmonized, cross-kingdom database of protein turnover, addressing a major bottleneck in the field and enabling novel evolutionary and mechanistic questions to be answered."
+                },
+                {
+                  "criterion": "Rigor of Approach",
+                  "score": 5,
+                  "justification": "The methodology is exceptionally rigorous, detailing a clear plan for data harmonization, consistent re-analysis using established models, and a sophisticated, multi-layered approach to identify predictors of protein stability."
+                }
+              ],
+              "category_average": 5.0
+            },
+            {
+              "category": "Feasibility",
+              "subcriteria": [
+                {
+                  "criterion": "Scope & Timeline",
+                  "score": 4,
+                  "justification": "The scope is ambitious but realistic due to the focus on four well-studied species and a detailed, logical two-year timeline with clear milestones; the pragmatic decision to create a static database enhances feasibility."
+                }
+              ],
+              "category_average": 4.0
+            },
+            {
+              "category": "Data Sources and Limitations",
+              "subcriteria": [
+                {
+                  "criterion": "Synthesis Focus",
+                  "score": 5,
+                  "justification": "This is an exemplary synthesis project that exclusively uses existing publicly available data, with its core mission being the integration and harmonization of fragmented datasets."
+                },
+                {
+                  "criterion": "Data Identification",
+                  "score": 5,
+                  "justification": "The proposal comprehensively identifies data sources and repositories, and its entire premise is built upon a thorough and insightful analysis of the limitations of current, unharmonized data."
+                }
+              ],
+              "category_average": 5.0
+            },
+            {
+              "category": "Open Science Compliance",
+              "subcriteria": [
+                {
+                  "criterion": "Open Science Commitment",
+                  "score": 5,
+                  "justification": "The proposal demonstrates an exemplary commitment to open science, with concrete plans to release all data, code, and analysis pipelines via public platforms and a goal of establishing community-wide standards."
+                }
+              ],
+              "category_average": 5.0
+            }
+          ],
+          "overall_rating": {
+            "final_numeric_score": 4.8,
+            "narrative_summary": "This is an outstanding proposal that perfectly aligns with the funding call's mission to support multidisciplinary data synthesis projects. Its key strengths are the significant scientific question it addresses, the novelty of its cross-kingdom comparative approach, the exceptional rigor of its methodology, and its exemplary commitment to open science. By harmonizing fragmented public datasets on protein turnover, the project promises to create a transformative community resource and uncover fundamental principles of proteome homeostasis, a core emergent phenomenon in cell biology.\n\nThe project is ambitious, which presents the only minor concern regarding feasibility. The success will depend on the quality and accessibility of raw data in public repositories, which can be variable. However, the scope is well-defined, the timeline is detailed and logical, and the team's expertise is well-suited to the challenge. Overall, this proposal is exceptionally strong and has a high potential for significant impact on the field."
+          }
+        }
+      }
+    },
+    {
+      "evaluation_id": "9_eval_human_criteria_20260106_130704",
+      "proposal_id": "9",
+      "proposal_title": "Predictive Synthesis Framework for Elucidating Biophysical Cell State from Spatial Transcriptomics and Proteomics",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-06T13:07:04.258989",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "9",
+          "criteria_scores": [
+            {
+              "category": "Scientific Merit and Innovation",
+              "subcriteria": [
+                {
+                  "criterion": "Relevance to Emergent Phenomena",
+                  "score": 5,
+                  "justification": "The proposal directly addresses how subcellular molecular organization gives rise to higher-level emergent properties like cell state and fate, which is a central theme of the funding call."
+                },
+                {
+                  "criterion": "Novelty & Significance",
+                  "score": 5,
+                  "justification": "The concept of a learned 'biophysical fingerprint' integrating spatial RNA and protein data is groundbreaking and has the potential to transform the definition and prediction of cell states."
+                },
+                {
+                  "criterion": "Rigor of Approach",
+                  "score": 5,
+                  "justification": "The methodology is exceptionally clear, building logically from framework development to hypothesis testing with detailed evaluation plans, quantitative metrics, and appropriate controls."
+                }
+              ],
+              "category_average": 5.0
+            },
+            {
+              "category": "Feasibility",
+              "subcriteria": [
+                {
+                  "criterion": "Scope & Timeline",
+                  "score": 4,
+                  "justification": "The scope is ambitious for a 24-month timeline, but the detailed milestones and reliance on NCEMS staff for key tasks make it realistic and well-planned."
+                }
+              ],
+              "category_average": 4.0
+            },
+            {
+              "category": "Data Sources and Limitations",
+              "subcriteria": [
+                {
+                  "criterion": "Synthesis Focus",
+                  "score": 5,
+                  "justification": "This is an exemplary synthesis project that exclusively uses existing, publicly available data and focuses entirely on integration and analysis, with no new data generation."
+                },
+                {
+                  "criterion": "Data Identification",
+                  "score": 4,
+                  "justification": "The primary validation dataset (Spatch) is clearly identified, and the proposal thoughtfully addresses the technical limitations of cross-modal data integration which it aims to solve."
+                }
+              ],
+              "category_average": 4.5
+            },
+            {
+              "category": "Open Science Compliance",
+              "subcriteria": [
+                {
+                  "criterion": "Open Science Commitment",
+                  "score": 5,
+                  "justification": "The proposal demonstrates an exemplary commitment by promising to release all code, models, and harmonized data under permissive licenses using containerized, reproducible workflows."
+                }
+              ],
+              "category_average": 5.0
+            }
+          ],
+          "overall_rating": {
+            "final_numeric_score": 4.6,
+            "narrative_summary": "This is an outstanding proposal that is exceptionally well-aligned with the funding call's mission to support community-scale data synthesis. Its key strengths are its transformative scientific vision to create a 'biophysical fingerprint' of cell state, the rigorous and well-defined computational methodology, an exemplary commitment to open science, and a clear, compelling justification for the working group structure and need for NCEMS resources. The project directly tackles the emergence of cell state and fate from subcellular molecular organization, representing a significant advance over current abundance-centric approaches.\n\nThe primary area for improvement is minor and relates to feasibility. The 24-month timeline is ambitious given the scope of developing, validating, and applying a novel AI framework across multiple large datasets. While the plan is well-structured with clear milestones, the success will heavily depend on the efficient execution of data harmonization and model development. Overall, this is a high-impact, innovative, and well-conceived project with a very high likelihood of success and significant impact on the field."
+          }
+        }
+      }
+    },
+    {
+      "evaluation_id": "10_eval_human_criteria_20260106_130729",
+      "proposal_id": "10",
+      "proposal_title": "Integrating AI and Molecular Dynamics Simulations for Quantitative Prediction of Enzyme Functions",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-06T13:07:29.904271",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "10",
+          "criteria_scores": [
+            {
+              "category": "Scientific Merit and Innovation",
+              "subcriteria": [
+                {
+                  "criterion": "Relevance to Emergent Phenomena",
+                  "score": 4,
+                  "justification": "The proposal addresses how enzyme function emerges from the collective, dynamic motions of atoms over time, which is highly relevant to the call's focus on emergent phenomena in molecular biosciences."
+                },
+                {
+                  "criterion": "Novelty & Significance",
+                  "score": 5,
+                  "justification": "The integration of multi-scale molecular dynamics with advanced AI models is a cutting-edge approach with the potential to transform protein function prediction beyond the current static structure paradigm."
+                },
+                {
+                  "criterion": "Rigor of Approach",
+                  "score": 5,
+                  "justification": "The methodology is exceptionally well-defined, building on strong preliminary data and incorporating a sophisticated, multi-modal AI framework with clear plans for benchmarking and validation."
+                }
+              ],
+              "category_average": 4.7
+            },
+            {
+              "category": "Feasibility",
+              "subcriteria": [
+                {
+                  "criterion": "Scope & Timeline",
+                  "score": 4,
+                  "justification": "The scope is ambitious but the 24-month timeline is well-structured and realistic, given the requested computational and personnel resources."
+                }
+              ],
+              "category_average": 4.0
+            },
+            {
+              "category": "Data Sources and Limitations",
+              "subcriteria": [
+                {
+                  "criterion": "Synthesis Focus",
+                  "score": 2,
+                  "justification": "The proposal is fundamentally misaligned with the call's 'synthesis-only' requirement, as its core activity is the large-scale generation of new simulation data, not the synthesis of existing data."
+                },
+                {
+                  "criterion": "Data Identification",
+                  "score": 4,
+                  "justification": "The proposal clearly identifies public databases for annotations and existing simulations, and it thoughtfully discusses the key limitation of MD sampling with proposed mitigation strategies."
+                }
+              ],
+              "category_average": 3.0
+            },
+            {
+              "category": "Open Science Compliance",
+              "subcriteria": [
+                {
+                  "criterion": "Open Science Commitment",
+                  "score": 4,
+                  "justification": "The proposal demonstrates a strong commitment to open science through concrete plans to deposit all curated data, trajectories, and analysis workflows in public repositories like MDRepo and Zenodo."
+                }
+              ],
+              "category_average": 4.0
+            }
+          ],
+          "overall_rating": {
+            "final_numeric_score": 3.9,
+            "narrative_summary": "This proposal presents a scientifically exceptional and highly innovative project to advance enzyme function prediction by integrating molecular dynamics with state-of-the-art AI. The methodology is rigorous, the team is well-qualified, and the potential for significant impact is high. The preliminary data is compelling and strongly supports the proposed approach.\n\nThe primary and critical weakness is its fundamental misalignment with the funding call's core mandate to support projects that *only* synthesize existing, publicly available data. The proposal's central aim and largest resource request are for the generation of a massive new dataset of molecular dynamics simulations, which explicitly contradicts the call's stipulation against generating new data. While scientifically meritorious, this focus on data generation rather than synthesis makes the project a poor fit for this specific funding opportunity. The proposal would need to be substantially re-scoped to focus exclusively on integrating the wealth of existing simulation data to be considered responsive to the call."
+          }
+        }
+      }
+    },
+    {
+      "evaluation_id": "11_eval_human_criteria_20260106_130755",
+      "proposal_id": "11",
+      "proposal_title": "Discovery and functional analysis of bacterial organelles through mining and refinement of omics data",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-06T13:07:55.966353",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "11",
+          "criteria_scores": [
+            {
+              "category": "Scientific Merit and Innovation",
+              "subcriteria": [
+                {
+                  "criterion": "Relevance to Emergent Phenomena",
+                  "score": 5,
+                  "justification": "The proposal directly investigates how subcellular components (organelles) are regulated and interact to create functional systems within cells and across microbial communities, which is a clear example of mesoscale emergent phenomena."
+                },
+                {
+                  "criterion": "Novelty & Significance",
+                  "score": 4,
+                  "justification": "This work is highly novel in its systematic, multi-omics synthesis of diverse bacterial organelle types across a complex ecosystem, with significant potential to reveal new principles of bacterial cell biology and ecology."
+                },
+                {
+                  "criterion": "Rigor of Approach",
+                  "score": 4,
+                  "justification": "The methodology is well-defined, citing specific databases, established bioinformatics tools (HMMER, Phaseek, WGCNA), and a logical workflow, though the integration of multiple large-scale omics datasets remains a significant challenge."
+                }
+              ],
+              "category_average": 4.3
+            },
+            {
+              "category": "Feasibility",
+              "subcriteria": [
+                {
+                  "criterion": "Scope & Timeline",
+                  "score": 4,
+                  "justification": "The project is ambitious but well-scoped by focusing on the data-rich human gut microbiome, and the proposed two-year timeline with clear milestones is realistic and well-planned."
+                }
+              ],
+              "category_average": 4.0
+            },
+            {
+              "category": "Data Sources and Limitations",
+              "subcriteria": [
+                {
+                  "criterion": "Synthesis Focus",
+                  "score": 5,
+                  "justification": "This is an exemplary synthesis project that exclusively uses existing, publicly available data and focuses on the integration of distinct datasets to answer novel questions, perfectly aligning with the funding call."
+                },
+                {
+                  "criterion": "Data Identification",
+                  "score": 5,
+                  "justification": "The proposal provides excellent detail on the specific public databases and project accession numbers to be used, along with a thoughtful acknowledgement of potential methodological limitations like false positives."
+                }
+              ],
+              "category_average": 5.0
+            },
+            {
+              "category": "Open Science Compliance",
+              "subcriteria": [
+                {
+                  "criterion": "Open Science Commitment",
+                  "score": 4,
+                  "justification": "The proposal demonstrates a strong commitment by planning a publicly accessible database, publications, and open science training, though it could be strengthened with more detail on code and workflow sharing."
+                }
+              ],
+              "category_average": 4.0
+            }
+          ],
+          "overall_rating": {
+            "final_numeric_score": 4.3,
+            "narrative_summary": "This is an outstanding proposal that is exceptionally well-aligned with the funding call's mission. Its key strengths are its exemplary focus on data synthesis, the novelty of its approach to understanding bacterial organelles at a community level, and the clear articulation of a rigorous, multi-omics methodology. The project directly addresses emergent phenomena by exploring the regulation and interaction of subcellular compartments in a complex ecosystem. The rationale for a collaborative working group and the need for NCEMS support are both compelling and well-justified.\n\nWhile the proposal is very strong, a minor area for improvement would be to provide more explicit details on the open science plan, such as specifying repositories for code and analysis workflows. Additionally, while the timeline is logical, the inherent complexity of harmonizing and integrating metagenomic, metatranscriptomic, and metaproteomic data could be acknowledged as a primary risk, though the request for NCEMS support wisely mitigates this concern. Overall, this project has high potential for significant impact and represents an excellent investment for the funding organization."
+          }
+        }
+      }
+    }
+  ]
+}
