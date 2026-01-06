@@ -1,0 +1,796 @@
+{
+  "metadata": {
+    "evaluation_type": "single_both",
+    "evaluation_templates": [
+      "eval_human_criteria"
+    ],
+    "proposal_role": null,
+    "proposal_ai_model": null,
+    "total_evaluations": 12,
+    "generation_timestamp": "2026-01-05T16:06:12.004237"
+  },
+  "evaluations": [
+    {
+      "evaluation_id": "1_eval_human_criteria_20260105_160129",
+      "proposal_id": "1",
+      "proposal_title": "N/A",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-05T16:01:29.663553",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "1",
+          "overall_score": 3.5,
+          "overall_assessment": "The proposal addresses a compelling and impactful scientific question with a strong, innovative data synthesis plan. However, it is significantly weakened by its failure to meet key programmatic requirements of the funding call, particularly regarding the formation of a diverse collaborative working group and the inclusion of a training plan.",
+          "criteria": [
+            {
+              "criterion": "Scientific Merit",
+              "score": 5,
+              "justification": "The proposal tackles a fundamental question in plant cell biology—the mechanism of cytokinetic robustness under heat stress—which is highly significant in the context of climate change and food security. The comparative approach between susceptible and resilient species is well-conceived to uncover novel molecular mechanisms."
+            },
+            {
+              "criterion": "Alignment with Call",
+              "score": 3,
+              "justification": "The project aligns well with the call's focus on using public data to answer fundamental questions in molecular/cellular biology. However, it falls short on key programmatic requirements, such as detailing a multi-lab collaborative team and providing a plan for training, which are defining characteristics of a Working Group."
+            },
+            {
+              "criterion": "Methodology",
+              "score": 4,
+              "justification": "The proposed methodology is sound, employing a logical pipeline for data reprocessing, comparative omics, and multi-layered network integration. The plan to standardize analysis across diverse public datasets is a major strength that directly addresses a common challenge in synthesis research."
+            },
+            {
+              "criterion": "Innovation",
+              "score": 4,
+              "justification": "The application of a multi-omics, network-based approach to dissect the heat stress response of a specific cellular process like cytokinesis is innovative. This approach moves beyond simple differential expression analysis to predict functional bottlenecks and generate a systems-level understanding."
+            },
+            {
+              "criterion": "Feasibility",
+              "score": 4,
+              "justification": "The project is well-scoped for a two-year timeline, with clear aims and a realistic plan for data acquisition and analysis. The team correctly identifies potential issues with data heterogeneity and proposes a viable solution, demonstrating a high likelihood of successful completion."
+            },
+            {
+              "criterion": "Data Synthesis Approach",
+              "score": 5,
+              "justification": "The proposal outlines an excellent data synthesis strategy, focusing on the integration of multiple data types (transcriptomics, proteomics) across different species and conditions. The plan to construct and analyze multi-layered networks represents a sophisticated and powerful approach to synthesis."
+            },
+            {
+              "criterion": "Collaborative Approach",
+              "score": 2,
+              "justification": "The proposal fails to describe a true multi-lab working group as required by the call. It reads more like a single research group seeking bioinformatics support from the funding center, rather than a collaborative partnership of diverse researchers from different institutions and career stages."
+            },
+            {
+              "criterion": "Open Science Commitment",
+              "score": 2,
+              "justification": "While the proposal mentions publishing findings, it lacks an explicit commitment to making the reprocessed data, analysis workflows, and code publicly available. This is a significant omission given the call's strong emphasis on adherence to open and reproducible science principles."
+            },
+            {
+              "criterion": "Training Opportunities",
+              "score": 1,
+              "justification": "The proposal completely fails to address the call's requirement to provide training opportunities for graduate students and postdocs. There is no mention of trainees, their roles in the project, or how the working group would contribute to training the next generation of data-savvy scientists."
+            },
+            {
+              "criterion": "Impact",
+              "score": 5,
+              "justification": "The potential impact of this research is excellent, with direct relevance to improving crop resilience and understanding ecosystem responses to climate change. The project is poised to generate novel, testable hypotheses and could lead to the development of new markers for plant heat tolerance."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "evaluation_id": "2_eval_human_criteria_20260105_160153",
+      "proposal_id": "2",
+      "proposal_title": "N/A",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-05T16:01:53.780891",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "2",
+          "overall_score": 4.0,
+          "overall_assessment": "This is a highly innovative and scientifically meritorious proposal that directly addresses a fundamental question in molecular biology using a state-of-the-art data synthesis approach. Its alignment with the call's core scientific goals is excellent, but it has significant weaknesses in addressing programmatic requirements, particularly the lack of a detailed training plan and a vague description of the collaborative team.",
+          "criteria": [
+            {
+              "criterion": "Scientific Merit",
+              "score": 5,
+              "justification": "The proposal addresses a fundamental, long-standing question regarding the relationship between 3D genome architecture and gene expression at the single-cell level. Applying this framework to Alzheimer's disease provides significant translational relevance and addresses a compelling scientific puzzle."
+            },
+            {
+              "criterion": "Alignment with Call",
+              "score": 5,
+              "justification": "The project is exceptionally well-aligned with the call's core mission. It proposes to synthesize publicly available data to answer a fundamental question in cellular biology, requires a multidisciplinary team, and focuses on developing innovative analytical strategies without generating new experimental data."
+            },
+            {
+              "criterion": "Methodology",
+              "score": 4,
+              "justification": "The proposed use of transformer architectures and a contrastive learning framework for multimodal data integration is sophisticated and state-of-the-art. The strategy to overcome the lack of co-assay data is clever, though the assumption of model transferability from non-brain to brain cells introduces a notable but acknowledged risk."
+            },
+            {
+              "criterion": "Innovation",
+              "score": 5,
+              "justification": "The proposal is highly innovative, aiming to create a novel multimodal AI framework that integrates three distinct single-cell modalities. Applying concepts from text-image AI (like CLIP) to genomics represents a creative and potentially transformative approach to data synthesis in this field."
+            },
+            {
+              "criterion": "Feasibility",
+              "score": 3,
+              "justification": "The project's success hinges on overcoming the significant challenge of limited multimodal single-cell co-assay data for human brain tissue. The proposed workarounds are plausible but unproven, making this ambitious project high-risk, high-reward."
+            },
+            {
+              "criterion": "Data Synthesis Approach",
+              "score": 5,
+              "justification": "The data synthesis strategy is a core strength, explicitly designed to integrate disparate public datasets (scRNA-seq, scATAC-seq, scHi-C). The use of contrastive learning to align embeddings from non-co-assayed data is a sophisticated and powerful synthesis method perfectly aligned with the call."
+            },
+            {
+              "criterion": "Collaborative Approach",
+              "score": 3,
+              "justification": "The proposal correctly identifies the need for an interdisciplinary team but fails to provide any details about the proposed working group members, their expertise, or a management plan. The rationale is generic and lacks the specific details needed to assess the strength of the proposed partnership."
+            },
+            {
+              "criterion": "Open Science Commitment",
+              "score": 3,
+              "justification": "The proposal implies an open science approach by planning to release computational tools and publish findings. However, it lacks an explicit commitment or plan for making all data, code, and analysis workflows publicly available in accordance with FAIR principles, as requested by the call."
+            },
+            {
+              "criterion": "Training Opportunities",
+              "score": 2,
+              "justification": "This is a major weakness of the proposal. The funding call explicitly requires a plan to train the next generation of scientists, but the proposal completely omits any mention of training opportunities for graduate students or postdocs."
+            },
+            {
+              "criterion": "Impact",
+              "score": 5,
+              "justification": "The potential impact is exceptionally high. Successful completion would yield powerful new computational tools for the genomics community, provide fundamental insights into gene regulation, and could identify novel epigenetic drivers of Alzheimer's disease."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "evaluation_id": "3_eval_human_criteria_20260105_160221",
+      "proposal_id": "3",
+      "proposal_title": "N/A",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-05T16:02:21.090577",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "3",
+          "overall_score": 3.4,
+          "overall_assessment": "This proposal outlines a highly innovative and impactful project to develop a novel tool integrating LLMs with bioinformatics workflows. The collaborative team is outstanding, but the proposal's focus on tool development over addressing a specific scientific question and its complete omission of a required training plan represent significant weaknesses in its alignment with the funding call.",
+          "criteria": [
+            {
+              "criterion": "Scientific Merit",
+              "score": 2,
+              "justification": "The proposal focuses on methodological development rather than addressing a compelling, fundamental scientific question or solving a long-standing puzzle in molecular biology. While developing innovative strategies is a goal of the call, the lack of a specific scientific driver is a significant weakness."
+            },
+            {
+              "criterion": "Alignment with Call",
+              "score": 3,
+              "justification": "The proposal aligns well with the call's emphasis on collaboration, public data use, and developing new analytical strategies. However, it deviates by not proposing to answer a specific scientific question through data synthesis and completely fails to address the mandatory training component."
+            },
+            {
+              "criterion": "Methodology",
+              "score": 3,
+              "justification": "The proposed plan to evaluate LLMs, develop APIs, and build a graphical interface is logical. However, the scope is very ambitious for a two-year project, particularly the suggestion of building a new LLM, and key details about the 'lightweight analyses' are underdeveloped."
+            },
+            {
+              "criterion": "Innovation",
+              "score": 5,
+              "justification": "The core concept of creating an integrated system that combines the natural language capabilities of LLMs with direct access and analysis of public bioinformatics datasets is highly innovative. This approach has the potential to create a new paradigm for how researchers interact with complex biological data."
+            },
+            {
+              "criterion": "Feasibility",
+              "score": 3,
+              "justification": "The project benefits from a strong, expert team, but the timeline is aggressive for the proposed scope. Integrating multiple disparate APIs and developing, fine-tuning, and hosting a large-scale LLM within two years presents a significant feasibility risk."
+            },
+            {
+              "criterion": "Data Synthesis Approach",
+              "score": 3,
+              "justification": "The proposal describes a powerful technical strategy for enabling data synthesis by creating a unified interface to diverse public datasets. However, it does not propose to conduct a synthesis project to generate new biological insights itself, which is the primary focus of the call."
+            },
+            {
+              "criterion": "Collaborative Approach",
+              "score": 5,
+              "justification": "The team is exceptionally strong and multidisciplinary, perfectly embodying the collaborative spirit of the funding call. The combination of expertise in software development, ancient DNA analysis, and large-scale omics integration is ideal for this project."
+            },
+            {
+              "criterion": "Open Science Commitment",
+              "score": 4,
+              "justification": "The proposal commits to releasing the final system to the public, which aligns with open science principles. The commitment could be strengthened by providing specific details on software licensing, code repository hosting, and plans for sharing the fine-tuned models."
+            },
+            {
+              "criterion": "Training Opportunities",
+              "score": 1,
+              "justification": "The proposal completely fails to address the call's explicit requirement to provide training opportunities for graduate students and postdocs. The lack of any mention of trainees or a training plan is a major deficiency."
+            },
+            {
+              "criterion": "Impact",
+              "score": 5,
+              "justification": "If successful, the proposed tool could have a transformative impact on the microbiome and ancient DNA fields by democratizing access to complex data and analyses. It would serve as a valuable community resource and a model for AI-bioinformatics integration in other domains."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "evaluation_id": "4_eval_human_criteria_20260105_160245",
+      "proposal_id": "4",
+      "proposal_title": "N/A",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-05T16:02:45.516329",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "4",
+          "overall_score": 4.3,
+          "overall_assessment": "This is an outstanding proposal with high scientific merit and excellent alignment with the funding call's goals for data synthesis and open science. The project is innovative and impactful, but it is critically weakened by a lack of detail regarding the collaborative team and a specific training plan.",
+          "criteria": [
+            {
+              "criterion": "Scientific Merit",
+              "score": 5,
+              "justification": "The proposal addresses a fundamental and compelling question about the organization of bacterial cell states, a significant gap in our understanding of microbial physiology and evolution. Creating a comprehensive atlas of these states would be a landmark achievement in the field."
+            },
+            {
+              "criterion": "Alignment with Call",
+              "score": 5,
+              "justification": "The project is perfectly aligned with the call's focus on synthesizing publicly available data to answer fundamental questions. It is a community-scale project, requires diverse expertise, leverages existing data without generating new experimental data, and clearly articulates the need for NCEMS support."
+            },
+            {
+              "criterion": "Methodology",
+              "score": 4,
+              "justification": "The phased approach, from developing a harmonization pipeline (inGEST) to applying established dimensional reduction techniques, is logical and appropriate. The plan acknowledges key challenges like technological variation and cross-species comparison, proposing sound solutions, though the difficulty of harmonizing such diverse data may be underestimated."
+            },
+            {
+              "criterion": "Innovation",
+              "score": 5,
+              "justification": "The proposal is highly innovative in its goal to create the first comprehensive atlas of bacterial cell states by repurposing thousands of bulk expression datasets. Applying analytical frameworks from single-cell biology to this problem is a novel and powerful approach that could yield transformative insights."
+            },
+            {
+              "criterion": "Feasibility",
+              "score": 4,
+              "justification": "The project is ambitious but feasible due to its well-structured, phased timeline. The primary risk lies in the complexity of harmonizing heterogeneous datasets, but the proposal directly addresses this by planning to build a dedicated tool. The computational resources described seem appropriate for the initial stages."
+            },
+            {
+              "criterion": "Data Synthesis Approach",
+              "score": 5,
+              "justification": "The data synthesis strategy is a core strength. The plan to develop a robust, open-source pipeline to systematically collect, harmonize, and quality-control tens of thousands of datasets from disparate sources before analysis is exemplary and essential for the project's success."
+            },
+            {
+              "criterion": "Collaborative Approach",
+              "score": 2,
+              "justification": "This is a major weakness of the proposal. While the project necessitates collaboration, the proposal fails to describe the composition of the working group, their respective expertise, or a management plan. It does not meet the call's requirement to assemble a team reflecting diverse expertise, career stages, and institutions."
+            },
+            {
+              "criterion": "Open Science Commitment",
+              "score": 5,
+              "justification": "The commitment to open science is outstanding. The proposal explicitly plans to deliver three major open-source products (pipeline, atlas, classifier) with full documentation, tutorials, and containerized deployment, ensuring maximum community access, reusability, and long-term impact."
+            },
+            {
+              "criterion": "Training Opportunities",
+              "score": 3,
+              "justification": "The proposal mentions that trainees will be involved in the research, which aligns with the call's goals. However, it lacks a specific, structured training plan detailing activities, mentorship, or skill development, making the commitment appear generic rather than integral to the project design."
+            },
+            {
+              "criterion": "Impact",
+              "score": 5,
+              "justification": "The potential impact is exceptionally high. The project will produce foundational resources that could reshape the study of bacterial physiology, ecology, and evolution, while the open-source tools will empower the broader research community to conduct novel data-driven discovery."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "evaluation_id": "5_eval_human_criteria_20260105_160308",
+      "proposal_id": "5",
+      "proposal_title": "N/A",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-05T16:03:08.949698",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "5",
+          "overall_score": 4.4,
+          "overall_assessment": "This is an outstanding proposal that directly addresses a fundamental question in molecular biosciences by synthesizing public data. Its key strengths are the innovative, multidisciplinary approach and the high potential for impact. While the proposal would be strengthened by more explicit plans for open science and trainee development, it is highly recommended for funding due to its exceptional scientific merit and alignment with the call's core mission.",
+          "criteria": [
+            {
+              "criterion": "Scientific Merit",
+              "score": 5,
+              "justification": "The proposal addresses a compelling and fundamental question: how do the biophysical properties of individual proteins give rise to the emergent architecture and evolution of cellular networks? The hypotheses are clear, significant, and testable, representing a major intellectual challenge in systems and molecular biology."
+            },
+            {
+              "criterion": "Alignment with Call",
+              "score": 5,
+              "justification": "The proposal is perfectly aligned with the funding call. It proposes a community-scale, multidisciplinary project to synthesize diverse public datasets to address an emergent phenomenon in cellular biosciences, without generating new experimental data."
+            },
+            {
+              "criterion": "Methodology",
+              "score": 4,
+              "justification": "The proposed methods for network construction, biophysical annotation, and evolutionary modeling are appropriate and build upon the team's expertise. The plan is comprehensive, though the use of 'contextual AI models' is slightly vague and the evolutionary simulations are highly ambitious, introducing some risk."
+            },
+            {
+              "criterion": "Innovation",
+              "score": 5,
+              "justification": "The project is highly innovative in its attempt to create a unified, biophysical framework for understanding protein interaction network topology. Linking protein stability and disorder directly to network evolution through integrative analysis and simulation represents a novel and transformative approach."
+            },
+            {
+              "criterion": "Feasibility",
+              "score": 4,
+              "justification": "The project is ambitious but feasible given the combined expertise of the working group. The first two goals are clearly achievable, while the third goal involving large-scale evolutionary simulations presents a significant computational challenge but is grounded in the team's prior work."
+            },
+            {
+              "criterion": "Data Synthesis Approach",
+              "score": 5,
+              "justification": "The data synthesis strategy is a core strength of the proposal. It explicitly plans to integrate disparate public data types—including interactomes, protein stability predictions, disorder predictions, and experimental proteostasis data—to generate novel insights that would be impossible from any single source."
+            },
+            {
+              "criterion": "Collaborative Approach",
+              "score": 5,
+              "justification": "The working group is exceptionally well-conceived, bringing together complementary expertise in network biology, protein biophysics, and evolutionary modeling. This transdisciplinary collaboration is essential for the project's success and is clearly beyond the capability of any single lab."
+            },
+            {
+              "criterion": "Open Science Commitment",
+              "score": 3,
+              "justification": "The proposal fails to explicitly state its commitment to open science principles, such as public release of code, workflows, and derived data. While adherence is a requirement of the call, the lack of a specific plan in the proposal is a notable weakness."
+            },
+            {
+              "criterion": "Training Opportunities",
+              "score": 3,
+              "justification": "The proposal mentions the involvement of trainees and personnel exchange but lacks a detailed training plan. It does not specify the activities, skills, or structured mentorship opportunities that will be provided to graduate students and postdocs, which is a missed opportunity."
+            },
+            {
+              "criterion": "Impact",
+              "score": 5,
+              "justification": "The potential impact is extremely high. A successful project would establish a new, biophysically-grounded understanding of the principles governing cellular network organization and evolution, with broad implications for systems biology, evolutionary biology, and synthetic biology."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "evaluation_id": "6_eval_human_criteria_20260105_160335",
+      "proposal_id": "6",
+      "proposal_title": "N/A",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-05T16:03:35.901279",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "6",
+          "overall_score": 4.4,
+          "overall_assessment": "This is an outstanding proposal that perfectly aligns with the funding call's mission to synthesize public data to address emergent phenomena. Its innovative, multidisciplinary approach to integrating disparate datasets to map mRNP networks has the potential for high impact, providing valuable tools and biological insights. The proposal is scientifically meritorious, ambitious, and well-conceived, making it highly recommended for funding.",
+          "criteria": [
+            {
+              "criterion": "Scientific Merit",
+              "score": 5,
+              "justification": "The proposal addresses a fundamental and compelling question regarding the emergent properties of mRNA-protein complexes (mRNPs). By aiming to create a comprehensive map of mRNP interaction networks, it tackles long-standing puzzles in molecular biology, such as the functional consequences of synonymous mutations and the cell-type specific effects of widely expressed RNAs."
+            },
+            {
+              "criterion": "Alignment with Call",
+              "score": 5,
+              "justification": "The proposal is exceptionally well-aligned with the funding call. It focuses on emergence in cellular biosciences, exclusively uses publicly available data for synthesis, requires a multidisciplinary team beyond a single lab's capacity, and aims to develop innovative analytical strategies while training a data-savvy workforce."
+            },
+            {
+              "criterion": "Methodology",
+              "score": 4,
+              "justification": "The proposed methodology is sophisticated and appropriate, combining data integration, state-of-the-art protein interaction prediction (AlphaFold), molecular simulations, and machine learning. The plan to validate the approach using the well-characterized β-actin mRNP is a significant strength, though the concept of 'linked features' for data integration could be more detailed."
+            },
+            {
+              "criterion": "Innovation",
+              "score": 5,
+              "justification": "The project is highly innovative in its aim to develop a unified computational framework for integrating diverse types of RNA-protein interaction data. Applying this framework to predict higher-order structures and functional outcomes represents a novel, systems-level approach that could transform our understanding of post-transcriptional gene regulation."
+            },
+            {
+              "criterion": "Feasibility",
+              "score": 4,
+              "justification": "The project is ambitious, and the two-year timeline is tight for developing multiple novel tools and databases. However, the phased approach with intermediate deliverables, reliance on existing computational tools, and the request for dedicated NCEMS staff scientist support significantly enhance the likelihood of success."
+            },
+            {
+              "criterion": "Data Synthesis Approach",
+              "score": 4,
+              "justification": "The data synthesis strategy is a core strength, proposing to integrate disparate experimental datasets with computationally predicted interactions and biophysical simulations. This multi-layered approach is powerful, though the success hinges on the development of the novel integration method, which is described conceptually but lacks implementation details."
+            },
+            {
+              "criterion": "Collaborative Approach",
+              "score": 4,
+              "justification": "The proposal makes a strong case for a working group approach, clearly articulating the need for diverse expertise in machine learning, biophysics, bioinformatics, and RNA biology that no single lab possesses. The request for NCEMS support for team science demonstrates a thoughtful approach to managing the collaboration."
+            },
+            {
+              "criterion": "Open Science Commitment",
+              "score": 5,
+              "justification": "The commitment to open science is exemplary. The proposal explicitly states that all developed tools will be open-source and that the generated mRNP maps and databases will be made publicly available, directly aligning with the core principles of the funding call."
+            },
+            {
+              "criterion": "Training Opportunities",
+              "score": 3,
+              "justification": "The proposal includes a training component by engaging undergraduate teams with mentorship from staff scientists. While positive, this aspect is less developed than others and does not explicitly mention opportunities for graduate students or postdocs, who are key targets mentioned in the funding call."
+            },
+            {
+              "criterion": "Impact",
+              "score": 5,
+              "justification": "The potential impact of this work is exceptionally high. The resulting open-source tools and comprehensive mRNP databases would be an invaluable resource for the broader research community, while the biological insights could fundamentally advance our understanding of gene regulation and cellular organization."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "evaluation_id": "7_eval_human_criteria_20260105_160401",
+      "proposal_id": "7",
+      "proposal_title": "N/A",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-05T16:04:01.910843",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "7",
+          "overall_score": 4.5,
+          "overall_assessment": "This is an outstanding proposal that directly addresses a fundamental question in molecular biology through an innovative, large-scale data synthesis approach. It is exceptionally well-aligned with the funding call's goals, demonstrating a clear need for a multidisciplinary working group and NCEMS resources. Despite a minor weakness in the explicit training plan, its high scientific merit, innovation, and potential impact make it highly recommended for funding.",
+          "criteria": [
+            {
+              "criterion": "Scientific Merit",
+              "score": 5,
+              "justification": "The proposal addresses a compelling and fundamental question regarding the role of intrinsically disordered regions in environmental adaptation. Using the vast marine metagenomic dataset as a natural laboratory to uncover emergent biophysical properties is a powerful and significant scientific endeavor."
+            },
+            {
+              "criterion": "Alignment with Call",
+              "score": 5,
+              "justification": "The proposal is perfectly aligned with the call. It focuses exclusively on synthesizing public data, requires a multidisciplinary team for a community-scale project, addresses a fundamental question of emergence, and clearly justifies the need for NCEMS support."
+            },
+            {
+              "criterion": "Methodology",
+              "score": 4,
+              "justification": "The methodology is robust, appropriately integrating large-scale bioinformatics, coarse-grained simulations, and advanced machine learning. The plan is well-structured, though it relies on an undescribed in-house model for temperature simulations and acknowledges an inability to model pressure, a key environmental variable."
+            },
+            {
+              "criterion": "Innovation",
+              "score": 5,
+              "justification": "The project is highly innovative, representing the first systematic effort to link marine metagenomics with IDR biophysics at this scale. The proposed use of generative AI to model evolutionary trajectories and design novel proteins is a cutting-edge approach that promises to create new research avenues."
+            },
+            {
+              "criterion": "Feasibility",
+              "score": 4,
+              "justification": "The project is ambitious due to the massive scale of data processing and simulation (440,000 trajectories). However, the phased plan is logical, and the well-justified request for significant NCEMS computational resources and staff support makes this challenging but achievable goal."
+            },
+            {
+              "criterion": "Data Synthesis Approach",
+              "score": 5,
+              "justification": "The data synthesis strategy is exemplary. It proposes to integrate disparate public data types—metagenomic sequences, environmental metadata, and predicted protein structures—to create a novel, comprehensive database that directly addresses the research question."
+            },
+            {
+              "criterion": "Collaborative Approach",
+              "score": 4,
+              "justification": "The proposal provides a strong rationale for a working group, clearly defining the essential contributions from experts in metagenomics, biophysics, and machine learning. The collaborative plan is well-integrated, though it would be strengthened by naming the specific investigators or institutions to fully assess team diversity."
+            },
+            {
+              "criterion": "Open Science Commitment",
+              "score": 5,
+              "justification": "The commitment to open science is excellent. The proposal explicitly states that the resulting database, analysis workflows, and computational tools will be made publicly available, fully adhering to the principles outlined in the funding call."
+            },
+            {
+              "criterion": "Training Opportunities",
+              "score": 3,
+              "justification": "While the project inherently offers training opportunities, the proposal lacks a specific, detailed plan for how graduate students and postdocs will be integrated, mentored, and trained within the working group. This aspect is mentioned as a goal but is not well-developed."
+            },
+            {
+              "criterion": "Impact",
+              "score": 5,
+              "justification": "The potential impact is transformative, promising to deliver fundamental insights into protein adaptation and evolution. The creation of a foundational database and novel design tools will serve as a valuable resource for the broader scientific community with clear applications in biotechnology and synthetic biology."
+            }
+          ]
+        }
+      }
+    },
+    
+    {
+      "evaluation_id": "9_eval_human_criteria_20260105_160448",
+      "proposal_id": "9",
+      "proposal_title": "N/A",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-05T16:04:48.751243",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "9",
+          "overall_score": 4.4,
+          "overall_assessment": "This is an outstanding proposal that directly addresses a fundamental question in cell biology using a highly innovative data synthesis approach. It is exceptionally well-aligned with the funding call's mission, though it could be strengthened by providing more explicit details on training opportunities.",
+          "criteria": [
+            {
+              "criterion": "Scientific Merit",
+              "score": 5,
+              "justification": "The proposal addresses a compelling and fundamental question regarding the principles of mesoscale cellular organization, moving beyond traditional gene-centric views to an integrative, physics-based perspective. The driving questions are significant and at the forefront of modern cell biology."
+            },
+            {
+              "criterion": "Alignment with Call",
+              "score": 5,
+              "justification": "The proposal is perfectly aligned with the call. It focuses exclusively on synthesizing public data, requires a multi-lab transdisciplinary team, develops a novel analytical strategy, and clearly articulates the need for the specific resources provided by NCEMS."
+            },
+            {
+              "criterion": "Methodology",
+              "score": 4,
+              "justification": "The proposed use of Gromov-Wasserstein distances combined with transfer learning is a sophisticated and powerful approach for integrating heterogeneous data. The plan to validate the workflow on three test cases of increasing complexity is logical and robust, though the integration of such diverse data types remains highly ambitious."
+            },
+            {
+              "criterion": "Innovation",
+              "score": 5,
+              "justification": "The core idea of using metric geometry (GW distances) to create a common framework for comparing and integrating imaging, in vitro, and in silico data is highly innovative. This approach has the potential to establish a new paradigm for predictive modeling in cell biology from disparate data sources."
+            },
+            {
+              "criterion": "Feasibility",
+              "score": 4,
+              "justification": "The project is ambitious but the plan is well-structured and logical. The proposal acknowledges key risks, such as data availability and computational expense, and presents a reasonable two-year timeline. The phased approach using defined test cases enhances the likelihood of success."
+            },
+            {
+              "criterion": "Data Synthesis Approach",
+              "score": 5,
+              "justification": "The data synthesis strategy is a core strength, proposing a sophisticated mathematical framework to quantitatively integrate multimodal data that exist in different feature spaces. The inclusion of minimal systems data and systematic literature synthesis demonstrates a comprehensive and deeply considered approach."
+            },
+            {
+              "criterion": "Collaborative Approach",
+              "score": 4,
+              "justification": "The proposal provides an excellent rationale for a working group, correctly identifying that the required expertise in image analysis, machine learning, biophysics, and cell biology is beyond the scope of a single lab. The collaborative structure is essential for the project's success."
+            },
+            {
+              "criterion": "Open Science Commitment",
+              "score": 4,
+              "justification": "The commitment to open science is strong, with plans to build on open-source tools and produce an open-source, generalizable workflow for the community. While the commitment is clear, it could be further improved by explicitly detailing a data and code management/sharing plan."
+            },
+            {
+              "criterion": "Training Opportunities",
+              "score": 3,
+              "justification": "The proposal mentions training as a goal of the funding call but fails to provide any specific details on how graduate students and postdocs will be trained or integrated into the working group. This is a notable weakness given the call's emphasis on training the future workforce."
+            },
+            {
+              "criterion": "Impact",
+              "score": 5,
+              "justification": "The potential impact is exceptionally high. A successful project would provide a transformative, generalizable framework for systems-level analysis of cellular organization, empowering the broader research community to leverage existing datasets to answer previously intractable questions."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "evaluation_id": "10_eval_human_criteria_20260105_160515",
+      "proposal_id": "10",
+      "proposal_title": "N/A",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-05T16:05:15.435570",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "10",
+          "overall_score": 4.6,
+          "overall_assessment": "This is an outstanding proposal that perfectly aligns with the funding call's mission to synthesize public data to address fundamental questions in biosciences. It tackles a significant, long-standing problem with a highly innovative and methodologically sound approach, promising both a transformative public data resource and major biological insights. The project is ambitious but well-conceived, and its collaborative, large-scale nature makes it an ideal candidate for this funding mechanism.",
+          "criteria": [
+            {
+              "criterion": "Scientific Merit",
+              "score": 5,
+              "justification": "The proposal addresses a fundamental and compelling question regarding the role of transposable elements in genomic innovation and regulatory evolution. By aiming to illuminate the function of a vast, yet underexplored, portion of the genome, the project tackles a significant puzzle with the potential for paradigm-shifting discoveries."
+            },
+            {
+              "criterion": "Alignment with Call",
+              "score": 5,
+              "justification": "The proposal is exceptionally well-aligned with every aspect of the call. It focuses on an emergence phenomenon (TEs to regulatory networks), exclusively uses public data for synthesis, requires a multidisciplinary team, is beyond the scope of a single lab, and clearly justifies the need for NCEMS resources."
+            },
+            {
+              "criterion": "Methodology",
+              "score": 5,
+              "justification": "The proposed methods are state-of-the-art and directly address the core technical challenges of studying repetitive DNA. The use of telomere-to-telomere/pangenome assemblies and probabilistic multi-read allocation is the correct and most advanced approach, and the two-phase structure for data reprocessing and synthesis is logical and robust."
+            },
+            {
+              "criterion": "Innovation",
+              "score": 5,
+              "justification": "The primary innovation lies in the systematic, large-scale application of novel computational strategies to tens of thousands of existing datasets. This will create a unique, comprehensive resource for studying the 'repeatome' that does not currently exist and will enable entirely new lines of inquiry across the research community."
+            },
+            {
+              "criterion": "Feasibility",
+              "score": 4,
+              "justification": "The project is highly ambitious due to the sheer scale of data reprocessing (75,000+ datasets). While the plan is well-structured and leverages existing tools, the timeline is aggressive and potential computational or data management hurdles could arise. However, with the requested NCEMS support, it is very likely to succeed."
+            },
+            {
+              "criterion": "Data Synthesis Approach",
+              "score": 5,
+              "justification": "The synthesis plan is excellent, moving beyond simple data aggregation to true multi-modal integration. The proposed use of advanced analytical methods like hidden Markov models and tensor decomposition to uncover higher-order relationships between TEs, transcription factors, and gene expression is sophisticated and powerful."
+            },
+            {
+              "criterion": "Collaborative Approach",
+              "score": 4,
+              "justification": "The proposal provides a strong rationale for a working group, clearly articulating the need for complementary expertise in transposon biology, genomics, evolution, and computation. The project's scale and complexity make a multi-lab, collaborative effort essential for success, aligning perfectly with the call's intent."
+            },
+            {
+              "criterion": "Open Science Commitment",
+              "score": 5,
+              "justification": "The commitment to open science is exemplary. The proposal's primary outcomes are a publicly accessible collection of reprocessed datasets and reproducible analysis pipelines, which will serve as a valuable community resource and directly fulfill the call's requirements."
+            },
+            {
+              "criterion": "Training Opportunities",
+              "score": 3,
+              "justification": "While the project inherently provides a cutting-edge training environment for data-savvy science, the proposal lacks a detailed, explicit plan for trainee involvement, such as workshops or defined roles. The mention of 'personnel exchanges' is positive but could be more developed to be a standout feature."
+            },
+            {
+              "criterion": "Impact",
+              "score": 5,
+              "justification": "The potential impact is exceptionally high. The project will produce a foundational data resource for the entire genomics community and is poised to deliver transformative insights into gene regulation, evolutionary biology, and the functional architecture of the genome."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "evaluation_id": "11_eval_human_criteria_20260105_160541",
+      "proposal_id": "11",
+      "proposal_title": "N/A",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-05T16:05:41.899840",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "11",
+          "overall_score": 4.3,
+          "overall_assessment": "This is an outstanding proposal that directly addresses the core mission of the funding call by synthesizing underutilized public data to solve a fundamental problem in cell biology. The plan to harmonize crosslinking mass spectrometry data and use it to structurally validate the protein interactome is highly innovative and impactful. The proposal's primary weakness is an underdeveloped plan for training junior scientists, which is a stated goal of the call.",
+          "criteria": [
+            {
+              "criterion": "Scientific Merit",
+              "score": 5,
+              "justification": "The proposal addresses the fundamental and compelling question of defining the complete, structurally-validated protein interactome. By leveraging crosslinking data to provide residue-level evidence for protein-protein interactions, it tackles a major limitation of existing large-scale interactome maps, which often lack direct structural evidence."
+            },
+            {
+              "criterion": "Alignment with Call",
+              "score": 5,
+              "justification": "The proposal is perfectly aligned with the call. It exclusively uses publicly available data, requires a multi-lab collaborative effort, integrates diverse datasets (XL-MS, interaction databases, structural predictions), and addresses a significant question through data synthesis that is beyond the scope of a single lab."
+            },
+            {
+              "criterion": "Methodology",
+              "score": 4,
+              "justification": "The proposed methodology is strong, logical, and uses state-of-the-art tools for data reprocessing (Scout) and structural validation (AlphaFold). The plan to re-annotate, reprocess, and redeposit data is sound. The third aim regarding uncharacterized proteins is less developed and noted as time-permitting, which is a minor weakness but also realistic."
+            },
+            {
+              "criterion": "Innovation",
+              "score": 4,
+              "justification": "The innovation lies not in the development of new tools, but in the novel, large-scale synthesis of a specific data type (XL-MS) and its integration with structural modeling to create a new, more reliable evidence layer for a community resource. This systematic harmonization and validation approach represents a significant advance over current disparate datasets."
+            },
+            {
+              "criterion": "Feasibility",
+              "score": 4,
+              "justification": "The project is ambitious but feasible due to the strong collaboration with EBI, which provides necessary infrastructure and expertise. The 15-month timeline is tight, and the success depends on the quality and heterogeneity of legacy data in PRIDE, which poses a potential risk. The phased approach and clear definition of required resources enhance its feasibility."
+            },
+            {
+              "criterion": "Data Synthesis Approach",
+              "score": 5,
+              "justification": "The data synthesis strategy is a core strength of the proposal. It outlines a clear plan to integrate heterogeneous XL-MS datasets by standardizing them, and then further synthesizes this information with orthogonal data from interaction databases (huMAP) and computational structural models (AlphaFold) for robust validation."
+            },
+            {
+              "criterion": "Collaborative Approach",
+              "score": 4,
+              "justification": "The collaboration between an XL-MS expert group and the EBI is essential and well-justified, bringing together the required scientific and data infrastructure expertise. The proposal would be stronger if it provided more detail on the full team composition, including career stages and institutional diversity, as requested by the call."
+            },
+            {
+              "criterion": "Open Science Commitment",
+              "score": 5,
+              "justification": "The commitment to open science is exemplary and central to the project's design. The plan to redeposit all reprocessed data into public repositories (PRIDE) with standardized metadata and integrate the final validated interactions into the public EBI Complex Portal fully embodies the principles of open, reproducible science."
+            },
+            {
+              "criterion": "Training Opportunities",
+              "score": 2,
+              "justification": "This is the most significant weakness of the proposal. While the call emphasizes training the next generation, the proposal only mentions hiring a 'data scientist' and lacks a specific plan for involving or mentoring graduate students or postdoctoral fellows in the research activities."
+            },
+            {
+              "criterion": "Impact",
+              "score": 5,
+              "justification": "The potential impact is exceptionally high. Creating a large, standardized, and structurally-validated resource of protein-protein interactions integrated into a major community portal will benefit a broad range of researchers in molecular biology, structural biology, and systems biology, significantly improving the quality and utility of interactome data."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "evaluation_id": "12_eval_human_criteria_20260105_160612",
+      "proposal_id": "12",
+      "proposal_title": "N/A",
+      "proposal_who": "unknown",
+      "proposal_role": "unknown",
+      "proposal_model": "unknown",
+      "evaluator_model": "gemini-2.5-pro",
+      "evaluation_template": "eval_human_criteria",
+      "role_description": null,
+      "timestamp": "2026-01-05T16:06:12.003930",
+      "evaluation_response": {
+        "evaluation": {
+          "proposal_id": "12",
+          "overall_score": 4.6,
+          "overall_assessment": "This is an outstanding proposal that directly addresses a critical infrastructural bottleneck in the molecular sciences, aligning perfectly with the funding call's mission. The project's focus on developing automated, community-scale tools to enhance metadata in a major public repository is highly impactful and innovative. I strongly recommend this proposal for funding.",
+          "criteria": [
+            {
+              "criterion": "Scientific Merit",
+              "score": 5,
+              "justification": "The proposal addresses a compelling and fundamental methodological challenge in the biosciences: the lack of high-quality metadata, which severely limits the reuse of public data. Solving this long-standing puzzle is of high scientific value as it will directly enable countless future data synthesis studies and discoveries."
+            },
+            {
+              "criterion": "Alignment with Call",
+              "score": 5,
+              "justification": "The proposal is exceptionally well-aligned with all aspects of the funding call. It focuses on methodological development using only public data, requires a multidisciplinary team beyond a single lab's capacity, clearly articulates the need for NCEMS support, and commits to open science and training."
+            },
+            {
+              "criterion": "Methodology",
+              "score": 5,
+              "justification": "The methodology is state-of-the-art, robust, and well-conceived. The combination of established bioinformatics tools, modern NLP/LLM approaches for text mining, and a community-based machine learning challenge constitutes a powerful and comprehensive strategy for tackling the problem."
+            },
+            {
+              "criterion": "Innovation",
+              "score": 4,
+              "justification": "While metadata extraction is not a new concept, the proposal is highly innovative in its scale, level of automation, and direct integration into a major community repository (PRIDE). The use of a community challenge to crowdsource novel algorithms is also a creative and forward-thinking approach."
+            },
+            {
+              "criterion": "Feasibility",
+              "score": 4,
+              "justification": "The project is ambitious but appears feasible within the two-year timeframe due to a logical, phased work plan and reliance on existing standards and tools. The primary challenge will be the complexity of NLP on scientific texts, but the proposal includes a reasonable validation and verification strategy."
+            },
+            {
+              "criterion": "Data Synthesis Approach",
+              "score": 5,
+              "justification": "The proposal presents an exemplary and foundational data synthesis strategy. Instead of synthesizing primary data, it synthesizes disparate metadata from raw files and publications into a coherent, structured layer, which is a critical prerequisite for enabling the large-scale data integration the call seeks to promote."
+            },
+            {
+              "criterion": "Collaborative Approach",
+              "score": 5,
+              "justification": "The project is perfectly suited for a working group, as it explicitly requires the integration of diverse expertise from bioinformatics, machine learning, NLP, proteomics, and data repository management. The proposal makes a compelling case that this scope of work is far beyond the capabilities of any single lab."
+            },
+            {
+              "criterion": "Open Science Commitment",
+              "score": 5,
+              "justification": "The commitment to open science is outstanding. The proposal details plans for releasing all code on public repositories, publishing preprints, and ensuring all outputs contribute to a public data resource, fully embodying the principles of open, team, and reproducible science."
+            },
+            {
+              "criterion": "Training Opportunities",
+              "score": 3,
+              "justification": "The proposal outlines a strong plan for creating educational resources for the broader community, which is valuable. However, it lacks specific details on how trainees (graduate students and postdocs) within the working group will be directly involved and mentored through the collaborative research activities."
+            },
+            {
+              "criterion": "Impact",
+              "score": 5,
+              "justification": "The potential impact is exceptionally high. By dramatically improving the FAIRness of data in a major international repository, this work will unlock the potential for large-scale reanalysis, facilitate AI/ML model training, and serve as a scalable template for other omics disciplines."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

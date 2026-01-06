@@ -210,16 +210,25 @@ class ProposalEvaluator:
         """Create an evaluation prompt for a single proposal"""
         
         # Map user-friendly template names to template keys in PromptManager
+        # Support both short names (e.g., "human_criteria") and full names (e.g., "eval_human_criteria")
         template_name_mapping = {
             "comprehensive": "eval_comprehensive",
+            "eval_comprehensive": "eval_comprehensive",
             "strengths_weaknesses": "eval_strengths_weaknesses",
+            "eval_strengths_weaknesses": "eval_strengths_weaknesses",
             "innovation_assessment": "eval_innovation_assessment",
+            "eval_innovation_assessment": "eval_innovation_assessment",
             "alignment_with_call": "eval_alignment_with_call",
-            "human_criteria": "eval_human_criteria"
+            "eval_alignment_with_call": "eval_alignment_with_call",
+            "human_criteria": "eval_human_criteria",
+            "eval_human_criteria": "eval_human_criteria"
         }
         
         # Get the template key
-        template_key = template_name_mapping.get(evaluation_template, "eval_comprehensive")
+        template_key = template_name_mapping.get(evaluation_template)
+        if not template_key:
+            logger.warning(f"Unknown template '{evaluation_template}', defaulting to eval_comprehensive")
+            template_key = "eval_comprehensive"
         
         # Get the template from PromptManager
         try:
@@ -231,9 +240,9 @@ class ProposalEvaluator:
             template_obj = self.prompt_manager.get_template(template_key)
             template = template_obj.template
         
-        # Extract proposal content from CSV format
+        # Extract proposal content - handle both CSV format (title) and human proposals JSON format (proposal_title)
         proposal_id = proposal.get('proposal_id', 'unknown')
-        proposal_title = proposal.get('title', 'N/A')
+        proposal_title = proposal.get('title') or proposal.get('proposal_title', 'N/A')
         proposal_abstract = proposal.get('abstract', 'N/A')
         proposal_full = proposal.get('full_draft', '')
         
@@ -262,7 +271,7 @@ class ProposalEvaluator:
         """Evaluate a single proposal"""
         
         proposal_id = proposal.get('proposal_id', 'unknown')
-        proposal_title = proposal.get('title', 'N/A')
+        proposal_title = proposal.get('title') or proposal.get('proposal_title', 'N/A')
         proposal_who = proposal.get('who', 'unknown')
         proposal_role = proposal.get('role', 'unknown')
         proposal_model = proposal.get('model', 'unknown')
@@ -451,11 +460,11 @@ class ProposalEvaluator:
     def list_available_evaluation_templates(self) -> List[str]:
         """List available templates for single proposal evaluation"""
         return [
-            "comprehensive",
-            "strengths_weaknesses",
-            "innovation_assessment",
-            "alignment_with_call",
-            "human_criteria"
+            "comprehensive (or eval_comprehensive)",
+            "strengths_weaknesses (or eval_strengths_weaknesses)",
+            "innovation_assessment (or eval_innovation_assessment)",
+            "alignment_with_call (or eval_alignment_with_call)",
+            "human_criteria (or eval_human_criteria)"
         ]
     
     def list_available_role_descriptions(self) -> List[str]:
