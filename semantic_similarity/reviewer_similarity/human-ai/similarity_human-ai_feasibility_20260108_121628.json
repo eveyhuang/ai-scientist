@@ -1,0 +1,6116 @@
+{
+  "metadata": {
+    "analysis_type": "reviewer_similarity",
+    "comparison_type": "human-ai",
+    "criterion": "feasibility_justification",
+    "criterion_name": "Feasibility",
+    "total_comparisons": 47,
+    "generation_timestamp": "2026-01-08T12:16:28.122432",
+    "methods": {
+      "tfidf": "TF-IDF based cosine similarity",
+      "embeddings": "Nomic-Embed (nomic-ai/nomic-embed-text-v1.5)",
+      "keywords": "TF-IDF top-20 keywords with Jaccard similarity",
+      "topics": "Latent Dirichlet Allocation (LDA) with 5 topics"
+    }
+  },
+  "results": [
+    {
+      "proposal_id": "1",
+      "proposal_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:14.981583",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.04539081951207711,
+        "embedding_cosine_similarity": 0.7802668346440611,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "highly"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "approach identified",
+            "data",
+            "data sets",
+            "deliverables",
+            "deliverables realistic",
+            "feasible",
+            "feasible timeline",
+            "goals",
+            "goals highly",
+            "highly feasible"
+          ],
+          "reviewer_2_unique": [
+            "aims realistic",
+            "ambitious",
+            "ambitious defined",
+            "defined",
+            "defined logical",
+            "group",
+            "highly suitable",
+            "logical",
+            "logical aims",
+            "making"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.07090503600175549,
+          "reviewer_1_topic_distribution": [
+            0.8806281522452514,
+            0.029839745251056652,
+            0.029852612001532282,
+            0.0298397452511177,
+            0.029839745251042056
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02984455057586752,
+            0.02982803984479558,
+            0.8806713298892632,
+            0.02982803984514058,
+            0.029828039844933155
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "objectives deliverables",
+                "feasible timeline",
+                "research goals",
+                "research",
+                "deliverables realistic"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "realistic",
+                "timeline",
+                "highly",
+                "making",
+                "produce manuscript"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "scope",
+                "year timeframe",
+                "making",
+                "produce manuscript",
+                "produce"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "realistic",
+                "timeline",
+                "highly",
+                "making",
+                "produce manuscript"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "realistic",
+                "timeline",
+                "highly",
+                "making",
+                "produce manuscript"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.25333333333333335,
+            "subjectivity": 0.5355555555555556,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.3041666666666667,
+            "subjectivity": 0.5208333333333333,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.05083333333333334,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9745833333333334
+        }
+      }
+    },
+    {
+      "proposal_id": "1",
+      "proposal_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:15.067215",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.04074270380209076,
+        "embedding_cosine_similarity": 0.6999876778280945,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "plan",
+            "year"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "reviewer_1_unique": [
+            "analysis",
+            "appropriate",
+            "data",
+            "detailed",
+            "detailed contingency",
+            "distinct phases",
+            "omics",
+            "omics data",
+            "outlined",
+            "phases"
+          ],
+          "reviewer_2_unique": [
+            "aims realistic",
+            "ambitious",
+            "ambitious defined",
+            "defined",
+            "defined logical",
+            "group",
+            "highly",
+            "highly suitable",
+            "logical",
+            "logical aims"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0517225746074159,
+          "reviewer_1_topic_distribution": [
+            0.015304104285764371,
+            0.015304104286769352,
+            0.015304301533465771,
+            0.938783385607838,
+            0.015304104286162462
+          ],
+          "reviewer_2_topic_distribution": [
+            0.029844436707204013,
+            0.029844436709609772,
+            0.8806061347568083,
+            0.02986055511958864,
+            0.029844436706789344
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "timeline",
+                "plan",
+                "ambitious",
+                "year",
+                "produce"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "timeline",
+                "plan",
+                "ambitious",
+                "year",
+                "produce"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "scope",
+                "manuscript year",
+                "timeframe making",
+                "suitable working",
+                "suitable"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data",
+                "analysis",
+                "omics",
+                "project",
+                "year"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "timeline",
+                "plan",
+                "ambitious",
+                "year",
+                "produce"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.15625000000000003,
+            "subjectivity": 0.5479166666666667,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.3041666666666667,
+            "subjectivity": 0.5208333333333333,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.14791666666666667,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9260416666666667
+        }
+      }
+    },
+    {
+      "proposal_id": "1",
+      "proposal_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:15.151299",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.039753598260071,
+        "embedding_cosine_similarity": 0.7440309330594549,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "plan"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02631578947368421,
+          "reviewer_1_unique": [
+            "action",
+            "action data",
+            "data",
+            "data sets",
+            "define",
+            "define timeline",
+            "documented",
+            "pf",
+            "pf action",
+            "plan pf"
+          ],
+          "reviewer_2_unique": [
+            "aims realistic",
+            "ambitious",
+            "ambitious defined",
+            "defined",
+            "defined logical",
+            "group",
+            "highly",
+            "highly suitable",
+            "logical",
+            "logical aims"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.08199631325368463,
+          "reviewer_1_topic_distribution": [
+            0.03752762090313568,
+            0.03753680447267458,
+            0.037527620903347464,
+            0.8498803328172628,
+            0.03752762090357942
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02979804157023849,
+            0.8807868256560912,
+            0.02979804156958164,
+            0.029819049634687355,
+            0.029798041569401194
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "timeline",
+                "plan",
+                "plan pf",
+                "sets used",
+                "action data"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "scope",
+                "scope ambitious",
+                "realistic plan",
+                "realistic",
+                "produce manuscript"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "timeline",
+                "plan",
+                "plan pf",
+                "sets used",
+                "action data"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "plan pf",
+                "team",
+                "action data",
+                "data",
+                "data sets"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "timeline",
+                "plan",
+                "plan pf",
+                "sets used",
+                "action data"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.1,
+            "subjectivity": 0.1,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.3041666666666667,
+            "subjectivity": 0.5208333333333333,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.2041666666666667,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8979166666666667
+        }
+      }
+    },
+    {
+      "proposal_id": "1",
+      "proposal_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:15.228888",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.07508445913049572,
+        "embedding_cosine_similarity": 0.8019555625144177,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "plan",
+            "year"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.06451612903225806,
+          "reviewer_1_unique": [
+            "feasible",
+            "feasible year",
+            "included",
+            "included timeline",
+            "plan included",
+            "project",
+            "project feasible",
+            "proposed",
+            "proposed project",
+            "timeline"
+          ],
+          "reviewer_2_unique": [
+            "aims realistic",
+            "ambitious",
+            "ambitious defined",
+            "defined",
+            "defined logical",
+            "group",
+            "highly",
+            "highly suitable",
+            "logical",
+            "logical aims"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.999274187721053,
+          "reviewer_1_topic_distribution": [
+            0.04380515730801168,
+            0.04380515731038662,
+            0.8247793707603567,
+            0.043805157312006675,
+            0.043805157309238535
+          ],
+          "reviewer_2_topic_distribution": [
+            0.029862578574495143,
+            0.029862578573776395,
+            0.880549685706516,
+            0.029862578574050593,
+            0.029862578571161764
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "proposed project",
+                "plan included",
+                "year plan",
+                "feasible",
+                "feasible year"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "proposed project",
+                "plan included",
+                "year plan",
+                "feasible",
+                "feasible year"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "scope",
+                "year",
+                "plan",
+                "timeline",
+                "proposed project"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "proposed project",
+                "plan included",
+                "year plan",
+                "feasible",
+                "feasible year"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "proposed project",
+                "plan included",
+                "year plan",
+                "feasible",
+                "feasible year"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.0,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.3041666666666667,
+            "subjectivity": 0.5208333333333333,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.3041666666666667,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8479166666666667
+        }
+      }
+    },
+    {
+      "proposal_id": "2",
+      "proposal_title": "Elucidating genome structure-function relationships in human brain cells",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:15.327516",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.012559311013552659,
+        "embedding_cosine_similarity": 0.6615134174217875,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "ai",
+            "ai models",
+            "ai single",
+            "applications",
+            "applications strong",
+            "based",
+            "based applications",
+            "cell",
+            "cell based",
+            "confidence"
+          ],
+          "reviewer_2_unique": [
+            "absence project",
+            "ambitious",
+            "ambitious reasonable",
+            "assess",
+            "assess feasibility",
+            "complete",
+            "complete absence",
+            "difficult",
+            "difficult fully",
+            "feasibility"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0706690994925908,
+          "reviewer_1_topic_distribution": [
+            0.028263043306972626,
+            0.028246176917220023,
+            0.028263043307052784,
+            0.8869646931617527,
+            0.0282630433070018
+          ],
+          "reviewer_2_topic_distribution": [
+            0.03127735559248938,
+            0.874907650591674,
+            0.03127735559258068,
+            0.031260282630714675,
+            0.031277355592541224
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "project",
+                "milestones makes",
+                "milestones",
+                "makes difficult",
+                "makes"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "timeline",
+                "scope",
+                "working group",
+                "difficult fully",
+                "makes difficult"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "project",
+                "milestones makes",
+                "milestones",
+                "makes difficult",
+                "makes"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "ai",
+                "strong",
+                "models",
+                "good",
+                "based applications"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "project",
+                "milestones makes",
+                "milestones",
+                "makes difficult",
+                "makes"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.26587301587301587,
+            "subjectivity": 0.4468253968253968,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.007500000000000018,
+            "subjectivity": 0.55,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.25837301587301587,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.870813492063492
+        }
+      }
+    },
+    {
+      "proposal_id": "2",
+      "proposal_title": "Elucidating genome structure-function relationships in human brain cells",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:15.411667",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.08167782319241472,
+        "embedding_cosine_similarity": 0.779370329750339,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "timeline"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.03333333333333333,
+          "reviewer_1_unique": [
+            "given",
+            "given ther",
+            "reasonable",
+            "reasonable given",
+            "requested",
+            "requested resources",
+            "resources",
+            "ther",
+            "ther requested",
+            "timeline reasonable"
+          ],
+          "reviewer_2_unique": [
+            "absence project",
+            "ambitious",
+            "ambitious reasonable",
+            "assess",
+            "assess feasibility",
+            "complete",
+            "complete absence",
+            "difficult",
+            "difficult fully",
+            "feasibility"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.09814761960941618,
+          "reviewer_1_topic_distribution": [
+            0.04672285798718064,
+            0.04664449637603041,
+            0.046644496375929746,
+            0.8133436528848201,
+            0.04664449637603893
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8758088993768741,
+            0.03103393268256502,
+            0.03103393268266992,
+            0.03108930257464128,
+            0.031033932683249738
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "scope",
+                "timeline",
+                "difficult",
+                "makes",
+                "group complete"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "reasonable",
+                "timeline",
+                "requested resources",
+                "resources",
+                "reasonable given"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "reasonable",
+                "timeline",
+                "requested resources",
+                "resources",
+                "reasonable given"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "requested resources",
+                "ther",
+                "reasonable given",
+                "requested",
+                "given ther"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "reasonable",
+                "timeline",
+                "requested resources",
+                "resources",
+                "reasonable given"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.2,
+            "subjectivity": 0.6,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.007500000000000018,
+            "subjectivity": 0.55,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.1925,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.90375
+        }
+      }
+    },
+    {
+      "proposal_id": "2",
+      "proposal_title": "Elucidating genome structure-function relationships in human brain cells",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:15.496858",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.05666529872979753,
+        "embedding_cosine_similarity": 0.7809645381590825,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "ambitious especially",
+            "assay",
+            "assay data",
+            "brain",
+            "brain cells",
+            "cells",
+            "cells introduce",
+            "challenges",
+            "challenges lack",
+            "computational"
+          ],
+          "reviewer_2_unique": [
+            "absence project",
+            "ambitious",
+            "ambitious reasonable",
+            "assess",
+            "assess feasibility",
+            "complete",
+            "complete absence",
+            "difficult",
+            "difficult fully",
+            "feasibility"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0697875094356967,
+          "reviewer_1_topic_distribution": [
+            0.02781652967866101,
+            0.8888468067138873,
+            0.027778887869041764,
+            0.02777888786921391,
+            0.02777888786919604
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8757456804486673,
+            0.03107058634005589,
+            0.03106124440384541,
+            0.03106124440365395,
+            0.031061244403777444
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "scope",
+                "timeline",
+                "working group",
+                "makes difficult",
+                "makes"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "cells introduce",
+                "computational",
+                "challenges",
+                "lack assay",
+                "lack"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "ambitious",
+                "feasibility",
+                "timeline",
+                "working group",
+                "difficult fully"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "ambitious",
+                "feasibility",
+                "timeline",
+                "working group",
+                "difficult fully"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "ambitious",
+                "feasibility",
+                "timeline",
+                "working group",
+                "difficult fully"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.11666666666666665,
+            "subjectivity": 0.7166666666666667,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.007500000000000018,
+            "subjectivity": 0.55,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.10916666666666663,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9454166666666667
+        }
+      }
+    },
+    {
+      "proposal_id": "3",
+      "proposal_title": "MaiTool - LLM-powered bioinformatics tools for microbiome analysis",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:15.609667",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1612269556374894,
+        "embedding_cosine_similarity": 0.8758115490184673,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "scope"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "ai",
+            "ai assisted",
+            "assisted",
+            "assisted bioinformatics",
+            "bioinformatics",
+            "bioinformatics workflows",
+            "discussion",
+            "justification",
+            "llm",
+            "needs"
+          ],
+          "reviewer_2_unique": [
+            "achieving milestones",
+            "ambitious",
+            "ambitious year",
+            "api",
+            "api development",
+            "application",
+            "application raises",
+            "building",
+            "building stack",
+            "concerns"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05589662677887974,
+          "reviewer_1_topic_distribution": [
+            0.0207028632888065,
+            0.02070286328739597,
+            0.020793988372207126,
+            0.9170974217632307,
+            0.020702863288359522
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02771826134549148,
+            0.027718261344903104,
+            0.889038413789546,
+            0.02780680217471642,
+            0.027718261345343085
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "evaluation",
+                "project",
+                "year",
+                "llm evaluation",
+                "milestones"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "evaluation",
+                "project",
+                "year",
+                "llm evaluation",
+                "milestones"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "scope",
+                "project encompassing",
+                "repositories building",
+                "repositories",
+                "concerns"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "assisted",
+                "timeline",
+                "scope timeline",
+                "scope",
+                "bioinformatics workflows"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "evaluation",
+                "project",
+                "year",
+                "llm evaluation",
+                "milestones"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.004761904761904745,
+            "subjectivity": 0.37857142857142856,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.125,
+            "subjectivity": 0.375,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.12023809523809526,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9398809523809524
+        }
+      }
+    },
+    {
+      "proposal_id": "3",
+      "proposal_title": "MaiTool - LLM-powered bioinformatics tools for microbiome analysis",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:15.628966",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.11231515365718099,
+        "embedding_cosine_similarity": 0.797033393899266,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "scope"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.03225806451612903,
+          "reviewer_1_unique": [
+            "clear",
+            "clear fact",
+            "fact",
+            "fact step",
+            "figure",
+            "figure scope",
+            "project",
+            "project figure",
+            "scope clear",
+            "step"
+          ],
+          "reviewer_2_unique": [
+            "achieving milestones",
+            "ambitious",
+            "ambitious year",
+            "api",
+            "api development",
+            "application",
+            "application raises",
+            "building",
+            "building stack",
+            "concerns"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9988326309923867,
+          "reviewer_1_topic_distribution": [
+            0.04525979801540631,
+            0.8189608079348579,
+            0.045259798017135304,
+            0.04525979801585626,
+            0.0452597980167443
+          ],
+          "reviewer_2_topic_distribution": [
+            0.027515859859990843,
+            0.8899365605840552,
+            0.027515859851482274,
+            0.02751585985514363,
+            0.02751585984932803
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "clear",
+                "scope clear",
+                "figure",
+                "figure scope",
+                "project figure"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "scope",
+                "project",
+                "clear",
+                "scope clear",
+                "fact step"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "clear",
+                "scope clear",
+                "figure",
+                "figure scope",
+                "project figure"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "clear",
+                "scope clear",
+                "figure",
+                "figure scope",
+                "project figure"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "clear",
+                "scope clear",
+                "figure",
+                "figure scope",
+                "project figure"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.1,
+            "subjectivity": 0.3583333333333333,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.125,
+            "subjectivity": 0.375,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.024999999999999994,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9875
+        }
+      }
+    },
+    {
+      "proposal_id": "3",
+      "proposal_title": "MaiTool - LLM-powered bioinformatics tools for microbiome analysis",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:15.715770",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.0781922538750909,
+        "embedding_cosine_similarity": 0.7980570280469315,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "development"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "arise outlined",
+            "bioinformatics",
+            "bioinformatics tool",
+            "clear",
+            "clear detailed",
+            "detailed",
+            "development project",
+            "expert",
+            "expert timeline",
+            "llm"
+          ],
+          "reviewer_2_unique": [
+            "achieving milestones",
+            "ambitious",
+            "ambitious year",
+            "api",
+            "api development",
+            "application",
+            "application raises",
+            "building",
+            "building stack",
+            "concerns"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.07279318331402192,
+          "reviewer_1_topic_distribution": [
+            0.03310904177443386,
+            0.8675375075813402,
+            0.033109041776501126,
+            0.03310904177655711,
+            0.033135367091167794
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02780435735471108,
+            0.027879789434156723,
+            0.02780435735615285,
+            0.027804357354912237,
+            0.888707138500067
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "llm",
+                "development",
+                "project",
+                "timeline",
+                "tool"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "timeline",
+                "development project",
+                "clear",
+                "pitfalls arise",
+                "potential"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "llm",
+                "development",
+                "project",
+                "timeline",
+                "tool"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "llm",
+                "development",
+                "project",
+                "timeline",
+                "tool"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "scope",
+                "concerns achieving",
+                "milestones",
+                "llm evaluation",
+                "year"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.16666666666666666,
+            "subjectivity": 0.7111111111111111,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.125,
+            "subjectivity": 0.375,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.04166666666666666,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9791666666666666
+        }
+      }
+    },
+    {
+      "proposal_id": "3",
+      "proposal_title": "MaiTool - LLM-powered bioinformatics tools for microbiome analysis",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:15.804802",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.0,
+        "embedding_cosine_similarity": 0.6351961911011244,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "bioinformatics",
+            "bioinformatics objective",
+            "expertise",
+            "expertise bioinformatics",
+            "justification",
+            "objective",
+            "objective justification"
+          ],
+          "reviewer_2_unique": [
+            "achieving milestones",
+            "ambitious",
+            "ambitious year",
+            "api",
+            "api development",
+            "application",
+            "application raises",
+            "building",
+            "building stack",
+            "concerns"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.10676366041555269,
+          "reviewer_1_topic_distribution": [
+            0.054888713689494065,
+            0.05491011663572099,
+            0.7803809364024571,
+            0.05491011663619158,
+            0.05491011663613623
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8892443379682521,
+            0.027695894725659313,
+            0.027667977856521274,
+            0.027695894724043914,
+            0.027695894725523407
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "scope",
+                "year project",
+                "building stack",
+                "evaluation api",
+                "evaluation"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "expertise",
+                "justification",
+                "bioinformatics",
+                "bioinformatics objective",
+                "objective"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "expertise",
+                "justification",
+                "bioinformatics",
+                "bioinformatics objective",
+                "objective"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "expertise",
+                "justification",
+                "bioinformatics",
+                "bioinformatics objective",
+                "objective"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "expertise",
+                "justification",
+                "bioinformatics",
+                "bioinformatics objective",
+                "objective"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.1,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.125,
+            "subjectivity": 0.375,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.125,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9375
+        }
+      }
+    },
+    {
+      "proposal_id": "4",
+      "proposal_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:15.973808",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.03925482859643413,
+        "embedding_cosine_similarity": 0.8126562803896419,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "address potential",
+            "ambitious",
+            "ambitious timeline",
+            "clearly",
+            "clearly outlined",
+            "did",
+            "did address",
+            "frame",
+            "frame proposal",
+            "given"
+          ],
+          "reviewer_2_unique": [
+            "ambitious realistic",
+            "approach",
+            "approach mitigates",
+            "complexity",
+            "expanding",
+            "expanding greater",
+            "focusing",
+            "focusing model",
+            "greater",
+            "greater complexity"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06561253108359538,
+          "reviewer_1_topic_distribution": [
+            0.8975755250453558,
+            0.02560109022753582,
+            0.02560109022846455,
+            0.025601090227907717,
+            0.02562120427073615
+          ],
+          "reviewer_2_topic_distribution": [
+            0.03022794516442117,
+            0.03023588854278836,
+            0.030235888542715254,
+            0.030235888542730197,
+            0.8790643892073451
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "accomplished",
+                "outlined",
+                "given time",
+                "project thought",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "ambitious",
+                "timeline",
+                "year timeline",
+                "greater complexity",
+                "year"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "ambitious",
+                "timeline",
+                "year timeline",
+                "greater complexity",
+                "year"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "ambitious",
+                "timeline",
+                "year timeline",
+                "greater complexity",
+                "year"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "timeline",
+                "year timeline",
+                "greater complexity",
+                "year",
+                "organism"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.16,
+            "subjectivity": 0.5766666666666667,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.2833333333333333,
+            "subjectivity": 0.4333333333333333,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.12333333333333332,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9383333333333334
+        }
+      }
+    },
+    {
+      "proposal_id": "4",
+      "proposal_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:16.061861",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.0,
+        "embedding_cosine_similarity": 0.6690458202934767,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "community",
+            "control",
+            "control analysis",
+            "data",
+            "data processing",
+            "data sets",
+            "documentation",
+            "documentation tutorials",
+            "feasible",
+            "feasible planned"
+          ],
+          "reviewer_2_unique": [
+            "ambitious realistic",
+            "approach",
+            "approach mitigates",
+            "complexity",
+            "expanding",
+            "expanding greater",
+            "focusing",
+            "focusing model",
+            "greater",
+            "greater complexity"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9998121737894817,
+          "reviewer_1_topic_distribution": [
+            0.022756590952895863,
+            0.022756590931890155,
+            0.02275659092030811,
+            0.022756590918144748,
+            0.9089736362767611
+          ],
+          "reviewer_2_topic_distribution": [
+            0.030518053301448758,
+            0.030518053304135376,
+            0.030518053305294876,
+            0.030518053305098613,
+            0.8779277867840224
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "year timeline",
+                "realistic logical",
+                "phased approach",
+                "phased",
+                "organism expanding"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "year timeline",
+                "realistic logical",
+                "phased approach",
+                "phased",
+                "organism expanding"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "year timeline",
+                "realistic logical",
+                "phased approach",
+                "phased",
+                "organism expanding"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "year timeline",
+                "realistic logical",
+                "phased approach",
+                "phased",
+                "organism expanding"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "timeline",
+                "community",
+                "data",
+                "proposal",
+                "year timeline"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": -0.10083333333333333,
+            "subjectivity": 0.5025000000000001,
+            "sentiment_label": "negative"
+          },
+          "sentiment_2": {
+            "polarity": 0.2833333333333333,
+            "subjectivity": 0.4333333333333333,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.38416666666666666,
+          "polarity_correlation": "opposite_direction",
+          "sentiment_agreement": "disagree",
+          "sentiment_alignment_score": 0.8079166666666666
+        }
+      }
+    },
+    {
+      "proposal_id": "4",
+      "proposal_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:16.087397",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.05006843790565203,
+        "embedding_cosine_similarity": 0.7429783010682917,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "classifier",
+            "coli",
+            "data",
+            "datasets",
+            "datasets limited",
+            "delineated",
+            "developing",
+            "developing classifier",
+            "discussion",
+            "discussion alternative"
+          ],
+          "reviewer_2_unique": [
+            "ambitious realistic",
+            "approach",
+            "approach mitigates",
+            "complexity",
+            "expanding",
+            "expanding greater",
+            "focusing",
+            "focusing model",
+            "greater",
+            "greater complexity"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06143523926180646,
+          "reviewer_1_topic_distribution": [
+            0.022387153641376827,
+            0.02238715364142628,
+            0.022387153641310092,
+            0.02242125323490381,
+            0.910417285840983
+          ],
+          "reviewer_2_topic_distribution": [
+            0.030301971057496366,
+            0.0303019710574905,
+            0.030301971057624305,
+            0.878789470839423,
+            0.030304615987965938
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "year",
+                "realistic",
+                "scope",
+                "timeline",
+                "year timeline"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "year",
+                "realistic",
+                "scope",
+                "timeline",
+                "year timeline"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "year",
+                "realistic",
+                "scope",
+                "timeline",
+                "year timeline"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "timeline",
+                "scope timeline",
+                "risk",
+                "realistic logical",
+                "phased approach"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "coli",
+                "classifier",
+                "integrated",
+                "discussion alternative"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.023809523809523808,
+            "subjectivity": 0.306547619047619,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.2833333333333333,
+            "subjectivity": 0.4333333333333333,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.2595238095238095,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8702380952380953
+        }
+      }
+    },
+    {
+      "proposal_id": "4",
+      "proposal_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:16.179578",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.0942043475205666,
+        "embedding_cosine_similarity": 0.801753101449511,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "greater",
+            "timeline",
+            "year timeline"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "reviewer_1_unique": [
+            "challenges",
+            "classifier",
+            "data",
+            "data harmonization",
+            "datasets",
+            "datasets broader",
+            "datasets different",
+            "different",
+            "different experimental",
+            "discussion"
+          ],
+          "reviewer_2_unique": [
+            "ambitious realistic",
+            "approach",
+            "approach mitigates",
+            "complexity",
+            "expanding",
+            "expanding greater",
+            "focusing",
+            "focusing model",
+            "greater complexity",
+            "logical"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.060213754775528865,
+          "reviewer_1_topic_distribution": [
+            0.02137385751768322,
+            0.9146811340561307,
+            0.02131500280821224,
+            0.021315002808379516,
+            0.021315002809594176
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8783849073909751,
+            0.03042432529400905,
+            0.030396922438310683,
+            0.030396922438313056,
+            0.030396922438392048
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "timeline",
+                "greater complexity",
+                "logical phased",
+                "phased approach",
+                "phased"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "harmonization",
+                "data harmonization",
+                "project",
+                "classifier"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "year timeline",
+                "logical",
+                "scope",
+                "scope timeline",
+                "greater"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "year timeline",
+                "logical",
+                "scope",
+                "scope timeline",
+                "greater"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "year timeline",
+                "logical",
+                "scope",
+                "scope timeline",
+                "greater"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.22142857142857145,
+            "subjectivity": 0.55,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.2833333333333333,
+            "subjectivity": 0.4333333333333333,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.06190476190476188,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.969047619047619
+        }
+      }
+    },
+    {
+      "proposal_id": "5",
+      "proposal_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:16.289941",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.027608124970324298,
+        "embedding_cosine_similarity": 0.7350037732839519,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "feasibility"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "affect idp",
+            "binding",
+            "binding interactions",
+            "carefully",
+            "carefully considered",
+            "considered",
+            "details",
+            "details proposal",
+            "determining",
+            "determining feasibility"
+          ],
+          "reviewer_2_unique": [
+            "assess",
+            "assess feasibility",
+            "detailed",
+            "detailed timeline",
+            "difficult",
+            "difficult fully",
+            "feasibility typical",
+            "fully",
+            "fully assess",
+            "funding"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06937846736852356,
+          "reviewer_1_topic_distribution": [
+            0.03148432435289582,
+            0.031479576737046884,
+            0.874067450195759,
+            0.03148432436089853,
+            0.03148432435339964
+          ],
+          "reviewer_2_topic_distribution": [
+            0.027094182934401984,
+            0.8916229566746738,
+            0.02709449452431656,
+            0.02709418293304029,
+            0.027094182933567315
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "feasibility",
+                "proposal",
+                "knowledge",
+                "knowledge gaps",
+                "interactions carefully"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "timeline",
+                "scope",
+                "working group",
+                "detailed",
+                "milestones"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "knowledge",
+                "determining feasibility",
+                "knowledge gaps",
+                "interactions carefully",
+                "interactions"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "feasibility",
+                "proposal",
+                "knowledge",
+                "knowledge gaps",
+                "interactions carefully"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "feasibility",
+                "proposal",
+                "knowledge",
+                "knowledge gaps",
+                "interactions carefully"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.13214285714285715,
+            "subjectivity": 0.7142857142857143,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.030555555555555572,
+            "subjectivity": 0.6208333333333333,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.10158730158730157,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9492063492063492
+        }
+      }
+    },
+    {
+      "proposal_id": "5",
+      "proposal_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:16.381658",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.024572003818086875,
+        "embedding_cosine_similarity": 0.6108522905600713,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "clear",
+            "experimentally",
+            "experimentally maybe",
+            "explanation",
+            "explanation does",
+            "fine",
+            "fine tuned",
+            "fold",
+            "fold native",
+            "form"
+          ],
+          "reviewer_2_unique": [
+            "assess",
+            "assess feasibility",
+            "detailed",
+            "detailed timeline",
+            "difficult",
+            "difficult fully",
+            "feasibility",
+            "feasibility typical",
+            "fully",
+            "fully assess"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.04953922900840386,
+          "reviewer_1_topic_distribution": [
+            0.01672576221807979,
+            0.016725762216270253,
+            0.016726796867689957,
+            0.9330959164792663,
+            0.016725762218693714
+          ],
+          "reviewer_2_topic_distribution": [
+            0.026887013278592872,
+            0.026887013278835595,
+            0.8924626770230312,
+            0.026876283141044188,
+            0.026887013278496158
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "assess",
+                "specific",
+                "timeline",
+                "milestones",
+                "working"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "assess",
+                "specific",
+                "timeline",
+                "milestones",
+                "working"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "scope",
+                "timeline",
+                "milestones",
+                "lab",
+                "working"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "clear",
+                "forms",
+                "models",
+                "unstable forms",
+                "unstable"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "assess",
+                "specific",
+                "timeline",
+                "milestones",
+                "working"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.07291666666666666,
+            "subjectivity": 0.36493055555555554,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.030555555555555572,
+            "subjectivity": 0.6208333333333333,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.042361111111111086,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9788194444444445
+        }
+      }
+    },
+    {
+      "proposal_id": "5",
+      "proposal_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:16.408324",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.007907089240850812,
+        "embedding_cosine_similarity": 0.682541884691387,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "fully"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "explained",
+            "explained biophysical",
+            "feasible",
+            "feasible expert",
+            "fine",
+            "fine tuned",
+            "frame",
+            "frame work",
+            "fully explained",
+            "given"
+          ],
+          "reviewer_2_unique": [
+            "assess",
+            "assess feasibility",
+            "detailed",
+            "detailed timeline",
+            "difficult",
+            "difficult fully",
+            "feasibility",
+            "feasibility typical",
+            "fully assess",
+            "funding"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05517369649747163,
+          "reviewer_1_topic_distribution": [
+            0.9159048558015854,
+            0.021008921717535142,
+            0.021028740835904704,
+            0.021028740823514608,
+            0.021028740821459953
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02702817324720727,
+            0.8918293918956377,
+            0.027047478284672286,
+            0.027047478285886824,
+            0.02704747828659603
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "work",
+                "given",
+                "topology",
+                "actually",
+                "network"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "timeline",
+                "scope",
+                "group proposal",
+                "proposal lacks",
+                "proposal"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "fully",
+                "working group",
+                "group proposal",
+                "proposal lacks",
+                "proposal"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "fully",
+                "working group",
+                "group proposal",
+                "proposal lacks",
+                "proposal"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "fully",
+                "working group",
+                "group proposal",
+                "proposal lacks",
+                "proposal"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0023809523809523803,
+            "subjectivity": 0.41428571428571426,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.030555555555555572,
+            "subjectivity": 0.6208333333333333,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.028174603174603192,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9859126984126984
+        }
+      }
+    },
+    {
+      "proposal_id": "5",
+      "proposal_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:16.429592",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.028649814047119592,
+        "embedding_cosine_similarity": 0.7588767164863295,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "approximate times",
+            "attached",
+            "attached milestone",
+            "clear",
+            "clear milestones",
+            "division",
+            "division labor",
+            "groups",
+            "groups clear",
+            "labor"
+          ],
+          "reviewer_2_unique": [
+            "assess",
+            "assess feasibility",
+            "detailed",
+            "detailed timeline",
+            "difficult",
+            "difficult fully",
+            "feasibility",
+            "feasibility typical",
+            "fully",
+            "fully assess"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9999057933332667,
+          "reviewer_1_topic_distribution": [
+            0.03246887341168953,
+            0.87012450635571,
+            0.03246887341096435,
+            0.03246887341032988,
+            0.0324688734113061
+          ],
+          "reviewer_2_topic_distribution": [
+            0.027120326069736758,
+            0.8915186957002049,
+            0.027120326074854574,
+            0.027120326082659272,
+            0.027120326072544523
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "groups",
+                "attached",
+                "milestones reasonable",
+                "milestone",
+                "division labor"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "timeline",
+                "scope",
+                "milestones",
+                "reasonable",
+                "division labor"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "groups",
+                "attached",
+                "milestones reasonable",
+                "milestone",
+                "division labor"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "groups",
+                "attached",
+                "milestones reasonable",
+                "milestone",
+                "division labor"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "groups",
+                "attached",
+                "milestones reasonable",
+                "milestone",
+                "division labor"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.04999999999999999,
+            "subjectivity": 0.3958333333333333,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.030555555555555572,
+            "subjectivity": 0.6208333333333333,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.019444444444444417,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9902777777777778
+        }
+      }
+    },
+    {
+      "proposal_id": "6",
+      "proposal_title": "Elucidating emergent structures in cellular RNA-protein interaction networks",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:16.532983",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.10000986134035436,
+        "embedding_cosine_similarity": 0.8268588338429802,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "ambitious given",
+            "analyze",
+            "data",
+            "data types",
+            "extent",
+            "extent data",
+            "given",
+            "given extent",
+            "hoping",
+            "hoping integrate"
+          ],
+          "reviewer_2_unique": [
+            "ambitious year",
+            "applications",
+            "applications success",
+            "dependent",
+            "dependent requested",
+            "development",
+            "development map",
+            "encompassing",
+            "encompassing tool",
+            "generation"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0736003948679564,
+          "reviewer_1_topic_distribution": [
+            0.03367889161282849,
+            0.033589724288740866,
+            0.8655519355207582,
+            0.03358972428882907,
+            0.03358972428884339
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8884955002883698,
+            0.027866967642306752,
+            0.02790359678254007,
+            0.027866967643305575,
+            0.027866967643477923
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "scope",
+                "timeline",
+                "year timeline",
+                "generation",
+                "multiple predictive"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "ambitious",
+                "timeline scope",
+                "scope",
+                "timeline",
+                "integrate analyze"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "hoping",
+                "data",
+                "project",
+                "extent data",
+                "overly ambitious"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "ambitious",
+                "timeline scope",
+                "scope",
+                "timeline",
+                "integrate analyze"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "ambitious",
+                "timeline scope",
+                "scope",
+                "timeline",
+                "integrate analyze"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.25,
+            "subjectivity": 0.75,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.08750000000000001,
+            "subjectivity": 0.3125,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.16249999999999998,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.91875
+        }
+      }
+    },
+    {
+      "proposal_id": "6",
+      "proposal_title": "Elucidating emergent structures in cellular RNA-protein interaction networks",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:16.561605",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.015328900837899215,
+        "embedding_cosine_similarity": 0.7152180901718355,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "expected involved",
+            "feasible",
+            "given",
+            "given number",
+            "goals",
+            "goals milestones",
+            "groups",
+            "groups support",
+            "involved",
+            "involved participating"
+          ],
+          "reviewer_2_unique": [
+            "ambitious year",
+            "applications",
+            "applications success",
+            "dependent",
+            "dependent requested",
+            "development",
+            "development map",
+            "encompassing",
+            "encompassing tool",
+            "generation"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.07379570741686006,
+          "reviewer_1_topic_distribution": [
+            0.03346355132382056,
+            0.03346355132490778,
+            0.03344868368445687,
+            0.03346355132419342,
+            0.8661606623426213
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02826637026857597,
+            0.02826637026713745,
+            0.8869473056508256,
+            0.0282663702681528,
+            0.028253583545308207
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "support",
+                "ncems",
+                "participating",
+                "research",
+                "given"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "support",
+                "ncems",
+                "participating",
+                "research",
+                "given"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "timeline",
+                "scope",
+                "year timeline",
+                "generation",
+                "year"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "support",
+                "ncems",
+                "participating",
+                "research",
+                "given"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "ncems",
+                "researchers expected",
+                "research groups",
+                "research",
+                "given"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": -0.1,
+            "subjectivity": 0.4,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.08750000000000001,
+            "subjectivity": 0.3125,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.1875,
+          "polarity_correlation": "opposite_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.90625
+        }
+      }
+    },
+    {
+      "proposal_id": "6",
+      "proposal_title": "Elucidating emergent structures in cellular RNA-protein interaction networks",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:16.649928",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.10869272441743137,
+        "embedding_cosine_similarity": 0.8020686803065668,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "admirable primary",
+            "boeynaems",
+            "boeynaems lab",
+            "completion",
+            "completion project",
+            "concerning",
+            "concerning timely",
+            "feasible",
+            "feasible involvement",
+            "help"
+          ],
+          "reviewer_2_unique": [
+            "ambitious year",
+            "applications",
+            "applications success",
+            "dependent",
+            "dependent requested",
+            "development",
+            "development map",
+            "encompassing",
+            "encompassing tool",
+            "generation"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.999990420320568,
+          "reviewer_1_topic_distribution": [
+            0.8951501169143029,
+            0.026212470770748186,
+            0.026212470773780566,
+            0.026212470771895004,
+            0.02621247076927338
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8881643960558577,
+            0.02795890098624549,
+            0.027958900985649206,
+            0.027958900986790318,
+            0.02795890098545715
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "scope",
+                "timeline",
+                "undergraduates",
+                "support",
+                "scientist"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "year timeline",
+                "scientist support",
+                "requested",
+                "predictive applications",
+                "year"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "year timeline",
+                "scientist support",
+                "requested",
+                "predictive applications",
+                "year"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "year timeline",
+                "scientist support",
+                "requested",
+                "predictive applications",
+                "year"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "year timeline",
+                "scientist support",
+                "requested",
+                "predictive applications",
+                "year"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.2833333333333333,
+            "subjectivity": 0.41666666666666663,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.08750000000000001,
+            "subjectivity": 0.3125,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.1958333333333333,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9020833333333333
+        }
+      }
+    },
+    {
+      "proposal_id": "6",
+      "proposal_title": "Elucidating emergent structures in cellular RNA-protein interaction networks",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:16.736579",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.009920836270502435,
+        "embedding_cosine_similarity": 0.7202878092891671,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "challenging",
+            "challenging evaluate",
+            "considerations",
+            "considerations challenging",
+            "critical",
+            "critical establishing",
+            "depend",
+            "depend method",
+            "details",
+            "details preliminary"
+          ],
+          "reviewer_2_unique": [
+            "ambitious year",
+            "applications",
+            "applications success",
+            "dependent",
+            "dependent requested",
+            "development",
+            "development map",
+            "encompassing",
+            "encompassing tool",
+            "generation"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0605214755017108,
+          "reviewer_1_topic_distribution": [
+            0.02387467256824555,
+            0.9045198656831976,
+            0.023874672568363533,
+            0.023856116609710026,
+            0.02387467257048335
+          ],
+          "reviewer_2_topic_distribution": [
+            0.028253916736833747,
+            0.028235003690840223,
+            0.028253916736787246,
+            0.887003246098698,
+            0.028253916736840894
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "success",
+                "year timeline",
+                "year",
+                "scientist",
+                "requested staff"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "method",
+                "mentioned",
+                "identifying",
+                "evaluate",
+                "evaluate feasibility"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "success",
+                "year timeline",
+                "year",
+                "scientist",
+                "requested staff"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "scope",
+                "timeline",
+                "predictive applications",
+                "scientist",
+                "requested staff"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "success",
+                "year timeline",
+                "year",
+                "scientist",
+                "requested staff"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.15000000000000002,
+            "subjectivity": 0.4111111111111111,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.08750000000000001,
+            "subjectivity": 0.3125,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.06250000000000001,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.96875
+        }
+      }
+    },
+    {
+      "proposal_id": "7",
+      "proposal_title": "Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:16.895028",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.105883502856258,
+        "embedding_cosine_similarity": 0.7813379467558168,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "aim",
+            "aim depends",
+            "approaches",
+            "approaches produced",
+            "assembled",
+            "assembled scope",
+            "creation",
+            "creation idr",
+            "database",
+            "database 52k"
+          ],
+          "reviewer_2_unique": [
+            "000 simulations",
+            "24",
+            "24 month",
+            "440",
+            "440 000",
+            "ambitious",
+            "ambitious particularly",
+            "analyze",
+            "analyze 440",
+            "concerns"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06174155291868849,
+          "reviewer_1_topic_distribution": [
+            0.023599630693542182,
+            0.9055169030499458,
+            0.02359963068844151,
+            0.023599630690859255,
+            0.023684204877211512
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02928623252749928,
+            0.02932056513804546,
+            0.029286232527121935,
+            0.029286232527389246,
+            0.8828207372799441
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "24",
+                "24 month",
+                "month timeline",
+                "month",
+                "simulations"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "large",
+                "feasbility especially",
+                "papers representing",
+                "assembled",
+                "multiple ai"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "24",
+                "24 month",
+                "month timeline",
+                "month",
+                "simulations"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "24",
+                "24 month",
+                "month timeline",
+                "month",
+                "simulations"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "timeline",
+                "scope",
+                "year raises",
+                "concerns feasibility",
+                "particularly plan"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.011904761904761904,
+            "subjectivity": 0.39880952380952384,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.20833333333333331,
+            "subjectivity": 0.5416666666666666,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.1964285714285714,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9017857142857143
+        }
+      }
+    },
+    {
+      "proposal_id": "7",
+      "proposal_title": "Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:16.920976",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.00934138286161766,
+        "embedding_cosine_similarity": 0.650898904443779,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "concerns"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "composition external",
+            "concerns include",
+            "conditions",
+            "conditions salinity",
+            "correlated",
+            "correlated salinity",
+            "enviornmental",
+            "enviornmental factors",
+            "environmental",
+            "environmental conditions"
+          ],
+          "reviewer_2_unique": [
+            "000 simulations",
+            "24",
+            "24 month",
+            "440",
+            "440 000",
+            "ambitious",
+            "ambitious particularly",
+            "analyze",
+            "analyze 440",
+            "concerns feasibility"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.999853006132153,
+          "reviewer_1_topic_distribution": [
+            0.022775711017182464,
+            0.022775711017293532,
+            0.02277571101663485,
+            0.022775711016501585,
+            0.9088971559323876
+          ],
+          "reviewer_2_topic_distribution": [
+            0.029666987361958743,
+            0.02966698736311566,
+            0.02966698736193633,
+            0.029666987362331514,
+            0.8813320505506578
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "year raises",
+                "plan run",
+                "particularly plan",
+                "particularly",
+                "month timeline"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "year raises",
+                "plan run",
+                "particularly plan",
+                "particularly",
+                "month timeline"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "year raises",
+                "plan run",
+                "particularly plan",
+                "particularly",
+                "month timeline"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "year raises",
+                "plan run",
+                "particularly plan",
+                "particularly",
+                "month timeline"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "salinity",
+                "timeline",
+                "scope",
+                "concerns",
+                "year raises"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.11562500000000002,
+            "subjectivity": 0.43333333333333335,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.20833333333333331,
+            "subjectivity": 0.5416666666666666,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.0927083333333333,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9536458333333333
+        }
+      }
+    },
+    {
+      "proposal_id": "7",
+      "proposal_title": "Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:17.017595",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.03579113553261689,
+        "embedding_cosine_similarity": 0.8071447001408588,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "timeline"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "appropriate timeline",
+            "assessing",
+            "assessing realistic",
+            "described",
+            "expertise",
+            "expertise goals",
+            "goals",
+            "goals appropriate",
+            "outside",
+            "outside expertise"
+          ],
+          "reviewer_2_unique": [
+            "000 simulations",
+            "24",
+            "24 month",
+            "440",
+            "440 000",
+            "ambitious",
+            "ambitious particularly",
+            "analyze",
+            "analyze 440",
+            "concerns"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9998500069766734,
+          "reviewer_1_topic_distribution": [
+            0.8560275435360775,
+            0.035993114115942186,
+            0.03599311411591193,
+            0.03599311411591143,
+            0.035993114116156785
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8823412440536116,
+            0.02941468898769235,
+            0.02941468898584409,
+            0.029414688988154802,
+            0.02941468898469719
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "timeline",
+                "scope",
+                "outside",
+                "realistic timeframe",
+                "expertise"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "outside",
+                "realistic",
+                "goals",
+                "goals appropriate",
+                "expertise goals"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "outside",
+                "realistic",
+                "goals",
+                "goals appropriate",
+                "expertise goals"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "outside",
+                "realistic",
+                "goals",
+                "goals appropriate",
+                "expertise goals"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "outside",
+                "realistic",
+                "goals",
+                "goals appropriate",
+                "expertise goals"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.2222222222222222,
+            "subjectivity": 0.29444444444444445,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.20833333333333331,
+            "subjectivity": 0.5416666666666666,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.013888888888888895,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9930555555555556
+        }
+      }
+    },
+    {
+      "proposal_id": "7",
+      "proposal_title": "Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:17.046482",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.008182172377447493,
+        "embedding_cosine_similarity": 0.7327845222740841,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "activities",
+            "aim",
+            "aim people",
+            "assigned",
+            "concerned",
+            "considered",
+            "considered experts",
+            "dedicated",
+            "dedicated expected",
+            "entire"
+          ],
+          "reviewer_2_unique": [
+            "000 simulations",
+            "24",
+            "24 month",
+            "440",
+            "440 000",
+            "ambitious",
+            "ambitious particularly",
+            "analyze",
+            "analyze 440",
+            "concerns"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06144807347598112,
+          "reviewer_1_topic_distribution": [
+            0.023149320796799374,
+            0.023129351082752693,
+            0.02314932079630695,
+            0.9074226865313926,
+            0.02314932079274848
+          ],
+          "reviewer_2_topic_distribution": [
+            0.029639929013438836,
+            0.8814593489025967,
+            0.029639929013471508,
+            0.029620864056526704,
+            0.029639929013966067
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "year",
+                "year raises",
+                "concerns feasibility",
+                "plan run",
+                "plan"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "scope",
+                "timeline",
+                "year raises",
+                "extremely",
+                "plan run"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "year",
+                "year raises",
+                "concerns feasibility",
+                "plan run",
+                "plan"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "aim",
+                "expected",
+                "personel",
+                "people",
+                "aim people"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "year",
+                "year raises",
+                "concerns feasibility",
+                "plan run",
+                "plan"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": -0.08333333333333334,
+            "subjectivity": 0.4739583333333333,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.20833333333333331,
+            "subjectivity": 0.5416666666666666,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.29166666666666663,
+          "polarity_correlation": "opposite_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8541666666666667
+        }
+      }
+    },
+    {
+      "proposal_id": "8",
+      "proposal_title": "Multimodal Single-Cell Frameworks for Cell Lines with Extensive Multi-Omics Data",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:17.232352",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.04466656076905525,
+        "embedding_cosine_similarity": 0.736318260428572,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "timeline"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.041666666666666664,
+          "reviewer_1_unique": [
+            "goals",
+            "goals timeline",
+            "reasonable",
+            "timeline reasonable"
+          ],
+          "reviewer_2_unique": [
+            "cell lines",
+            "deep",
+            "deep integrated",
+            "defined",
+            "defined realistic",
+            "develop",
+            "develop deep",
+            "focusing",
+            "focusing manageable",
+            "integrated"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.12893717001299262,
+          "reviewer_1_topic_distribution": [
+            0.06217392627469447,
+            0.7512814583970935,
+            0.0621967627794278,
+            0.06217392627426992,
+            0.06217392627451429
+          ],
+          "reviewer_2_topic_distribution": [
+            0.03343789459315332,
+            0.03352821923403429,
+            0.8661580969866123,
+            0.03343789459320573,
+            0.0334378945929944
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "timeline",
+                "reasonable",
+                "goals",
+                "goals timeline",
+                "timeline reasonable"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "reasonable",
+                "goals",
+                "goals timeline",
+                "timeline reasonable",
+                "timeline"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "scope",
+                "timeline scope",
+                "lines develop",
+                "cell lines",
+                "deep"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "timeline",
+                "reasonable",
+                "goals",
+                "goals timeline",
+                "timeline reasonable"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "timeline",
+                "reasonable",
+                "goals",
+                "goals timeline",
+                "timeline reasonable"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.2,
+            "subjectivity": 0.6,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.08333333333333333,
+            "subjectivity": 0.3666666666666667,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.11666666666666668,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9416666666666667
+        }
+      }
+    },
+    {
+      "proposal_id": "8",
+      "proposal_title": "Multimodal Single-Cell Frameworks for Cell Lines with Extensive Multi-Omics Data",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:17.317781",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.0,
+        "embedding_cosine_similarity": 0.7031945484753545,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "amble",
+            "amble experience",
+            "assembled",
+            "assembled team",
+            "datasets",
+            "datasets goals",
+            "experience",
+            "experience datasets",
+            "goals",
+            "goals milestones"
+          ],
+          "reviewer_2_unique": [
+            "cell lines",
+            "deep",
+            "deep integrated",
+            "defined",
+            "defined realistic",
+            "develop",
+            "develop deep",
+            "focusing",
+            "focusing manageable",
+            "integrated"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.08949727212442744,
+          "reviewer_1_topic_distribution": [
+            0.039087864677669094,
+            0.03911872070229071,
+            0.843555973215462,
+            0.039118720701762255,
+            0.03911872070281583
+          ],
+          "reviewer_2_topic_distribution": [
+            0.866593381990058,
+            0.03336075630918161,
+            0.03332434908235311,
+            0.03336075630946548,
+            0.03336075630894188
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "scope",
+                "timeline scope",
+                "develop",
+                "lines",
+                "timeline"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "amble",
+                "reasonable timeframe",
+                "goals",
+                "goals milestones",
+                "experience"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "amble",
+                "reasonable timeframe",
+                "goals",
+                "goals milestones",
+                "experience"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "amble",
+                "reasonable timeframe",
+                "goals",
+                "goals milestones",
+                "experience"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "amble",
+                "reasonable timeframe",
+                "goals",
+                "goals milestones",
+                "experience"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.2,
+            "subjectivity": 0.6,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.08333333333333333,
+            "subjectivity": 0.3666666666666667,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.11666666666666668,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9416666666666667
+        }
+      }
+    },
+    {
+      "proposal_id": "8",
+      "proposal_title": "Multimodal Single-Cell Frameworks for Cell Lines with Extensive Multi-Omics Data",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:17.408553",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.02333811279610295,
+        "embedding_cosine_similarity": 0.7037759443165542,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "timeline"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.027777777777777776,
+          "reviewer_1_unique": [
+            "data",
+            "data goal",
+            "fasible",
+            "goal",
+            "goal project",
+            "preliminary",
+            "preliminary data",
+            "project",
+            "project timeline",
+            "propsal"
+          ],
+          "reviewer_2_unique": [
+            "cell lines",
+            "deep",
+            "deep integrated",
+            "defined",
+            "defined realistic",
+            "develop",
+            "develop deep",
+            "focusing",
+            "focusing manageable",
+            "integrated"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.08977584761343824,
+          "reviewer_1_topic_distribution": [
+            0.039188890713854424,
+            0.03919472699488963,
+            0.03919472699490039,
+            0.8432269283011344,
+            0.03919472699522121
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8663201120482343,
+            0.03342007471205846,
+            0.0334200747119113,
+            0.03341966381566592,
+            0.033420074712130085
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "scope",
+                "number cell",
+                "manageable",
+                "lines develop",
+                "lines"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "timeline",
+                "propsal stongly",
+                "goal project",
+                "fasible",
+                "timeline fasible"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "timeline",
+                "propsal stongly",
+                "goal project",
+                "fasible",
+                "timeline fasible"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "propsal stongly",
+                "goal project",
+                "fasible",
+                "timeline fasible",
+                "preliminary"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "timeline",
+                "propsal stongly",
+                "goal project",
+                "fasible",
+                "timeline fasible"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.0,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.08333333333333333,
+            "subjectivity": 0.3666666666666667,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.08333333333333333,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9583333333333334
+        }
+      }
+    },
+    {
+      "proposal_id": "8",
+      "proposal_title": "Multimodal Single-Cell Frameworks for Cell Lines with Extensive Multi-Omics Data",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:17.429356",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.02204097098471528,
+        "embedding_cosine_similarity": 0.6996589540547673,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "timeline"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02631578947368421,
+          "reviewer_1_unique": [
+            "analysis",
+            "analysis expertise",
+            "appears",
+            "appears reasonable",
+            "experience",
+            "experience time",
+            "expertise",
+            "expertise experience",
+            "frame",
+            "frame proposed"
+          ],
+          "reviewer_2_unique": [
+            "cell lines",
+            "deep",
+            "deep integrated",
+            "defined",
+            "defined realistic",
+            "develop",
+            "develop deep",
+            "focusing",
+            "focusing manageable",
+            "integrated"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.999940216150949,
+          "reviewer_1_topic_distribution": [
+            0.03750095961773505,
+            0.03750095961815102,
+            0.8499961615276602,
+            0.03750095961843275,
+            0.03750095961802097
+          ],
+          "reviewer_2_topic_distribution": [
+            0.0334478788816807,
+            0.03344787888144469,
+            0.86620848447482,
+            0.03344787888155008,
+            0.033447878880504434
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "analysis",
+                "proposed timeline",
+                "frame",
+                "frame proposed",
+                "expertise"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "analysis",
+                "proposed timeline",
+                "frame",
+                "frame proposed",
+                "expertise"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "scope",
+                "timeline",
+                "analysis",
+                "proposed",
+                "experience time"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "analysis",
+                "proposed timeline",
+                "frame",
+                "frame proposed",
+                "expertise"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "analysis",
+                "proposed timeline",
+                "frame",
+                "frame proposed",
+                "expertise"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.2,
+            "subjectivity": 0.6,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.08333333333333333,
+            "subjectivity": 0.3666666666666667,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.11666666666666668,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9416666666666667
+        }
+      }
+    },
+    {
+      "proposal_id": "8",
+      "proposal_title": "Multimodal Single-Cell Frameworks for Cell Lines with Extensive Multi-Omics Data",
+      "year": "y1",
+      "human_reviewer_id": "5.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:17.449291",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.03903870815470824,
+        "embedding_cosine_similarity": 0.7310979913973418,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "adding buffers",
+            "buffers",
+            "buffers especially",
+            "data",
+            "data harmonization",
+            "enhance",
+            "enhance feasibility",
+            "especially",
+            "especially data",
+            "experimental"
+          ],
+          "reviewer_2_unique": [
+            "cell lines",
+            "deep",
+            "deep integrated",
+            "defined",
+            "defined realistic",
+            "develop",
+            "develop deep",
+            "focusing",
+            "focusing manageable",
+            "integrated"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.08138625962788343,
+          "reviewer_1_topic_distribution": [
+            0.03351538321724625,
+            0.8659280369453336,
+            0.033525813402763796,
+            0.033515383217339115,
+            0.033515383217317125
+          ],
+          "reviewer_2_topic_distribution": [
+            0.03347502493288479,
+            0.03349046457277683,
+            0.8660844606273935,
+            0.03347502493256026,
+            0.03347502493438471
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "realistic",
+                "timeline",
+                "number",
+                "focusing",
+                "integrated"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "validatio enhance",
+                "harmonization experimental",
+                "adding buffers",
+                "buffers",
+                "buffers especially"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "scope",
+                "number",
+                "manageable number",
+                "develop",
+                "defined realistic"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "realistic",
+                "timeline",
+                "number",
+                "focusing",
+                "integrated"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "realistic",
+                "timeline",
+                "number",
+                "focusing",
+                "integrated"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.14166666666666666,
+            "subjectivity": 0.43333333333333335,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.08333333333333333,
+            "subjectivity": 0.3666666666666667,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.058333333333333334,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9708333333333333
+        }
+      }
+    },
+    {
+      "proposal_id": "9",
+      "proposal_title": "From Image Data and Biophysical Simulations to Principles of Mesoscale Organization Through Integrated Transfer Learning",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:17.489189",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.06522815361068143,
+        "embedding_cosine_similarity": 0.8619999193601144,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "timeline"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "albeit exactly",
+            "answer",
+            "answer scope",
+            "bit",
+            "bit optimistic",
+            "clear",
+            "clear proposing",
+            "concept",
+            "concept albeit",
+            "exactly"
+          ],
+          "reviewer_2_unique": [
+            "ambitious year",
+            "applying",
+            "applying complex",
+            "challenge",
+            "complex",
+            "complex systems",
+            "computational",
+            "computational framework",
+            "data",
+            "data presents"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9998963976300227,
+          "reviewer_1_topic_distribution": [
+            0.034665563482966726,
+            0.03466556348250628,
+            0.03466556348283587,
+            0.8613377460694671,
+            0.03466556348222397
+          ],
+          "reviewer_2_topic_distribution": [
+            0.029159807426341847,
+            0.02915980742666782,
+            0.029159807427657544,
+            0.8833607702897996,
+            0.029159807429533127
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "albeit",
+                "scope proposing",
+                "exactly clear",
+                "concept albeit",
+                "methods"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "albeit",
+                "scope proposing",
+                "exactly clear",
+                "concept albeit",
+                "methods"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "albeit",
+                "scope proposing",
+                "exactly clear",
+                "concept albeit",
+                "methods"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "proposing",
+                "timeline",
+                "scope",
+                "albeit",
+                "proposing methods"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "albeit",
+                "scope proposing",
+                "exactly clear",
+                "concept albeit",
+                "methods"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": -0.024999999999999998,
+            "subjectivity": 0.44166666666666665,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.10833333333333334,
+            "subjectivity": 0.6749999999999999,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.13333333333333333,
+          "polarity_correlation": "opposite_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9333333333333333
+        }
+      }
+    },
+    {
+      "proposal_id": "9",
+      "proposal_title": "From Image Data and Biophysical Simulations to Principles of Mesoscale Organization Through Integrated Transfer Learning",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:17.574529",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.03767553219070757,
+        "embedding_cosine_similarity": 0.7410625099801201,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "timeline"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02631578947368421,
+          "reviewer_1_unique": [
+            "5c",
+            "5c intrgration",
+            "component",
+            "component 5c",
+            "feasible",
+            "feasible sure",
+            "implemented",
+            "implemented component",
+            "intrgration",
+            "intrgration synthesis"
+          ],
+          "reviewer_2_unique": [
+            "ambitious year",
+            "applying",
+            "applying complex",
+            "challenge",
+            "complex",
+            "complex systems",
+            "computational",
+            "computational framework",
+            "data",
+            "data presents"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9997708179563498,
+          "reviewer_1_topic_distribution": [
+            0.8500275969487954,
+            0.0374931007648749,
+            0.03749310076620183,
+            0.0374931007601636,
+            0.03749310075996428
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8823366577021362,
+            0.029415835574715794,
+            0.029415835574105393,
+            0.029415835572338074,
+            0.029415835576704543
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "timeline",
+                "scope",
+                "intrgration synthesis",
+                "5c intrgration",
+                "component"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "intrgration synthesis",
+                "project feasible",
+                "5c intrgration",
+                "component",
+                "component 5c"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "intrgration synthesis",
+                "project feasible",
+                "5c intrgration",
+                "component",
+                "component 5c"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "intrgration synthesis",
+                "project feasible",
+                "5c intrgration",
+                "component",
+                "component 5c"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "intrgration synthesis",
+                "project feasible",
+                "5c intrgration",
+                "component",
+                "component 5c"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": -0.125,
+            "subjectivity": 0.4444444444444444,
+            "sentiment_label": "negative"
+          },
+          "sentiment_2": {
+            "polarity": 0.10833333333333334,
+            "subjectivity": 0.6749999999999999,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.23333333333333334,
+          "polarity_correlation": "opposite_direction",
+          "sentiment_agreement": "disagree",
+          "sentiment_alignment_score": 0.8833333333333333
+        }
+      }
+    },
+    {
+      "proposal_id": "9",
+      "proposal_title": "From Image Data and Biophysical Simulations to Principles of Mesoscale Organization Through Integrated Transfer Learning",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:17.660196",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.051889228233887884,
+        "embedding_cosine_similarity": 0.8228459446141001,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "timeline"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "appropriate timeline",
+            "aspect",
+            "aspect micro",
+            "doing",
+            "doing aspect",
+            "ensure",
+            "ensure timely",
+            "examples",
+            "examples tandem",
+            "lab"
+          ],
+          "reviewer_2_unique": [
+            "ambitious year",
+            "applying",
+            "applying complex",
+            "challenge",
+            "complex",
+            "complex systems",
+            "computational",
+            "computational framework",
+            "data",
+            "data presents"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06777229629225301,
+          "reviewer_1_topic_distribution": [
+            0.02806613542488575,
+            0.8877371769098407,
+            0.028064416815546344,
+            0.028066135424801606,
+            0.02806613542492574
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02937654906602829,
+            0.02937585214054008,
+            0.8824945006608388,
+            0.02937654906644571,
+            0.029376549066147135
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "timeline",
+                "ambitious",
+                "data presents",
+                "highly ambitious",
+                "scouting"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "timeline",
+                "years appropriate",
+                "lab doing",
+                "progression project",
+                "progression"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "scope",
+                "timeline",
+                "ambitious",
+                "significant",
+                "highly ambitious"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "timeline",
+                "ambitious",
+                "data presents",
+                "highly ambitious",
+                "scouting"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "timeline",
+                "ambitious",
+                "data presents",
+                "highly ambitious",
+                "scouting"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.43333333333333335,
+            "subjectivity": 0.3333333333333333,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.10833333333333334,
+            "subjectivity": 0.6749999999999999,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.325,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.8375
+        }
+      }
+    },
+    {
+      "proposal_id": "10",
+      "proposal_title": "Transposable elements and the emergence of genomic innovation",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:17.846935",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.0,
+        "embedding_cosine_similarity": 0.7509082871176065,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "collaborative team",
+            "computational",
+            "computational resources",
+            "confidence",
+            "confidence collaborative",
+            "deliverables",
+            "deliverables proposed",
+            "especially",
+            "especially provided",
+            "generate"
+          ],
+          "reviewer_2_unique": [
+            "ambitious plans",
+            "challenge",
+            "challenge year",
+            "datasets",
+            "datasets year",
+            "extremely",
+            "extremely ambitious",
+            "feasibility",
+            "feasibility challenge",
+            "logical"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.07427732824695646,
+          "reviewer_1_topic_distribution": [
+            0.8666448677460374,
+            0.03334628400557626,
+            0.033316280232947595,
+            0.033346284008603955,
+            0.03334628400683465
+          ],
+          "reviewer_2_topic_distribution": [
+            0.028727046012574146,
+            0.0287585855205064,
+            0.8849971974261739,
+            0.0287585855204315,
+            0.028758585520313955
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "proposed",
+                "especially",
+                "provided",
+                "proposed timeframe",
+                "proposed research"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "especially",
+                "deliverables",
+                "planned confidence",
+                "generate deliverables",
+                "generate"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "year",
+                "scope",
+                "timeline",
+                "year timeline",
+                "logical"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "especially",
+                "deliverables",
+                "planned confidence",
+                "generate deliverables",
+                "generate"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "especially",
+                "deliverables",
+                "planned confidence",
+                "generate deliverables",
+                "generate"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 1.0,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.225,
+            "subjectivity": 0.5916666666666666,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.225,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8875
+        }
+      }
+    },
+    {
+      "proposal_id": "10",
+      "proposal_title": "Transposable elements and the emergence of genomic innovation",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:17.937264",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.07108136581549998,
+        "embedding_cosine_similarity": 0.7697229229089021,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "timeline"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.041666666666666664,
+          "reviewer_1_unique": [
+            "justfied",
+            "reasonable",
+            "reasonable justfied",
+            "timeline reasonable"
+          ],
+          "reviewer_2_unique": [
+            "ambitious plans",
+            "challenge",
+            "challenge year",
+            "datasets",
+            "datasets year",
+            "extremely",
+            "extremely ambitious",
+            "feasibility",
+            "feasibility challenge",
+            "logical"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.1213090425446231,
+          "reviewer_1_topic_distribution": [
+            0.7512501794873327,
+            0.062168786248418324,
+            0.06216878624840895,
+            0.06216878624841465,
+            0.06224346176742518
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02864452144590202,
+            0.028598248068017543,
+            0.028598248066550147,
+            0.028598248067144765,
+            0.8855607343523855
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "reasonable justfied",
+                "justfied",
+                "timeline reasonable",
+                "reasonable",
+                "timeline"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "timeline",
+                "reasonable justfied",
+                "justfied",
+                "timeline reasonable",
+                "reasonable"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "timeline",
+                "reasonable justfied",
+                "justfied",
+                "timeline reasonable",
+                "reasonable"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "timeline",
+                "reasonable justfied",
+                "justfied",
+                "timeline reasonable",
+                "reasonable"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "year",
+                "scope",
+                "timeline",
+                "year timeline",
+                "feasibility challenge"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.2,
+            "subjectivity": 0.6,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.225,
+            "subjectivity": 0.5916666666666666,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.024999999999999994,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9875
+        }
+      }
+    },
+    {
+      "proposal_id": "10",
+      "proposal_title": "Transposable elements and the emergence of genomic innovation",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:18.030870",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.010054977489034387,
+        "embedding_cosine_similarity": 0.7928220933687145,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "aim project",
+            "ambitious",
+            "bit",
+            "bit ambitious",
+            "computational",
+            "computational resources",
+            "consists",
+            "consists planned",
+            "data",
+            "data bit"
+          ],
+          "reviewer_2_unique": [
+            "ambitious plans",
+            "challenge",
+            "challenge year",
+            "datasets",
+            "datasets year",
+            "extremely",
+            "extremely ambitious",
+            "feasibility",
+            "feasibility challenge",
+            "logical"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06745988772802355,
+          "reviewer_1_topic_distribution": [
+            0.8862052591184402,
+            0.028433608444853167,
+            0.028453710812648997,
+            0.02845371081228745,
+            0.02845371081177015
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02877694495571216,
+            0.884834852234968,
+            0.0287960676030553,
+            0.02879606760323043,
+            0.028796067603034162
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "resources",
+                "project",
+                "local",
+                "requires"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "year",
+                "scope",
+                "timeline",
+                "year timeline",
+                "feasibility"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "ambitious",
+                "processing",
+                "large computational",
+                "reproces transcirptional",
+                "reproces"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "ambitious",
+                "processing",
+                "large computational",
+                "reproces transcirptional",
+                "reproces"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "ambitious",
+                "processing",
+                "large computational",
+                "reproces transcirptional",
+                "reproces"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.11607142857142858,
+            "subjectivity": 0.29464285714285715,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.225,
+            "subjectivity": 0.5916666666666666,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.10892857142857143,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9455357142857143
+        }
+      }
+    },
+    {
+      "proposal_id": "10",
+      "proposal_title": "Transposable elements and the emergence of genomic innovation",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:18.056548",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.051161564601156416,
+        "embedding_cosine_similarity": 0.82368418587362,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "applicants suggest",
+            "available",
+            "available applicants",
+            "clear",
+            "clear does",
+            "confidence",
+            "confidence hit",
+            "data",
+            "data sets",
+            "depends"
+          ],
+          "reviewer_2_unique": [
+            "ambitious plans",
+            "challenge",
+            "challenge year",
+            "datasets",
+            "datasets year",
+            "extremely",
+            "extremely ambitious",
+            "feasibility",
+            "feasibility challenge",
+            "logical"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0598896034509942,
+          "reviewer_1_topic_distribution": [
+            0.023186680809488897,
+            0.9072214346518794,
+            0.023218522916362262,
+            0.023186680809855316,
+            0.02318668081241417
+          ],
+          "reviewer_2_topic_distribution": [
+            0.028405578851971324,
+            0.028400366069012632,
+            0.8863828973742692,
+            0.028405578852510445,
+            0.028405578852236425
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "ambitious",
+                "year",
+                "timeline",
+                "year timeline",
+                "logical"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "000",
+                "year time",
+                "confidence",
+                "ready provides",
+                "ready"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "scope",
+                "year",
+                "timeline",
+                "year timeline",
+                "logical"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "ambitious",
+                "year",
+                "timeline",
+                "year timeline",
+                "logical"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "ambitious",
+                "year",
+                "timeline",
+                "year timeline",
+                "logical"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.33055555555555555,
+            "subjectivity": 0.5222222222222223,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.225,
+            "subjectivity": 0.5916666666666666,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.10555555555555554,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9472222222222222
+        }
+      }
+    },
+    {
+      "proposal_id": "11",
+      "proposal_title": " Searching the Crosslinking Mass Spectrometry Universe for New Protein-Protein Interactions",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:18.097821",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.0,
+        "embedding_cosine_similarity": 0.6907716830920769,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "appears",
+            "appears open",
+            "appears tractable",
+            "described",
+            "described task",
+            "ended",
+            "open",
+            "open ended",
+            "provided",
+            "provided task"
+          ],
+          "reviewer_2_unique": [
+            "15 month",
+            "ambitious",
+            "ambitious realistic",
+            "approach",
+            "approach potential",
+            "challenges",
+            "challenges curating",
+            "concern",
+            "curating",
+            "curating large"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9995848531298688,
+          "reviewer_1_topic_distribution": [
+            0.8408214121613226,
+            0.03979464696514639,
+            0.039794646949280095,
+            0.039794646967420695,
+            0.039794646956830264
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8839330854511184,
+            0.02901672863815519,
+            0.029016728640193397,
+            0.02901672863477522,
+            0.02901672863575781
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "task appears",
+                "task",
+                "appears",
+                "timeline",
+                "workflow described"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "workflow described",
+                "resources provided",
+                "ended",
+                "described task",
+                "workflow"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "workflow described",
+                "resources provided",
+                "ended",
+                "described task",
+                "workflow"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "workflow described",
+                "resources provided",
+                "ended",
+                "described task",
+                "workflow"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "workflow described",
+                "resources provided",
+                "ended",
+                "described task",
+                "workflow"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.5,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.20619047619047617,
+            "subjectivity": 0.6023809523809522,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.20619047619047617,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8969047619047619
+        }
+      }
+    },
+    {
+      "proposal_id": "11",
+      "proposal_title": "nan",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:18.119607",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.041603351325412236,
+        "embedding_cosine_similarity": 0.7067329618384555,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "datasets"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "concern potential",
+            "different",
+            "different species",
+            "exploring",
+            "exploring different",
+            "focusing",
+            "focusing human",
+            "gleaned",
+            "gleaned focusing",
+            "goals"
+          ],
+          "reviewer_2_unique": [
+            "15 month",
+            "ambitious",
+            "ambitious realistic",
+            "approach",
+            "approach potential",
+            "challenges",
+            "challenges curating",
+            "concern",
+            "curating",
+            "curating large"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06787479543356686,
+          "reviewer_1_topic_distribution": [
+            0.028421478995934658,
+            0.0284128461558477,
+            0.02841284615559792,
+            0.8863399825371866,
+            0.02841284615543301
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8836405732560053,
+            0.029087140926176053,
+            0.029087140926396304,
+            0.029098003965081394,
+            0.02908714092634093
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "timeline",
+                "legacy",
+                "defined",
+                "phased",
+                "number legacy"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "datasets",
+                "concern",
+                "potential",
+                "defined",
+                "phased"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "datasets",
+                "concern",
+                "potential",
+                "defined",
+                "phased"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "yeast datasets",
+                "exploring",
+                "focusing",
+                "noted concern",
+                "noted"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "datasets",
+                "concern",
+                "potential",
+                "defined",
+                "phased"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.13333333333333333,
+            "subjectivity": 0.5120370370370371,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.20619047619047617,
+            "subjectivity": 0.6023809523809522,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.07285714285714284,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9635714285714285
+        }
+      }
+    },
+    {
+      "proposal_id": "11",
+      "proposal_title": "nan",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:18.214156",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.03419022349121843,
+        "embedding_cosine_similarity": 0.7065990850685391,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "defined"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "available",
+            "available data",
+            "curated",
+            "curated annotated",
+            "data",
+            "data curated",
+            "data data",
+            "defined makes",
+            "definition",
+            "definition information"
+          ],
+          "reviewer_2_unique": [
+            "15 month",
+            "ambitious",
+            "ambitious realistic",
+            "approach",
+            "approach potential",
+            "challenges",
+            "challenges curating",
+            "concern",
+            "curating",
+            "curating large"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06472352456077117,
+          "reviewer_1_topic_distribution": [
+            0.026461997398757913,
+            0.026479114060717925,
+            0.026461997397077622,
+            0.02646199739716448,
+            0.894134893746282
+          ],
+          "reviewer_2_topic_distribution": [
+            0.028751281845861686,
+            0.8850056611163646,
+            0.028751281846013166,
+            0.028751281845979453,
+            0.028740493345781205
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "defined",
+                "timeline",
+                "timeline goal",
+                "depend",
+                "makes sense"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "timeline",
+                "15",
+                "curating large",
+                "phased",
+                "number"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "defined",
+                "timeline",
+                "timeline goal",
+                "depend",
+                "makes sense"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "defined",
+                "timeline",
+                "timeline goal",
+                "depend",
+                "makes sense"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "information",
+                "data",
+                "protein",
+                "timeline goal",
+                "depend information"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.05,
+            "subjectivity": 0.44999999999999996,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.20619047619047617,
+            "subjectivity": 0.6023809523809522,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.15619047619047616,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9219047619047619
+        }
+      }
+    },
+    {
+      "proposal_id": "11",
+      "proposal_title": "nan",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:18.300502",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.028990889036670176,
+        "embedding_cosine_similarity": 0.7503343080183706,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "data",
+            "data realistic",
+            "database",
+            "database second",
+            "expertise",
+            "expertise pride",
+            "final",
+            "final number",
+            "given",
+            "given working"
+          ],
+          "reviewer_2_unique": [
+            "15 month",
+            "ambitious",
+            "ambitious realistic",
+            "approach",
+            "approach potential",
+            "challenges",
+            "challenges curating",
+            "concern",
+            "curating",
+            "curating large"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05484354260525773,
+          "reviewer_1_topic_distribution": [
+            0.018627131067421247,
+            0.9254957574974001,
+            0.018627131066332004,
+            0.018627131070892124,
+            0.01862284929795454
+          ],
+          "reviewer_2_topic_distribution": [
+            0.029071948381705494,
+            0.029072565902138355,
+            0.02907194838148987,
+            0.02907194838138193,
+            0.8837115889532843
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "15",
+                "number",
+                "realistic",
+                "phased approach",
+                "challenges"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "months",
+                "researchers",
+                "data",
+                "predictions",
+                "phase"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "15",
+                "number",
+                "realistic",
+                "phased approach",
+                "challenges"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "15",
+                "number",
+                "realistic",
+                "phased approach",
+                "challenges"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "timeline",
+                "month",
+                "phased",
+                "primary concern",
+                "primary"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.1638888888888889,
+            "subjectivity": 0.39999999999999997,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.20619047619047617,
+            "subjectivity": 0.6023809523809522,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.042301587301587285,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9788492063492064
+        }
+      }
+    },
+    {
+      "proposal_id": "12",
+      "proposal_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry based",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:18.339477",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.028649814047119592,
+        "embedding_cosine_similarity": 0.682182287804768,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "community extremely",
+            "data",
+            "data establishing",
+            "datasets",
+            "datasets strong",
+            "establishing",
+            "establishing standard",
+            "expand",
+            "expand time",
+            "extremely"
+          ],
+          "reviewer_2_unique": [
+            "approach",
+            "approach starting",
+            "community",
+            "community engagement",
+            "development",
+            "development community",
+            "division",
+            "division tasks",
+            "engagement",
+            "engagement integration"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.07074253751027258,
+          "reviewer_1_topic_distribution": [
+            0.03244481024293375,
+            0.032441302929541074,
+            0.03244481024508206,
+            0.03244481024809963,
+            0.8702242663343435
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02709527387960412,
+            0.8916165333138216,
+            0.027095273878870115,
+            0.027095273879180738,
+            0.027097645048523467
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "community",
+                "standard",
+                "permits",
+                "data establishing",
+                "impactful"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "scope",
+                "timeline",
+                "year timeline",
+                "large",
+                "proteomics"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "community",
+                "standard",
+                "permits",
+                "data establishing",
+                "impactful"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "community",
+                "standard",
+                "permits",
+                "data establishing",
+                "impactful"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "permits",
+                "strategy",
+                "impactful",
+                "extremely impactful",
+                "extremely"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.04583333333333334,
+            "subjectivity": 0.5270833333333333,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.14682539682539683,
+            "subjectivity": 0.3103174603174603,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.1009920634920635,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9495039682539682
+        }
+      }
+    },
+    {
+      "proposal_id": "12",
+      "proposal_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry based",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:18.365204",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.038175936413632906,
+        "embedding_cosine_similarity": 0.778826558208475,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "address potential",
+            "attainable",
+            "attainable proposed",
+            "did",
+            "did address",
+            "encompasses",
+            "encompasses tasks",
+            "goals",
+            "goals reasonable",
+            "impede"
+          ],
+          "reviewer_2_unique": [
+            "approach",
+            "approach starting",
+            "community",
+            "community engagement",
+            "development",
+            "development community",
+            "division",
+            "division tasks",
+            "engagement",
+            "engagement integration"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06572361497982233,
+          "reviewer_1_topic_distribution": [
+            0.8837170706188793,
+            0.02906713658346405,
+            0.029081519630774568,
+            0.029067136583417568,
+            0.029067136583464565
+          ],
+          "reviewer_2_topic_distribution": [
+            0.026869148401660305,
+            0.0268761720867834,
+            0.8925023353385112,
+            0.026876172086340935,
+            0.026876172086704092
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "address",
+                "reasonable attainable",
+                "encompasses",
+                "proposed work",
+                "proposed"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "tasks",
+                "timeline",
+                "address",
+                "proposed work",
+                "proposed"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "scope",
+                "timeline",
+                "year timeline",
+                "engagement integration",
+                "phased"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "tasks",
+                "timeline",
+                "address",
+                "proposed work",
+                "proposed"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "tasks",
+                "timeline",
+                "address",
+                "proposed work",
+                "proposed"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.06666666666666667,
+            "subjectivity": 0.5333333333333333,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.14682539682539683,
+            "subjectivity": 0.3103174603174603,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.08015873015873017,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.959920634920635
+        }
+      }
+    },
+    {
+      "proposal_id": "12",
+      "proposal_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry based",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:18.389718",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.03165436516822328,
+        "embedding_cosine_similarity": 0.762215236332677,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "timeline"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "assemble exchange",
+            "detailed",
+            "exchange",
+            "exchange personnel",
+            "group",
+            "group plans",
+            "group requested",
+            "group success",
+            "helpful",
+            "helpful timeline"
+          ],
+          "reviewer_2_unique": [
+            "approach",
+            "approach starting",
+            "community",
+            "community engagement",
+            "development",
+            "development community",
+            "division",
+            "division tasks",
+            "engagement",
+            "engagement integration"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06609597036872225,
+          "reviewer_1_topic_distribution": [
+            0.02939007342433115,
+            0.029384336499398714,
+            0.8824454432251333,
+            0.029390073425743495,
+            0.029390073425393418
+          ],
+          "reviewer_2_topic_distribution": [
+            0.026843706981859717,
+            0.8926374092611791,
+            0.026831469794533987,
+            0.026843706981287383,
+            0.02684370698113985
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "timeline",
+                "years working",
+                "group success",
+                "plans assemble",
+                "plans"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "scope",
+                "timeline",
+                "scope timeline",
+                "standard proteomics",
+                "scope manageable"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "working",
+                "group",
+                "working group",
+                "years",
+                "support"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "timeline",
+                "years working",
+                "group success",
+                "plans assemble",
+                "plans"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "timeline",
+                "years working",
+                "group success",
+                "plans assemble",
+                "plans"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.35,
+            "subjectivity": 0.375,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.14682539682539683,
+            "subjectivity": 0.3103174603174603,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.20317460317460315,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.8984126984126984
+        }
+      }
+    },
+    {
+      "proposal_id": "12",
+      "proposal_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry based",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "feasibility_justification",
+      "criterion_name": "Feasibility",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:18.481298",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.00934460488211183,
+        "embedding_cosine_similarity": 0.7551064860319993,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "complex",
+            "complex task",
+            "enhance",
+            "enhance likelihood",
+            "ensuring",
+            "ensuring accuracy",
+            "especially",
+            "especially ensuring",
+            "extracting",
+            "extracting metadata"
+          ],
+          "reviewer_2_unique": [
+            "approach",
+            "approach starting",
+            "community",
+            "community engagement",
+            "development",
+            "development community",
+            "division",
+            "division tasks",
+            "engagement",
+            "engagement integration"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05936606729230346,
+          "reviewer_1_topic_distribution": [
+            0.02422897458826576,
+            0.02422897458861228,
+            0.02422897458772811,
+            0.024209671489785332,
+            0.9031034047456086
+          ],
+          "reviewer_2_topic_distribution": [
+            0.027052059768638784,
+            0.027052059768568802,
+            0.027052059769594728,
+            0.8918111854983864,
+            0.02703263519481129
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "realistic",
+                "realistic logical",
+                "proteomics workflows",
+                "proteomics",
+                "phased approach"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "realistic",
+                "realistic logical",
+                "proteomics workflows",
+                "proteomics",
+                "phased approach"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "realistic",
+                "realistic logical",
+                "proteomics workflows",
+                "proteomics",
+                "phased approach"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "scope",
+                "timeline",
+                "year timeline",
+                "integration",
+                "proteomics"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "time",
+                "task",
+                "accuracy",
+                "ensuring",
+                "overall goals"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.09523809523809525,
+            "subjectivity": 0.3904761904761905,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.14682539682539683,
+            "subjectivity": 0.3103174603174603,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.051587301587301584,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9742063492063492
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "n_human_human": 64,
+  "n_human_ai": 47,
+  "continuous_metrics": {
+    "tfidf_similarity": {
+      "metric_name": "TF-IDF Similarity",
+      "human_human": {
+        "n": 64,
+        "mean": 0.14805940394517397,
+        "std": 0.061346062637948034,
+        "median": 0.1437861230125344
+      },
+      "human_ai": {
+        "n": 47,
+        "mean": 0.16459733018237896,
+        "std": 0.05764198154835734,
+        "median": 0.16361604074808103
+      },
+      "mann_whitney_u": {
+        "statistic": 1201.0,
+        "p_value": 0.07101559768452662,
+        "significant_at_0.05": false,
+        "significant_at_0.01": false
+      },
+      "effect_size": {
+        "cohens_d": -0.2740251272483661,
+        "interpretation": "small"
+      }
+    },
+    "embedding_similarity": {
+      "metric_name": "Embedding Similarity",
+      "human_human": {
+        "n": 64,
+        "mean": 0.8316755279418491,
+        "std": 0.04697430337797946,
+        "median": 0.8434032561049841
+      },
+      "human_ai": {
+        "n": 47,
+        "mean": 0.833902876185565,
+        "std": 0.042360548363120275,
+        "median": 0.8371991286678134
+      },
+      "mann_whitney_u": {
+        "statistic": 1522.0,
+        "p_value": 0.9168175317739912,
+        "significant_at_0.05": false,
+        "significant_at_0.01": false
+      },
+      "effect_size": {
+        "cohens_d": -0.04896336835140301,
+        "interpretation": "negligible"
+      }
+    },
+    "keyword_jaccard": {
+      "metric_name": "Keyword Jaccard",
+      "human_human": {
+        "n": 64,
+        "mean": 0.10778616589616977,
+        "std": 0.05711596882530039,
+        "median": 0.1111111111111111
+      },
+      "human_ai": {
+        "n": 47,
+        "mean": 0.11570218094821215,
+        "std": 0.05445548249003036,
+        "median": 0.1111111111111111
+      },
+      "mann_whitney_u": {
+        "statistic": 1384.5,
+        "p_value": 0.4712680266238708,
+        "significant_at_0.05": false,
+        "significant_at_0.01": false
+      },
+      "effect_size": {
+        "cohens_d": -0.14006591121999057,
+        "interpretation": "negligible"
+      }
+    },
+    "topic_similarity": {
+      "metric_name": "Topic Similarity",
+      "human_human": {
+        "n": 64,
+        "mean": 0.1939546639913563,
+        "std": 0.3672197776644211,
+        "median": 0.02705997351746998
+      },
+      "human_ai": {
+        "n": 47,
+        "mean": 0.19089367522933479,
+        "std": 0.366454168730718,
+        "median": 0.025408170886042154
+      },
+      "mann_whitney_u": {
+        "statistic": 1865.0,
+        "p_value": 0.03143417231585676,
+        "significant_at_0.05": true,
+        "significant_at_0.01": false
+      },
+      "effect_size": {
+        "cohens_d": 0.008267434432784375,
+        "interpretation": "negligible"
+      }
+    },
+    "sentiment_alignment": {
+      "metric_name": "Sentiment Alignment",
+      "human_human": {
+        "n": 64,
+        "mean": 0.9692827448282053,
+        "std": 0.021488540911787694,
+        "median": 0.9747354264541764
+      },
+      "human_ai": {
+        "n": 47,
+        "mean": 0.9647230222921108,
+        "std": 0.027719895697795278,
+        "median": 0.9710324756696936
+      },
+      "mann_whitney_u": {
+        "statistic": 1618.0,
+        "p_value": 0.4981587628303643,
+        "significant_at_0.05": false,
+        "significant_at_0.01": false
+      },
+      "effect_size": {
+        "cohens_d": 0.18577117235387197,
+        "interpretation": "negligible"
+      }
+    }
+  },
+  "categorical_metrics": {
+    "sentiment_agreement": {
+      "error": "The internally computed table of expected frequencies has a zero element at (np.int64(0), np.int64(2)).",
+      "human_human_counts": {
+        "agree": 44,
+        "partial": 20,
+        "disagree": 0
+      },
+      "human_ai_counts": {
+        "agree": 38,
+        "partial": 9,
+        "disagree": 0
+      }
+    }
+  }
+}

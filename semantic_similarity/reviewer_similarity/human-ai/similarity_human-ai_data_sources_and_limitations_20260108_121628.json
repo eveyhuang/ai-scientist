@@ -1,0 +1,6202 @@
+{
+  "metadata": {
+    "analysis_type": "reviewer_similarity",
+    "comparison_type": "human-ai",
+    "criterion": "data_sources_and_limitations_justification",
+    "criterion_name": "Data Sources & Limitations",
+    "total_comparisons": 47,
+    "generation_timestamp": "2026-01-08T12:16:28.394787",
+    "methods": {
+      "tfidf": "TF-IDF based cosine similarity",
+      "embeddings": "Nomic-Embed (nomic-ai/nomic-embed-text-v1.5)",
+      "keywords": "TF-IDF top-20 keywords with Jaccard similarity",
+      "topics": "Latent Dirichlet Allocation (LDA) with 5 topics"
+    }
+  },
+  "results": [
+    {
+      "proposal_id": "1",
+      "proposal_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:18.594421",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.0744497812340975,
+        "embedding_cosine_similarity": 0.6962222782619298,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "cytokinesis",
+            "cytokinesis heat",
+            "genetic",
+            "heat",
+            "heat stress",
+            "identified",
+            "identify",
+            "key",
+            "likely",
+            "limitations"
+          ],
+          "reviewer_2_unique": [
+            "exclusively proposes",
+            "exemplary",
+            "exemplary synthesis",
+            "existing",
+            "existing publicly",
+            "fails",
+            "fails list",
+            "focus",
+            "focus exemplary",
+            "funding"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.041577656621110584,
+          "reviewer_1_topic_distribution": [
+            0.9356411554236518,
+            0.016087289028659257,
+            0.01609697746984837,
+            0.016087289044128712,
+            0.01608728903371198
+          ],
+          "reviewer_2_topic_distribution": [
+            0.021266737959156404,
+            0.02126633602395072,
+            0.914934253959353,
+            0.021266336027414234,
+            0.021266336030125677
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "cytokinesis",
+                "limitations",
+                "heat",
+                "proposal",
+                "data"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "datasets",
+                "species",
+                "proposal",
+                "data",
+                "accessions"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "data",
+                "synthesis",
+                "exclusively proposes",
+                "fails",
+                "existing publicly"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "datasets",
+                "species",
+                "proposal",
+                "data",
+                "accessions"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "datasets",
+                "species",
+                "proposal",
+                "data",
+                "accessions"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": -0.0021428571428571395,
+            "subjectivity": 0.7101785714285714,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.27662337662337666,
+            "subjectivity": 0.4685064935064935,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.2787662337662338,
+          "polarity_correlation": "opposite_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8606168831168831
+        }
+      }
+    },
+    {
+      "proposal_id": "1",
+      "proposal_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:18.691440",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.28490294101887803,
+        "embedding_cosine_similarity": 0.8624657068125554,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "synthesis"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "reviewer_1_unique": [
+            "approach",
+            "datasets",
+            "details",
+            "details types",
+            "divergent",
+            "divergent responses",
+            "elucidate",
+            "elucidate heat",
+            "emergent",
+            "emergent phenomena"
+          ],
+          "reviewer_2_unique": [
+            "exclusively proposes",
+            "exemplary",
+            "exemplary synthesis",
+            "existing",
+            "existing publicly",
+            "fails",
+            "fails list",
+            "focus",
+            "focus exemplary",
+            "funding"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.04136665094756847,
+          "reviewer_1_topic_distribution": [
+            0.015628423634403713,
+            0.01567614711865538,
+            0.0156284236347505,
+            0.015628423635427092,
+            0.9374385819767633
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02144157980265005,
+            0.9141561471177188,
+            0.02144157980274932,
+            0.021441579802803666,
+            0.021519113474078044
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "focus",
+                "types",
+                "publicly",
+                "publicly available",
+                "data identification"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "synthesis",
+                "perfectly matching",
+                "new data",
+                "datasets accessions"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "focus",
+                "types",
+                "publicly",
+                "publicly available",
+                "data identification"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "focus",
+                "types",
+                "publicly",
+                "publicly available",
+                "data identification"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "proposal",
+                "project",
+                "synthesis",
+                "approach"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.15833333333333333,
+            "subjectivity": 0.4437499999999999,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.27662337662337666,
+            "subjectivity": 0.4685064935064935,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.11829004329004333,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9408549783549783
+        }
+      }
+    },
+    {
+      "proposal_id": "1",
+      "proposal_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:18.711899",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.08148543902694351,
+        "embedding_cosine_similarity": 0.6940176653806218,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "data sets",
+            "defined",
+            "defined limtations",
+            "documented",
+            "does",
+            "does onstrate",
+            "generating",
+            "generating hypothesis",
+            "high",
+            "high temperature"
+          ],
+          "reviewer_2_unique": [
+            "exclusively proposes",
+            "exemplary",
+            "exemplary synthesis",
+            "existing",
+            "existing publicly",
+            "fails",
+            "fails list",
+            "focus",
+            "focus exemplary",
+            "funding"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.04943633735032155,
+          "reviewer_1_topic_distribution": [
+            0.022356439712775834,
+            0.910544870728945,
+            0.02235643971639378,
+            0.022356439712730884,
+            0.022385810129154495
+          ],
+          "reviewer_2_topic_distribution": [
+            0.021277662126296705,
+            0.021272496850333555,
+            0.021277662125980715,
+            0.02127766212571236,
+            0.9148945167716768
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "proposal",
+                "project",
+                "does",
+                "data",
+                "data sets"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "omics",
+                "high",
+                "data",
+                "organ",
+                "omics data"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "proposal",
+                "project",
+                "does",
+                "data",
+                "data sets"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "proposal",
+                "project",
+                "does",
+                "data",
+                "data sets"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "synthesis",
+                "use integrate",
+                "identifies types",
+                "focus exemplary"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.16,
+            "subjectivity": 0.54,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.27662337662337666,
+            "subjectivity": 0.4685064935064935,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.11662337662337666,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9416883116883117
+        }
+      }
+    },
+    {
+      "proposal_id": "1",
+      "proposal_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:18.738296",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.14011599092145122,
+        "embedding_cosine_similarity": 0.7441314385148996,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "cell",
+            "cell data",
+            "collected",
+            "collected experiments",
+            "data collected",
+            "data plant",
+            "experiments",
+            "experiments tested",
+            "heat",
+            "heat stress"
+          ],
+          "reviewer_2_unique": [
+            "exclusively proposes",
+            "exemplary",
+            "exemplary synthesis",
+            "existing",
+            "existing publicly",
+            "fails",
+            "fails list",
+            "focus",
+            "focus exemplary",
+            "funding"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06326728274721216,
+          "reviewer_1_topic_distribution": [
+            0.8694925700134026,
+            0.03261113750446481,
+            0.032674017473298046,
+            0.03261113750442394,
+            0.03261113750441056
+          ],
+          "reviewer_2_topic_distribution": [
+            0.021331072247788664,
+            0.021286608089595236,
+            0.9148091034813975,
+            0.021286608090048106,
+            0.02128660809117049
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "proposal",
+                "data",
+                "integrate single",
+                "collected experiments",
+                "experiments tested"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "integrate",
+                "species",
+                "proposal",
+                "data",
+                "integrate single"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "data",
+                "synthesis",
+                "use integrate",
+                "heterogeneity",
+                "fails"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "integrate",
+                "species",
+                "proposal",
+                "data",
+                "integrate single"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "integrate",
+                "species",
+                "proposal",
+                "data",
+                "integrate single"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.0,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.27662337662337666,
+            "subjectivity": 0.4685064935064935,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.27662337662337666,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8616883116883116
+        }
+      }
+    },
+    {
+      "proposal_id": "2",
+      "proposal_title": "Elucidating genome structure-function relationships in human brain cells",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:18.788200",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.08623497745570599,
+        "embedding_cosine_similarity": 0.7585423774600569,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "datasets",
+            "public"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.058823529411764705,
+          "reviewer_1_unique": [
+            "available",
+            "available datasets",
+            "datasets defined",
+            "defined",
+            "defined work",
+            "group",
+            "group prior",
+            "prior",
+            "prior publications",
+            "public available"
+          ],
+          "reviewer_2_unique": [
+            "data",
+            "disparate",
+            "entirely",
+            "entirely computational",
+            "exemplary",
+            "exemplary synthesis",
+            "existing",
+            "existing public",
+            "experimental",
+            "experimental data"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.07811160976665735,
+          "reviewer_1_topic_distribution": [
+            0.040323261527157206,
+            0.04032326152751443,
+            0.04035976954112819,
+            0.04032326152718747,
+            0.8386704458770126
+          ],
+          "reviewer_2_topic_distribution": [
+            0.024021510924607074,
+            0.024021510925439332,
+            0.903868984769545,
+            0.024021510923495568,
+            0.024066482456913157
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "public",
+                "datasets",
+                "work group",
+                "prior publications",
+                "public available"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "public",
+                "datasets",
+                "work group",
+                "prior publications",
+                "public available"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "data",
+                "public datasets",
+                "synthesis",
+                "public",
+                "datasets"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "public",
+                "datasets",
+                "work group",
+                "prior publications",
+                "public available"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "datasets",
+                "work group",
+                "prior publications",
+                "public available",
+                "defined work"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.06875,
+            "subjectivity": 0.21041666666666667,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.013920454545454541,
+            "subjectivity": 0.3641098484848485,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.054829545454545464,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9725852272727272
+        }
+      }
+    },
+    {
+      "proposal_id": "2",
+      "proposal_title": "Elucidating genome structure-function relationships in human brain cells",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:18.813504",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.09173231716406023,
+        "embedding_cosine_similarity": 0.8052800714913796,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "datasets"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "cell datasets",
+            "clear",
+            "clear dataset",
+            "dataset",
+            "dataset fits",
+            "datasets limited",
+            "datasets total",
+            "datasets used",
+            "discussed",
+            "discussed proposal"
+          ],
+          "reviewer_2_unique": [
+            "data",
+            "disparate",
+            "entirely",
+            "entirely computational",
+            "exemplary",
+            "exemplary synthesis",
+            "existing",
+            "existing public",
+            "experimental",
+            "experimental data"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9999509268607217,
+          "reviewer_1_topic_distribution": [
+            0.028208532872232163,
+            0.8871658685094592,
+            0.02820853287220794,
+            0.028208532871702694,
+            0.028208532874397754
+          ],
+          "reviewer_2_topic_distribution": [
+            0.024226172715906834,
+            0.9030953091375855,
+            0.024226172717005008,
+            0.024226172724408163,
+            0.02422617270509452
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "proposal text",
+                "single cell",
+                "dataset",
+                "dataset fits",
+                "provide table"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "datasets",
+                "data",
+                "public",
+                "synthesis",
+                "public datasets"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "proposal text",
+                "single cell",
+                "dataset",
+                "dataset fits",
+                "provide table"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "proposal text",
+                "single cell",
+                "dataset",
+                "dataset fits",
+                "provide table"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "proposal text",
+                "single cell",
+                "dataset",
+                "dataset fits",
+                "provide table"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": -0.030357142857142853,
+            "subjectivity": 0.319047619047619,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.013920454545454541,
+            "subjectivity": 0.3641098484848485,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.044277597402597395,
+          "polarity_correlation": "opposite_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9778612012987014
+        }
+      }
+    },
+    {
+      "proposal_id": "2",
+      "proposal_title": "Elucidating genome structure-function relationships in human brain cells",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:18.906459",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.07466946261556949,
+        "embedding_cosine_similarity": 0.8144972755013073,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "datasets"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "reviewer_1_unique": [
+            "acknowledged strategies",
+            "ai",
+            "ai data",
+            "clearly",
+            "clearly described",
+            "data modalities",
+            "data sources",
+            "datasets detailed",
+            "described",
+            "described limitation"
+          ],
+          "reviewer_2_unique": [
+            "disparate",
+            "entirely",
+            "entirely computational",
+            "exemplary",
+            "exemplary synthesis",
+            "existing",
+            "existing public",
+            "experimental",
+            "experimental data",
+            "fails"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05936746940591746,
+          "reviewer_1_topic_distribution": [
+            0.027472463501491285,
+            0.027495345877676814,
+            0.027472463501926447,
+            0.027472463501574527,
+            0.8900872636173309
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02375135029150003,
+            0.9049973152401108,
+            0.023751350290862217,
+            0.023751350289053112,
+            0.023748633888473963
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "datasets",
+                "data",
+                "acknowledged",
+                "limitation properly",
+                "neurobiology"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "public",
+                "public datasets",
+                "synthesis",
+                "datasets"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "datasets",
+                "data",
+                "acknowledged",
+                "limitation properly",
+                "neurobiology"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "datasets",
+                "data",
+                "acknowledged",
+                "limitation properly",
+                "neurobiology"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "acknowledged",
+                "described",
+                "neurobiology",
+                "multiple"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.13333333333333333,
+            "subjectivity": 0.2972222222222222,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.013920454545454541,
+            "subjectivity": 0.3641098484848485,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.11941287878787879,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9402935606060606
+        }
+      }
+    },
+    {
+      "proposal_id": "3",
+      "proposal_title": "MaiTool - LLM-powered bioinformatics tools for microbiome analysis",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:19.078018",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.23806703547961294,
+        "embedding_cosine_similarity": 0.7941738771558395,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "existing",
+            "focus",
+            "synthesis"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "reviewer_1_unique": [
+            "discusses",
+            "discusses api",
+            "existing microbiome",
+            "focus project",
+            "focusing",
+            "focusing integrating",
+            "generating",
+            "generating new",
+            "hmp img",
+            "identification"
+          ],
+          "reviewer_2_unique": [
+            "datasets data",
+            "discussion",
+            "discussion inherent",
+            "diverse",
+            "diverse datasets",
+            "effects",
+            "exclusively",
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.048263053344767035,
+          "reviewer_1_topic_distribution": [
+            0.9172209243583505,
+            0.020680380584528195,
+            0.020680380586161628,
+            0.02068038058655389,
+            0.020737933884405747
+          ],
+          "reviewer_2_topic_distribution": [
+            0.022011773457511558,
+            0.021942620491771776,
+            0.021942620492103257,
+            0.02194262049190175,
+            0.9121603650667117
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "microbiome",
+                "proposal",
+                "synthesis",
+                "integrating reanalyzing"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data identification",
+                "project",
+                "identification proposal",
+                "synthesis focus",
+                "integration"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "data identification",
+                "project",
+                "identification proposal",
+                "synthesis focus",
+                "integration"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data identification",
+                "project",
+                "identification proposal",
+                "synthesis focus",
+                "integration"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "synthesis",
+                "uses existing",
+                "identifies key",
+                "existing publicly"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.29393939393939394,
+            "subjectivity": 0.4875757575757576,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.1,
+            "subjectivity": 0.4699999999999999,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.19393939393939394,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9030303030303031
+        }
+      }
+    },
+    {
+      "proposal_id": "3",
+      "proposal_title": "MaiTool - LLM-powered bioinformatics tools for microbiome analysis",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:19.169577",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.09547932275688113,
+        "embedding_cosine_similarity": 0.8472147647387633,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "synthesis"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05405405405405406,
+          "reviewer_1_unique": [
+            "appropriate",
+            "aspect",
+            "aspect project",
+            "authors",
+            "authors identified",
+            "clear",
+            "clear synthesis",
+            "data sources",
+            "identified",
+            "identified large"
+          ],
+          "reviewer_2_unique": [
+            "datasets data",
+            "discussion",
+            "discussion inherent",
+            "diverse",
+            "diverse datasets",
+            "effects",
+            "exclusively",
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9991794958139254,
+          "reviewer_1_topic_distribution": [
+            0.037591508196384,
+            0.03759150819857469,
+            0.8496339672118912,
+            0.03759150819669303,
+            0.03759150819645722
+          ],
+          "reviewer_2_topic_distribution": [
+            0.021807455093774242,
+            0.021807455093388634,
+            0.9127701796231349,
+            0.021807455094845166,
+            0.021807455094857323
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "project authors",
+                "synthesis aspect",
+                "data sources",
+                "clear synthesis",
+                "clear"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "project authors",
+                "synthesis aspect",
+                "data sources",
+                "clear synthesis",
+                "clear"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "data",
+                "synthesis",
+                "project",
+                "large",
+                "large data"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "project authors",
+                "synthesis aspect",
+                "data sources",
+                "clear synthesis",
+                "clear"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "project authors",
+                "synthesis aspect",
+                "data sources",
+                "clear synthesis",
+                "clear"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.32857142857142857,
+            "subjectivity": 0.4529761904761905,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.1,
+            "subjectivity": 0.4699999999999999,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.22857142857142856,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8857142857142857
+        }
+      }
+    },
+    {
+      "proposal_id": "3",
+      "proposal_title": "MaiTool - LLM-powered bioinformatics tools for microbiome analysis",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:19.255561",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.09320702554448815,
+        "embedding_cosine_similarity": 0.6948162530347554,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "additional quality",
+            "analysis",
+            "analysis retrieved",
+            "appears",
+            "appears layer",
+            "control",
+            "control team",
+            "current",
+            "current gpt",
+            "data data"
+          ],
+          "reviewer_2_unique": [
+            "datasets data",
+            "discussion",
+            "discussion inherent",
+            "diverse",
+            "diverse datasets",
+            "effects",
+            "exclusively",
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.055869458908052165,
+          "reviewer_1_topic_distribution": [
+            0.026666895984711246,
+            0.8933071175123931,
+            0.026666895985040396,
+            0.026666895984655867,
+            0.02669219453319927
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02188732927371975,
+            0.021902953404757678,
+            0.02188732926736331,
+            0.02188732927177939,
+            0.9124350587823797
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "limitations",
+                "tool",
+                "data",
+                "visualization statistical",
+                "gpt"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "tool",
+                "data",
+                "visualization statistical",
+                "gpt",
+                "perform visualization"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "limitations",
+                "tool",
+                "data",
+                "visualization statistical",
+                "gpt"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "limitations",
+                "tool",
+                "data",
+                "visualization statistical",
+                "gpt"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "synthesis",
+                "inherent",
+                "data aims",
+                "heterogeneity batch"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.25,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.1,
+            "subjectivity": 0.4699999999999999,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.1,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.95
+        }
+      }
+    },
+    {
+      "proposal_id": "3",
+      "proposal_title": "MaiTool - LLM-powered bioinformatics tools for microbiome analysis",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:19.343841",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1685812941641485,
+        "embedding_cosine_similarity": 0.8702268088683824,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "synthesis"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "reviewer_1_unique": [
+            "acknowledge limitations",
+            "clearly",
+            "clearly demonstrates",
+            "data sources",
+            "demonstrates",
+            "demonstrates synthesis",
+            "explicitly",
+            "explicitly identified",
+            "identified",
+            "identified acknowledge"
+          ],
+          "reviewer_2_unique": [
+            "datasets data",
+            "discussion",
+            "discussion inherent",
+            "diverse",
+            "diverse datasets",
+            "effects",
+            "exclusively",
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06939259883044427,
+          "reviewer_1_topic_distribution": [
+            0.03626142746282667,
+            0.8548108617544563,
+            0.03626142746273872,
+            0.03626142746272963,
+            0.036404855857248786
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02186931260516191,
+            0.021974737258830618,
+            0.02186931260472486,
+            0.02186931260464046,
+            0.9124173249266422
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "project",
+                "limitations",
+                "synthesis project",
+                "proposal",
+                "proposal clearly"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "acknowledge",
+                "sources explicitly",
+                "identified",
+                "identified acknowledge",
+                "demonstrates synthesis"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "project",
+                "limitations",
+                "synthesis project",
+                "proposal",
+                "proposal clearly"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "project",
+                "limitations",
+                "synthesis project",
+                "proposal",
+                "proposal clearly"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "synthesis",
+                "uses existing",
+                "diverse datasets",
+                "effects"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.09999999999999999,
+            "subjectivity": 0.3833333333333333,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.1,
+            "subjectivity": 0.4699999999999999,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 1.3877787807814457e-17,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 1.0
+        }
+      }
+    },
+    {
+      "proposal_id": "4",
+      "proposal_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:19.463168",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.05002312823331449,
+        "embedding_cosine_similarity": 0.7180704719604972,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "existing"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "reviewer_1_unique": [
+            "coli",
+            "coli databases",
+            "coli species",
+            "data non",
+            "data sources",
+            "databases",
+            "databases existing",
+            "databases selection",
+            "example",
+            "example species"
+          ],
+          "reviewer_2_unique": [
+            "exclusively",
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis",
+            "existing publicly",
+            "focus",
+            "focus exemplary",
+            "focuses",
+            "focuses entirely",
+            "harmonization"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05224268023025165,
+          "reviewer_1_topic_distribution": [
+            0.024846245845990263,
+            0.9006125189994542,
+            0.024846245846846086,
+            0.024848743461664283,
+            0.024846245846045126
+          ],
+          "reviewer_2_topic_distribution": [
+            0.020968499843070754,
+            0.02097158175351616,
+            0.02096849984270071,
+            0.9161229187181735,
+            0.020968499842538797
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "existing",
+                "limitation",
+                "sources",
+                "data",
+                "acknowledged"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "coli",
+                "databases",
+                "species",
+                "data",
+                "acknowledged"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "existing",
+                "limitation",
+                "sources",
+                "data",
+                "acknowledged"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "project",
+                "synthesis",
+                "data",
+                "identification",
+                "exemplary synthesis"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "existing",
+                "limitation",
+                "sources",
+                "data",
+                "acknowledged"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": -0.07986111111111112,
+            "subjectivity": 0.3013888888888889,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.18181818181818182,
+            "subjectivity": 0.48013468013468014,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.26167929292929293,
+          "polarity_correlation": "opposite_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8691603535353536
+        }
+      }
+    },
+    {
+      "proposal_id": "4",
+      "proposal_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:19.489493",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.09481745776453832,
+        "embedding_cosine_similarity": 0.7801969097770167,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "clearly",
+            "current",
+            "current fragmentation",
+            "data issue",
+            "data needed",
+            "data sources",
+            "discovery",
+            "discovery current",
+            "explicit",
+            "expression"
+          ],
+          "reviewer_2_unique": [
+            "exclusively",
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis",
+            "existing",
+            "existing publicly",
+            "focus",
+            "focus exemplary",
+            "focuses",
+            "focuses entirely"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05161551891104693,
+          "reviewer_1_topic_distribution": [
+            0.024507165693784198,
+            0.02453939552373551,
+            0.024507165691605392,
+            0.024507165691345045,
+            0.9019391073995298
+          ],
+          "reviewer_2_topic_distribution": [
+            0.020781512804523644,
+            0.916852233343634,
+            0.020781512804729826,
+            0.02078151280448611,
+            0.02080322824262629
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "proposal",
+                "synthesis project",
+                "sources",
+                "project",
+                "synthesis"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "project",
+                "synthesis",
+                "data",
+                "key limitation",
+                "identification proposal"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "proposal",
+                "synthesis project",
+                "sources",
+                "project",
+                "synthesis"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "proposal",
+                "synthesis project",
+                "sources",
+                "project",
+                "synthesis"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "needed",
+                "clearly",
+                "way process",
+                "gene"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.1401360544217687,
+            "subjectivity": 0.427891156462585,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.18181818181818182,
+            "subjectivity": 0.48013468013468014,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.04168212739641311,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9791589363017934
+        }
+      }
+    },
+    {
+      "proposal_id": "4",
+      "proposal_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:19.590635",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.09666208136636235,
+        "embedding_cosine_similarity": 0.7516903820195421,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "existing"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "reviewer_1_unique": [
+            "coli",
+            "coli gene",
+            "combined",
+            "combined exciting",
+            "create",
+            "create atlas",
+            "data combined",
+            "data sets",
+            "data sources",
+            "datasets"
+          ],
+          "reviewer_2_unique": [
+            "exclusively",
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis",
+            "existing publicly",
+            "focus",
+            "focus exemplary",
+            "focuses",
+            "focuses entirely",
+            "harmonization"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05283956457483946,
+          "reviewer_1_topic_distribution": [
+            0.025453648737085048,
+            0.0254536487367843,
+            0.025453648737642148,
+            0.025482715673225294,
+            0.8981563381152633
+          ],
+          "reviewer_2_topic_distribution": [
+            0.020771556703852233,
+            0.020771556703579608,
+            0.020771556703359548,
+            0.9168898711189204,
+            0.020795458770288374
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "existing",
+                "sources",
+                "project",
+                "synthesis",
+                "data"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "existing",
+                "sources",
+                "project",
+                "synthesis",
+                "data"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "existing",
+                "sources",
+                "project",
+                "synthesis",
+                "data"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "synthesis",
+                "project",
+                "data",
+                "identification proposal",
+                "existing publicly"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "identified limitations",
+                "metadata",
+                "data combined",
+                "data sets"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": -0.03333333333333335,
+            "subjectivity": 0.6333333333333334,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.18181818181818182,
+            "subjectivity": 0.48013468013468014,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.21515151515151518,
+          "polarity_correlation": "opposite_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8924242424242425
+        }
+      }
+    },
+    {
+      "proposal_id": "4",
+      "proposal_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:19.675443",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1436870087433007,
+        "embedding_cosine_similarity": 0.8172131468866335,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "existing",
+            "focus",
+            "synthesis"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "reviewer_1_unique": [
+            "data sources",
+            "databases okgeneexpdb",
+            "dataset",
+            "dataset inventory",
+            "demonstrates",
+            "demonstrates strong",
+            "existing data",
+            "experimental",
+            "experimental data",
+            "expression"
+          ],
+          "reviewer_2_unique": [
+            "exclusively",
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis",
+            "existing publicly",
+            "focus exemplary",
+            "focuses",
+            "focuses entirely",
+            "harmonization",
+            "harmonization disparate"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.04642846724449848,
+          "reviewer_1_topic_distribution": [
+            0.9189035343985895,
+            0.020267598892098247,
+            0.020267598891986895,
+            0.0202936689245908,
+            0.020267598892734474
+          ],
+          "reviewer_2_topic_distribution": [
+            0.021003291548462335,
+            0.020942107967864124,
+            0.0209421079680156,
+            0.9161703845476724,
+            0.020942107967985457
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "existing data",
+                "existing",
+                "proposal",
+                "synthesis"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "identification",
+                "synthesis focus",
+                "sources",
+                "provides",
+                "focus"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "identification",
+                "synthesis focus",
+                "sources",
+                "provides",
+                "focus"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "project",
+                "synthesis",
+                "data",
+                "variation proposing",
+                "identifies specific"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "identification",
+                "synthesis focus",
+                "sources",
+                "provides",
+                "focus"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.15393939393939393,
+            "subjectivity": 0.49424242424242426,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.18181818181818182,
+            "subjectivity": 0.48013468013468014,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.027878787878787892,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9860606060606061
+        }
+      }
+    },
+    {
+      "proposal_id": "5",
+      "proposal_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:19.777484",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.008085434787969102,
+        "embedding_cosine_similarity": 0.7311686320117616,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "analysis existing",
+            "clear",
+            "clear computational",
+            "computational",
+            "computational resources",
+            "disordered",
+            "disordered proteins",
+            "existing",
+            "existing network",
+            "fairly"
+          ],
+          "reviewer_2_unique": [
+            "data",
+            "exemplary synthesis",
+            "existing publicly",
+            "experimental",
+            "experimental data",
+            "fails",
+            "fails specify",
+            "false",
+            "false positive",
+            "focus"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06057645822306553,
+          "reviewer_1_topic_distribution": [
+            0.030548907623894977,
+            0.8777557591394529,
+            0.030565111076011574,
+            0.03056511107800133,
+            0.030565111082639238
+          ],
+          "reviewer_2_topic_distribution": [
+            0.913935657216598,
+            0.021502267239015556,
+            0.021520691849878617,
+            0.021520691847586135,
+            0.021520691846921798
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "interactomes",
+                "synthesis",
+                "interactomes proteomics",
+                "identification"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "wasn clear",
+                "disordered proteins",
+                "required",
+                "questions wasn",
+                "questions"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "existing",
+                "wasn clear",
+                "questions wasn",
+                "questions",
+                "pulling disordered"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "existing",
+                "wasn clear",
+                "questions wasn",
+                "questions",
+                "pulling disordered"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "existing",
+                "wasn clear",
+                "questions wasn",
+                "questions",
+                "pulling disordered"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.19999999999999998,
+            "subjectivity": 0.4134920634920635,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.16996632996632993,
+            "subjectivity": 0.49198653198653197,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.03003367003367005,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.984983164983165
+        }
+      }
+    },
+    {
+      "proposal_id": "5",
+      "proposal_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:19.802571",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.11300932880375965,
+        "embedding_cosine_similarity": 0.8013449305035727,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "focus",
+            "synthesis"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "reviewer_1_unique": [
+            "correctly",
+            "correctly referenced",
+            "data bases",
+            "discussion",
+            "discussion shortcomings",
+            "focus libararies",
+            "justifies",
+            "justifies synthesis",
+            "libararies",
+            "libararies correctly"
+          ],
+          "reviewer_2_unique": [
+            "exemplary synthesis",
+            "existing publicly",
+            "experimental",
+            "experimental data",
+            "fails",
+            "fails specify",
+            "false",
+            "false positive",
+            "focus exemplary",
+            "generating"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0636198215199456,
+          "reviewer_1_topic_distribution": [
+            0.033615198875152276,
+            0.8654155939610948,
+            0.03361519887509896,
+            0.03361519887508297,
+            0.03373880941357088
+          ],
+          "reviewer_2_topic_distribution": [
+            0.020444011271816998,
+            0.020471119640713378,
+            0.02044401127073884,
+            0.020444011270329313,
+            0.9181968465464015
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "proposal",
+                "focus",
+                "synthesis focus",
+                "synthesis",
+                "data"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "referenced limited",
+                "shortcomings selected",
+                "libararies correctly",
+                "justifies synthesis",
+                "justifies"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "proposal",
+                "focus",
+                "synthesis focus",
+                "synthesis",
+                "data"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "proposal",
+                "focus",
+                "synthesis focus",
+                "synthesis",
+                "data"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "interactomes",
+                "synthesis",
+                "used interactomes",
+                "geo data"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": -0.07142857142857142,
+            "subjectivity": 0.14285714285714285,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.16996632996632993,
+            "subjectivity": 0.49198653198653197,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.24139490139490136,
+          "polarity_correlation": "opposite_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8793025493025494
+        }
+      }
+    },
+    {
+      "proposal_id": "5",
+      "proposal_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:19.888949",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.13696889102736676,
+        "embedding_cosine_similarity": 0.7809121178580148,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "centered new",
+            "clearly",
+            "clearly delineated",
+            "data lipms",
+            "data se",
+            "data sources",
+            "datasets",
+            "datasets limitations",
+            "delineated",
+            "delineated listed"
+          ],
+          "reviewer_2_unique": [
+            "exemplary synthesis",
+            "existing publicly",
+            "experimental",
+            "experimental data",
+            "fails",
+            "fails specify",
+            "false",
+            "false positive",
+            "focus",
+            "focus exemplary"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0529990952682984,
+          "reviewer_1_topic_distribution": [
+            0.025882052242525294,
+            0.02591307604422734,
+            0.025882052243007946,
+            0.8964407672273794,
+            0.025882052242859943
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02047255541301994,
+            0.9181065751076002,
+            0.020472555410381822,
+            0.02047575865865706,
+            0.020472555410341133
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "limitations",
+                "new",
+                "data",
+                "direction group",
+                "ontology"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "interactomes",
+                "synthesis",
+                "used interactomes",
+                "high"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "limitations",
+                "new",
+                "data",
+                "direction group",
+                "ontology"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data",
+                "direction group",
+                "ontology data",
+                "involving interaction",
+                "data sources"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "limitations",
+                "new",
+                "data",
+                "direction group",
+                "ontology"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.11818181818181817,
+            "subjectivity": 0.41893939393939394,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.16996632996632993,
+            "subjectivity": 0.49198653198653197,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.051784511784511766,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9741077441077441
+        }
+      }
+    },
+    {
+      "proposal_id": "5",
+      "proposal_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:19.972715",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.07845089559227453,
+        "embedding_cosine_similarity": 0.743097717122034,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "annotations",
+            "clearly",
+            "clearly makes",
+            "data begin",
+            "data elegans",
+            "did",
+            "did data",
+            "elegans",
+            "elegans ppi",
+            "emergent"
+          ],
+          "reviewer_2_unique": [
+            "exemplary synthesis",
+            "existing publicly",
+            "experimental",
+            "experimental data",
+            "fails",
+            "fails specify",
+            "false",
+            "false positive",
+            "focus",
+            "focus exemplary"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.047993746278596684,
+          "reviewer_1_topic_distribution": [
+            0.9118225849017136,
+            0.022037062849715443,
+            0.022037062848033577,
+            0.02206622655031067,
+            0.022037062850226836
+          ],
+          "reviewer_2_topic_distribution": [
+            0.020457117452374874,
+            0.020468007412913575,
+            0.020468007412906903,
+            0.9181388603082716,
+            0.02046800741353293
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "annotations",
+                "ppi",
+                "data",
+                "working group",
+                "makes"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "use",
+                "project",
+                "data",
+                "working group",
+                "makes"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "use",
+                "project",
+                "data",
+                "working group",
+                "makes"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data",
+                "interactomes",
+                "synthesis",
+                "known",
+                "identification"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "use",
+                "project",
+                "data",
+                "working group",
+                "makes"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0375,
+            "subjectivity": 0.3597222222222222,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.16996632996632993,
+            "subjectivity": 0.49198653198653197,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.13246632996632993,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.933766835016835
+        }
+      }
+    },
+    {
+      "proposal_id": "6",
+      "proposal_title": "Elucidating emergent structures in cellular RNA-protein interaction networks",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:20.143169",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.21895457127913187,
+        "embedding_cosine_similarity": 0.779955564647859,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "biology",
+            "data sources",
+            "data types",
+            "databases",
+            "databases maps",
+            "datasets",
+            "datasets avoid",
+            "datasets create",
+            "different",
+            "different scales"
+          ],
+          "reviewer_2_unique": [
+            "detailed",
+            "discussion",
+            "discussion data",
+            "disparate",
+            "disparate sources",
+            "entirely",
+            "entirely integration",
+            "exclusively",
+            "exclusively using",
+            "exemplary"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9999445549575715,
+          "reviewer_1_topic_distribution": [
+            0.018600766224111838,
+            0.925596935120818,
+            0.01860076621122427,
+            0.01860076622251648,
+            0.01860076622132954
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02303441390786791,
+            0.9078623443622776,
+            0.02303441391461663,
+            0.023034413905627844,
+            0.023034413909609953
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "using existing",
+                "exclusively using",
+                "lacks",
+                "lacks specificity",
+                "entirely integration"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "types",
+                "proposal",
+                "synthesis",
+                "datasets"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "using existing",
+                "exclusively using",
+                "lacks",
+                "lacks specificity",
+                "entirely integration"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "using existing",
+                "exclusively using",
+                "lacks",
+                "lacks specificity",
+                "entirely integration"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "using existing",
+                "exclusively using",
+                "lacks",
+                "lacks specificity",
+                "entirely integration"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.15333333333333335,
+            "subjectivity": 0.3991666666666667,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.2916666666666667,
+            "subjectivity": 0.5458333333333333,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.13833333333333334,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9308333333333333
+        }
+      }
+    },
+    {
+      "proposal_id": "6",
+      "proposal_title": "Elucidating emergent structures in cellular RNA-protein interaction networks",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:20.171004",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.0898118933894451,
+        "embedding_cosine_similarity": 0.8291339657834778,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "existing"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "datasets individually",
+            "datasources",
+            "datasources explicitly",
+            "distinct",
+            "distinct areas",
+            "diverse",
+            "diverse distinct",
+            "existing data",
+            "expertise",
+            "expertise provided"
+          ],
+          "reviewer_2_unique": [
+            "data",
+            "detailed",
+            "discussion",
+            "discussion data",
+            "disparate",
+            "disparate sources",
+            "entirely",
+            "entirely integration",
+            "exclusively",
+            "exclusively using"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.054097581737340625,
+          "reviewer_1_topic_distribution": [
+            0.024171047176930225,
+            0.024171047177291075,
+            0.024232519538912603,
+            0.024171047177287762,
+            0.9032543389295784
+          ],
+          "reviewer_2_topic_distribution": [
+            0.023020147428178806,
+            0.023020147431014364,
+            0.9078960632645873,
+            0.023020147425021103,
+            0.023043494451198424
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "limitations",
+                "existing",
+                "datasets",
+                "proposal",
+                "integration"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "limitations",
+                "existing",
+                "datasets",
+                "proposal",
+                "integration"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "data",
+                "synthesis",
+                "proposal",
+                "using existing",
+                "disparate sources"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "limitations",
+                "existing",
+                "datasets",
+                "proposal",
+                "integration"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "integration",
+                "insights rnp",
+                "function",
+                "function datasources",
+                "identified"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.2111111111111111,
+            "subjectivity": 0.3444444444444444,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.2916666666666667,
+            "subjectivity": 0.5458333333333333,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.08055555555555557,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9597222222222223
+        }
+      }
+    },
+    {
+      "proposal_id": "6",
+      "proposal_title": "Elucidating emergent structures in cellular RNA-protein interaction networks",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:20.197774",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.09444832913715269,
+        "embedding_cosine_similarity": 0.7456799339498837,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "proposal"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "reviewer_1_unique": [
+            "consider",
+            "consider variability",
+            "considered",
+            "considered predicting",
+            "data sources",
+            "datasets",
+            "datasets mrna",
+            "determinants",
+            "determinants considered",
+            "discussed"
+          ],
+          "reviewer_2_unique": [
+            "detailed",
+            "discussion",
+            "discussion data",
+            "disparate",
+            "disparate sources",
+            "entirely",
+            "entirely integration",
+            "exclusively",
+            "exclusively using",
+            "exemplary"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05408221143949574,
+          "reviewer_1_topic_distribution": [
+            0.02416540732041714,
+            0.024225045639293525,
+            0.9032787323956953,
+            0.02416540732309092,
+            0.02416540732150307
+          ],
+          "reviewer_2_topic_distribution": [
+            0.023019872565052276,
+            0.9079020906132637,
+            0.02303829169463776,
+            0.02301987256578015,
+            0.023019872561266193
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "available",
+                "sources",
+                "datasets",
+                "limitations",
+                "proposal"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "synthesis",
+                "proposal",
+                "limitations detailed",
+                "integrated"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "rna",
+                "proposal",
+                "variability",
+                "fate",
+                "fate genetic"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "available",
+                "sources",
+                "datasets",
+                "limitations",
+                "proposal"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "available",
+                "sources",
+                "datasets",
+                "limitations",
+                "proposal"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.30833333333333335,
+            "subjectivity": 0.33958333333333335,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.2916666666666667,
+            "subjectivity": 0.5458333333333333,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.016666666666666663,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9916666666666667
+        }
+      }
+    },
+    {
+      "proposal_id": "6",
+      "proposal_title": "Elucidating emergent structures in cellular RNA-protein interaction networks",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:20.286698",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.15655267907309073,
+        "embedding_cosine_similarity": 0.8523524366105576,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "discussion",
+            "proposal"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "reviewer_1_unique": [
+            "data sources",
+            "discussion individual",
+            "identifying",
+            "identifying relevant",
+            "impact",
+            "impact study",
+            "individual",
+            "individual limitations",
+            "ip",
+            "ip ms"
+          ],
+          "reviewer_2_unique": [
+            "detailed",
+            "discussion data",
+            "disparate",
+            "disparate sources",
+            "entirely",
+            "entirely integration",
+            "exclusively",
+            "exclusively using",
+            "exemplary",
+            "exemplary synthesis"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.052469363204115875,
+          "reviewer_1_topic_distribution": [
+            0.022959163354322094,
+            0.02295916335117856,
+            0.022959163351091716,
+            0.023029764111186957,
+            0.9080927458322207
+          ],
+          "reviewer_2_topic_distribution": [
+            0.022956257875064286,
+            0.022956257870341223,
+            0.022956257866243432,
+            0.908132109996007,
+            0.022999116392343952
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "project",
+                "types",
+                "synthesis project",
+                "discussion",
+                "sources"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "project",
+                "types",
+                "synthesis project",
+                "discussion",
+                "sources"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "project",
+                "types",
+                "synthesis project",
+                "discussion",
+                "sources"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data",
+                "synthesis",
+                "proposal",
+                "entirely",
+                "disparate sources"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "proposal",
+                "data",
+                "various types",
+                "little discussion",
+                "various"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.009722222222222224,
+            "subjectivity": 0.4138888888888889,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.2916666666666667,
+            "subjectivity": 0.5458333333333333,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.28194444444444444,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8590277777777777
+        }
+      }
+    },
+    {
+      "proposal_id": "7",
+      "proposal_title": "Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:20.405431",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.14533236053605747,
+        "embedding_cosine_similarity": 0.9101213818526002,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "gene",
+            "gene atlas"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "reviewer_1_unique": [
+            "ai ml",
+            "atlas",
+            "atlas v2",
+            "data sources",
+            "dataset",
+            "dataset datasets",
+            "datasets",
+            "datasets implicit",
+            "explicitly",
+            "explicitly identified"
+          ],
+          "reviewer_2_unique": [
+            "does propose",
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis",
+            "experimental",
+            "experimental data",
+            "focus",
+            "focus exemplary",
+            "generation",
+            "generation data"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05550573943557542,
+          "reviewer_1_topic_distribution": [
+            0.026797277577871606,
+            0.02679727757821106,
+            0.026883386673798058,
+            0.02679727757752472,
+            0.8927247805925945
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02136447939803752,
+            0.021364479398432907,
+            0.9144634162667069,
+            0.021364479397696708,
+            0.02144314553912591
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "datasets",
+                "ocean gene",
+                "project",
+                "gene atlas",
+                "gene"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "datasets",
+                "ocean gene",
+                "project",
+                "gene atlas",
+                "gene"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "data",
+                "synthesis",
+                "model constraints",
+                "limitations",
+                "limitations model"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "datasets",
+                "ocean gene",
+                "project",
+                "gene atlas",
+                "gene"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "various ai",
+                "information",
+                "primarily",
+                "models utilized",
+                "models"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.2,
+            "subjectivity": 0.5,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.18939393939393936,
+            "subjectivity": 0.4396464646464646,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.010606060606060647,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9946969696969696
+        }
+      }
+    },
+    {
+      "proposal_id": "7",
+      "proposal_title": "Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:20.425973",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.0,
+        "embedding_cosine_similarity": 0.6542300596625131,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "accuracy protein",
+            "annotated",
+            "annotated organisms",
+            "annotation",
+            "annotation wide",
+            "cases",
+            "cases idrs",
+            "concerns",
+            "concerns accuracy",
+            "having"
+          ],
+          "reviewer_2_unique": [
+            "data",
+            "does propose",
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis",
+            "experimental",
+            "experimental data",
+            "focus",
+            "focus exemplary",
+            "gene"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06602784817203293,
+          "reviewer_1_topic_distribution": [
+            0.03449329340946306,
+            0.034493293409030394,
+            0.03449329341242986,
+            0.8620507508213133,
+            0.034469368947763285
+          ],
+          "reviewer_2_topic_distribution": [
+            0.021505883499121158,
+            0.021505883502126125,
+            0.02150588349093312,
+            0.021481188931333765,
+            0.9140011605764858
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "wide range",
+                "concerns accuracy",
+                "protein",
+                "organisms having",
+                "wide"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "wide range",
+                "concerns accuracy",
+                "protein",
+                "organisms having",
+                "wide"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "wide range",
+                "concerns accuracy",
+                "protein",
+                "organisms having",
+                "wide"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "organisms",
+                "wide range",
+                "range",
+                "protein",
+                "organisms having"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "synthesis",
+                "large scale",
+                "large",
+                "generation data"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": -0.19999999999999998,
+            "subjectivity": 0.6333333333333333,
+            "sentiment_label": "negative"
+          },
+          "sentiment_2": {
+            "polarity": 0.18939393939393936,
+            "subjectivity": 0.4396464646464646,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.38939393939393935,
+          "polarity_correlation": "opposite_direction",
+          "sentiment_agreement": "disagree",
+          "sentiment_alignment_score": 0.8053030303030303
+        }
+      }
+    },
+    {
+      "proposal_id": "7",
+      "proposal_title": "Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:20.450538",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.05827094187340244,
+        "embedding_cosine_similarity": 0.76092723678184,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "synthesis"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "data set",
+            "ideal",
+            "ideal proposed",
+            "insights",
+            "misgivings",
+            "misgivings noted",
+            "noted",
+            "noted data",
+            "power",
+            "power proposed"
+          ],
+          "reviewer_2_unique": [
+            "data",
+            "does propose",
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis",
+            "experimental",
+            "experimental data",
+            "focus",
+            "focus exemplary",
+            "gene"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06770627448410085,
+          "reviewer_1_topic_distribution": [
+            0.03594531938151901,
+            0.8561601267747261,
+            0.03600391508002263,
+            0.03594531938154434,
+            0.03594531938218797
+          ],
+          "reviewer_2_topic_distribution": [
+            0.021117092106327316,
+            0.021111434286264514,
+            0.9155372893924211,
+            0.021117092107738104,
+            0.021117092107248957
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "synthesis",
+                "data",
+                "work strong",
+                "noted",
+                "proposed work"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "proposed",
+                "work strong",
+                "set ideal",
+                "data set",
+                "ideal"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "data",
+                "synthesis",
+                "methodological limitations",
+                "large scale",
+                "limitations"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "synthesis",
+                "data",
+                "work strong",
+                "noted",
+                "proposed work"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "synthesis",
+                "data",
+                "work strong",
+                "noted",
+                "proposed work"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.4877777777777778,
+            "subjectivity": 0.6844444444444445,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.18939393939393936,
+            "subjectivity": 0.4396464646464646,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.2983838383838384,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.8508080808080808
+        }
+      }
+    },
+    {
+      "proposal_id": "7",
+      "proposal_title": "Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:20.538280",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.16788265051802795,
+        "embedding_cosine_similarity": 0.8159644833283393,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "appropriately",
+            "appropriately acknowledged",
+            "clearly",
+            "clearly laid",
+            "computational",
+            "computational limitations",
+            "data sources",
+            "data synthesis",
+            "explicitly",
+            "explicitly data"
+          ],
+          "reviewer_2_unique": [
+            "does propose",
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis",
+            "experimental",
+            "experimental data",
+            "focus",
+            "focus exemplary",
+            "gene",
+            "gene atlas"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06413357187276393,
+          "reviewer_1_topic_distribution": [
+            0.033265235070313204,
+            0.033351432364644634,
+            0.033265235070328705,
+            0.8668528624244567,
+            0.033265235070256846
+          ],
+          "reviewer_2_topic_distribution": [
+            0.021193342938392853,
+            0.9151417716140763,
+            0.021193342938418926,
+            0.021278199570963496,
+            0.021193342938148226
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "project",
+                "limitations",
+                "clearly",
+                "sources",
+                "data sources"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "synthesis",
+                "large scale",
+                "available",
+                "generation data"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "project",
+                "limitations",
+                "clearly",
+                "sources",
+                "data sources"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data",
+                "yes explicitly",
+                "project clearly",
+                "appropriately",
+                "appropriately acknowledged"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "project",
+                "limitations",
+                "clearly",
+                "sources",
+                "data sources"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.3,
+            "subjectivity": 0.44166666666666665,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.18939393939393936,
+            "subjectivity": 0.4396464646464646,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.11060606060606062,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9446969696969697
+        }
+      }
+    },
+    {
+      "proposal_id": "8",
+      "proposal_title": "Multimodal Single-Cell Frameworks for Cell Lines with Extensive Multi-Omics Data",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:20.578118",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.15404334804585365,
+        "embedding_cosine_similarity": 0.8078714444425725,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "data sources",
+            "datasets",
+            "generated"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "reviewer_1_unique": [
+            "appropriately listed",
+            "available",
+            "brunk",
+            "brunk listed",
+            "clearly",
+            "clearly demonstrates",
+            "datasets generated",
+            "demonstrates",
+            "demonstrates synthesis",
+            "dr"
+          ],
+          "reviewer_2_unique": [
+            "data generated",
+            "data identification",
+            "depmap",
+            "depmap ccle",
+            "exclusively",
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis",
+            "existing",
+            "existing heterogeneous"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9999418987661636,
+          "reviewer_1_topic_distribution": [
+            0.02858715144064648,
+            0.028587151439665053,
+            0.8856513942373667,
+            0.028587151441119448,
+            0.028587151441202323
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02426172794889413,
+            0.02426172796414543,
+            0.9029530881854052,
+            0.024261727951548864,
+            0.024261727950006355
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "weakness key",
+                "datasets generated",
+                "project weakness",
+                "demonstrates synthesis",
+                "preparation review"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "weakness key",
+                "datasets generated",
+                "project weakness",
+                "demonstrates synthesis",
+                "preparation review"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "data",
+                "listed",
+                "synthesis",
+                "existing",
+                "sources"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "weakness key",
+                "datasets generated",
+                "project weakness",
+                "demonstrates synthesis",
+                "preparation review"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "weakness key",
+                "datasets generated",
+                "project weakness",
+                "demonstrates synthesis",
+                "preparation review"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.09999999999999999,
+            "subjectivity": 0.5708333333333333,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.17886363636363636,
+            "subjectivity": 0.44757575757575757,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.07886363636363637,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9605681818181818
+        }
+      }
+    },
+    {
+      "proposal_id": "8",
+      "proposal_title": "Multimodal Single-Cell Frameworks for Cell Lines with Extensive Multi-Omics Data",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:20.604768",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.04975508355317203,
+        "embedding_cosine_similarity": 0.7766200472859272,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "datasets"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "advanced synthesis",
+            "analyzing",
+            "analyzing inclusion",
+            "clearly",
+            "clearly synthesizing",
+            "datasets labs",
+            "datasets requires",
+            "hard",
+            "hard time",
+            "imaging"
+          ],
+          "reviewer_2_unique": [
+            "data",
+            "data generated",
+            "data identification",
+            "data sources",
+            "depmap",
+            "depmap ccle",
+            "exclusively",
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06358404298414139,
+          "reviewer_1_topic_distribution": [
+            0.029493247432271573,
+            0.8820174736337568,
+            0.029502784068863044,
+            0.029493247432582137,
+            0.029493247432526317
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02483850922468641,
+            0.024863606797968566,
+            0.9006208655465023,
+            0.02483850921500164,
+            0.024838509215841208
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "clearly",
+                "synthesis",
+                "datasets",
+                "yes clearly",
+                "yes"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "datasets",
+                "yes clearly",
+                "yes",
+                "requires",
+                "protein datasets"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "data",
+                "existing",
+                "synthesis",
+                "heterogeneous datasets",
+                "new"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "clearly",
+                "synthesis",
+                "datasets",
+                "yes clearly",
+                "yes"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "clearly",
+                "synthesis",
+                "datasets",
+                "yes clearly",
+                "yes"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.20138888888888892,
+            "subjectivity": 0.5041666666666667,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.17886363636363636,
+            "subjectivity": 0.44757575757575757,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.02252525252525256,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9887373737373737
+        }
+      }
+    },
+    {
+      "proposal_id": "8",
+      "proposal_title": "Multimodal Single-Cell Frameworks for Cell Lines with Extensive Multi-Omics Data",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:20.628811",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.14873300431979875,
+        "embedding_cosine_similarity": 0.85310220522989,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "focus"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "reviewer_1_unique": [
+            "collected proposing",
+            "current",
+            "current data",
+            "data collected",
+            "data generalized",
+            "described",
+            "described multi",
+            "focus described",
+            "focused",
+            "focused utilized"
+          ],
+          "reviewer_2_unique": [
+            "data generated",
+            "data identification",
+            "data sources",
+            "datasets",
+            "depmap",
+            "depmap ccle",
+            "exclusively",
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9998912607556992,
+          "reviewer_1_topic_distribution": [
+            0.0299917939832561,
+            0.029991793984241868,
+            0.8800328240671142,
+            0.029991793982759658,
+            0.029991793982628055
+          ],
+          "reviewer_2_topic_distribution": [
+            0.024106713447096136,
+            0.02410671344423406,
+            0.903573146190995,
+            0.024106713458835912,
+            0.024106713458838677
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "utilized current",
+                "project synthesis",
+                "pipeline",
+                "omics data",
+                "focus described"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "utilized current",
+                "project synthesis",
+                "pipeline",
+                "omics data",
+                "focus described"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "data",
+                "project",
+                "synthesis",
+                "existing",
+                "focus"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "utilized current",
+                "project synthesis",
+                "pipeline",
+                "omics data",
+                "focus described"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "utilized current",
+                "project synthesis",
+                "pipeline",
+                "omics data",
+                "focus described"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.4,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.17886363636363636,
+            "subjectivity": 0.44757575757575757,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.17886363636363636,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9105681818181818
+        }
+      }
+    },
+    {
+      "proposal_id": "8",
+      "proposal_title": "Multimodal Single-Cell Frameworks for Cell Lines with Extensive Multi-Omics Data",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:20.715675",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.19774661696039741,
+        "embedding_cosine_similarity": 0.7726975406471959,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "data sources",
+            "explicitly",
+            "synthesis"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "reviewer_1_unique": [
+            "a549 colo320dm",
+            "cell",
+            "cell lines",
+            "clearly",
+            "clearly synthesis",
+            "colo320dm",
+            "colo320dm lacking",
+            "data layers",
+            "discussed",
+            "explicitly identified"
+          ],
+          "reviewer_2_unique": [
+            "data generated",
+            "data identification",
+            "datasets",
+            "depmap",
+            "depmap ccle",
+            "exclusively",
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis",
+            "existing"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06221633733252538,
+          "reviewer_1_topic_distribution": [
+            0.8840093341770414,
+            0.02908575188012107,
+            0.028968304647622727,
+            0.028968304647620423,
+            0.02896830464759442
+          ],
+          "reviewer_2_topic_distribution": [
+            0.024295699398281623,
+            0.9030905076211748,
+            0.024204597660132134,
+            0.02420459766022631,
+            0.02420459766018503
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "a549",
+                "layers discussed",
+                "clearly synthesis",
+                "lines a549"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "existing",
+                "synthesis",
+                "uses existing",
+                "exemplary synthesis"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "explicitly",
+                "synthesis project",
+                "data sources",
+                "clearly",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "explicitly",
+                "synthesis project",
+                "data sources",
+                "clearly",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "explicitly",
+                "synthesis project",
+                "data sources",
+                "clearly",
+                "project"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.09999999999999999,
+            "subjectivity": 0.3833333333333333,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.17886363636363636,
+            "subjectivity": 0.44757575757575757,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.07886363636363637,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9605681818181818
+        }
+      }
+    },
+    {
+      "proposal_id": "8",
+      "proposal_title": "Multimodal Single-Cell Frameworks for Cell Lines with Extensive Multi-Omics Data",
+      "year": "y1",
+      "human_reviewer_id": "5.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:20.741718",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.19347857733584375,
+        "embedding_cosine_similarity": 0.8210289290521517,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "data sources",
+            "explicitly"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "reviewer_1_unique": [
+            "data fragmentation",
+            "data types",
+            "data use",
+            "demonstrates",
+            "demonstrates synthesis",
+            "demonstrating",
+            "demonstrating realistic",
+            "developing",
+            "developing unified",
+            "diverse"
+          ],
+          "reviewer_2_unique": [
+            "data generated",
+            "data identification",
+            "datasets",
+            "depmap",
+            "depmap ccle",
+            "exclusively",
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis",
+            "existing"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.04949649827444922,
+          "reviewer_1_topic_distribution": [
+            0.01937290491484881,
+            0.01942323428549449,
+            0.019372904914515123,
+            0.019372904913994467,
+            0.9224580509711471
+          ],
+          "reviewer_2_topic_distribution": [
+            0.024213021655291538,
+            0.9030980511345161,
+            0.024213021656429738,
+            0.02421302165656914,
+            0.024262883897193326
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "limitations",
+                "proposal",
+                "explicitly",
+                "sources",
+                "proposal clearly"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "existing",
+                "synthesis",
+                "limitations existing",
+                "generated"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "limitations",
+                "proposal",
+                "explicitly",
+                "sources",
+                "proposal clearly"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "limitations",
+                "proposal",
+                "explicitly",
+                "sources",
+                "proposal clearly"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "acknowledged",
+                "frameworks",
+                "challenges",
+                "cell bulk"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.25555555555555554,
+            "subjectivity": 0.4055555555555555,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.17886363636363636,
+            "subjectivity": 0.44757575757575757,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.07669191919191917,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9616540404040405
+        }
+      }
+    },
+    {
+      "proposal_id": "9",
+      "proposal_title": "From Image Data and Biophysical Simulations to Principles of Mesoscale Organization Through Integrated Transfer Learning",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:20.854514",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.050827068438103924,
+        "embedding_cosine_similarity": 0.6569557838711719,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "able",
+            "able access",
+            "able provide",
+            "access",
+            "access data",
+            "authors",
+            "authors identified",
+            "authors requesting",
+            "clear",
+            "clear able"
+          ],
+          "reviewer_2_unique": [
+            "exclusively",
+            "exemplary",
+            "exemplary synthesis",
+            "existing",
+            "existing public",
+            "experimental",
+            "experimental data",
+            "experiments",
+            "experiments silico",
+            "focus"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05674311690173525,
+          "reviewer_1_topic_distribution": [
+            0.02846731025296814,
+            0.02846731025294047,
+            0.028467310253229027,
+            0.02851597907845018,
+            0.8860820901624122
+          ],
+          "reviewer_2_topic_distribution": [
+            0.0206967045709806,
+            0.02069670457021849,
+            0.020696704569647572,
+            0.9172163974701927,
+            0.020693488818960704
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "datasets",
+                "data",
+                "help",
+                "datasets clear",
+                "requesting support"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "datasets",
+                "data",
+                "help",
+                "datasets clear",
+                "requesting support"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "datasets",
+                "data",
+                "help",
+                "datasets clear",
+                "requesting support"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data",
+                "synthesis",
+                "public",
+                "identification proposal",
+                "experimental"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "able",
+                "authors",
+                "support",
+                "datasets",
+                "ncems"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.39,
+            "subjectivity": 0.6666666666666666,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.09204545454545454,
+            "subjectivity": 0.26202651515151515,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.29795454545454547,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8510227272727273
+        }
+      }
+    },
+    {
+      "proposal_id": "9",
+      "proposal_title": "From Image Data and Biophysical Simulations to Principles of Mesoscale Organization Through Integrated Transfer Learning",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:20.880488",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.11079493196936835,
+        "embedding_cosine_similarity": 0.7147294837154968,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "existing"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "reviewer_1_unique": [
+            "allen",
+            "cell",
+            "cell lines",
+            "cell science",
+            "cell type",
+            "consideration",
+            "consideration cell",
+            "czi",
+            "czi multiple",
+            "data allen"
+          ],
+          "reviewer_2_unique": [
+            "exclusively",
+            "exemplary",
+            "exemplary synthesis",
+            "existing public",
+            "experimental",
+            "experimental data",
+            "experiments",
+            "experiments silico",
+            "focus",
+            "focus project"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05320581425091585,
+          "reviewer_1_topic_distribution": [
+            0.02580384476501201,
+            0.8967615720094441,
+            0.02580384476214559,
+            0.025826893701295033,
+            0.025803844762103244
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02070927280271276,
+            0.020726441691000127,
+            0.020709272803327607,
+            0.9171457398998427,
+            0.0207092728031168
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "existing",
+                "cell",
+                "data",
+                "investigation",
+                "lines"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "team",
+                "cell",
+                "data",
+                "data allen",
+                "allen"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "existing",
+                "cell",
+                "data",
+                "investigation",
+                "lines"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data",
+                "public",
+                "synthesis",
+                "vitro experiments",
+                "limitations data"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "existing",
+                "cell",
+                "data",
+                "investigation",
+                "lines"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.02500000000000001,
+            "subjectivity": 0.25,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.09204545454545454,
+            "subjectivity": 0.26202651515151515,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.06704545454545453,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9664772727272727
+        }
+      }
+    },
+    {
+      "proposal_id": "9",
+      "proposal_title": "From Image Data and Biophysical Simulations to Principles of Mesoscale Organization Through Integrated Transfer Learning",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:20.982135",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.17389418906897022,
+        "embedding_cosine_similarity": 0.7816931252745365,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "description",
+            "develop broad",
+            "discussed",
+            "discussed cohesive",
+            "discussed data",
+            "discussed example",
+            "enthusiasm",
+            "enthusiasm dampened",
+            "especially",
+            "especially related"
+          ],
+          "reviewer_2_unique": [
+            "exclusively",
+            "exemplary",
+            "exemplary synthesis",
+            "existing",
+            "existing public",
+            "experimental",
+            "experimental data",
+            "experiments",
+            "experiments silico",
+            "focus"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.042487082993826183,
+          "reviewer_1_topic_distribution": [
+            0.017409157440432883,
+            0.017409157434111016,
+            0.9303495631182311,
+            0.017409157454444872,
+            0.017422964552780133
+          ],
+          "reviewer_2_topic_distribution": [
+            0.020680244020360776,
+            0.0206802440203392,
+            0.020699858476780943,
+            0.020680244020032084,
+            0.917259409462487
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "types",
+                "specific",
+                "silico",
+                "availability",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "types",
+                "specific",
+                "silico",
+                "availability",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "data",
+                "simulation",
+                "discussed",
+                "use",
+                "example"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "types",
+                "specific",
+                "silico",
+                "availability",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "public",
+                "synthesis",
+                "exclusively proposing",
+                "scale"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.06726190476190476,
+            "subjectivity": 0.4800595238095239,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.09204545454545454,
+            "subjectivity": 0.26202651515151515,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.024783549783549783,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9876082251082251
+        }
+      }
+    },
+    {
+      "proposal_id": "10",
+      "proposal_title": "Transposable elements and the emergence of genomic innovation",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:21.029481",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.10991587200071089,
+        "embedding_cosine_similarity": 0.8231756471185536,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "elements proposed",
+            "exciting",
+            "exciting genomic",
+            "field",
+            "field transposable",
+            "functional",
+            "functional genomic",
+            "genomic",
+            "genomic functional",
+            "genomic proposal"
+          ],
+          "reviewer_2_unique": [
+            "data identification",
+            "discuss",
+            "discuss potential",
+            "does",
+            "does propose",
+            "encode",
+            "encode gtex",
+            "exclusively",
+            "exclusively uses",
+            "exemplary"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05050712394635748,
+          "reviewer_1_topic_distribution": [
+            0.023630368999021923,
+            0.02356334683822862,
+            0.023563346838807803,
+            0.9056795904857314,
+            0.023563346838210222
+          ],
+          "reviewer_2_topic_distribution": [
+            0.9165869982233423,
+            0.020850165862601275,
+            0.0208501658542979,
+            0.020862504204900514,
+            0.020850165854857886
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "limitations",
+                "synthesis",
+                "identification proposal",
+                "limitations previous"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "new data",
+                "methods",
+                "proposal",
+                "limitations",
+                "synthesis"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "new data",
+                "methods",
+                "proposal",
+                "limitations",
+                "synthesis"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "research",
+                "working",
+                "proposed research",
+                "proposed",
+                "genomic"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "new data",
+                "methods",
+                "proposal",
+                "limitations",
+                "synthesis"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.1015151515151515,
+            "subjectivity": 0.46893939393939393,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.29246632996633,
+            "subjectivity": 0.6005050505050504,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.19095117845117848,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9045244107744108
+        }
+      }
+    },
+    {
+      "proposal_id": "10",
+      "proposal_title": "Transposable elements and the emergence of genomic innovation",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:21.054991",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.05323161123123678,
+        "embedding_cosine_similarity": 0.773007226006112,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "synthesis"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "000",
+            "000 datasets",
+            "70",
+            "70 000",
+            "acknowledged",
+            "clear",
+            "clear synthesis",
+            "clearly",
+            "clearly identified",
+            "datasets"
+          ],
+          "reviewer_2_unique": [
+            "data",
+            "data identification",
+            "discuss",
+            "discuss potential",
+            "does",
+            "does propose",
+            "encode",
+            "encode gtex",
+            "exclusively",
+            "exclusively uses"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.07097995530110533,
+          "reviewer_1_topic_distribution": [
+            0.03763848399656157,
+            0.8495284467639899,
+            0.03761102308043816,
+            0.037611023079403144,
+            0.037611023079607245
+          ],
+          "reviewer_2_topic_distribution": [
+            0.9129314576103572,
+            0.021789738909145547,
+            0.021759601160595565,
+            0.021759601159787204,
+            0.021759601160114307
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "limitations",
+                "synthesis",
+                "uses existing",
+                "exemplary"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "datasets",
+                "reprocessed",
+                "clear synthesis",
+                "project datasets",
+                "clearly identified"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "synthesis project",
+                "clearly",
+                "project",
+                "synthesis",
+                "000"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "synthesis project",
+                "clearly",
+                "project",
+                "synthesis",
+                "000"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "synthesis project",
+                "clearly",
+                "project",
+                "synthesis",
+                "000"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.09999999999999999,
+            "subjectivity": 0.3833333333333333,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.29246632996633,
+            "subjectivity": 0.6005050505050504,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.19246632996633,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.903766835016835
+        }
+      }
+    },
+    {
+      "proposal_id": "10",
+      "proposal_title": "Transposable elements and the emergence of genomic innovation",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:21.148112",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.05256775800125756,
+        "embedding_cosine_similarity": 0.746541184274333,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "clearly identified",
+            "collaborative",
+            "collaborative effort",
+            "data sources",
+            "demonstration",
+            "demonstration collaborative",
+            "effort",
+            "effort performed",
+            "effort requires",
+            "expertise"
+          ],
+          "reviewer_2_unique": [
+            "data identification",
+            "discuss",
+            "discuss potential",
+            "does",
+            "does propose",
+            "encode",
+            "encode gtex",
+            "exclusively",
+            "exclusively uses",
+            "exemplary"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.059927020550359866,
+          "reviewer_1_topic_distribution": [
+            0.030573634858559857,
+            0.0306329169471762,
+            0.8776461784771336,
+            0.030573634858571994,
+            0.030573634858558317
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02094183385025148,
+            0.916244714580238,
+            0.02092978386958066,
+            0.020941833849870924,
+            0.020941833850058964
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "clearly",
+                "data",
+                "expertise multiple",
+                "labs majority",
+                "performed"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "limitations",
+                "synthesis",
+                "uses existing",
+                "focus exemplary"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "effort",
+                "expertise multiple",
+                "labs",
+                "performed",
+                "performed pi"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "clearly",
+                "data",
+                "expertise multiple",
+                "labs majority",
+                "performed"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "clearly",
+                "data",
+                "expertise multiple",
+                "labs majority",
+                "performed"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.26666666666666666,
+            "subjectivity": 0.3277777777777778,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.29246632996633,
+            "subjectivity": 0.6005050505050504,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.025799663299663322,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9871001683501683
+        }
+      }
+    },
+    {
+      "proposal_id": "10",
+      "proposal_title": "Transposable elements and the emergence of genomic innovation",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:21.169198",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.04025111448199853,
+        "embedding_cosine_similarity": 0.6922872321519093,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "clear",
+            "clear aspects",
+            "collected",
+            "collected sources",
+            "concern",
+            "concern data",
+            "data available",
+            "deal",
+            "deal variation",
+            "different"
+          ],
+          "reviewer_2_unique": [
+            "data identification",
+            "discuss",
+            "discuss potential",
+            "does",
+            "does propose",
+            "encode",
+            "encode gtex",
+            "exclusively",
+            "exclusively uses",
+            "exemplary"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05095711112871561,
+          "reviewer_1_topic_distribution": [
+            0.02388310615277092,
+            0.02391522124070224,
+            0.904435460298464,
+            0.023883106152845293,
+            0.023883106155217562
+          ],
+          "reviewer_2_topic_distribution": [
+            0.020935320447193276,
+            0.9162761759135631,
+            0.020917862746067876,
+            0.02093532044668556,
+            0.020935320446490012
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "available",
+                "data",
+                "nature",
+                "genotypes",
+                "collected"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "limitations",
+                "synthesis",
+                "identification",
+                "funding"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "telomere",
+                "won necessarily",
+                "different genotypes",
+                "genome approach",
+                "collected"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "available",
+                "data",
+                "nature",
+                "genotypes",
+                "collected"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "available",
+                "data",
+                "nature",
+                "genotypes",
+                "collected"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.12083333333333333,
+            "subjectivity": 0.5520833333333334,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.29246632996633,
+            "subjectivity": 0.6005050505050504,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.17163299663299664,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9141835016835017
+        }
+      }
+    },
+    {
+      "proposal_id": "11",
+      "proposal_title": " Searching the Crosslinking Mass Spectrometry Universe for New Protein-Protein Interactions",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:21.210932",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.13139589582427808,
+        "embedding_cosine_similarity": 0.7178000242937952,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "existing"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "reviewer_1_unique": [
+            "address issue",
+            "data format",
+            "data noting",
+            "data quality",
+            "databases",
+            "databases specified",
+            "deposited",
+            "deposited data",
+            "differences",
+            "differences deposited"
+          ],
+          "reviewer_2_unique": [
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis",
+            "existing data",
+            "existing publicly",
+            "focus",
+            "focus exemplary",
+            "formats",
+            "formats metadata",
+            "forms"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05860829793282977,
+          "reviewer_1_topic_distribution": [
+            0.02891121210175957,
+            0.0289112121015805,
+            0.028911212101536046,
+            0.028950278787587252,
+            0.8843160849075367
+          ],
+          "reviewer_2_topic_distribution": [
+            0.021649698730809817,
+            0.021649698730465048,
+            0.021649698730480182,
+            0.9133699956176923,
+            0.021680908190552586
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "source",
+                "existing",
+                "proposal",
+                "data",
+                "data format"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "source",
+                "existing",
+                "proposal",
+                "data",
+                "data format"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "source",
+                "existing",
+                "proposal",
+                "data",
+                "data format"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data",
+                "pride",
+                "synthesis",
+                "project",
+                "existing"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "deposited",
+                "deposited data",
+                "proposal",
+                "existing databases"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.0,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.007500000000000007,
+            "subjectivity": 0.34833333333333333,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.007500000000000007,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.99625
+        }
+      }
+    },
+    {
+      "proposal_id": "11",
+      "proposal_title": "nan",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:21.296837",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.11005012086476354,
+        "embedding_cosine_similarity": 0.7390799050084013,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "project"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05714285714285714,
+          "reviewer_1_unique": [
+            "address",
+            "address currently",
+            "assess",
+            "assess informtation",
+            "available",
+            "available data",
+            "currently",
+            "currently available",
+            "data assess",
+            "informtation"
+          ],
+          "reviewer_2_unique": [
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis",
+            "existing",
+            "existing data",
+            "existing publicly",
+            "focus",
+            "focus exemplary",
+            "formats",
+            "formats metadata"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.07355499538129093,
+          "reviewer_1_topic_distribution": [
+            0.0393752730207537,
+            0.039375273021018606,
+            0.8423870674668975,
+            0.039487113470534574,
+            0.039375273020795555
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02165825858274456,
+            0.021658258582661436,
+            0.021699454086649996,
+            0.9133257701648063,
+            0.02165825858313769
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "available",
+                "available data",
+                "project",
+                "data",
+                "currently"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "available",
+                "available data",
+                "project",
+                "data",
+                "currently"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "address",
+                "currently",
+                "address currently",
+                "informtation",
+                "informtation obtained"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data",
+                "existing",
+                "pride",
+                "synthesis",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "available",
+                "available data",
+                "project",
+                "data",
+                "currently"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.4,
+            "subjectivity": 0.4,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.007500000000000007,
+            "subjectivity": 0.34833333333333333,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.3925,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.80375
+        }
+      }
+    },
+    {
+      "proposal_id": "11",
+      "proposal_title": "nan",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:21.321734",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.10165588053991055,
+        "embedding_cosine_similarity": 0.7614255616078094,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "challenging",
+            "challenging synthesis",
+            "clearly",
+            "clearly synthesize",
+            "cross",
+            "cross linker",
+            "data sets",
+            "experimental",
+            "experimental approaches",
+            "linker"
+          ],
+          "reviewer_2_unique": [
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis",
+            "existing",
+            "existing data",
+            "existing publicly",
+            "focus",
+            "focus exemplary",
+            "formats",
+            "formats metadata"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05789554971939343,
+          "reviewer_1_topic_distribution": [
+            0.028431141335507493,
+            0.02843114133539208,
+            0.8862429582379179,
+            0.02843114133565818,
+            0.02846361775552431
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02162983418791807,
+            0.02162983418824786,
+            0.021634447109040264,
+            0.021629834188474664,
+            0.9134760503263192
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "source",
+                "synthesis",
+                "data",
+                "xl ms",
+                "linker"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "source",
+                "synthesis",
+                "data",
+                "xl ms",
+                "linker"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "sets",
+                "data sets",
+                "data",
+                "linker",
+                "proposed work"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "source",
+                "synthesis",
+                "data",
+                "xl ms",
+                "linker"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "project",
+                "existing",
+                "pride",
+                "synthesis"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.175,
+            "subjectivity": 0.5708333333333333,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.007500000000000007,
+            "subjectivity": 0.34833333333333333,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.16749999999999998,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.91625
+        }
+      }
+    },
+    {
+      "proposal_id": "11",
+      "proposal_title": "nan",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:21.411924",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.06656478082786846,
+        "embedding_cosine_similarity": 0.7493168496442912,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "clearly",
+            "data curate",
+            "datasets",
+            "datasets clearly",
+            "datasets describing",
+            "datasets manual",
+            "described",
+            "described challenges",
+            "describing",
+            "describing total"
+          ],
+          "reviewer_2_unique": [
+            "exclusively uses",
+            "exemplary",
+            "exemplary synthesis",
+            "existing",
+            "existing data",
+            "existing publicly",
+            "focus",
+            "focus exemplary",
+            "formats",
+            "formats metadata"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.049609268250464564,
+          "reviewer_1_topic_distribution": [
+            0.9113819688498662,
+            0.022141494341826978,
+            0.022141494347939078,
+            0.022141494345856917,
+            0.022193548114510905
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02160455389566833,
+            0.02160522319892104,
+            0.021605223201691965,
+            0.02160522319145617,
+            0.9135797765122625
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "datasets",
+                "clearly",
+                "total",
+                "ms",
+                "effort"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "metadata",
+                "publicly available",
+                "available",
+                "publicly",
+                "synthesis"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "metadata",
+                "publicly available",
+                "available",
+                "publicly",
+                "synthesis"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "metadata",
+                "publicly available",
+                "available",
+                "publicly",
+                "synthesis"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "pride",
+                "existing",
+                "synthesis",
+                "project"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.12222222222222223,
+            "subjectivity": 0.4722222222222222,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.007500000000000007,
+            "subjectivity": 0.34833333333333333,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.11472222222222223,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9426388888888889
+        }
+      }
+    },
+    {
+      "proposal_id": "12",
+      "proposal_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry based",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:21.513407",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.019678080365743176,
+        "embedding_cosine_similarity": 0.6797407191547751,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "adopt workflow",
+            "anticpate",
+            "anticpate fields",
+            "better",
+            "datasets",
+            "datasets question",
+            "datasets team",
+            "development",
+            "development 244",
+            "dissemenate"
+          ],
+          "reviewer_2_unique": [
+            "data",
+            "existing public",
+            "experimental data",
+            "files",
+            "files publications",
+            "focus",
+            "focus exemplary",
+            "format",
+            "format data",
+            "generate"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.050277486111607775,
+          "reviewer_1_topic_distribution": [
+            0.8966204899435387,
+            0.025848527639184122,
+            0.02584852763891429,
+            0.025833927139021884,
+            0.02584852763934091
+          ],
+          "reviewer_2_topic_distribution": [
+            0.018406343137239056,
+            0.018409571422628456,
+            0.018409571425528782,
+            0.9263649425901844,
+            0.018409571424419218
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "datasets",
+                "methdology",
+                "general milestones",
+                "github",
+                "github publication"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "plan",
+                "datasets",
+                "yes initial",
+                "methdology",
+                "general milestones"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "plan",
+                "datasets",
+                "yes initial",
+                "methdology",
+                "general milestones"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data",
+                "information",
+                "synthesis",
+                "like",
+                "limitations like"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "plan",
+                "datasets",
+                "yes initial",
+                "methdology",
+                "general milestones"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.2625,
+            "subjectivity": 0.375,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.0381993006993007,
+            "subjectivity": 0.41451048951048947,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.22430069930069932,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8878496503496504
+        }
+      }
+    },
+    {
+      "proposal_id": "12",
+      "proposal_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry based",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:21.605148",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.12213049502247089,
+        "embedding_cosine_similarity": 0.8364367231786174,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "addressed",
+            "existin",
+            "extracted",
+            "extracted examining",
+            "form",
+            "form integration",
+            "fully",
+            "fully addressed",
+            "great",
+            "great output"
+          ],
+          "reviewer_2_unique": [
+            "existing public",
+            "experimental data",
+            "files",
+            "files publications",
+            "focus",
+            "focus exemplary",
+            "format",
+            "format data",
+            "generate",
+            "generate new"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.04087007702871423,
+          "reviewer_1_topic_distribution": [
+            0.018716065716519677,
+            0.018716065715961447,
+            0.9251115277084033,
+            0.0187402751426061,
+            0.01871606571650947
+          ],
+          "reviewer_2_topic_distribution": [
+            0.01805884238156302,
+            0.018058842381143456,
+            0.018086973555087316,
+            0.9277364993000707,
+            0.018058842382135405
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "proposed",
+                "raw",
+                "integration",
+                "data sources",
+                "clearly"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "proposed",
+                "raw",
+                "integration",
+                "data sources",
+                "clearly"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "new",
+                "data",
+                "addressed",
+                "output",
+                "limitations"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data",
+                "information",
+                "synthesis",
+                "like missing",
+                "implicitly"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "proposed",
+                "raw",
+                "integration",
+                "data sources",
+                "clearly"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.054101667563206016,
+            "subjectivity": 0.39873139680831987,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.0381993006993007,
+            "subjectivity": 0.41451048951048947,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.015902366863905316,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9920488165680473
+        }
+      }
+    },
+    {
+      "proposal_id": "12",
+      "proposal_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry based",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:21.701298",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.15681141696996365,
+        "embedding_cosine_similarity": 0.7892250162724919,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "access",
+            "clearly",
+            "data sets",
+            "database outline",
+            "datasets",
+            "datasets pride",
+            "demonstrates",
+            "demonstrates synthesis",
+            "designed allow",
+            "group"
+          ],
+          "reviewer_2_unique": [
+            "existing public",
+            "experimental data",
+            "files",
+            "files publications",
+            "focus",
+            "focus exemplary",
+            "format",
+            "format data",
+            "generate",
+            "generate new"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.04072366554107628,
+          "reviewer_1_topic_distribution": [
+            0.9257460323315817,
+            0.01855604510314881,
+            0.018585832359797032,
+            0.018556045098815276,
+            0.018556045106657145
+          ],
+          "reviewer_2_topic_distribution": [
+            0.01812378941294005,
+            0.01808904805270927,
+            0.9276090664275318,
+            0.01808904805352413,
+            0.018089048053294726
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "group",
+                "proteomics",
+                "working",
+                "sets"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "public",
+                "datasets",
+                "clearly identifies",
+                "proposal",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "data",
+                "information",
+                "synthesis",
+                "llm",
+                "exemplary"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "public",
+                "datasets",
+                "clearly identifies",
+                "proposal",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "public",
+                "datasets",
+                "clearly identifies",
+                "proposal",
+                "project"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.1111111111111111,
+            "subjectivity": 0.4287037037037037,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.0381993006993007,
+            "subjectivity": 0.41451048951048947,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.07291181041181041,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9635440947940948
+        }
+      }
+    },
+    {
+      "proposal_id": "12",
+      "proposal_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry based",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "data_sources_and_limitations_justification",
+      "criterion_name": "Data Sources & Limitations",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:21.729206",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.13216474260788622,
+        "embedding_cosine_similarity": 0.8364556275899828,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "format"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "reviewer_1_unique": [
+            "clearly",
+            "disciplines methodologies",
+            "format controlled",
+            "friendly",
+            "friendly tools",
+            "identified",
+            "identified scope",
+            "including",
+            "including bioinformatics",
+            "integration"
+          ],
+          "reviewer_2_unique": [
+            "existing public",
+            "experimental data",
+            "files",
+            "files publications",
+            "focus",
+            "focus exemplary",
+            "format data",
+            "generate",
+            "generate new",
+            "goal"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.043753877702538094,
+          "reviewer_1_topic_distribution": [
+            0.021030332954577017,
+            0.020987941458876717,
+            0.020987941458825578,
+            0.02098794145875534,
+            0.9160058426689653
+          ],
+          "reviewer_2_topic_distribution": [
+            0.9276416960198326,
+            0.018079012497181402,
+            0.01807901249728169,
+            0.018079012497602968,
+            0.01812126648810125
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "information",
+                "synthesis",
+                "access",
+                "datasets"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "pride",
+                "project",
+                "format",
+                "sources",
+                "like"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "pride",
+                "project",
+                "format",
+                "sources",
+                "like"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "pride",
+                "project",
+                "format",
+                "sources",
+                "like"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "clearly",
+                "data",
+                "machine",
+                "including bioinformatics",
+                "integration pride"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.07999999999999999,
+            "subjectivity": 0.30999999999999994,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.0381993006993007,
+            "subjectivity": 0.41451048951048947,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.04180069930069929,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9790996503496504
+        }
+      }
+    }
+  ]
+}

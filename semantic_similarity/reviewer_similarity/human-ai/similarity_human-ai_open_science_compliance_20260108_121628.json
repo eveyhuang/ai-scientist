@@ -1,0 +1,6028 @@
+{
+  "metadata": {
+    "analysis_type": "reviewer_similarity",
+    "comparison_type": "human-ai",
+    "criterion": "open_science_compliance_justification",
+    "criterion_name": "Open Science Compliance",
+    "total_comparisons": 47,
+    "generation_timestamp": "2026-01-08T12:16:28.755735",
+    "methods": {
+      "tfidf": "TF-IDF based cosine similarity",
+      "embeddings": "Nomic-Embed (nomic-ai/nomic-embed-text-v1.5)",
+      "keywords": "TF-IDF top-20 keywords with Jaccard similarity",
+      "topics": "Latent Dirichlet Allocation (LDA) with 5 topics"
+    }
+  },
+  "results": [
+    {
+      "proposal_id": "1",
+      "proposal_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:21.844293",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.13125757401720517,
+        "embedding_cosine_similarity": 0.8793634474401784,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "commitment",
+            "open",
+            "open science",
+            "science"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "reviewer_1_unique": [
+            "conventional standards",
+            "demonstrated",
+            "demonstrates",
+            "demonstrates strong",
+            "educational",
+            "educational backgrounds",
+            "explicitly",
+            "explicitly demonstrated",
+            "lacking",
+            "lacking conventional"
+          ],
+          "reviewer_2_unique": [
+            "code",
+            "code synthesized",
+            "commitment proposal",
+            "concrete",
+            "concrete plans",
+            "data",
+            "data products",
+            "explicit",
+            "explicit open",
+            "falling"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05826427128040136,
+          "reviewer_1_topic_distribution": [
+            0.024368500073608305,
+            0.024368500072247865,
+            0.02441977652332438,
+            0.02436850007131327,
+            0.9024747232595061
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02595898657056956,
+            0.025958986570667822,
+            0.896098624930883,
+            0.025958986570152155,
+            0.026024415357727582
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "science commitment",
+                "open science",
+                "open",
+                "commitment",
+                "science"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "science commitment",
+                "open science",
+                "open",
+                "commitment",
+                "science"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "open science",
+                "open",
+                "science",
+                "workflows code",
+                "findings lacks"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "science commitment",
+                "open science",
+                "open",
+                "commitment",
+                "science"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "commitment",
+                "science",
+                "publishable research",
+                "explicitly",
+                "proposed publishable"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.1080952380952381,
+            "subjectivity": 0.5680952380952381,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.11000000000000001,
+            "subjectivity": 0.4,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.001904761904761909,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9990476190476191
+        }
+      }
+    },
+    {
+      "proposal_id": "1",
+      "proposal_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:21.935935",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.16957781650596807,
+        "embedding_cosine_similarity": 0.847232284508047,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "open",
+            "open science",
+            "science"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "reviewer_1_unique": [
+            "collaborative",
+            "community",
+            "data sharing",
+            "detailed",
+            "enhance",
+            "ensuring",
+            "methodologies",
+            "plan",
+            "plans",
+            "platforms"
+          ],
+          "reviewer_2_unique": [
+            "code",
+            "code synthesized",
+            "commitment",
+            "commitment proposal",
+            "concrete",
+            "concrete plans",
+            "data products",
+            "explicit",
+            "explicit open",
+            "falling"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.044931737266931344,
+          "reviewer_1_topic_distribution": [
+            0.013723346811510207,
+            0.9452019444870606,
+            0.013691569567058606,
+            0.013691569567282352,
+            0.013691569567088275
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8955142896248504,
+            0.026186227352894827,
+            0.026099827673961993,
+            0.02609982767401243,
+            0.026099827674280394
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "open science",
+                "science",
+                "open",
+                "products",
+                "data products"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "sharing",
+                "proposal",
+                "open",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "analysis",
+                "commitment",
+                "publicly",
+                "code",
+                "publicly available"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "analysis",
+                "commitment",
+                "publicly",
+                "code",
+                "publicly available"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "analysis",
+                "commitment",
+                "publicly",
+                "code",
+                "publicly available"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.13137254901960785,
+            "subjectivity": 0.5019607843137255,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.11000000000000001,
+            "subjectivity": 0.4,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.021372549019607834,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.989313725490196
+        }
+      }
+    },
+    {
+      "proposal_id": "1",
+      "proposal_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:21.960776",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.08112769192071642,
+        "embedding_cosine_similarity": 0.7897689974653533,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "findings"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "reviewer_1_unique": [
+            "clear data",
+            "data disseminated",
+            "did",
+            "did mention",
+            "disseminated",
+            "disseminated proposal",
+            "end",
+            "end project",
+            "findings end",
+            "mention"
+          ],
+          "reviewer_2_unique": [
+            "code",
+            "code synthesized",
+            "commitment",
+            "commitment proposal",
+            "concrete",
+            "concrete plans",
+            "data products",
+            "explicit",
+            "explicit open",
+            "falling"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.07551441052819717,
+          "reviewer_1_topic_distribution": [
+            0.036160312912416025,
+            0.03616031291266448,
+            0.855318805075799,
+            0.036200256186288006,
+            0.03616031291283257
+          ],
+          "reviewer_2_topic_distribution": [
+            0.0265677339486965,
+            0.02656773394983865,
+            0.02665183333290876,
+            0.8936449648182635,
+            0.026567733950292546
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "proposal",
+                "data",
+                "publishing findings",
+                "publishing",
+                "findings"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "proposal",
+                "data",
+                "publishing findings",
+                "publishing",
+                "findings"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "findings end",
+                "clear data",
+                "project",
+                "data disseminated",
+                "did"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "open science",
+                "science",
+                "open",
+                "explicit open",
+                "mentions publishing"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "proposal",
+                "data",
+                "publishing findings",
+                "publishing",
+                "findings"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.09999999999999999,
+            "subjectivity": 0.3833333333333333,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.11000000000000001,
+            "subjectivity": 0.4,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.010000000000000023,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.995
+        }
+      }
+    },
+    {
+      "proposal_id": "1",
+      "proposal_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:21.981279",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.05349300031943796,
+        "embedding_cosine_similarity": 0.7549257570115083,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "analysis software",
+            "available",
+            "available mentioned",
+            "data management",
+            "didn",
+            "didn include",
+            "generated",
+            "generated project",
+            "include",
+            "include data"
+          ],
+          "reviewer_2_unique": [
+            "code",
+            "code synthesized",
+            "commitment",
+            "commitment proposal",
+            "concrete",
+            "concrete plans",
+            "data products",
+            "explicit",
+            "explicit open",
+            "falling"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06875806312686226,
+          "reviewer_1_topic_distribution": [
+            0.8737798019494242,
+            0.03155108984681165,
+            0.031566928516863525,
+            0.03155108984283528,
+            0.03155108984406542
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02656201969324296,
+            0.026530231738316264,
+            0.8938472850900232,
+            0.026530231740225237,
+            0.026530231738192377
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "project available",
+                "meta analysis",
+                "include data",
+                "project",
+                "didn"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "analysis",
+                "available",
+                "proposal",
+                "data",
+                "management"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "open science",
+                "open",
+                "science",
+                "falling",
+                "mentions publishing"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "analysis",
+                "available",
+                "proposal",
+                "data",
+                "management"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "analysis",
+                "available",
+                "proposal",
+                "data",
+                "management"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.4,
+            "subjectivity": 0.4,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.11000000000000001,
+            "subjectivity": 0.4,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.29000000000000004,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.855
+        }
+      }
+    },
+    {
+      "proposal_id": "2",
+      "proposal_title": "Elucidating genome structure-function relationships in human brain cells",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:22.083255",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.07118316312717018,
+        "embedding_cosine_similarity": 0.6378400131081849,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.034482758620689655,
+          "reviewer_1_unique": [
+            "data shared",
+            "generative",
+            "generative models",
+            "models",
+            "models shared",
+            "processed",
+            "processed data",
+            "shared",
+            "shared processed"
+          ],
+          "reviewer_2_unique": [
+            "analysis workflows",
+            "available",
+            "available required",
+            "code",
+            "code analysis",
+            "commitment",
+            "commitment proposal",
+            "commits",
+            "commits producing",
+            "data publicly"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.09838050313390614,
+          "reviewer_1_topic_distribution": [
+            0.050244748006929095,
+            0.05024474800699592,
+            0.050301058427271166,
+            0.7989646975516915,
+            0.05024474800711236
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02720135694795322,
+            0.02720135694832662,
+            0.8911065266444603,
+            0.027289402510393537,
+            0.027201356948866356
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "processed",
+                "processed data",
+                "data",
+                "models shared",
+                "shared processed"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "processed",
+                "processed data",
+                "data",
+                "models shared",
+                "shared processed"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "workflows processed",
+                "data publicly",
+                "open science",
+                "workflows",
+                "making code"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "shared",
+                "models",
+                "data shared",
+                "models shared",
+                "generative models"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "processed",
+                "processed data",
+                "data",
+                "models shared",
+                "shared processed"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.0,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.2,
+            "subjectivity": 0.4291666666666667,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.2,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9
+        }
+      }
+    },
+    {
+      "proposal_id": "2",
+      "proposal_title": "Elucidating genome structure-function relationships in human brain cells",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:22.107175",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.05654684600421751,
+        "embedding_cosine_similarity": 0.8114401483188075,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "open"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.03571428571428571,
+          "reviewer_1_unique": [
+            "commitement",
+            "commitement open",
+            "discussion",
+            "discussion commitement",
+            "open reproducible",
+            "reproducible",
+            "reproducible science",
+            "science"
+          ],
+          "reviewer_2_unique": [
+            "analysis workflows",
+            "available",
+            "available required",
+            "code",
+            "code analysis",
+            "commitment",
+            "commitment proposal",
+            "commits",
+            "commits producing",
+            "data"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.09849120902575506,
+          "reviewer_1_topic_distribution": [
+            0.05036489343704771,
+            0.05036489343707645,
+            0.050392051223918224,
+            0.05036489343712351,
+            0.7985132684648342
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02717878619881509,
+            0.027178786199190955,
+            0.8912114483633085,
+            0.02717878619963202,
+            0.02725219303905346
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "open",
+                "science",
+                "reproducible",
+                "discussion commitement",
+                "discussion"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "open",
+                "science",
+                "reproducible",
+                "discussion commitement",
+                "discussion"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "workflows processed",
+                "data",
+                "workflows",
+                "making code",
+                "making"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "open",
+                "science",
+                "reproducible",
+                "discussion commitement",
+                "discussion"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "open reproducible",
+                "reproducible science",
+                "discussion commitement",
+                "discussion",
+                "commitement open"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.5,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.2,
+            "subjectivity": 0.4291666666666667,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.2,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9
+        }
+      }
+    },
+    {
+      "proposal_id": "2",
+      "proposal_title": "Elucidating genome structure-function relationships in human brain cells",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:22.131022",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.04000024699429192,
+        "embedding_cosine_similarity": 0.7194685074805516,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "commitment"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.027777777777777776,
+          "reviewer_1_unique": [
+            "datasets",
+            "datasets included",
+            "dissemination",
+            "dissemination strategies",
+            "explicit",
+            "explicit sharing",
+            "included",
+            "included dissemination",
+            "sharing",
+            "sharing tools"
+          ],
+          "reviewer_2_unique": [
+            "analysis workflows",
+            "available",
+            "available required",
+            "code",
+            "code analysis",
+            "commitment proposal",
+            "commits",
+            "commits producing",
+            "data",
+            "data publicly"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0808506523123852,
+          "reviewer_1_topic_distribution": [
+            0.03926731869291453,
+            0.039257963937906315,
+            0.03925796393848309,
+            0.842958789492752,
+            0.03925796393794415
+          ],
+          "reviewer_2_topic_distribution": [
+            0.891293087222382,
+            0.027171327720436567,
+            0.0271713277198334,
+            0.0271929296178867,
+            0.027171327719461336
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "workflows processed",
+                "detailed",
+                "plan making",
+                "plan",
+                "workflows"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "commitment",
+                "tools",
+                "sharing",
+                "datasets",
+                "dissemination"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "commitment",
+                "tools",
+                "sharing",
+                "datasets",
+                "dissemination"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "sharing",
+                "sharing tools",
+                "dissemination",
+                "dissemination strategies",
+                "explicit"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "commitment",
+                "tools",
+                "sharing",
+                "datasets",
+                "dissemination"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.25,
+            "subjectivity": 0.5,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.2,
+            "subjectivity": 0.4291666666666667,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.04999999999999999,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.975
+        }
+      }
+    },
+    {
+      "proposal_id": "3",
+      "proposal_title": "MaiTool - LLM-powered bioinformatics tools for microbiome analysis",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:22.170530",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.17492744211254146,
+        "embedding_cosine_similarity": 0.8604438613294824,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "commitment",
+            "commits",
+            "open",
+            "open science"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "reviewer_1_unique": [
+            "code",
+            "code publicly",
+            "commitment open",
+            "commits making",
+            "dataset",
+            "dataset integration",
+            "datasets",
+            "datasets code",
+            "development",
+            "development maitool"
+          ],
+          "reviewer_2_unique": [
+            "code workflows",
+            "commitment proposal",
+            "commits releasing",
+            "details",
+            "details open",
+            "final",
+            "final tool",
+            "key",
+            "key tenet",
+            "lacks"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06273834751794784,
+          "reviewer_1_topic_distribution": [
+            0.024663813336443345,
+            0.024663813335375193,
+            0.024663813336245656,
+            0.9012704780438269,
+            0.02473808194810895
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02891984831398315,
+            0.028919848314155713,
+            0.028919848314067614,
+            0.029031906194546743,
+            0.8842085488632468
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "code",
+                "proposal",
+                "tool",
+                "commitment",
+                "commits"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "code",
+                "proposal",
+                "tool",
+                "commitment",
+                "commits"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "code",
+                "proposal",
+                "tool",
+                "commitment",
+                "commits"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "open",
+                "science",
+                "open science",
+                "ncems",
+                "making datasets"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "open",
+                "workflows key",
+                "commits releasing",
+                "releasing",
+                "publishing results"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.13333333333333333,
+            "subjectivity": 0.4666666666666666,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.0,
+            "subjectivity": 0.65625,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.13333333333333333,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9333333333333333
+        }
+      }
+    },
+    {
+      "proposal_id": "3",
+      "proposal_title": "MaiTool - LLM-powered bioinformatics tools for microbiome analysis",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:22.265475",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.0,
+        "embedding_cosine_similarity": 0.5284293363871609,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "yes"
+          ],
+          "reviewer_2_unique": [
+            "code workflows",
+            "commitment",
+            "commitment proposal",
+            "commits",
+            "commits releasing",
+            "details",
+            "details open",
+            "final",
+            "final tool",
+            "key"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9673058478750238,
+          "reviewer_1_topic_distribution": [
+            0.10004573589143828,
+            0.5998170564385279,
+            0.1000457358909232,
+            0.10004573588920686,
+            0.10004573588990386
+          ],
+          "reviewer_2_topic_distribution": [
+            0.029019264750637475,
+            0.8839229409401144,
+            0.029019264759551452,
+            0.029019264779222897,
+            0.029019264770473924
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "yes",
+                "workflows key",
+                "open sourcing",
+                "open science",
+                "lacks specific"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "yes",
+                "open",
+                "proposal",
+                "open science",
+                "lacks specific"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "yes",
+                "workflows key",
+                "open sourcing",
+                "open science",
+                "lacks specific"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "yes",
+                "workflows key",
+                "open sourcing",
+                "open science",
+                "lacks specific"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "yes",
+                "workflows key",
+                "open sourcing",
+                "open science",
+                "lacks specific"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.0,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.0,
+            "subjectivity": 0.65625,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.0,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 1.0
+        }
+      }
+    },
+    {
+      "proposal_id": "3",
+      "proposal_title": "MaiTool - LLM-powered bioinformatics tools for microbiome analysis",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:22.364908",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.17565553308419948,
+        "embedding_cosine_similarity": 0.8923732428670743,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "commitment",
+            "open",
+            "open science",
+            "proposal"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.14814814814814814,
+          "reviewer_1_unique": [
+            "commitment open",
+            "demonstrates",
+            "demonstrates commitment",
+            "principles",
+            "proposal demonstrates",
+            "science",
+            "science principles"
+          ],
+          "reviewer_2_unique": [
+            "code workflows",
+            "commitment proposal",
+            "commits",
+            "commits releasing",
+            "details",
+            "details open",
+            "final",
+            "final tool",
+            "key",
+            "key tenet"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.09560240457984887,
+          "reviewer_1_topic_distribution": [
+            0.04688218228032921,
+            0.046882182280353034,
+            0.04703547094462749,
+            0.04688218228032848,
+            0.8123179822143618
+          ],
+          "reviewer_2_topic_distribution": [
+            0.028864421619496216,
+            0.02886442161949883,
+            0.8843216849689407,
+            0.028864421619522945,
+            0.029085050172541406
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "science",
+                "open science",
+                "proposal",
+                "commitment",
+                "open"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "science",
+                "open science",
+                "proposal",
+                "commitment",
+                "open"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "open",
+                "workflows key",
+                "final tool",
+                "open sourcing",
+                "lacks specific"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "science",
+                "open science",
+                "proposal",
+                "commitment",
+                "open"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "principles",
+                "demonstrates",
+                "proposal demonstrates",
+                "commitment open",
+                "demonstrates commitment"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.5,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.0,
+            "subjectivity": 0.65625,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.0,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 1.0
+        }
+      }
+    },
+    {
+      "proposal_id": "3",
+      "proposal_title": "MaiTool - LLM-powered bioinformatics tools for microbiome analysis",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:22.392692",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.038431464450811505,
+        "embedding_cosine_similarity": 0.6608765954386833,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "proposal"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.041666666666666664,
+          "reviewer_1_unique": [
+            "does",
+            "proposal does",
+            "yes",
+            "yes proposal"
+          ],
+          "reviewer_2_unique": [
+            "code workflows",
+            "commitment",
+            "commitment proposal",
+            "commits",
+            "commits releasing",
+            "details",
+            "details open",
+            "final",
+            "final tool",
+            "key"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.12194059046893402,
+          "reviewer_1_topic_distribution": [
+            0.062169820380480106,
+            0.06216982038015774,
+            0.06216982037967841,
+            0.06218573293639761,
+            0.7513048059232862
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02904047612064942,
+            0.029040476116493148,
+            0.029040476117020216,
+            0.8837683480223312,
+            0.029110223623505984
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "proposal",
+                "yes proposal",
+                "does",
+                "yes",
+                "proposal does"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "proposal",
+                "yes proposal",
+                "does",
+                "yes",
+                "proposal does"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "proposal",
+                "yes proposal",
+                "does",
+                "yes",
+                "proposal does"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "open",
+                "proposal commits",
+                "publishing",
+                "open science",
+                "lacks specific"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "yes proposal",
+                "does",
+                "yes",
+                "proposal does",
+                "proposal"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.0,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.0,
+            "subjectivity": 0.65625,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.0,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 1.0
+        }
+      }
+    },
+    {
+      "proposal_id": "4",
+      "proposal_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:22.433054",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.17685682511687068,
+        "embedding_cosine_similarity": 0.8697113645713275,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "open"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "actions open",
+            "addressed",
+            "addressed concrete",
+            "advertisement",
+            "advertisement dissemination",
+            "code",
+            "code datasets",
+            "concrete",
+            "concrete actions",
+            "datasets"
+          ],
+          "reviewer_2_unique": [
+            "analysis pipeline",
+            "atlas",
+            "atlas predictive",
+            "classifier",
+            "classifier open",
+            "clear",
+            "clear plans",
+            "commitment",
+            "commitment commitment",
+            "commitment open"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.07382562435271708,
+          "reviewer_1_topic_distribution": [
+            0.8713540595025363,
+            0.032127408435199595,
+            0.03226371519162952,
+            0.03212740843530428,
+            0.03212740843533026
+          ],
+          "reviewer_2_topic_distribution": [
+            0.0295249025360008,
+            0.029455902847656132,
+            0.8821073889193551,
+            0.02945590284842727,
+            0.029455902848560592
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "open",
+                "documentation includes",
+                "licensure",
+                "includes plan",
+                "includes"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "source",
+                "open source",
+                "open science",
+                "science",
+                "open"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "open",
+                "commitment",
+                "open science",
+                "science",
+                "classifier"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "source",
+                "open source",
+                "open science",
+                "science",
+                "open"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "source",
+                "open source",
+                "open science",
+                "science",
+                "open"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.07500000000000001,
+            "subjectivity": 0.4,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.03333333333333333,
+            "subjectivity": 0.4611111111111111,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.04166666666666668,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9791666666666666
+        }
+      }
+    },
+    {
+      "proposal_id": "4",
+      "proposal_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:22.533211",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.07110083586207228,
+        "embedding_cosine_similarity": 0.7552844395376408,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "clear"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "fate project",
+            "gene expression",
+            "generating",
+            "generating clear",
+            "great",
+            "great job",
+            "highlighted",
+            "highlighted proposal",
+            "importance",
+            "importance generating"
+          ],
+          "reviewer_2_unique": [
+            "analysis pipeline",
+            "atlas",
+            "atlas predictive",
+            "classifier",
+            "classifier open",
+            "clear plans",
+            "commitment",
+            "commitment commitment",
+            "commitment open",
+            "community"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05780882682336541,
+          "reviewer_1_topic_distribution": [
+            0.9189652098680892,
+            0.020296171642002717,
+            0.020246206163173477,
+            0.020246206163409556,
+            0.020246206163324856
+          ],
+          "reviewer_2_topic_distribution": [
+            0.029686587388852416,
+            0.8813012237777679,
+            0.029670729611013937,
+            0.029670729611132075,
+            0.029670729611233744
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "proposal",
+                "clear",
+                "years development",
+                "integrates",
+                "great"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "open",
+                "open science",
+                "commitment",
+                "science",
+                "exemplary"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "community",
+                "data",
+                "clear",
+                "science",
+                "open"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "community",
+                "data",
+                "clear",
+                "science",
+                "open"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "community",
+                "data",
+                "clear",
+                "science",
+                "open"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.17708333333333337,
+            "subjectivity": 0.5208333333333334,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.03333333333333333,
+            "subjectivity": 0.4611111111111111,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.14375000000000004,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.928125
+        }
+      }
+    },
+    {
+      "proposal_id": "4",
+      "proposal_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:22.558370",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.09704796744876185,
+        "embedding_cosine_similarity": 0.7978733717485258,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "cmercs",
+            "cmercs expertise",
+            "data distributed",
+            "distributed",
+            "distributed software",
+            "does",
+            "does mention",
+            "engage",
+            "engage cmercs",
+            "ensure"
+          ],
+          "reviewer_2_unique": [
+            "analysis pipeline",
+            "atlas",
+            "atlas predictive",
+            "classifier",
+            "classifier open",
+            "clear",
+            "clear plans",
+            "commitment",
+            "commitment commitment",
+            "commitment open"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06293967345123275,
+          "reviewer_1_topic_distribution": [
+            0.024339633287422727,
+            0.024440386427587252,
+            0.9025407137136986,
+            0.02433963328580146,
+            0.024339633285490003
+          ],
+          "reviewer_2_topic_distribution": [
+            0.029444388533122246,
+            0.8822082381823885,
+            0.02945859621875985,
+            0.02944438853290232,
+            0.029444388532827204
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "resources",
+                "data",
+                "open science",
+                "science",
+                "open"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "open",
+                "commitment",
+                "open science",
+                "science",
+                "classifier open"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "wanting follow",
+                "ensure",
+                "mention wanting",
+                "mention",
+                "like engage"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "resources",
+                "data",
+                "open science",
+                "science",
+                "open"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "resources",
+                "data",
+                "open science",
+                "science",
+                "open"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.425,
+            "subjectivity": 0.45625,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.03333333333333333,
+            "subjectivity": 0.4611111111111111,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.39166666666666666,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8041666666666667
+        }
+      }
+    },
+    {
+      "proposal_id": "4",
+      "proposal_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:22.586858",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.2694767656825064,
+        "embedding_cosine_similarity": 0.8677714268879969,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "commitment",
+            "commitment open",
+            "open",
+            "open science",
+            "science"
+          ],
+          "num_overlapping": 5,
+          "jaccard_similarity": 0.14285714285714285,
+          "reviewer_1_unique": [
+            "collaborative maintenance",
+            "commits",
+            "commits open",
+            "dataset",
+            "dataset sharing",
+            "development",
+            "development open",
+            "github",
+            "github based",
+            "including"
+          ],
+          "reviewer_2_unique": [
+            "analysis pipeline",
+            "atlas",
+            "atlas predictive",
+            "classifier",
+            "classifier open",
+            "clear",
+            "clear plans",
+            "commitment commitment",
+            "community",
+            "community resources"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06416928286943133,
+          "reviewer_1_topic_distribution": [
+            0.025267059014731266,
+            0.025393149178962408,
+            0.02526705901464167,
+            0.02526705901464349,
+            0.8988056737770213
+          ],
+          "reviewer_2_topic_distribution": [
+            0.029328214529888964,
+            0.8825741447466425,
+            0.029328214529968914,
+            0.02932821452993188,
+            0.029441211663567633
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "source",
+                "pipeline",
+                "open source",
+                "commitment open",
+                "commitment"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "open",
+                "commitment",
+                "open science",
+                "science",
+                "clear plans"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "source",
+                "pipeline",
+                "open source",
+                "commitment open",
+                "commitment"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "source",
+                "pipeline",
+                "open source",
+                "commitment open",
+                "commitment"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "open",
+                "science",
+                "open science",
+                "tools ingest",
+                "github based"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.14444444444444446,
+            "subjectivity": 0.5777777777777778,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.03333333333333333,
+            "subjectivity": 0.4611111111111111,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.11111111111111113,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9444444444444444
+        }
+      }
+    },
+    {
+      "proposal_id": "5",
+      "proposal_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:22.629395",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.0,
+        "embedding_cosine_similarity": 0.608816170210911,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "clear",
+            "discussed",
+            "discussed clear",
+            "particular",
+            "particular discussed"
+          ],
+          "reviewer_2_unique": [
+            "address open",
+            "analysis",
+            "analysis workflows",
+            "available",
+            "code",
+            "code analysis",
+            "commitment",
+            "commitment proposal",
+            "completely",
+            "completely fails"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.1207794809375185,
+          "reviewer_1_topic_distribution": [
+            0.7526212971120352,
+            0.06182979814425173,
+            0.0618496349140092,
+            0.06184963491543388,
+            0.06184963491426994
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02874944741748564,
+            0.8849184385672799,
+            0.028777371337264032,
+            0.028777371337876712,
+            0.02877737134009361
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "discussed clear",
+                "discussed",
+                "clear",
+                "particular",
+                "particular discussed"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "science",
+                "open",
+                "open science",
+                "workflows derived",
+                "completely"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "discussed clear",
+                "discussed",
+                "clear",
+                "particular",
+                "particular discussed"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "discussed clear",
+                "discussed",
+                "clear",
+                "particular",
+                "particular discussed"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "discussed clear",
+                "discussed",
+                "clear",
+                "particular",
+                "particular discussed"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": -0.06666666666666667,
+            "subjectivity": 0.3583333333333333,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": -0.024999999999999994,
+            "subjectivity": 0.42500000000000004,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.04166666666666667,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9791666666666666
+        }
+      }
+    },
+    {
+      "proposal_id": "5",
+      "proposal_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:22.717473",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.060873026063493166,
+        "embedding_cosine_similarity": 0.7390205319070904,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "address",
+            "address point",
+            "does",
+            "does address",
+            "point",
+            "proposal",
+            "proposal does"
+          ],
+          "reviewer_2_unique": [
+            "address open",
+            "analysis",
+            "analysis workflows",
+            "available",
+            "code",
+            "code analysis",
+            "commitment",
+            "commitment proposal",
+            "completely",
+            "completely fails"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.10946493599997739,
+          "reviewer_1_topic_distribution": [
+            0.05531133279872018,
+            0.05531133279920764,
+            0.055341502259645736,
+            0.7787244993435102,
+            0.055311332798916195
+          ],
+          "reviewer_2_topic_distribution": [
+            0.028865715598586382,
+            0.028865715603856566,
+            0.884413143148218,
+            0.028989710048711828,
+            0.028865715600627267
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "address",
+                "proposal",
+                "point",
+                "does address",
+                "does"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "address",
+                "proposal",
+                "point",
+                "does address",
+                "does"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "science",
+                "open",
+                "open science",
+                "workflows derived",
+                "completely"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "proposal does",
+                "does address",
+                "address point",
+                "does",
+                "point"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "address",
+                "proposal",
+                "point",
+                "does address",
+                "does"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.0,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": -0.024999999999999994,
+            "subjectivity": 0.42500000000000004,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.024999999999999994,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9875
+        }
+      }
+    },
+    {
+      "proposal_id": "5",
+      "proposal_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:22.805169",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.07271599343771787,
+        "embedding_cosine_similarity": 0.7860911688563497,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "accessible ideal",
+            "closed",
+            "closed scientific",
+            "community",
+            "community statement",
+            "evidence",
+            "evidence suggests",
+            "explicit",
+            "explicit statement",
+            "ideal"
+          ],
+          "reviewer_2_unique": [
+            "address open",
+            "analysis",
+            "analysis workflows",
+            "available",
+            "code",
+            "code analysis",
+            "commitment",
+            "commitment proposal",
+            "completely",
+            "completely fails"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06840182877112877,
+          "reviewer_1_topic_distribution": [
+            0.02909122805522075,
+            0.8835813821234633,
+            0.02909122805501547,
+            0.029144933711392235,
+            0.02909122805490829
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02873656176629628,
+            0.028765463287377842,
+            0.028736561766356424,
+            0.8850248514136645,
+            0.02873656176630492
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "plans",
+                "plans make",
+                "proposal",
+                "make",
+                "science"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "outcomes",
+                "statement",
+                "reproducible science",
+                "outcomes plans",
+                "outcomes proposal"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "plans",
+                "plans make",
+                "proposal",
+                "make",
+                "science"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "open",
+                "open science",
+                "science",
+                "workflows",
+                "mention"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "plans",
+                "plans make",
+                "proposal",
+                "make",
+                "science"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.29375,
+            "subjectivity": 0.46875,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": -0.024999999999999994,
+            "subjectivity": 0.42500000000000004,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.31875,
+          "polarity_correlation": "opposite_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.840625
+        }
+      }
+    },
+    {
+      "proposal_id": "5",
+      "proposal_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:22.830660",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.12135428865537237,
+        "embedding_cosine_similarity": 0.8152454702916869,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "open",
+            "science"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "reviewer_1_unique": [
+            "did",
+            "did explicit",
+            "discussion",
+            "discussion open",
+            "explicit",
+            "explicit discussion",
+            "open reproducible",
+            "principles",
+            "proposal",
+            "proposal structured"
+          ],
+          "reviewer_2_unique": [
+            "address open",
+            "analysis",
+            "analysis workflows",
+            "available",
+            "code",
+            "code analysis",
+            "commitment",
+            "commitment proposal",
+            "completely",
+            "completely fails"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.07921504169959007,
+          "reviewer_1_topic_distribution": [
+            0.03688956027520134,
+            0.03688956027563957,
+            0.8523653212541603,
+            0.03688956027577183,
+            0.03696599791922693
+          ],
+          "reviewer_2_topic_distribution": [
+            0.028423119096206897,
+            0.028423119097077853,
+            0.028485977003654,
+            0.028423119097211028,
+            0.8862446657058503
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "proposal",
+                "open",
+                "science",
+                "proposal structured",
+                "reproducible science"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "proposal",
+                "open",
+                "science",
+                "proposal structured",
+                "reproducible science"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "science",
+                "proposal structured",
+                "reproducible science",
+                "discussion open",
+                "discussion"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "proposal",
+                "open",
+                "science",
+                "proposal structured",
+                "reproducible science"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "open science",
+                "open",
+                "science",
+                "data publicly",
+                "workflows"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.5,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": -0.024999999999999994,
+            "subjectivity": 0.42500000000000004,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.024999999999999994,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9875
+        }
+      }
+    },
+    {
+      "proposal_id": "6",
+      "proposal_title": "Elucidating emergent structures in cellular RNA-protein interaction networks",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:22.876664",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.09216543500187924,
+        "embedding_cosine_similarity": 0.7004239596420769,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "databases"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "analyses",
+            "analyses future",
+            "analyses publically",
+            "available",
+            "available enable",
+            "biological databases",
+            "code",
+            "code publically",
+            "creating",
+            "creating open"
+          ],
+          "reviewer_2_unique": [
+            "aligning principles",
+            "commitment",
+            "commitment promising",
+            "commitment proposal",
+            "databases aligning",
+            "deliver",
+            "deliver open",
+            "demonstrates",
+            "demonstrates strong",
+            "open"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06901192768612062,
+          "reviewer_1_topic_distribution": [
+            0.8916414118071476,
+            0.027067405640626513,
+            0.02715637127326927,
+            0.027067405639278463,
+            0.02706740563967812
+          ],
+          "reviewer_2_topic_distribution": [
+            0.031180762141529463,
+            0.031135528232457462,
+            0.8754126531609832,
+            0.031135528232617688,
+            0.031135528232412127
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "analyses",
+                "available",
+                "publically",
+                "publically available",
+                "types meta"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "source tools",
+                "tools",
+                "open source",
+                "team",
+                "databases"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "commitment",
+                "science",
+                "open",
+                "proposal",
+                "promising"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "source tools",
+                "tools",
+                "open source",
+                "team",
+                "databases"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "source tools",
+                "tools",
+                "open source",
+                "team",
+                "databases"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.4,
+            "subjectivity": 0.41874999999999996,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.2111111111111111,
+            "subjectivity": 0.5777777777777778,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.1888888888888889,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9055555555555556
+        }
+      }
+    },
+    {
+      "proposal_id": "6",
+      "proposal_title": "Elucidating emergent structures in cellular RNA-protein interaction networks",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:22.960213",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.09651748523097382,
+        "embedding_cosine_similarity": 0.8442716179229388,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "open"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "access",
+            "access publications",
+            "access tool",
+            "commits",
+            "commits release",
+            "findings",
+            "findings proposal",
+            "form",
+            "form open",
+            "open access"
+          ],
+          "reviewer_2_unique": [
+            "aligning principles",
+            "commitment",
+            "commitment promising",
+            "commitment proposal",
+            "databases",
+            "databases aligning",
+            "deliver",
+            "deliver open",
+            "demonstrates",
+            "demonstrates strong"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.08439602293794507,
+          "reviewer_1_topic_distribution": [
+            0.037961801475839524,
+            0.03796180147640462,
+            0.8480970533123371,
+            0.03801754225913884,
+            0.03796180147627997
+          ],
+          "reviewer_2_topic_distribution": [
+            0.030936662271403285,
+            0.030936662271490757,
+            0.03099693239530638,
+            0.8761930807900811,
+            0.030936662271718512
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "proposal",
+                "team",
+                "open",
+                "tool",
+                "access publications"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "proposal",
+                "team",
+                "open",
+                "tool",
+                "access publications"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "access",
+                "open access",
+                "open",
+                "commits",
+                "findings proposal"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "commitment",
+                "science",
+                "open",
+                "tools databases",
+                "demonstrates"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "proposal",
+                "team",
+                "open",
+                "tool",
+                "access publications"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.5,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.2111111111111111,
+            "subjectivity": 0.5777777777777778,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.2111111111111111,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8944444444444445
+        }
+      }
+    },
+    {
+      "proposal_id": "6",
+      "proposal_title": "Elucidating emergent structures in cellular RNA-protein interaction networks",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.050022",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.010060907934849261,
+        "embedding_cosine_similarity": 0.7217405401204218,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "challenging reproducibility",
+            "collaborative",
+            "collaborative project",
+            "datasets",
+            "datasets given",
+            "datasets produced",
+            "deserves",
+            "deserves benefit",
+            "different",
+            "different labs"
+          ],
+          "reviewer_2_unique": [
+            "aligning principles",
+            "commitment",
+            "commitment promising",
+            "commitment proposal",
+            "databases",
+            "databases aligning",
+            "deliver",
+            "deliver open",
+            "demonstrates",
+            "demonstrates strong"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0643672999524533,
+          "reviewer_1_topic_distribution": [
+            0.023846094114306864,
+            0.9046335902365679,
+            0.023828127418121556,
+            0.023846094116054734,
+            0.023846094114949055
+          ],
+          "reviewer_2_topic_distribution": [
+            0.031080946004134413,
+            0.031062586165945007,
+            0.8756945758194962,
+            0.031080946005636056,
+            0.031080946004788314
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "team",
+                "commitment promising",
+                "demonstrates",
+                "deliver open",
+                "proposal demonstrates"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "datasets",
+                "project",
+                "variables factors",
+                "factors associated",
+                "doubt"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "commitment",
+                "open",
+                "science",
+                "promising",
+                "demonstrates"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "team",
+                "commitment promising",
+                "demonstrates",
+                "deliver open",
+                "proposal demonstrates"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "team",
+                "commitment promising",
+                "demonstrates",
+                "deliver open",
+                "proposal demonstrates"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.23200000000000004,
+            "subjectivity": 0.588,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.2111111111111111,
+            "subjectivity": 0.5777777777777778,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.02088888888888893,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9895555555555555
+        }
+      }
+    },
+    {
+      "proposal_id": "6",
+      "proposal_title": "Elucidating emergent structures in cellular RNA-protein interaction networks",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.074802",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.14635567314208262,
+        "embedding_cosine_similarity": 0.8541395967075275,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "open",
+            "open source",
+            "tools"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08333333333333333,
+          "reviewer_1_unique": [
+            "available",
+            "available database",
+            "commitments",
+            "commitments generate",
+            "database",
+            "database indicated",
+            "generate",
+            "generate open",
+            "indicated",
+            "indicated proposal"
+          ],
+          "reviewer_2_unique": [
+            "aligning principles",
+            "commitment",
+            "commitment promising",
+            "commitment proposal",
+            "databases",
+            "databases aligning",
+            "deliver",
+            "deliver open",
+            "demonstrates",
+            "demonstrates strong"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.08449057163571197,
+          "reviewer_1_topic_distribution": [
+            0.03773408138818195,
+            0.848941790182472,
+            0.037855965653105304,
+            0.037734081388169576,
+            0.037734081388071376
+          ],
+          "reviewer_2_topic_distribution": [
+            0.03110007188626271,
+            0.03126158341137005,
+            0.8754382009304311,
+            0.031100071886230294,
+            0.031100071885705852
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "tools",
+                "open source",
+                "proposal",
+                "source tools",
+                "source"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "tools publically",
+                "commitments",
+                "generate open",
+                "indicated",
+                "indicated proposal"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "commitment",
+                "science",
+                "open",
+                "open science",
+                "deliver open"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "tools",
+                "open source",
+                "proposal",
+                "source tools",
+                "source"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "tools",
+                "open source",
+                "proposal",
+                "source tools",
+                "source"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.2,
+            "subjectivity": 0.45,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.2111111111111111,
+            "subjectivity": 0.5777777777777778,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.0111111111111111,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9944444444444445
+        }
+      }
+    },
+    {
+      "proposal_id": "7",
+      "proposal_title": "Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.121893",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.15123472047153386,
+        "embedding_cosine_similarity": 0.8569012362118764,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "commitment",
+            "open",
+            "principles"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "reviewer_1_unique": [
+            "code sharing",
+            "commitment open",
+            "commitment team",
+            "containers",
+            "data",
+            "data code",
+            "explicit",
+            "explicit stated",
+            "open reproducible",
+            "principles explicit"
+          ],
+          "reviewer_2_unique": [
+            "aligning open",
+            "commitment planning",
+            "commitment proposal",
+            "database",
+            "database tools",
+            "datasets",
+            "datasets fully",
+            "demonstrates",
+            "demonstrates strong",
+            "fully"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0736700432137888,
+          "reviewer_1_topic_distribution": [
+            0.03047047493101412,
+            0.03034787387883882,
+            0.03034787387892409,
+            0.8784859034321689,
+            0.030347873879054122
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8753475203068695,
+            0.031145790766314085,
+            0.03114579076649152,
+            0.031215107393809158,
+            0.031145790766515632
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "open science",
+                "open",
+                "science",
+                "commitment",
+                "aligning"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "science principles",
+                "principles",
+                "open",
+                "science",
+                "commitment"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "science principles",
+                "principles",
+                "open",
+                "science",
+                "commitment"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "commitment",
+                "yes commitment",
+                "explicit",
+                "reproducibility",
+                "publishing software"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "science principles",
+                "principles",
+                "open",
+                "science",
+                "commitment"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.5,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.10833333333333334,
+            "subjectivity": 0.45,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.10833333333333334,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9458333333333333
+        }
+      }
+    },
+    {
+      "proposal_id": "7",
+      "proposal_title": "Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.141795",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.0,
+        "embedding_cosine_similarity": 0.6816995198229956,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "addressed easy",
+            "addresses",
+            "easy",
+            "easy make",
+            "goal",
+            "goal rapid",
+            "incorporated",
+            "incorporated goal",
+            "make",
+            "make sure"
+          ],
+          "reviewer_2_unique": [
+            "aligning open",
+            "commitment",
+            "commitment planning",
+            "commitment proposal",
+            "database",
+            "database tools",
+            "datasets",
+            "datasets fully",
+            "demonstrates",
+            "demonstrates strong"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.08217060096451292,
+          "reviewer_1_topic_distribution": [
+            0.03587909286648872,
+            0.8563952510229732,
+            0.0359085520366569,
+            0.03590855203686335,
+            0.03590855203701781
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8733661225479704,
+            0.03163232526890842,
+            0.031667184061070684,
+            0.031667184060855474,
+            0.03166718406119513
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "open science",
+                "commitment",
+                "open",
+                "science",
+                "aligning open"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "addressed",
+                "rapid publication",
+                "incorporated",
+                "incorporated goal",
+                "make"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "tools datasets",
+                "database tools",
+                "fully",
+                "demonstrates strong",
+                "tools"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "tools datasets",
+                "database tools",
+                "fully",
+                "demonstrates strong",
+                "tools"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "tools datasets",
+                "database tools",
+                "fully",
+                "demonstrates strong",
+                "tools"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.2833333333333334,
+            "subjectivity": 0.6851851851851851,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.10833333333333334,
+            "subjectivity": 0.45,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.17500000000000004,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9125
+        }
+      }
+    },
+    {
+      "proposal_id": "7",
+      "proposal_title": "Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.169374",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.010715884450059388,
+        "embedding_cosine_similarity": 0.7104442064183464,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "assess",
+            "assess aspect",
+            "available",
+            "available like",
+            "based",
+            "based simply",
+            "broadly",
+            "broadly available",
+            "data",
+            "data structure"
+          ],
+          "reviewer_2_unique": [
+            "aligning open",
+            "commitment",
+            "commitment planning",
+            "commitment proposal",
+            "database",
+            "database tools",
+            "datasets",
+            "datasets fully",
+            "demonstrates",
+            "demonstrates strong"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06583726525396019,
+          "reviewer_1_topic_distribution": [
+            0.9029121564695054,
+            0.02425884761943857,
+            0.024276331970460894,
+            0.024276331971238383,
+            0.02427633196935663
+          ],
+          "reviewer_2_topic_distribution": [
+            0.03170208494153502,
+            0.8731343120738014,
+            0.03172120099567187,
+            0.03172120099484535,
+            0.031721200994146506
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "trajectories analytical",
+                "findings",
+                "dissemination",
+                "dissemination publish",
+                "expertise"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "open science",
+                "commitment",
+                "science",
+                "open",
+                "database"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "tools",
+                "release",
+                "demonstrates strong",
+                "planning",
+                "planning public"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "tools",
+                "release",
+                "demonstrates strong",
+                "planning",
+                "planning public"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "tools",
+                "release",
+                "demonstrates strong",
+                "planning",
+                "planning public"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.16666666666666666,
+            "subjectivity": 0.3523809523809524,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.10833333333333334,
+            "subjectivity": 0.45,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.05833333333333332,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9708333333333333
+        }
+      }
+    },
+    {
+      "proposal_id": "7",
+      "proposal_title": "Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.270419",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.24151349621997362,
+        "embedding_cosine_similarity": 0.8689182498186594,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "open",
+            "open science",
+            "science"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "reviewer_1_unique": [
+            "exactly direct",
+            "idrs source",
+            "likely",
+            "likely continue",
+            "materials",
+            "materials likely",
+            "mention",
+            "mention commitment",
+            "narrative",
+            "open source"
+          ],
+          "reviewer_2_unique": [
+            "aligning open",
+            "commitment",
+            "commitment planning",
+            "commitment proposal",
+            "database",
+            "database tools",
+            "datasets",
+            "datasets fully",
+            "demonstrates",
+            "demonstrates strong"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06032202925225205,
+          "reviewer_1_topic_distribution": [
+            0.020702530076033995,
+            0.917093371743845,
+            0.020702530075815732,
+            0.020799038028323343,
+            0.020702530075982
+          ],
+          "reviewer_2_topic_distribution": [
+            0.030946999021232605,
+            0.03106870230557521,
+            0.03094699902113871,
+            0.8760903006308363,
+            0.03094699902121724
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "science principles",
+                "database",
+                "principles",
+                "proposal",
+                "commitment"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "open",
+                "science",
+                "source",
+                "open science",
+                "source materials"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "science principles",
+                "database",
+                "principles",
+                "proposal",
+                "commitment"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "commitment",
+                "open science",
+                "science",
+                "open",
+                "aligning"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "science principles",
+                "database",
+                "principles",
+                "proposal",
+                "commitment"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": -0.029166666666666664,
+            "subjectivity": 0.5875,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.10833333333333334,
+            "subjectivity": 0.45,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.1375,
+          "polarity_correlation": "opposite_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.93125
+        }
+      }
+    },
+    {
+      "proposal_id": "8",
+      "proposal_title": "Multimodal Single-Cell Frameworks for Cell Lines with Extensive Multi-Omics Data",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.317885",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.07940027273270009,
+        "embedding_cosine_similarity": 0.8132125426493847,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "commitment"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "datasets",
+            "datasets listed",
+            "describing",
+            "describing datasets",
+            "difficult",
+            "difficult assess",
+            "explained",
+            "explained judging",
+            "explicitly",
+            "explicitly explained"
+          ],
+          "reviewer_2_unique": [
+            "benchmarking resource",
+            "central",
+            "central goal",
+            "commitment commitment",
+            "commitment strong",
+            "community",
+            "community driven",
+            "create",
+            "create public",
+            "development"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9996431911559447,
+          "reviewer_1_topic_distribution": [
+            0.020390119470557615,
+            0.02039011947177069,
+            0.020390119477514516,
+            0.9184395221074805,
+            0.020390119472676698
+          ],
+          "reviewer_2_topic_distribution": [
+            0.03116511520319593,
+            0.031165115202894392,
+            0.031165115202308344,
+            0.8753395391887134,
+            0.031165115202887884
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "commitment commitment",
+                "benchmarking resource",
+                "create public",
+                "create",
+                "community driven"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "commitment commitment",
+                "benchmarking resource",
+                "create public",
+                "create",
+                "community driven"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "commitment commitment",
+                "benchmarking resource",
+                "create public",
+                "create",
+                "community driven"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "commitment",
+                "science",
+                "making",
+                "datasets",
+                "tools"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "commitment commitment",
+                "benchmarking resource",
+                "create public",
+                "create",
+                "community driven"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": -0.0071428571428571435,
+            "subjectivity": 0.5261904761904762,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.10833333333333334,
+            "subjectivity": 0.3875,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.11547619047619048,
+          "polarity_correlation": "opposite_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9422619047619047
+        }
+      }
+    },
+    {
+      "proposal_id": "8",
+      "proposal_title": "Multimodal Single-Cell Frameworks for Cell Lines with Extensive Multi-Omics Data",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.342465",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.053550953149967315,
+        "embedding_cosine_similarity": 0.6975107741084452,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "community"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "available project",
+            "code",
+            "code pipelines",
+            "completed",
+            "completed excellent",
+            "databases",
+            "databases pubically",
+            "descriptions",
+            "descriptions making",
+            "excellent"
+          ],
+          "reviewer_2_unique": [
+            "benchmarking resource",
+            "central",
+            "central goal",
+            "commitment",
+            "commitment commitment",
+            "commitment strong",
+            "community driven",
+            "create",
+            "create public",
+            "development"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.07708104609375807,
+          "reviewer_1_topic_distribution": [
+            0.03251138009262491,
+            0.0324886624544264,
+            0.0324886624543279,
+            0.03248866245443145,
+            0.8700226325441893
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8739325499327449,
+            0.03150934772648096,
+            0.03150934772651207,
+            0.03150934772634572,
+            0.03153940688791628
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "commitment",
+                "tools community",
+                "central goal",
+                "create",
+                "development"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "resource",
+                "community",
+                "project",
+                "tools community",
+                "open science"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "resource",
+                "community",
+                "project",
+                "tools community",
+                "open science"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "resource",
+                "community",
+                "project",
+                "tools community",
+                "open science"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "final",
+                "descriptions",
+                "good descriptions",
+                "good",
+                "final databases"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.525,
+            "subjectivity": 0.75,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.10833333333333334,
+            "subjectivity": 0.3875,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.4166666666666667,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.7916666666666666
+        }
+      }
+    },
+    {
+      "proposal_id": "8",
+      "proposal_title": "Multimodal Single-Cell Frameworks for Cell Lines with Extensive Multi-Omics Data",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.369149",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.07379915856562665,
+        "embedding_cosine_similarity": 0.7161213080932494,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "community"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "1000 students",
+            "access",
+            "access 1000",
+            "accessible",
+            "accessible community",
+            "aligned",
+            "aligned open",
+            "annully",
+            "annully biochemisty",
+            "biochemisty"
+          ],
+          "reviewer_2_unique": [
+            "benchmarking resource",
+            "central",
+            "central goal",
+            "commitment",
+            "commitment commitment",
+            "commitment strong",
+            "community driven",
+            "create",
+            "create public",
+            "development"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06982365282673442,
+          "reviewer_1_topic_distribution": [
+            0.8910357255973572,
+            0.02723049076813922,
+            0.027230490769042826,
+            0.027230490767953554,
+            0.02727280209750718
+          ],
+          "reviewer_2_topic_distribution": [
+            0.03163521483990201,
+            0.03159407231439195,
+            0.031594072314485716,
+            0.03159407231434346,
+            0.8735825682168769
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "dockerized piplines",
+                "mentioned output",
+                "indicates deliver",
+                "indicates",
+                "dockerized"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "community",
+                "project",
+                "open science",
+                "open",
+                "science"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "community",
+                "project",
+                "open science",
+                "open",
+                "science"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "community",
+                "project",
+                "open science",
+                "open",
+                "science"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "commitment",
+                "tools community",
+                "community driven",
+                "commitment strong",
+                "commitment commitment"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.1875,
+            "subjectivity": 0.4375,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.10833333333333334,
+            "subjectivity": 0.3875,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.07916666666666666,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9604166666666667
+        }
+      }
+    },
+    {
+      "proposal_id": "8",
+      "proposal_title": "Multimodal Single-Cell Frameworks for Cell Lines with Extensive Multi-Omics Data",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.398533",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.014309052890992591,
+        "embedding_cosine_similarity": 0.765011869675942,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "open"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "admirable team",
+            "approach",
+            "approach clear",
+            "clear",
+            "clear findings",
+            "clear output",
+            "educational",
+            "educational impact",
+            "findings",
+            "findings clear"
+          ],
+          "reviewer_2_unique": [
+            "benchmarking resource",
+            "central",
+            "central goal",
+            "commitment",
+            "commitment commitment",
+            "commitment strong",
+            "community",
+            "community driven",
+            "create",
+            "create public"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.07612857850296237,
+          "reviewer_1_topic_distribution": [
+            0.031977009529867234,
+            0.03199174918900786,
+            0.8720477429026074,
+            0.03199174918923957,
+            0.031991749189277864
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8743684705547622,
+            0.0314118010522762,
+            0.03139612628819767,
+            0.031411801052366836,
+            0.031411801052396986
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "commitment",
+                "central goal",
+                "public",
+                "driven",
+                "development"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "open",
+                "weakness proposal",
+                "output findings",
+                "open source",
+                "major weakness"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "findings",
+                "clear",
+                "proposal",
+                "approach",
+                "findings open"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "open",
+                "weakness proposal",
+                "output findings",
+                "open source",
+                "major weakness"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "open",
+                "weakness proposal",
+                "output findings",
+                "open source",
+                "major weakness"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.090625,
+            "subjectivity": 0.37916666666666665,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.10833333333333334,
+            "subjectivity": 0.3875,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.01770833333333334,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9911458333333333
+        }
+      }
+    },
+    {
+      "proposal_id": "8",
+      "proposal_title": "Multimodal Single-Cell Frameworks for Cell Lines with Extensive Multi-Omics Data",
+      "year": "y1",
+      "human_reviewer_id": "5.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.424413",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.048283371156694795,
+        "embedding_cosine_similarity": 0.786260526092708,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "demonstrates commitment",
+            "detailed documentation",
+            "documentation",
+            "documentation validation",
+            "effectively",
+            "effectively additionally",
+            "emphasizes",
+            "emphasizes interdisciplinary",
+            "ensuring",
+            "ensuring results"
+          ],
+          "reviewer_2_unique": [
+            "benchmarking resource",
+            "central",
+            "central goal",
+            "commitment",
+            "commitment commitment",
+            "commitment strong",
+            "community",
+            "community driven",
+            "create",
+            "create public"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.05882399848828135,
+          "reviewer_1_topic_distribution": [
+            0.019505567946826095,
+            0.019505567945213794,
+            0.019533346094528118,
+            0.9219499500669747,
+            0.01950556794645722
+          ],
+          "reviewer_2_topic_distribution": [
+            0.031145494447989874,
+            0.031145494447582037,
+            0.8754158728321462,
+            0.031147643823749297,
+            0.03114549444853256
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "open",
+                "tools",
+                "science",
+                "commitment",
+                "community driven"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "open",
+                "tools",
+                "science",
+                "commitment",
+                "community driven"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "commitment",
+                "community driven",
+                "strong",
+                "commitment strong",
+                "commitment commitment"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "validation",
+                "ensuring",
+                "workflows ensuring",
+                "external validation",
+                "effectively"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "open",
+                "tools",
+                "science",
+                "commitment",
+                "community driven"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.1142857142857143,
+            "subjectivity": 0.4904761904761905,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.10833333333333334,
+            "subjectivity": 0.3875,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.005952380952380959,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9970238095238095
+        }
+      }
+    },
+    {
+      "proposal_id": "9",
+      "proposal_title": "From Image Data and Biophysical Simulations to Principles of Mesoscale Organization Through Integrated Transfer Learning",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.464914",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.0,
+        "embedding_cosine_similarity": 0.6826664433731613,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "authors suggest",
+            "available",
+            "available details",
+            "broader",
+            "broader impacts",
+            "details",
+            "details provided",
+            "empower",
+            "empower researchers",
+            "impacts"
+          ],
+          "reviewer_2_unique": [
+            "build open",
+            "commitment",
+            "commitment open",
+            "commitment proposal",
+            "community",
+            "demonstrates",
+            "demonstrates exemplary",
+            "entire",
+            "entire scientific",
+            "exemplary"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0770392592530138,
+          "reviewer_1_topic_distribution": [
+            0.03236626221589548,
+            0.03233812525074655,
+            0.8705630880986368,
+            0.03236626221796435,
+            0.03236626221675667
+          ],
+          "reviewer_2_topic_distribution": [
+            0.03170122506489699,
+            0.8732331041189534,
+            0.0316632206861879,
+            0.03170122506474139,
+            0.031701225065220315
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "workflow entire",
+                "proposal demonstrates",
+                "produce open",
+                "produce",
+                "workflow"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "open",
+                "source",
+                "commitment",
+                "open source",
+                "open science"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "authors",
+                "researchers",
+                "impacts",
+                "impacts authors",
+                "empower researchers"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "workflow entire",
+                "proposal demonstrates",
+                "produce open",
+                "produce",
+                "workflow"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "workflow entire",
+                "proposal demonstrates",
+                "produce open",
+                "produce",
+                "workflow"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.4,
+            "subjectivity": 0.4,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.0,
+            "subjectivity": 0.5416666666666666,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.4,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8
+        }
+      }
+    },
+    {
+      "proposal_id": "9",
+      "proposal_title": "From Image Data and Biophysical Simulations to Principles of Mesoscale Organization Through Integrated Transfer Learning",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "error": "Empty text in one or both reviews"
+    },
+    {
+      "proposal_id": "9",
+      "proposal_title": "From Image Data and Biophysical Simulations to Principles of Mesoscale Organization Through Integrated Transfer Learning",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.489336",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.10722428325983631,
+        "embedding_cosine_similarity": 0.7751939487578274,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "open"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "available",
+            "curated",
+            "curated database",
+            "data",
+            "data open",
+            "database",
+            "database individuals",
+            "framework",
+            "framework available",
+            "framework given"
+          ],
+          "reviewer_2_unique": [
+            "build open",
+            "commitment",
+            "commitment open",
+            "commitment proposal",
+            "community",
+            "demonstrates",
+            "demonstrates exemplary",
+            "entire",
+            "entire scientific",
+            "exemplary"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9999013784758484,
+          "reviewer_1_topic_distribution": [
+            0.025010531878922514,
+            0.025010531903132523,
+            0.8999578724335119,
+            0.025010531894370993,
+            0.02501053189006218
+          ],
+          "reviewer_2_topic_distribution": [
+            0.030579079772028225,
+            0.030579079769335455,
+            0.8776836809155995,
+            0.03057907977129821,
+            0.030579079771738772
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "planning build",
+                "workflow entire",
+                "demonstrates exemplary",
+                "entire",
+                "entire scientific"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "planning build",
+                "workflow entire",
+                "demonstrates exemplary",
+                "entire",
+                "entire scientific"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "open",
+                "framework",
+                "science",
+                "open science",
+                "source"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "planning build",
+                "workflow entire",
+                "demonstrates exemplary",
+                "entire",
+                "entire scientific"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "planning build",
+                "workflow entire",
+                "demonstrates exemplary",
+                "entire",
+                "entire scientific"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.2,
+            "subjectivity": 0.44999999999999996,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.0,
+            "subjectivity": 0.5416666666666666,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.2,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9
+        }
+      }
+    },
+    {
+      "proposal_id": "10",
+      "proposal_title": "Transposable elements and the emergence of genomic innovation",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.534210",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.010925994106018598,
+        "embedding_cosine_similarity": 0.7171045126067578,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "allocated doing",
+            "available",
+            "available did",
+            "budget",
+            "budget allocated",
+            "data",
+            "data don",
+            "data mapped",
+            "did",
+            "did specify"
+          ],
+          "reviewer_2_unique": [
+            "accessible collection",
+            "analysis",
+            "analysis pipelines",
+            "collection",
+            "collection reprocessed",
+            "commitment",
+            "commitment commitment",
+            "commitment exemplary",
+            "comprehensive",
+            "comprehensive publicly"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9999972258814924,
+          "reviewer_1_topic_distribution": [
+            0.8890692574732598,
+            0.02773268563210246,
+            0.02773268563100152,
+            0.027732685633430624,
+            0.02773268563020553
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8853461300097417,
+            0.028663467496855975,
+            0.02866346749997358,
+            0.028663467497898224,
+            0.028663467495530514
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "open",
+                "science",
+                "commitment",
+                "open science"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "accessible",
+                "publicly accessible",
+                "produce comprehensive",
+                "exemplary explicit",
+                "principles"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "accessible",
+                "publicly accessible",
+                "produce comprehensive",
+                "exemplary explicit",
+                "principles"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "accessible",
+                "publicly accessible",
+                "produce comprehensive",
+                "exemplary explicit",
+                "principles"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "accessible",
+                "publicly accessible",
+                "produce comprehensive",
+                "exemplary explicit",
+                "principles"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.13333333333333333,
+            "subjectivity": 0.5083333333333333,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.125,
+            "subjectivity": 0.4583333333333333,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.008333333333333331,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9958333333333333
+        }
+      }
+    },
+    {
+      "proposal_id": "10",
+      "proposal_title": "Transposable elements and the emergence of genomic innovation",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.559549",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.06033036481787279,
+        "embedding_cosine_similarity": 0.7584823767410676,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "analysis pipelines",
+            "open"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "reviewer_1_unique": [
+            "addition",
+            "addition pis",
+            "avaiable",
+            "avaiable addition",
+            "available",
+            "available analysis",
+            "data",
+            "data publically",
+            "expliciltly",
+            "expliciltly request"
+          ],
+          "reviewer_2_unique": [
+            "accessible collection",
+            "collection",
+            "collection reprocessed",
+            "commitment",
+            "commitment commitment",
+            "commitment exemplary",
+            "comprehensive",
+            "comprehensive publicly",
+            "datasets",
+            "datasets reproducible"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.07021821081532652,
+          "reviewer_1_topic_distribution": [
+            0.03057618534602167,
+            0.030617374960642024,
+            0.030576185346091713,
+            0.8776540690011829,
+            0.0305761853460616
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02856889206378217,
+            0.8857043321054899,
+            0.028568892063396037,
+            0.028588991703736945,
+            0.02856889206359492
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "pipelines",
+                "analysis",
+                "analysis pipelines",
+                "open",
+                "funds publish"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "science",
+                "commitment",
+                "open science",
+                "open",
+                "science principles"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "pipelines",
+                "analysis",
+                "analysis pipelines",
+                "open",
+                "funds publish"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "pis",
+                "publically",
+                "funds publish",
+                "pis outline",
+                "pipelines publically"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "pipelines",
+                "analysis",
+                "analysis pipelines",
+                "open",
+                "funds publish"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.2,
+            "subjectivity": 0.45,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.125,
+            "subjectivity": 0.4583333333333333,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.07500000000000001,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9625
+        }
+      }
+    },
+    {
+      "proposal_id": "10",
+      "proposal_title": "Transposable elements and the emergence of genomic innovation",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.585390",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.02792686303156443,
+        "embedding_cosine_similarity": 0.6999267187053441,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "available",
+            "data",
+            "data publicly",
+            "processed",
+            "processed data",
+            "publicly",
+            "publicly available"
+          ],
+          "reviewer_2_unique": [
+            "accessible collection",
+            "analysis",
+            "analysis pipelines",
+            "collection",
+            "collection reprocessed",
+            "commitment",
+            "commitment commitment",
+            "commitment exemplary",
+            "comprehensive",
+            "comprehensive publicly"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9971206378310657,
+          "reviewer_1_topic_distribution": [
+            0.05515533522664141,
+            0.05515533522676303,
+            0.7793786590925004,
+            0.05515533522663332,
+            0.05515533522746189
+          ],
+          "reviewer_2_topic_distribution": [
+            0.028678295565517393,
+            0.02867829556392423,
+            0.8852868177491101,
+            0.028678295564992747,
+            0.028678295556455482
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "processed data",
+                "available",
+                "publicly available",
+                "data publicly",
+                "data"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "processed data",
+                "available",
+                "publicly available",
+                "data publicly",
+                "data"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "processed",
+                "available",
+                "publicly available",
+                "data publicly",
+                "processed data"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "processed data",
+                "available",
+                "publicly available",
+                "data publicly",
+                "data"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "processed data",
+                "available",
+                "publicly available",
+                "data publicly",
+                "data"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.4,
+            "subjectivity": 0.4,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.125,
+            "subjectivity": 0.4583333333333333,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.275,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.8625
+        }
+      }
+    },
+    {
+      "proposal_id": "10",
+      "proposal_title": "Transposable elements and the emergence of genomic innovation",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.604949",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.10609510102743967,
+        "embedding_cosine_similarity": 0.8244106778717638,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "open",
+            "open science"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "reviewer_1_unique": [
+            "briefly",
+            "briefly does",
+            "data",
+            "data appropriate",
+            "does",
+            "does permeate",
+            "mentioned",
+            "mentioned outcomes",
+            "outcomes",
+            "outcomes section"
+          ],
+          "reviewer_2_unique": [
+            "accessible collection",
+            "analysis",
+            "analysis pipelines",
+            "collection",
+            "collection reprocessed",
+            "commitment",
+            "commitment commitment",
+            "commitment exemplary",
+            "comprehensive",
+            "comprehensive publicly"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.07243820540169613,
+          "reviewer_1_topic_distribution": [
+            0.032520916634931354,
+            0.8698142965039343,
+            0.03262295359121805,
+            0.03252091663494988,
+            0.032520916634966444
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02812688645232986,
+            0.028155723271286223,
+            0.8874636173711969,
+            0.028126886452698195,
+            0.028126886452488713
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "pipelines",
+                "open",
+                "science",
+                "open science",
+                "analysis pipelines"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "sharing pipelines",
+                "does permeate",
+                "permeate rest",
+                "permeate",
+                "outcomes section"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "commitment",
+                "open",
+                "science",
+                "open science",
+                "datasets"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "pipelines",
+                "open",
+                "science",
+                "open science",
+                "analysis pipelines"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "pipelines",
+                "open",
+                "science",
+                "open science",
+                "analysis pipelines"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.16666666666666666,
+            "subjectivity": 0.4444444444444444,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.125,
+            "subjectivity": 0.4583333333333333,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.04166666666666666,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9791666666666666
+        }
+      }
+    },
+    {
+      "proposal_id": "11",
+      "proposal_title": " Searching the Crosslinking Mass Spectrometry Universe for New Protein-Protein Interactions",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.649595",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.03885819920377839,
+        "embedding_cosine_similarity": 0.7390898940492873,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "open"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "reviewer_1_unique": [
+            "clear plan",
+            "data provided",
+            "datasets",
+            "datasets improved",
+            "improved",
+            "improved proposed",
+            "open source",
+            "plan",
+            "plan use",
+            "proposal"
+          ],
+          "reviewer_2_unique": [
+            "commitment",
+            "community",
+            "community resources",
+            "complex",
+            "complex portal",
+            "data reusable",
+            "ebi",
+            "ebi complex",
+            "exemplary",
+            "exemplary project"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06887063356214129,
+          "reviewer_1_topic_distribution": [
+            0.03148354729848049,
+            0.03148354729850615,
+            0.8740507906076206,
+            0.03149856749688866,
+            0.03148354729850419
+          ],
+          "reviewer_2_topic_distribution": [
+            0.026711829720406505,
+            0.026711829720569468,
+            0.026708321594505435,
+            0.8931561892438894,
+            0.026711829720629146
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "open",
+                "proposal provides",
+                "datasets",
+                "provides clear"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "open",
+                "proposal provides",
+                "datasets",
+                "provides clear"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "work",
+                "proposal provides",
+                "provides clear",
+                "provides",
+                "provided updated"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "commitment",
+                "open science",
+                "science",
+                "open",
+                "portal"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "open",
+                "proposal provides",
+                "datasets",
+                "provides clear"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.09999999999999999,
+            "subjectivity": 0.3833333333333333,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.03333333333333333,
+            "subjectivity": 0.36944444444444446,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.06666666666666665,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9666666666666667
+        }
+      }
+    },
+    {
+      "proposal_id": "11",
+      "proposal_title": "nan",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.736864",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.023090999180051773,
+        "embedding_cosine_similarity": 0.6737303619195454,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.03571428571428571,
+          "reviewer_1_unique": [
+            "publicallya",
+            "publicallya vailable",
+            "team",
+            "team use",
+            "use",
+            "use publicallya",
+            "vailable",
+            "vailable data"
+          ],
+          "reviewer_2_unique": [
+            "commitment",
+            "community",
+            "community resources",
+            "complex",
+            "complex portal",
+            "data reusable",
+            "ebi",
+            "ebi complex",
+            "exemplary",
+            "exemplary project"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.09768891903567875,
+          "reviewer_1_topic_distribution": [
+            0.05021872037703675,
+            0.0502207249454511,
+            0.05022072494543775,
+            0.7991191047865774,
+            0.05022072494549704
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8925293119696391,
+            0.02686293778571754,
+            0.026862937786443514,
+            0.026881874675091465,
+            0.026862937783108356
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "open science",
+                "open",
+                "commitment",
+                "science",
+                "exemplary"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "vailable data",
+                "use publicallya",
+                "use",
+                "team use"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "data",
+                "vailable data",
+                "use publicallya",
+                "use",
+                "team use"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "vailable data",
+                "use publicallya",
+                "use",
+                "team use",
+                "team"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "vailable data",
+                "use publicallya",
+                "use",
+                "team use"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.0,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.03333333333333333,
+            "subjectivity": 0.36944444444444446,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.03333333333333333,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9833333333333333
+        }
+      }
+    },
+    {
+      "proposal_id": "11",
+      "proposal_title": "nan",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.761251",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.07934261162057842,
+        "embedding_cosine_similarity": 0.7093565410626891,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "community",
+            "data",
+            "goal"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "reviewer_1_unique": [
+            "boon scientific",
+            "central",
+            "central goal",
+            "community data",
+            "considerable",
+            "considerable expansion",
+            "data exists",
+            "data future",
+            "data searchable",
+            "exists"
+          ],
+          "reviewer_2_unique": [
+            "commitment",
+            "community resources",
+            "complex",
+            "complex portal",
+            "data reusable",
+            "ebi",
+            "ebi complex",
+            "exemplary",
+            "exemplary project",
+            "goal make"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.06670838813810166,
+          "reviewer_1_topic_distribution": [
+            0.02957950082916837,
+            0.029579500829311534,
+            0.029596708335484816,
+            0.8816647891766355,
+            0.029579500829399814
+          ],
+          "reviewer_2_topic_distribution": [
+            0.026992556016162617,
+            0.026992556016794542,
+            0.8919377850454823,
+            0.027084546904893574,
+            0.02699255601666706
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "community",
+                "goal",
+                "central",
+                "central goal",
+                "data"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "community",
+                "goal",
+                "central",
+                "central goal",
+                "data"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "open science",
+                "open",
+                "commitment",
+                "science",
+                "make"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data",
+                "xl ms",
+                "expansion data",
+                "minable central",
+                "minable"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "community",
+                "goal",
+                "central",
+                "central goal",
+                "data"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.07142857142857142,
+            "subjectivity": 0.6035714285714285,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.03333333333333333,
+            "subjectivity": 0.36944444444444446,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.03809523809523809,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9809523809523809
+        }
+      }
+    },
+    {
+      "proposal_id": "11",
+      "proposal_title": "nan",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.789035",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.06219185902608579,
+        "embedding_cosine_similarity": 0.779473494557492,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "open"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "reviewer_1_unique": [
+            "analyze repost",
+            "available",
+            "available data",
+            "clean",
+            "clean analyze",
+            "data clean",
+            "effort",
+            "effort support",
+            "great",
+            "great effort"
+          ],
+          "reviewer_2_unique": [
+            "commitment",
+            "community",
+            "community resources",
+            "complex",
+            "complex portal",
+            "data reusable",
+            "ebi",
+            "ebi complex",
+            "exemplary",
+            "exemplary project"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0664029383023976,
+          "reviewer_1_topic_distribution": [
+            0.02983509937511589,
+            0.029835099375165534,
+            0.880617564114725,
+            0.02987713775985012,
+            0.029835099375143566
+          ],
+          "reviewer_2_topic_distribution": [
+            0.026561861065694848,
+            0.02656186106628143,
+            0.026566325720008357,
+            0.8937480910812362,
+            0.0265618610667792
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "open",
+                "science",
+                "redepositing",
+                "complex portal"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "open",
+                "science",
+                "redepositing",
+                "complex portal"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "use publicly",
+                "great effort",
+                "repost improved",
+                "repost",
+                "publicly available"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "open science",
+                "commitment",
+                "science",
+                "open",
+                "make"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "open",
+                "science",
+                "redepositing",
+                "complex portal"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.3916666666666667,
+            "subjectivity": 0.5875,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.03333333333333333,
+            "subjectivity": 0.36944444444444446,
+            "sentiment_label": "neutral"
+          },
+          "polarity_difference": 0.3583333333333334,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.8208333333333333
+        }
+      }
+    },
+    {
+      "proposal_id": "12",
+      "proposal_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry based",
+      "year": "y1",
+      "human_reviewer_id": "1.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.828893",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.0,
+        "embedding_cosine_similarity": 0.575544087952356,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "reviewer_1_unique": [
+            "addressing",
+            "team",
+            "team addressing",
+            "yes",
+            "yes team"
+          ],
+          "reviewer_2_unique": [
+            "commitment",
+            "commitment open",
+            "commitment proposal",
+            "community",
+            "community challenge",
+            "data",
+            "demonstrates",
+            "demonstrates exemplary",
+            "enhance",
+            "enhance fair"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.11659865898770193,
+          "reviewer_1_topic_distribution": [
+            0.061829996347483214,
+            0.061847298939872605,
+            0.061847298939730184,
+            0.06184729893984745,
+            0.7526281068330665
+          ],
+          "reviewer_2_topic_distribution": [
+            0.8958520086027105,
+            0.026043160453928616,
+            0.026043160449803555,
+            0.02604316045496184,
+            0.02601851003859556
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "open",
+                "open science",
+                "commitment",
+                "science",
+                "open source"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "yes team",
+                "team",
+                "yes",
+                "addressing",
+                "team addressing"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "yes team",
+                "team",
+                "yes",
+                "addressing",
+                "team addressing"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "yes team",
+                "team",
+                "yes",
+                "addressing",
+                "team addressing"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "yes team",
+                "team",
+                "yes",
+                "addressing",
+                "team addressing"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.0,
+            "subjectivity": 0.0,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.13333333333333333,
+            "subjectivity": 0.49583333333333335,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.13333333333333333,
+          "polarity_correlation": "neutral",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9333333333333333
+        }
+      }
+    },
+    {
+      "proposal_id": "12",
+      "proposal_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry based",
+      "year": "y1",
+      "human_reviewer_id": "2.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.848985",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1614023587753801,
+        "embedding_cosine_similarity": 0.8496257304139869,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "open"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "reviewer_1_unique": [
+            "actions",
+            "actions open",
+            "addressed",
+            "addressed concrete",
+            "code",
+            "code dissemination",
+            "concrete",
+            "concrete actions",
+            "dissemination",
+            "dissemination github"
+          ],
+          "reviewer_2_unique": [
+            "commitment",
+            "commitment open",
+            "commitment proposal",
+            "community",
+            "community challenge",
+            "data",
+            "demonstrates",
+            "demonstrates exemplary",
+            "enhance",
+            "enhance fair"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.061123512854994164,
+          "reviewer_1_topic_distribution": [
+            0.027018740162932403,
+            0.8918484785628601,
+            0.02709530094814232,
+            0.027018740163061838,
+            0.027018740163003423
+          ],
+          "reviewer_2_topic_distribution": [
+            0.025438743366907334,
+            0.025489754030152766,
+            0.8981940158673661,
+            0.025438743367788154,
+            0.025438743367785677
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "open source",
+                "source",
+                "code",
+                "science",
+                "open science"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "open",
+                "unclear",
+                "form little",
+                "open access",
+                "mentioned form"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "open",
+                "commitment",
+                "science",
+                "open science",
+                "plans releasing"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "open source",
+                "source",
+                "code",
+                "science",
+                "open science"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "open source",
+                "source",
+                "code",
+                "science",
+                "open science"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.053125000000000006,
+            "subjectivity": 0.3875,
+            "sentiment_label": "neutral"
+          },
+          "sentiment_2": {
+            "polarity": 0.13333333333333333,
+            "subjectivity": 0.49583333333333335,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.08020833333333333,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "partial",
+          "sentiment_alignment_score": 0.9598958333333334
+        }
+      }
+    },
+    {
+      "proposal_id": "12",
+      "proposal_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry based",
+      "year": "y1",
+      "human_reviewer_id": "3.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.938577",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.15728882838858035,
+        "embedding_cosine_similarity": 0.7597501084607088,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "demonstrates",
+            "open",
+            "science"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "reviewer_1_unique": [
+            "demonstrates emphasis",
+            "demonstrating",
+            "demonstrating commitment",
+            "designed",
+            "designed develop",
+            "develop",
+            "develop best",
+            "emphasis",
+            "emphasis team",
+            "goals"
+          ],
+          "reviewer_2_unique": [
+            "commitment",
+            "commitment open",
+            "commitment proposal",
+            "community",
+            "community challenge",
+            "demonstrates exemplary",
+            "enhance",
+            "enhance fair",
+            "entire",
+            "entire purpose"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.04990708490406286,
+          "reviewer_1_topic_distribution": [
+            0.018195087618132256,
+            0.018195087618240995,
+            0.018269563587619487,
+            0.018195087618108223,
+            0.927145173557899
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02563775606119328,
+            0.025637756061912004,
+            0.8973856375739087,
+            0.025637756060676732,
+            0.025701094242309246
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "community",
+                "project",
+                "open source",
+                "principles",
+                "source"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "community",
+                "project",
+                "open source",
+                "principles",
+                "source"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "open",
+                "open science",
+                "commitment",
+                "science",
+                "purpose enhance"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "community",
+                "project",
+                "open source",
+                "principles",
+                "source"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "group",
+                "proposal",
+                "machine learning",
+                "learning",
+                "machine"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.29500000000000004,
+            "subjectivity": 0.31166666666666665,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.13333333333333333,
+            "subjectivity": 0.49583333333333335,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.1616666666666667,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9191666666666667
+        }
+      }
+    },
+    {
+      "proposal_id": "12",
+      "proposal_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry based",
+      "year": "y1",
+      "human_reviewer_id": "4.0",
+      "ai_source": "human_y1",
+      "criterion": "open_science_compliance_justification",
+      "criterion_name": "Open Science Compliance",
+      "comparison_type": "human-ai",
+      "timestamp": "2026-01-08T12:16:23.963996",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.10028081764010888,
+        "embedding_cosine_similarity": 0.8572603056620643,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "community",
+            "data",
+            "open"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "reviewer_1_unique": [
+            "accessible transparent",
+            "aligns",
+            "aligns open",
+            "commitments",
+            "commitments ensure",
+            "community engagement",
+            "data tools",
+            "emphasis",
+            "emphasis open",
+            "engagement"
+          ],
+          "reviewer_2_unique": [
+            "commitment",
+            "commitment open",
+            "commitment proposal",
+            "community challenge",
+            "demonstrates",
+            "demonstrates exemplary",
+            "enhance",
+            "enhance fair",
+            "entire",
+            "entire purpose"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.056936417620102646,
+          "reviewer_1_topic_distribution": [
+            0.9055381391206258,
+            0.023606851986500855,
+            0.023606851981795768,
+            0.02364130493059982,
+            0.023606851980477968
+          ],
+          "reviewer_2_topic_distribution": [
+            0.02579139424981615,
+            0.025754514219557042,
+            0.02575451421887094,
+            0.8969450630898161,
+            0.025754514221939723
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "scientific",
+                "community",
+                "open",
+                "workflows rigorous",
+                "interdisciplinary"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "proposal",
+                "project",
+                "principles",
+                "data",
+                "community"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "proposal",
+                "project",
+                "principles",
+                "data",
+                "community"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "open",
+                "open science",
+                "commitment",
+                "science",
+                "community challenge"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "proposal",
+                "project",
+                "principles",
+                "data",
+                "community"
+              ]
+            }
+          ]
+        },
+        "sentiment_analysis": {
+          "sentiment_1": {
+            "polarity": 0.11875,
+            "subjectivity": 0.4395833333333333,
+            "sentiment_label": "positive"
+          },
+          "sentiment_2": {
+            "polarity": 0.13333333333333333,
+            "subjectivity": 0.49583333333333335,
+            "sentiment_label": "positive"
+          },
+          "polarity_difference": 0.014583333333333337,
+          "polarity_correlation": "same_direction",
+          "sentiment_agreement": "agree",
+          "sentiment_alignment_score": 0.9927083333333333
+        }
+      }
+    }
+  ]
+}

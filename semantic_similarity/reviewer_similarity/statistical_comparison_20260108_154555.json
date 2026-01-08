@@ -1,0 +1,22 @@
+{
+  "n_human_human": 64,
+  "n_human_ai": 47,
+  "continuous_metrics": {
+    "tfidf_similarity": {
+      "metric_name": "TF-IDF Similarity",
+      "human_human": {
+        "n": 64,
+        "mean": 0.14805940394517397,
+        "std": 0.061346062637948034,
+        "median": 0.1437861230125344
+      },
+      "human_ai": {
+        "n": 47,
+        "mean": 0.16459733018237896,
+        "std": 0.05764198154835734,
+        "median": 0.16361604074808103
+      },
+      "mann_whitney_u": {
+        "statistic": 1201.0,
+        "p_value": 0.07101559768452662,
+        "significant_at_0.05": 
