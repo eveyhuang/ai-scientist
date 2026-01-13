@@ -1,0 +1,6527 @@
+{
+  "metadata": {
+    "comparison_type": "human-human",
+    "role_filter": null,
+    "model_filter": null,
+    "total_analyses": 56,
+    "generation_timestamp": "2025-11-07T10:35:32.612962",
+    "methods": {
+      "tfidf": "TF-IDF based cosine similarity",
+      "embeddings": "OpenAI text-embedding-3-small",
+      "keywords": "TF-IDF top-20 keywords with Jaccard similarity",
+      "topics": "Latent Dirichlet Allocation (LDA) with 5 topics"
+    }
+  },
+  "results": [
+    {
+      "proposal_1_id": "human_1",
+      "proposal_2_id": "human_2",
+      "proposal_1_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "proposal_2_title": "Elucidating genome structure-function relationships in human brain cells",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:29.895786",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.145879521628457,
+        "embedding_cosine_similarity": 0.7490660640802953,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "cell",
+            "data"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "aim",
+            "analysis",
+            "cytokinesis",
+            "cytokinetic",
+            "datasets",
+            "genes",
+            "heat",
+            "heat stress",
+            "identify",
+            "networks"
+          ],
+          "proposal_2_unique": [
+            "accessibility",
+            "brain",
+            "cell types",
+            "cells",
+            "chromatin",
+            "chromatin organization",
+            "dna",
+            "embeddings",
+            "expression",
+            "gene"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.031336710618357896,
+          "proposal_1_topic_distribution": [
+            0.014652124805630487,
+            0.9416162786602593,
+            0.014577198846168215,
+            0.014577198843314345,
+            0.014577198844627746
+          ],
+          "proposal_2_topic_distribution": [
+            0.9431097617728532,
+            0.01424606204653675,
+            0.01421472539314353,
+            0.01421472538689485,
+            0.014214725400571738
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "chromatin",
+                "gene",
+                "cell",
+                "organization",
+                "chromatin organization"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "heat",
+                "cytokinetic",
+                "stress",
+                "heat stress",
+                "cytokinesis"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "datasets",
+                "using",
+                "analysis",
+                "specific",
+                "changes"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "datasets",
+                "using",
+                "analysis",
+                "specific",
+                "changes"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "datasets",
+                "using",
+                "analysis",
+                "specific",
+                "changes"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_1",
+      "proposal_2_id": "human_4",
+      "proposal_1_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "proposal_2_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:30.153761",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1337378813218142,
+        "embedding_cosine_similarity": 0.7077596334573464,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "cell",
+            "data",
+            "datasets",
+            "species"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "proposal_1_unique": [
+            "aim",
+            "analysis",
+            "cytokinesis",
+            "cytokinetic",
+            "genes",
+            "heat",
+            "heat stress",
+            "identify",
+            "networks",
+            "phragmoplast"
+          ],
+          "proposal_2_unique": [
+            "atlas",
+            "bacterial",
+            "bacterial cell",
+            "bacterial gene",
+            "cell states",
+            "community",
+            "expression",
+            "gene",
+            "gene expression",
+            "growth"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.030382173614129336,
+          "proposal_1_topic_distribution": [
+            0.9453400342609464,
+            0.013699622199007513,
+            0.01365344784767968,
+            0.013653447844758124,
+            0.013653447847608398
+          ],
+          "proposal_2_topic_distribution": [
+            0.014382296937124988,
+            0.9426010705499421,
+            0.014338877514908682,
+            0.014338877500615799,
+            0.014338877497408403
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "heat",
+                "cytokinetic",
+                "heat stress",
+                "cytokinesis",
+                "stress"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "states",
+                "bacterial",
+                "expression",
+                "gene",
+                "cell"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "identify",
+                "using",
+                "cells",
+                "analysis",
+                "species"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "identify",
+                "using",
+                "cells",
+                "analysis",
+                "species"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "identify",
+                "using",
+                "cells",
+                "analysis",
+                "species"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_1",
+      "proposal_2_id": "human_5",
+      "proposal_1_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "proposal_2_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:30.280890",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.11870991225602698,
+        "embedding_cosine_similarity": 0.7303440465702455,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "networks"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "aim",
+            "analysis",
+            "cell",
+            "cytokinesis",
+            "cytokinetic",
+            "datasets",
+            "genes",
+            "heat",
+            "heat stress",
+            "identify"
+          ],
+          "proposal_2_unique": [
+            "based",
+            "binding",
+            "chaperone",
+            "disordered",
+            "disordered proteins",
+            "evolutionary",
+            "hubs",
+            "interaction",
+            "interaction networks",
+            "interactions"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.029313408105048122,
+          "proposal_1_topic_distribution": [
+            0.014259313154246632,
+            0.9431830816949709,
+            0.014185868385653114,
+            0.014185868382185609,
+            0.01418586838294372
+          ],
+          "proposal_2_topic_distribution": [
+            0.9484539653511642,
+            0.01290511867318279,
+            0.012880305324963202,
+            0.012880305319472119,
+            0.012880305331217595
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "proteins",
+                "interactions",
+                "protein",
+                "chaperone",
+                "network"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "heat",
+                "cytokinetic",
+                "stress",
+                "heat stress",
+                "cytokinesis"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "specific",
+                "using",
+                "robustness",
+                "datasets",
+                "genetic"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "specific",
+                "using",
+                "robustness",
+                "datasets",
+                "genetic"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "specific",
+                "using",
+                "robustness",
+                "datasets",
+                "genetic"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_1",
+      "proposal_2_id": "human_7",
+      "proposal_1_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "proposal_2_title": "Oceans of Disorder: Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:30.612337",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.0778857510635692,
+        "embedding_cosine_similarity": 0.7561072759498191,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "aim",
+            "analysis",
+            "cell",
+            "cytokinesis",
+            "cytokinetic",
+            "datasets",
+            "genes",
+            "heat",
+            "heat stress",
+            "identify"
+          ],
+          "proposal_2_unique": [
+            "adaptation",
+            "biophysical",
+            "biophysical properties",
+            "conditions",
+            "diverse",
+            "environmental",
+            "environmental conditions",
+            "features",
+            "idr",
+            "idrs"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.029922439788960805,
+          "proposal_1_topic_distribution": [
+            0.01470873012640065,
+            0.014673002470530619,
+            0.014673002492315698,
+            0.9412722624352367,
+            0.014673002475516278
+          ],
+          "proposal_2_topic_distribution": [
+            0.9481836259227431,
+            0.012947410412997911,
+            0.012947410427110213,
+            0.012974142797121734,
+            0.01294741044002709
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "environmental",
+                "idrs",
+                "idr",
+                "properties",
+                "conditions"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "using",
+                "specific",
+                "protein",
+                "proteins",
+                "mechanisms"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "using",
+                "specific",
+                "protein",
+                "proteins",
+                "mechanisms"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "heat",
+                "cytokinetic",
+                "heat stress",
+                "cytokinesis",
+                "stress"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "using",
+                "specific",
+                "protein",
+                "proteins",
+                "mechanisms"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_1",
+      "proposal_2_id": "human_10",
+      "proposal_1_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "proposal_2_title": "Transposable elements and the emergence of genomic innovation",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:30.844398",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.13832861342183156,
+        "embedding_cosine_similarity": 0.6889257674165847,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "datasets",
+            "species",
+            "specific"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "proposal_1_unique": [
+            "aim",
+            "analysis",
+            "cell",
+            "cytokinesis",
+            "cytokinetic",
+            "genes",
+            "heat",
+            "heat stress",
+            "identify",
+            "networks"
+          ],
+          "proposal_2_unique": [
+            "aware",
+            "elements",
+            "genomic",
+            "multi",
+            "phase",
+            "reads",
+            "regions",
+            "regulatory",
+            "repeat",
+            "repeat aware"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.027684154455990505,
+          "proposal_1_topic_distribution": [
+            0.01368222906498379,
+            0.9454190321917563,
+            0.013632912918176456,
+            0.01363291291284519,
+            0.013632912912238306
+          ],
+          "proposal_2_topic_distribution": [
+            0.9517702820036422,
+            0.012072864544569253,
+            0.012052284484093576,
+            0.012052284481374366,
+            0.012052284486320326
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "te",
+                "aware",
+                "repeat aware",
+                "seq"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "heat",
+                "cytokinetic",
+                "stress",
+                "heat stress",
+                "cytokinesis"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "analysis",
+                "using",
+                "specific",
+                "datasets",
+                "identify"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "analysis",
+                "using",
+                "specific",
+                "datasets",
+                "identify"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "analysis",
+                "using",
+                "specific",
+                "datasets",
+                "identify"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_1",
+      "proposal_2_id": "human_11",
+      "proposal_1_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "proposal_2_title": "Searching the crosslinking mass spectrometry universe for new protein-protein interactions",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:30.954333",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.11204702080351767,
+        "embedding_cosine_similarity": 0.6788328680744977,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "datasets"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "aim",
+            "analysis",
+            "cell",
+            "cytokinesis",
+            "cytokinetic",
+            "genes",
+            "heat",
+            "heat stress",
+            "identify",
+            "networks"
+          ],
+          "proposal_2_unique": [
+            "complex",
+            "complex portal",
+            "complexes",
+            "human",
+            "interaction",
+            "interactions",
+            "large",
+            "large scale",
+            "ms",
+            "portal"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9999993446947568,
+          "proposal_1_topic_distribution": [
+            0.013557665069270239,
+            0.013557665070046824,
+            0.01355766507675445,
+            0.9457693397135648,
+            0.013557665070363649
+          ],
+          "proposal_2_topic_distribution": [
+            0.013044139241473282,
+            0.013044139240283081,
+            0.013044139241970282,
+            0.9478234430321488,
+            0.013044139244124505
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "susceptible",
+                "maize",
+                "responses",
+                "38",
+                "genetic"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "susceptible",
+                "maize",
+                "responses",
+                "38",
+                "genetic"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "susceptible",
+                "maize",
+                "responses",
+                "38",
+                "genetic"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data",
+                "heat",
+                "cytokinetic",
+                "stress",
+                "protein"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "susceptible",
+                "maize",
+                "responses",
+                "38",
+                "genetic"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_1",
+      "proposal_2_id": "human_12",
+      "proposal_1_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "proposal_2_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry-based proteomics data",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.068541",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.08149416810946643,
+        "embedding_cosine_similarity": 0.655196102878292,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "datasets"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "aim",
+            "analysis",
+            "cell",
+            "cytokinesis",
+            "cytokinetic",
+            "genes",
+            "heat",
+            "heat stress",
+            "identify",
+            "networks"
+          ],
+          "proposal_2_unique": [
+            "automated",
+            "based",
+            "challenge",
+            "community",
+            "extraction",
+            "group",
+            "integration",
+            "metadata",
+            "open",
+            "pride"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9999964650413709,
+          "proposal_1_topic_distribution": [
+            0.9448047764965888,
+            0.013798805855910845,
+            0.013798805879194137,
+            0.013798805856858236,
+            0.013798805911448112
+          ],
+          "proposal_2_topic_distribution": [
+            0.9400770974455257,
+            0.014980725628691696,
+            0.014980725659718185,
+            0.014980725636807815,
+            0.014980725629256661
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "metadata",
+                "data",
+                "heat",
+                "cytokinetic",
+                "stress"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "sdrf",
+                "workflow",
+                "integrated",
+                "querying",
+                "ensure"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "sdrf",
+                "workflow",
+                "integrated",
+                "querying",
+                "ensure"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "sdrf",
+                "workflow",
+                "integrated",
+                "querying",
+                "ensure"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "sdrf",
+                "workflow",
+                "integrated",
+                "querying",
+                "ensure"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_2",
+      "proposal_2_id": "human_1",
+      "proposal_1_title": "Elucidating genome structure-function relationships in human brain cells",
+      "proposal_2_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.085705",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.14587952162845697,
+        "embedding_cosine_similarity": 0.7490660640802953,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "cell",
+            "data"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "accessibility",
+            "brain",
+            "cell types",
+            "cells",
+            "chromatin",
+            "chromatin organization",
+            "dna",
+            "embeddings",
+            "expression",
+            "gene"
+          ],
+          "proposal_2_unique": [
+            "aim",
+            "analysis",
+            "cytokinesis",
+            "cytokinetic",
+            "datasets",
+            "genes",
+            "heat",
+            "heat stress",
+            "identify",
+            "networks"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.031336710618357896,
+          "proposal_1_topic_distribution": [
+            0.9431097617728532,
+            0.01424606204653675,
+            0.01421472539314353,
+            0.01421472538689485,
+            0.014214725400571738
+          ],
+          "proposal_2_topic_distribution": [
+            0.014652124805630487,
+            0.9416162786602593,
+            0.014577198846168215,
+            0.014577198843314345,
+            0.014577198844627746
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "chromatin",
+                "gene",
+                "cell",
+                "organization",
+                "chromatin organization"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "heat",
+                "cytokinetic",
+                "stress",
+                "heat stress",
+                "cytokinesis"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "datasets",
+                "using",
+                "analysis",
+                "specific",
+                "changes"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "datasets",
+                "using",
+                "analysis",
+                "specific",
+                "changes"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "datasets",
+                "using",
+                "analysis",
+                "specific",
+                "changes"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_2",
+      "proposal_2_id": "human_4",
+      "proposal_1_title": "Elucidating genome structure-function relationships in human brain cells",
+      "proposal_2_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.117173",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.3282233809714461,
+        "embedding_cosine_similarity": 0.7719016745153612,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "cell",
+            "data",
+            "expression",
+            "gene",
+            "gene expression"
+          ],
+          "num_overlapping": 5,
+          "jaccard_similarity": 0.14285714285714285,
+          "proposal_1_unique": [
+            "accessibility",
+            "brain",
+            "cell types",
+            "cells",
+            "chromatin",
+            "chromatin organization",
+            "dna",
+            "embeddings",
+            "genome",
+            "model"
+          ],
+          "proposal_2_unique": [
+            "atlas",
+            "bacterial",
+            "bacterial cell",
+            "bacterial gene",
+            "cell states",
+            "community",
+            "datasets",
+            "growth",
+            "ingest",
+            "rna"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.029713886153671168,
+          "proposal_1_topic_distribution": [
+            0.9467367228772577,
+            0.013357282350746128,
+            0.013301998257243815,
+            0.013301998255916547,
+            0.013301998258835643
+          ],
+          "proposal_2_topic_distribution": [
+            0.014156360855506867,
+            0.9436441394793008,
+            0.014066499888900944,
+            0.014066499888013463,
+            0.01406649988827785
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "chromatin",
+                "gene",
+                "organization",
+                "cell",
+                "chromatin organization"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "bacterial",
+                "states",
+                "expression",
+                "cell",
+                "gene"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "cells",
+                "dimensional",
+                "analysis",
+                "using",
+                "learning"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "cells",
+                "dimensional",
+                "analysis",
+                "using",
+                "learning"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "cells",
+                "dimensional",
+                "analysis",
+                "using",
+                "learning"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_2",
+      "proposal_2_id": "human_5",
+      "proposal_1_title": "Elucidating genome structure-function relationships in human brain cells",
+      "proposal_2_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.133710",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.09199178303119339,
+        "embedding_cosine_similarity": 0.7594826354637143,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "accessibility",
+            "brain",
+            "cell",
+            "cell types",
+            "cells",
+            "chromatin",
+            "chromatin organization",
+            "dna",
+            "embeddings",
+            "expression"
+          ],
+          "proposal_2_unique": [
+            "based",
+            "binding",
+            "chaperone",
+            "disordered",
+            "disordered proteins",
+            "evolutionary",
+            "hubs",
+            "interaction",
+            "interaction networks",
+            "interactions"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.029767225566536194,
+          "proposal_1_topic_distribution": [
+            0.014163036534999044,
+            0.014163036528666025,
+            0.9433076850546195,
+            0.014203205330645058,
+            0.014163036551070336
+          ],
+          "proposal_2_topic_distribution": [
+            0.013304730060366862,
+            0.013304730059824696,
+            0.013351449238178601,
+            0.9467343605795472,
+            0.013304730062082671
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "using",
+                "specific",
+                "datasets",
+                "proposed",
+                "architecture"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "using",
+                "specific",
+                "datasets",
+                "proposed",
+                "architecture"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "chromatin",
+                "gene",
+                "gene expression",
+                "organization",
+                "cell"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "proteins",
+                "protein",
+                "stability",
+                "chaperone",
+                "network"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "using",
+                "specific",
+                "datasets",
+                "architecture",
+                "proposed"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_2",
+      "proposal_2_id": "human_7",
+      "proposal_1_title": "Elucidating genome structure-function relationships in human brain cells",
+      "proposal_2_title": "Oceans of Disorder: Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.167632",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.09890287661617424,
+        "embedding_cosine_similarity": 0.7245159595564807,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "accessibility",
+            "brain",
+            "cell",
+            "cell types",
+            "cells",
+            "chromatin",
+            "chromatin organization",
+            "dna",
+            "embeddings",
+            "expression"
+          ],
+          "proposal_2_unique": [
+            "adaptation",
+            "biophysical",
+            "biophysical properties",
+            "conditions",
+            "diverse",
+            "environmental",
+            "environmental conditions",
+            "features",
+            "idr",
+            "idrs"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.03056645903973155,
+          "proposal_1_topic_distribution": [
+            0.015164558243307076,
+            0.015109568114754342,
+            0.015109568137464576,
+            0.015109568120490696,
+            0.9395067373839833
+          ],
+          "proposal_2_topic_distribution": [
+            0.9478244888831575,
+            0.013035204631267928,
+            0.01303520463542666,
+            0.013035204632169884,
+            0.013069897217978115
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "environmental",
+                "idrs",
+                "idr",
+                "conditions",
+                "simulations"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "structural",
+                "using",
+                "mechanisms",
+                "dimensional",
+                "learning"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "structural",
+                "using",
+                "mechanisms",
+                "dimensional",
+                "learning"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "structural",
+                "using",
+                "mechanisms",
+                "dimensional",
+                "learning"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "chromatin",
+                "organization",
+                "cell",
+                "expression",
+                "gene"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_2",
+      "proposal_2_id": "human_10",
+      "proposal_1_title": "Elucidating genome structure-function relationships in human brain cells",
+      "proposal_2_title": "Transposable elements and the emergence of genomic innovation",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.197731",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.20656945866741833,
+        "embedding_cosine_similarity": 0.7725464803601599,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "accessibility",
+            "brain",
+            "cell",
+            "cell types",
+            "cells",
+            "chromatin",
+            "chromatin organization",
+            "dna",
+            "embeddings",
+            "expression"
+          ],
+          "proposal_2_unique": [
+            "aware",
+            "datasets",
+            "elements",
+            "genomic",
+            "multi",
+            "phase",
+            "reads",
+            "regions",
+            "regulatory",
+            "repeat"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.027359237468247512,
+          "proposal_1_topic_distribution": [
+            0.9470275313329153,
+            0.013285043108930892,
+            0.013229141853312377,
+            0.013229141851034064,
+            0.01322914185380731
+          ],
+          "proposal_2_topic_distribution": [
+            0.01219312131007345,
+            0.9513935140521429,
+            0.012137788216707895,
+            0.012137788211060426,
+            0.012137788210015087
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "organization",
+                "chromatin",
+                "gene",
+                "cell",
+                "chromatin organization"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "te",
+                "repeat",
+                "repeat aware",
+                "tes"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "analysis",
+                "genome",
+                "using",
+                "dna",
+                "human"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "analysis",
+                "genome",
+                "using",
+                "dna",
+                "human"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "analysis",
+                "genome",
+                "using",
+                "dna",
+                "human"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_2",
+      "proposal_2_id": "human_11",
+      "proposal_1_title": "Elucidating genome structure-function relationships in human brain cells",
+      "proposal_2_title": "Searching the crosslinking mass spectrometry universe for new protein-protein interactions",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.212189",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.11502851289803198,
+        "embedding_cosine_similarity": 0.73231481217088,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "accessibility",
+            "brain",
+            "cell",
+            "cell types",
+            "cells",
+            "chromatin",
+            "chromatin organization",
+            "dna",
+            "embeddings",
+            "expression"
+          ],
+          "proposal_2_unique": [
+            "complex",
+            "complex portal",
+            "complexes",
+            "datasets",
+            "human",
+            "interaction",
+            "interactions",
+            "large",
+            "large scale",
+            "ms"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.029716645947670435,
+          "proposal_1_topic_distribution": [
+            0.9419430653598907,
+            0.01450408878524916,
+            0.01450408878677349,
+            0.014544668280530424,
+            0.014504088787556197
+          ],
+          "proposal_2_topic_distribution": [
+            0.012961841855452128,
+            0.01294672765390964,
+            0.012946727658700401,
+            0.9481979751774832,
+            0.012946727654454688
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "chromatin",
+                "gene",
+                "cell",
+                "organization",
+                "expression"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "using",
+                "provide",
+                "human",
+                "datasets",
+                "structural"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "using",
+                "provide",
+                "human",
+                "datasets",
+                "structural"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "protein",
+                "data",
+                "proteins",
+                "xl ms",
+                "xl"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "using",
+                "provide",
+                "human",
+                "datasets",
+                "structural"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_2",
+      "proposal_2_id": "human_12",
+      "proposal_1_title": "Elucidating genome structure-function relationships in human brain cells",
+      "proposal_2_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry-based proteomics data",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.226294",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1044580626803661,
+        "embedding_cosine_similarity": 0.7160083092029967,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "accessibility",
+            "brain",
+            "cell",
+            "cell types",
+            "cells",
+            "chromatin",
+            "chromatin organization",
+            "dna",
+            "embeddings",
+            "expression"
+          ],
+          "proposal_2_unique": [
+            "automated",
+            "based",
+            "challenge",
+            "community",
+            "datasets",
+            "extraction",
+            "group",
+            "integration",
+            "metadata",
+            "open"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0315166394775476,
+          "proposal_1_topic_distribution": [
+            0.9438829866176804,
+            0.014050402878465911,
+            0.014022203502270188,
+            0.014022203499683162,
+            0.014022203501900237
+          ],
+          "proposal_2_topic_distribution": [
+            0.014995862931565513,
+            0.9401039870142973,
+            0.014966716697471672,
+            0.014966716680353783,
+            0.014966716676311716
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "chromatin",
+                "gene",
+                "cell",
+                "gene expression",
+                "organization"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "metadata",
+                "data",
+                "proteomics",
+                "pride",
+                "open"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "using",
+                "learning",
+                "datasets",
+                "approach",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "using",
+                "learning",
+                "datasets",
+                "approach",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "using",
+                "learning",
+                "datasets",
+                "approach",
+                "research"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_4",
+      "proposal_2_id": "human_1",
+      "proposal_1_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "proposal_2_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.392128",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.133737881321814,
+        "embedding_cosine_similarity": 0.7077596334573464,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "cell",
+            "data",
+            "datasets",
+            "species"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "proposal_1_unique": [
+            "atlas",
+            "bacterial",
+            "bacterial cell",
+            "bacterial gene",
+            "cell states",
+            "community",
+            "expression",
+            "gene",
+            "gene expression",
+            "growth"
+          ],
+          "proposal_2_unique": [
+            "aim",
+            "analysis",
+            "cytokinesis",
+            "cytokinetic",
+            "genes",
+            "heat",
+            "heat stress",
+            "identify",
+            "networks",
+            "phragmoplast"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.030382173614129336,
+          "proposal_1_topic_distribution": [
+            0.014382296937124988,
+            0.9426010705499421,
+            0.014338877514908682,
+            0.014338877500615799,
+            0.014338877497408403
+          ],
+          "proposal_2_topic_distribution": [
+            0.9453400342609464,
+            0.013699622199007513,
+            0.01365344784767968,
+            0.013653447844758124,
+            0.013653447847608398
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "heat",
+                "cytokinetic",
+                "heat stress",
+                "cytokinesis",
+                "stress"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "states",
+                "bacterial",
+                "expression",
+                "gene",
+                "cell"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "identify",
+                "using",
+                "cells",
+                "analysis",
+                "species"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "identify",
+                "using",
+                "cells",
+                "analysis",
+                "species"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "identify",
+                "using",
+                "cells",
+                "analysis",
+                "species"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_4",
+      "proposal_2_id": "human_2",
+      "proposal_1_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "proposal_2_title": "Elucidating genome structure-function relationships in human brain cells",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.407063",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.3282233809714469,
+        "embedding_cosine_similarity": 0.7719016745153612,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "cell",
+            "data",
+            "expression",
+            "gene",
+            "gene expression"
+          ],
+          "num_overlapping": 5,
+          "jaccard_similarity": 0.14285714285714285,
+          "proposal_1_unique": [
+            "atlas",
+            "bacterial",
+            "bacterial cell",
+            "bacterial gene",
+            "cell states",
+            "community",
+            "datasets",
+            "growth",
+            "ingest",
+            "rna"
+          ],
+          "proposal_2_unique": [
+            "accessibility",
+            "brain",
+            "cell types",
+            "cells",
+            "chromatin",
+            "chromatin organization",
+            "dna",
+            "embeddings",
+            "genome",
+            "model"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.029713886153671168,
+          "proposal_1_topic_distribution": [
+            0.014156360855506867,
+            0.9436441394793008,
+            0.014066499888900944,
+            0.014066499888013463,
+            0.01406649988827785
+          ],
+          "proposal_2_topic_distribution": [
+            0.9467367228772577,
+            0.013357282350746128,
+            0.013301998257243815,
+            0.013301998255916547,
+            0.013301998258835643
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "chromatin",
+                "gene",
+                "organization",
+                "cell",
+                "chromatin organization"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "bacterial",
+                "states",
+                "expression",
+                "cell",
+                "gene"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "cells",
+                "dimensional",
+                "analysis",
+                "using",
+                "learning"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "cells",
+                "dimensional",
+                "analysis",
+                "using",
+                "learning"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "cells",
+                "dimensional",
+                "analysis",
+                "using",
+                "learning"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_4",
+      "proposal_2_id": "human_5",
+      "proposal_1_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "proposal_2_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.435229",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.05990861213659239,
+        "embedding_cosine_similarity": 0.7292369599457251,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "atlas",
+            "bacterial",
+            "bacterial cell",
+            "bacterial gene",
+            "cell",
+            "cell states",
+            "community",
+            "datasets",
+            "expression",
+            "gene"
+          ],
+          "proposal_2_unique": [
+            "based",
+            "binding",
+            "chaperone",
+            "disordered",
+            "disordered proteins",
+            "evolutionary",
+            "hubs",
+            "interaction",
+            "interaction networks",
+            "interactions"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.02978550697947929,
+          "proposal_1_topic_distribution": [
+            0.014032460334666413,
+            0.943856504497444,
+            0.014032460372024472,
+            0.014046114454840981,
+            0.0140324603410243
+          ],
+          "proposal_2_topic_distribution": [
+            0.013492673756172573,
+            0.013521232967821857,
+            0.013492673759950953,
+            0.9460007457573715,
+            0.013492673758683134
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "analyses",
+                "using",
+                "data",
+                "resources",
+                "high"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "states",
+                "bacterial",
+                "gene",
+                "gene expression",
+                "expression"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "analyses",
+                "using",
+                "data",
+                "resources",
+                "high"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "proteins",
+                "protein",
+                "network",
+                "networks",
+                "interactions"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "analyses",
+                "using",
+                "data",
+                "resources",
+                "high"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_4",
+      "proposal_2_id": "human_7",
+      "proposal_1_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "proposal_2_title": "Oceans of Disorder: Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.465564",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.0863563361833699,
+        "embedding_cosine_similarity": 0.7350908898913876,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "atlas",
+            "bacterial",
+            "bacterial cell",
+            "bacterial gene",
+            "cell",
+            "cell states",
+            "community",
+            "datasets",
+            "expression",
+            "gene"
+          ],
+          "proposal_2_unique": [
+            "adaptation",
+            "biophysical",
+            "biophysical properties",
+            "conditions",
+            "diverse",
+            "environmental",
+            "environmental conditions",
+            "features",
+            "idr",
+            "idrs"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.999981016961555,
+          "proposal_1_topic_distribution": [
+            0.9402947650915433,
+            0.014926308721320315,
+            0.014926308737860397,
+            0.014926308725512842,
+            0.014926308723763328
+          ],
+          "proposal_2_topic_distribution": [
+            0.9513274357658646,
+            0.012168141044778459,
+            0.01216814106168314,
+            0.012168141045706335,
+            0.012168141081967284
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "states",
+                "idrs",
+                "bacterial",
+                "environmental",
+                "expression"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "coli",
+                "atlas bacterial",
+                "thousands",
+                "expression datasets",
+                "composition"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "coli",
+                "atlas bacterial",
+                "thousands",
+                "expression datasets",
+                "composition"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "expression datasets",
+                "coli",
+                "composition",
+                "atlas bacterial",
+                "thousands"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "coli",
+                "atlas bacterial",
+                "thousands",
+                "expression datasets",
+                "composition"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_4",
+      "proposal_2_id": "human_10",
+      "proposal_1_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "proposal_2_title": "Transposable elements and the emergence of genomic innovation",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.493375",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1919133793544844,
+        "embedding_cosine_similarity": 0.7408751016248691,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "datasets",
+            "seq",
+            "species"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "proposal_1_unique": [
+            "atlas",
+            "bacterial",
+            "bacterial cell",
+            "bacterial gene",
+            "cell",
+            "cell states",
+            "community",
+            "expression",
+            "gene",
+            "gene expression"
+          ],
+          "proposal_2_unique": [
+            "aware",
+            "elements",
+            "genomic",
+            "multi",
+            "phase",
+            "reads",
+            "regions",
+            "regulatory",
+            "repeat",
+            "repeat aware"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.025587168505872365,
+          "proposal_1_topic_distribution": [
+            0.012705283792685498,
+            0.949317006641365,
+            0.01265923652454173,
+            0.01265923652103699,
+            0.01265923652037096
+          ],
+          "proposal_2_topic_distribution": [
+            0.9552474526950955,
+            0.011225754304411193,
+            0.01117559766704915,
+            0.01117559766616331,
+            0.011175597667280672
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "te",
+                "regulatory",
+                "tes",
+                "aware"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "bacterial",
+                "states",
+                "expression",
+                "gene",
+                "cell"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "analyses",
+                "project",
+                "analysis",
+                "species",
+                "using"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "analyses",
+                "project",
+                "analysis",
+                "species",
+                "using"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "analyses",
+                "project",
+                "analysis",
+                "species",
+                "using"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_4",
+      "proposal_2_id": "human_11",
+      "proposal_1_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "proposal_2_title": "Searching the crosslinking mass spectrometry universe for new protein-protein interactions",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.507330",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.10329103640790095,
+        "embedding_cosine_similarity": 0.690719229841704,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "datasets"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "atlas",
+            "bacterial",
+            "bacterial cell",
+            "bacterial gene",
+            "cell",
+            "cell states",
+            "community",
+            "expression",
+            "gene",
+            "gene expression"
+          ],
+          "proposal_2_unique": [
+            "complex",
+            "complex portal",
+            "complexes",
+            "human",
+            "interaction",
+            "interactions",
+            "large",
+            "large scale",
+            "ms",
+            "portal"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.027942060888804465,
+          "proposal_1_topic_distribution": [
+            0.013547883718122553,
+            0.945902690626172,
+            0.013516475221768324,
+            0.013516475216831646,
+            0.013516475217105507
+          ],
+          "proposal_2_topic_distribution": [
+            0.9503273984979155,
+            0.012430604141372713,
+            0.01241399912010626,
+            0.012413999114563914,
+            0.012413999126041662
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "protein",
+                "data",
+                "proteins",
+                "interactions",
+                "complex"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "states",
+                "bacterial",
+                "expression",
+                "cell",
+                "gene"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "project",
+                "using",
+                "resources",
+                "analyses",
+                "thousands"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "project",
+                "using",
+                "resources",
+                "analyses",
+                "thousands"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "project",
+                "using",
+                "resources",
+                "analyses",
+                "thousands"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_4",
+      "proposal_2_id": "human_12",
+      "proposal_1_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "proposal_2_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry-based proteomics data",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.521732",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.14783032923188777,
+        "embedding_cosine_similarity": 0.7281492423757414,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "community",
+            "data",
+            "datasets"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "atlas",
+            "bacterial",
+            "bacterial cell",
+            "bacterial gene",
+            "cell",
+            "cell states",
+            "expression",
+            "gene",
+            "gene expression",
+            "growth"
+          ],
+          "proposal_2_unique": [
+            "automated",
+            "based",
+            "challenge",
+            "extraction",
+            "group",
+            "integration",
+            "metadata",
+            "open",
+            "pride",
+            "project"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.027961182928449863,
+          "proposal_1_topic_distribution": [
+            0.013776620316411374,
+            0.01377662031631039,
+            0.013855810493694635,
+            0.9448143285568337,
+            0.013776620316749972
+          ],
+          "proposal_2_topic_distribution": [
+            0.012120492137576763,
+            0.01212049213677426,
+            0.9514975575991743,
+            0.012140965986851833,
+            0.012120492139622737
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "community",
+                "project",
+                "include",
+                "resources",
+                "using"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "community",
+                "project",
+                "include",
+                "resources",
+                "using"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "metadata",
+                "data",
+                "pride",
+                "proteomics",
+                "workflows"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "states",
+                "bacterial",
+                "cell",
+                "gene",
+                "gene expression"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "community",
+                "project",
+                "include",
+                "resources",
+                "using"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_5",
+      "proposal_2_id": "human_1",
+      "proposal_1_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "proposal_2_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.538008",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.11870991225602692,
+        "embedding_cosine_similarity": 0.7303440465702455,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "networks"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "based",
+            "binding",
+            "chaperone",
+            "disordered",
+            "disordered proteins",
+            "evolutionary",
+            "hubs",
+            "interaction",
+            "interaction networks",
+            "interactions"
+          ],
+          "proposal_2_unique": [
+            "aim",
+            "analysis",
+            "cell",
+            "cytokinesis",
+            "cytokinetic",
+            "datasets",
+            "genes",
+            "heat",
+            "heat stress",
+            "identify"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.029313408105048122,
+          "proposal_1_topic_distribution": [
+            0.9484539653511642,
+            0.01290511867318279,
+            0.012880305324963202,
+            0.012880305319472119,
+            0.012880305331217595
+          ],
+          "proposal_2_topic_distribution": [
+            0.014259313154246632,
+            0.9431830816949709,
+            0.014185868385653114,
+            0.014185868382185609,
+            0.01418586838294372
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "proteins",
+                "interactions",
+                "protein",
+                "chaperone",
+                "network"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "heat",
+                "cytokinetic",
+                "stress",
+                "heat stress",
+                "cytokinesis"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "specific",
+                "using",
+                "robustness",
+                "datasets",
+                "genetic"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "specific",
+                "using",
+                "robustness",
+                "datasets",
+                "genetic"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "specific",
+                "using",
+                "robustness",
+                "datasets",
+                "genetic"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_5",
+      "proposal_2_id": "human_2",
+      "proposal_1_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "proposal_2_title": "Elucidating genome structure-function relationships in human brain cells",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.553346",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.09199178303119325,
+        "embedding_cosine_similarity": 0.7594826354637143,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "based",
+            "binding",
+            "chaperone",
+            "disordered",
+            "disordered proteins",
+            "evolutionary",
+            "hubs",
+            "interaction",
+            "interaction networks",
+            "interactions"
+          ],
+          "proposal_2_unique": [
+            "accessibility",
+            "brain",
+            "cell",
+            "cell types",
+            "cells",
+            "chromatin",
+            "chromatin organization",
+            "dna",
+            "embeddings",
+            "expression"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.029767225566536194,
+          "proposal_1_topic_distribution": [
+            0.013304730060366862,
+            0.013304730059824696,
+            0.013351449238178601,
+            0.9467343605795472,
+            0.013304730062082671
+          ],
+          "proposal_2_topic_distribution": [
+            0.014163036534999044,
+            0.014163036528666025,
+            0.9433076850546195,
+            0.014203205330645058,
+            0.014163036551070336
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "using",
+                "specific",
+                "datasets",
+                "proposed",
+                "architecture"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "using",
+                "specific",
+                "datasets",
+                "proposed",
+                "architecture"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "chromatin",
+                "gene",
+                "gene expression",
+                "organization",
+                "cell"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "proteins",
+                "protein",
+                "stability",
+                "chaperone",
+                "network"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "using",
+                "specific",
+                "datasets",
+                "architecture",
+                "proposed"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_5",
+      "proposal_2_id": "human_4",
+      "proposal_1_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "proposal_2_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.583111",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.05990861213659238,
+        "embedding_cosine_similarity": 0.7292369599457251,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "based",
+            "binding",
+            "chaperone",
+            "disordered",
+            "disordered proteins",
+            "evolutionary",
+            "hubs",
+            "interaction",
+            "interaction networks",
+            "interactions"
+          ],
+          "proposal_2_unique": [
+            "atlas",
+            "bacterial",
+            "bacterial cell",
+            "bacterial gene",
+            "cell",
+            "cell states",
+            "community",
+            "datasets",
+            "expression",
+            "gene"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.02978550697947929,
+          "proposal_1_topic_distribution": [
+            0.013492673756172573,
+            0.013521232967821857,
+            0.013492673759950953,
+            0.9460007457573715,
+            0.013492673758683134
+          ],
+          "proposal_2_topic_distribution": [
+            0.014032460334666413,
+            0.943856504497444,
+            0.014032460372024472,
+            0.014046114454840981,
+            0.0140324603410243
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "analyses",
+                "using",
+                "data",
+                "resources",
+                "high"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "states",
+                "bacterial",
+                "gene",
+                "gene expression",
+                "expression"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "analyses",
+                "using",
+                "data",
+                "resources",
+                "high"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "proteins",
+                "protein",
+                "network",
+                "networks",
+                "interactions"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "analyses",
+                "using",
+                "data",
+                "resources",
+                "high"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_5",
+      "proposal_2_id": "human_7",
+      "proposal_1_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "proposal_2_title": "Oceans of Disorder: Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.616089",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.15778040478839608,
+        "embedding_cosine_similarity": 0.7395736150896162,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "properties",
+            "protein",
+            "proteins"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "proposal_1_unique": [
+            "based",
+            "binding",
+            "chaperone",
+            "disordered",
+            "disordered proteins",
+            "evolutionary",
+            "hubs",
+            "interaction",
+            "interaction networks",
+            "interactions"
+          ],
+          "proposal_2_unique": [
+            "adaptation",
+            "biophysical",
+            "biophysical properties",
+            "conditions",
+            "diverse",
+            "environmental",
+            "environmental conditions",
+            "features",
+            "idr",
+            "idrs"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.027561444636010873,
+          "proposal_1_topic_distribution": [
+            0.012915533096937536,
+            0.9484534930613794,
+            0.012876991291279411,
+            0.0128769912768704,
+            0.01287699127353325
+          ],
+          "proposal_2_topic_distribution": [
+            0.94925292465832,
+            0.012739344379953764,
+            0.01266924365528489,
+            0.012669243652240763,
+            0.012669243654200612
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "environmental",
+                "idrs",
+                "idr",
+                "conditions",
+                "adaptation"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "proteins",
+                "stability",
+                "protein",
+                "chaperone",
+                "network"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "using",
+                "specific",
+                "data",
+                "models",
+                "based"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "using",
+                "specific",
+                "data",
+                "models",
+                "based"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "using",
+                "specific",
+                "data",
+                "models",
+                "based"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_5",
+      "proposal_2_id": "human_10",
+      "proposal_1_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "proposal_2_title": "Transposable elements and the emergence of genomic innovation",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.651751",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1194066984301211,
+        "embedding_cosine_similarity": 0.7032232665158974,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "based",
+            "binding",
+            "chaperone",
+            "disordered",
+            "disordered proteins",
+            "evolutionary",
+            "hubs",
+            "interaction",
+            "interaction networks",
+            "interactions"
+          ],
+          "proposal_2_unique": [
+            "aware",
+            "datasets",
+            "elements",
+            "genomic",
+            "multi",
+            "phase",
+            "reads",
+            "regions",
+            "regulatory",
+            "repeat"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.026179378536233294,
+          "proposal_1_topic_distribution": [
+            0.012399547651199315,
+            0.9503622170921062,
+            0.01239954765917726,
+            0.012399547653632048,
+            0.012439139943885031
+          ],
+          "proposal_2_topic_distribution": [
+            0.011984763207765791,
+            0.012009964323742075,
+            0.01198476320911635,
+            0.011984763206902858,
+            0.952035746052473
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "binding",
+                "support",
+                "analyses",
+                "using",
+                "specific"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "proteins",
+                "interactions",
+                "stability",
+                "protein",
+                "chaperone"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "binding",
+                "support",
+                "analyses",
+                "using",
+                "specific"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "binding",
+                "support",
+                "analyses",
+                "using",
+                "specific"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "te",
+                "regulatory",
+                "aware",
+                "transcription"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_5",
+      "proposal_2_id": "human_11",
+      "proposal_1_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "proposal_2_title": "Searching the crosslinking mass spectrometry universe for new protein-protein interactions",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.665963",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.2871810002629501,
+        "embedding_cosine_similarity": 0.8103818337711456,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "interaction",
+            "interactions",
+            "protein",
+            "proteins"
+          ],
+          "num_overlapping": 5,
+          "jaccard_similarity": 0.14285714285714285,
+          "proposal_1_unique": [
+            "based",
+            "binding",
+            "chaperone",
+            "disordered",
+            "disordered proteins",
+            "evolutionary",
+            "hubs",
+            "interaction networks",
+            "network",
+            "networks"
+          ],
+          "proposal_2_unique": [
+            "complex",
+            "complex portal",
+            "complexes",
+            "datasets",
+            "human",
+            "large",
+            "large scale",
+            "ms",
+            "portal",
+            "pride"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.025533436006142253,
+          "proposal_1_topic_distribution": [
+            0.01165543449212384,
+            0.011655434492147601,
+            0.011702041558955165,
+            0.9533316549645668,
+            0.011655434492206398
+          ],
+          "proposal_2_topic_distribution": [
+            0.012136770340493888,
+            0.01213677034038665,
+            0.9514053909532323,
+            0.012184298025127443,
+            0.012136770340759684
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "support",
+                "using",
+                "resources",
+                "new",
+                "analyses"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "support",
+                "using",
+                "resources",
+                "new",
+                "analyses"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "data",
+                "protein",
+                "proteins",
+                "xl ms",
+                "ms"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "proteins",
+                "stability",
+                "protein",
+                "chaperone",
+                "network"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "support",
+                "using",
+                "resources",
+                "new",
+                "analyses"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_5",
+      "proposal_2_id": "human_12",
+      "proposal_1_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "proposal_2_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry-based proteomics data",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.679836",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.07576124230042566,
+        "embedding_cosine_similarity": 0.7195201688458686,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "based",
+            "data"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "binding",
+            "chaperone",
+            "disordered",
+            "disordered proteins",
+            "evolutionary",
+            "hubs",
+            "interaction",
+            "interaction networks",
+            "interactions",
+            "network"
+          ],
+          "proposal_2_unique": [
+            "automated",
+            "challenge",
+            "community",
+            "datasets",
+            "extraction",
+            "group",
+            "integration",
+            "metadata",
+            "open",
+            "pride"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.029281825855822147,
+          "proposal_1_topic_distribution": [
+            0.9477144653150971,
+            0.01306536491827619,
+            0.01306536493357849,
+            0.013089439883715255,
+            0.013065364949332997
+          ],
+          "proposal_2_topic_distribution": [
+            0.014044361033889506,
+            0.014029320403368715,
+            0.01402932044127242,
+            0.9438676777133779,
+            0.014029320408091461
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "proteins",
+                "network",
+                "networks",
+                "interactions",
+                "stability"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "based",
+                "support",
+                "using",
+                "resources",
+                "biological"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "based",
+                "support",
+                "using",
+                "resources",
+                "biological"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "metadata",
+                "data",
+                "proteomics",
+                "pride",
+                "open"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "based",
+                "support",
+                "using",
+                "resources",
+                "biological"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_7",
+      "proposal_2_id": "human_1",
+      "proposal_1_title": "Oceans of Disorder: Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "proposal_2_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.853326",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.07788575106356917,
+        "embedding_cosine_similarity": 0.7561072759498191,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "adaptation",
+            "biophysical",
+            "biophysical properties",
+            "conditions",
+            "diverse",
+            "environmental",
+            "environmental conditions",
+            "features",
+            "idr",
+            "idrs"
+          ],
+          "proposal_2_unique": [
+            "aim",
+            "analysis",
+            "cell",
+            "cytokinesis",
+            "cytokinetic",
+            "datasets",
+            "genes",
+            "heat",
+            "heat stress",
+            "identify"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.029922439788960805,
+          "proposal_1_topic_distribution": [
+            0.9481836259227431,
+            0.012947410412997911,
+            0.012947410427110213,
+            0.012974142797121734,
+            0.01294741044002709
+          ],
+          "proposal_2_topic_distribution": [
+            0.01470873012640065,
+            0.014673002470530619,
+            0.014673002492315698,
+            0.9412722624352367,
+            0.014673002475516278
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "environmental",
+                "idrs",
+                "idr",
+                "properties",
+                "conditions"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "using",
+                "specific",
+                "protein",
+                "proteins",
+                "mechanisms"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "using",
+                "specific",
+                "protein",
+                "proteins",
+                "mechanisms"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "heat",
+                "cytokinetic",
+                "heat stress",
+                "cytokinesis",
+                "stress"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "using",
+                "specific",
+                "protein",
+                "proteins",
+                "mechanisms"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_7",
+      "proposal_2_id": "human_2",
+      "proposal_1_title": "Oceans of Disorder: Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "proposal_2_title": "Elucidating genome structure-function relationships in human brain cells",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.870502",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.09890287661617422,
+        "embedding_cosine_similarity": 0.7245159595564807,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "adaptation",
+            "biophysical",
+            "biophysical properties",
+            "conditions",
+            "diverse",
+            "environmental",
+            "environmental conditions",
+            "features",
+            "idr",
+            "idrs"
+          ],
+          "proposal_2_unique": [
+            "accessibility",
+            "brain",
+            "cell",
+            "cell types",
+            "cells",
+            "chromatin",
+            "chromatin organization",
+            "dna",
+            "embeddings",
+            "expression"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.03056645903973155,
+          "proposal_1_topic_distribution": [
+            0.9478244888831575,
+            0.013035204631267928,
+            0.01303520463542666,
+            0.013035204632169884,
+            0.013069897217978115
+          ],
+          "proposal_2_topic_distribution": [
+            0.015164558243307076,
+            0.015109568114754342,
+            0.015109568137464576,
+            0.015109568120490696,
+            0.9395067373839833
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "environmental",
+                "idrs",
+                "idr",
+                "conditions",
+                "simulations"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "structural",
+                "using",
+                "mechanisms",
+                "dimensional",
+                "learning"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "structural",
+                "using",
+                "mechanisms",
+                "dimensional",
+                "learning"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "structural",
+                "using",
+                "mechanisms",
+                "dimensional",
+                "learning"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "chromatin",
+                "organization",
+                "cell",
+                "expression",
+                "gene"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_7",
+      "proposal_2_id": "human_4",
+      "proposal_1_title": "Oceans of Disorder: Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "proposal_2_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.904772",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.08635633618337003,
+        "embedding_cosine_similarity": 0.7350908898913876,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "adaptation",
+            "biophysical",
+            "biophysical properties",
+            "conditions",
+            "diverse",
+            "environmental",
+            "environmental conditions",
+            "features",
+            "idr",
+            "idrs"
+          ],
+          "proposal_2_unique": [
+            "atlas",
+            "bacterial",
+            "bacterial cell",
+            "bacterial gene",
+            "cell",
+            "cell states",
+            "community",
+            "datasets",
+            "expression",
+            "gene"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.999981016961555,
+          "proposal_1_topic_distribution": [
+            0.9513274357658646,
+            0.012168141044778459,
+            0.01216814106168314,
+            0.012168141045706335,
+            0.012168141081967284
+          ],
+          "proposal_2_topic_distribution": [
+            0.9402947650915433,
+            0.014926308721320315,
+            0.014926308737860397,
+            0.014926308725512842,
+            0.014926308723763328
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "states",
+                "idrs",
+                "bacterial",
+                "environmental",
+                "expression"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "coli",
+                "atlas bacterial",
+                "thousands",
+                "expression datasets",
+                "composition"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "coli",
+                "atlas bacterial",
+                "thousands",
+                "expression datasets",
+                "composition"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "expression datasets",
+                "coli",
+                "composition",
+                "atlas bacterial",
+                "thousands"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "coli",
+                "atlas bacterial",
+                "thousands",
+                "expression datasets",
+                "composition"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_7",
+      "proposal_2_id": "human_5",
+      "proposal_1_title": "Oceans of Disorder: Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "proposal_2_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.921091",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.15778040478839592,
+        "embedding_cosine_similarity": 0.7395736150896162,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "properties",
+            "protein",
+            "proteins"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "proposal_1_unique": [
+            "adaptation",
+            "biophysical",
+            "biophysical properties",
+            "conditions",
+            "diverse",
+            "environmental",
+            "environmental conditions",
+            "features",
+            "idr",
+            "idrs"
+          ],
+          "proposal_2_unique": [
+            "based",
+            "binding",
+            "chaperone",
+            "disordered",
+            "disordered proteins",
+            "evolutionary",
+            "hubs",
+            "interaction",
+            "interaction networks",
+            "interactions"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.027561444636010873,
+          "proposal_1_topic_distribution": [
+            0.94925292465832,
+            0.012739344379953764,
+            0.01266924365528489,
+            0.012669243652240763,
+            0.012669243654200612
+          ],
+          "proposal_2_topic_distribution": [
+            0.012915533096937536,
+            0.9484534930613794,
+            0.012876991291279411,
+            0.0128769912768704,
+            0.01287699127353325
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "environmental",
+                "idrs",
+                "idr",
+                "conditions",
+                "adaptation"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "proteins",
+                "stability",
+                "protein",
+                "chaperone",
+                "network"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "using",
+                "specific",
+                "data",
+                "models",
+                "based"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "using",
+                "specific",
+                "data",
+                "models",
+                "based"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "using",
+                "specific",
+                "data",
+                "models",
+                "based"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_7",
+      "proposal_2_id": "human_10",
+      "proposal_1_title": "Oceans of Disorder: Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "proposal_2_title": "Transposable elements and the emergence of genomic innovation",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.969902",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.10552552364486739,
+        "embedding_cosine_similarity": 0.6745138147038026,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "using"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "adaptation",
+            "biophysical",
+            "biophysical properties",
+            "conditions",
+            "diverse",
+            "environmental",
+            "environmental conditions",
+            "features",
+            "idr",
+            "idrs"
+          ],
+          "proposal_2_unique": [
+            "aware",
+            "datasets",
+            "elements",
+            "genomic",
+            "multi",
+            "phase",
+            "reads",
+            "regions",
+            "regulatory",
+            "repeat"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.026825421276128858,
+          "proposal_1_topic_distribution": [
+            0.9505545883691414,
+            0.012393166255825714,
+            0.012350748458517033,
+            0.012350748456144733,
+            0.012350748460370977
+          ],
+          "proposal_2_topic_distribution": [
+            0.012618766551530292,
+            0.9495765648622873,
+            0.012601556198305594,
+            0.012601556194164035,
+            0.012601556193712731
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "environmental",
+                "idrs",
+                "idr",
+                "conditions",
+                "biophysical"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "te",
+                "regulatory",
+                "transcription",
+                "tes"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "using",
+                "activity",
+                "project",
+                "specific",
+                "functional"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "using",
+                "activity",
+                "project",
+                "specific",
+                "functional"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "using",
+                "activity",
+                "project",
+                "specific",
+                "functional"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_7",
+      "proposal_2_id": "human_11",
+      "proposal_1_title": "Oceans of Disorder: Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "proposal_2_title": "Searching the crosslinking mass spectrometry universe for new protein-protein interactions",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:31.984964",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.14493760616800974,
+        "embedding_cosine_similarity": 0.6934152528404623,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "protein",
+            "proteins"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "adaptation",
+            "biophysical",
+            "biophysical properties",
+            "conditions",
+            "diverse",
+            "environmental",
+            "environmental conditions",
+            "features",
+            "idr",
+            "idrs"
+          ],
+          "proposal_2_unique": [
+            "complex",
+            "complex portal",
+            "complexes",
+            "datasets",
+            "human",
+            "interaction",
+            "interactions",
+            "large",
+            "large scale",
+            "ms"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.027023695388602394,
+          "proposal_1_topic_distribution": [
+            0.9506595501133395,
+            0.01237590332499133,
+            0.012321515520779064,
+            0.012321515518310748,
+            0.012321515522579433
+          ],
+          "proposal_2_topic_distribution": [
+            0.012809451484796414,
+            0.948825513513763,
+            0.012788345003884396,
+            0.012788344999063183,
+            0.012788344998492986
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "environmental",
+                "idrs",
+                "idr",
+                "conditions",
+                "biophysical"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "protein",
+                "complex",
+                "proteins",
+                "xl ms"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "using",
+                "metadata",
+                "project",
+                "dataset",
+                "structural"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "using",
+                "metadata",
+                "project",
+                "dataset",
+                "structural"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "using",
+                "metadata",
+                "project",
+                "dataset",
+                "structural"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_7",
+      "proposal_2_id": "human_12",
+      "proposal_1_title": "Oceans of Disorder: Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "proposal_2_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry-based proteomics data",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.001053",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1273909874034546,
+        "embedding_cosine_similarity": 0.712199607231375,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "adaptation",
+            "biophysical",
+            "biophysical properties",
+            "conditions",
+            "diverse",
+            "environmental",
+            "environmental conditions",
+            "features",
+            "idr",
+            "idrs"
+          ],
+          "proposal_2_unique": [
+            "automated",
+            "based",
+            "challenge",
+            "community",
+            "datasets",
+            "extraction",
+            "group",
+            "integration",
+            "metadata",
+            "open"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0279381441719261,
+          "proposal_1_topic_distribution": [
+            0.012413522282772718,
+            0.012484660956198063,
+            0.012413522285999429,
+            0.012413522283141982,
+            0.9502747721918879
+          ],
+          "proposal_2_topic_distribution": [
+            0.013467356919473194,
+            0.9461034198570533,
+            0.013467356943931063,
+            0.013467356927747334,
+            0.013494509351795166
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "using",
+                "learning",
+                "project",
+                "machine learning",
+                "machine"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "metadata",
+                "data",
+                "proteomics",
+                "pride",
+                "workflows"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "using",
+                "learning",
+                "project",
+                "machine learning",
+                "machine"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "using",
+                "learning",
+                "project",
+                "machine learning",
+                "machine"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "environmental",
+                "idrs",
+                "idr",
+                "biophysical",
+                "features"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_10",
+      "proposal_2_id": "human_1",
+      "proposal_1_title": "Transposable elements and the emergence of genomic innovation",
+      "proposal_2_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.179111",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.13832861342183175,
+        "embedding_cosine_similarity": 0.6889257674165847,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "datasets",
+            "species",
+            "specific"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "proposal_1_unique": [
+            "aware",
+            "elements",
+            "genomic",
+            "multi",
+            "phase",
+            "reads",
+            "regions",
+            "regulatory",
+            "repeat",
+            "repeat aware"
+          ],
+          "proposal_2_unique": [
+            "aim",
+            "analysis",
+            "cell",
+            "cytokinesis",
+            "cytokinetic",
+            "genes",
+            "heat",
+            "heat stress",
+            "identify",
+            "networks"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.027684154455990505,
+          "proposal_1_topic_distribution": [
+            0.9517702820036422,
+            0.012072864544569253,
+            0.012052284484093576,
+            0.012052284481374366,
+            0.012052284486320326
+          ],
+          "proposal_2_topic_distribution": [
+            0.01368222906498379,
+            0.9454190321917563,
+            0.013632912918176456,
+            0.01363291291284519,
+            0.013632912912238306
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "te",
+                "aware",
+                "repeat aware",
+                "seq"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "heat",
+                "cytokinetic",
+                "stress",
+                "heat stress",
+                "cytokinesis"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "analysis",
+                "using",
+                "specific",
+                "datasets",
+                "identify"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "analysis",
+                "using",
+                "specific",
+                "datasets",
+                "identify"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "analysis",
+                "using",
+                "specific",
+                "datasets",
+                "identify"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_10",
+      "proposal_2_id": "human_2",
+      "proposal_1_title": "Transposable elements and the emergence of genomic innovation",
+      "proposal_2_title": "Elucidating genome structure-function relationships in human brain cells",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.203186",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.20656945866741871,
+        "embedding_cosine_similarity": 0.7725464803601599,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "aware",
+            "datasets",
+            "elements",
+            "genomic",
+            "multi",
+            "phase",
+            "reads",
+            "regions",
+            "regulatory",
+            "repeat"
+          ],
+          "proposal_2_unique": [
+            "accessibility",
+            "brain",
+            "cell",
+            "cell types",
+            "cells",
+            "chromatin",
+            "chromatin organization",
+            "dna",
+            "embeddings",
+            "expression"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.027359237468247512,
+          "proposal_1_topic_distribution": [
+            0.01219312131007345,
+            0.9513935140521429,
+            0.012137788216707895,
+            0.012137788211060426,
+            0.012137788210015087
+          ],
+          "proposal_2_topic_distribution": [
+            0.9470275313329153,
+            0.013285043108930892,
+            0.013229141853312377,
+            0.013229141851034064,
+            0.01322914185380731
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "organization",
+                "chromatin",
+                "gene",
+                "cell",
+                "chromatin organization"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "te",
+                "repeat",
+                "repeat aware",
+                "tes"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "analysis",
+                "genome",
+                "using",
+                "dna",
+                "human"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "analysis",
+                "genome",
+                "using",
+                "dna",
+                "human"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "analysis",
+                "genome",
+                "using",
+                "dna",
+                "human"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_10",
+      "proposal_2_id": "human_4",
+      "proposal_1_title": "Transposable elements and the emergence of genomic innovation",
+      "proposal_2_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.229739",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1919133793544846,
+        "embedding_cosine_similarity": 0.7408751016248691,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "datasets",
+            "seq",
+            "species"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "proposal_1_unique": [
+            "aware",
+            "elements",
+            "genomic",
+            "multi",
+            "phase",
+            "reads",
+            "regions",
+            "regulatory",
+            "repeat",
+            "repeat aware"
+          ],
+          "proposal_2_unique": [
+            "atlas",
+            "bacterial",
+            "bacterial cell",
+            "bacterial gene",
+            "cell",
+            "cell states",
+            "community",
+            "expression",
+            "gene",
+            "gene expression"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.025587168505872365,
+          "proposal_1_topic_distribution": [
+            0.9552474526950955,
+            0.011225754304411193,
+            0.01117559766704915,
+            0.01117559766616331,
+            0.011175597667280672
+          ],
+          "proposal_2_topic_distribution": [
+            0.012705283792685498,
+            0.949317006641365,
+            0.01265923652454173,
+            0.01265923652103699,
+            0.01265923652037096
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "te",
+                "regulatory",
+                "tes",
+                "aware"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "bacterial",
+                "states",
+                "expression",
+                "gene",
+                "cell"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "analyses",
+                "project",
+                "analysis",
+                "species",
+                "using"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "analyses",
+                "project",
+                "analysis",
+                "species",
+                "using"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "analyses",
+                "project",
+                "analysis",
+                "species",
+                "using"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_10",
+      "proposal_2_id": "human_5",
+      "proposal_1_title": "Transposable elements and the emergence of genomic innovation",
+      "proposal_2_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.243462",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.11940669843012108,
+        "embedding_cosine_similarity": 0.7032232665158974,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "aware",
+            "datasets",
+            "elements",
+            "genomic",
+            "multi",
+            "phase",
+            "reads",
+            "regions",
+            "regulatory",
+            "repeat"
+          ],
+          "proposal_2_unique": [
+            "based",
+            "binding",
+            "chaperone",
+            "disordered",
+            "disordered proteins",
+            "evolutionary",
+            "hubs",
+            "interaction",
+            "interaction networks",
+            "interactions"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.026179378536233294,
+          "proposal_1_topic_distribution": [
+            0.011984763207765791,
+            0.012009964323742075,
+            0.01198476320911635,
+            0.011984763206902858,
+            0.952035746052473
+          ],
+          "proposal_2_topic_distribution": [
+            0.012399547651199315,
+            0.9503622170921062,
+            0.01239954765917726,
+            0.012399547653632048,
+            0.012439139943885031
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "binding",
+                "support",
+                "analyses",
+                "using",
+                "specific"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "proteins",
+                "interactions",
+                "stability",
+                "protein",
+                "chaperone"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "binding",
+                "support",
+                "analyses",
+                "using",
+                "specific"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "binding",
+                "support",
+                "analyses",
+                "using",
+                "specific"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "te",
+                "regulatory",
+                "aware",
+                "transcription"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_10",
+      "proposal_2_id": "human_7",
+      "proposal_1_title": "Transposable elements and the emergence of genomic innovation",
+      "proposal_2_title": "Oceans of Disorder: Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.274428",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.10552552364486728,
+        "embedding_cosine_similarity": 0.6745138147038026,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "using"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "aware",
+            "datasets",
+            "elements",
+            "genomic",
+            "multi",
+            "phase",
+            "reads",
+            "regions",
+            "regulatory",
+            "repeat"
+          ],
+          "proposal_2_unique": [
+            "adaptation",
+            "biophysical",
+            "biophysical properties",
+            "conditions",
+            "diverse",
+            "environmental",
+            "environmental conditions",
+            "features",
+            "idr",
+            "idrs"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.026825421276128858,
+          "proposal_1_topic_distribution": [
+            0.012618766551530292,
+            0.9495765648622873,
+            0.012601556198305594,
+            0.012601556194164035,
+            0.012601556193712731
+          ],
+          "proposal_2_topic_distribution": [
+            0.9505545883691414,
+            0.012393166255825714,
+            0.012350748458517033,
+            0.012350748456144733,
+            0.012350748460370977
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "environmental",
+                "idrs",
+                "idr",
+                "conditions",
+                "biophysical"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "te",
+                "regulatory",
+                "transcription",
+                "tes"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "using",
+                "activity",
+                "project",
+                "specific",
+                "functional"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "using",
+                "activity",
+                "project",
+                "specific",
+                "functional"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "using",
+                "activity",
+                "project",
+                "specific",
+                "functional"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_10",
+      "proposal_2_id": "human_11",
+      "proposal_1_title": "Transposable elements and the emergence of genomic innovation",
+      "proposal_2_title": "Searching the crosslinking mass spectrometry universe for new protein-protein interactions",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.301876",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1974852892162355,
+        "embedding_cosine_similarity": 0.7159830273313796,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "datasets"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "aware",
+            "elements",
+            "genomic",
+            "multi",
+            "phase",
+            "reads",
+            "regions",
+            "regulatory",
+            "repeat",
+            "repeat aware"
+          ],
+          "proposal_2_unique": [
+            "complex",
+            "complex portal",
+            "complexes",
+            "human",
+            "interaction",
+            "interactions",
+            "large",
+            "large scale",
+            "ms",
+            "portal"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.024143179320750593,
+          "proposal_1_topic_distribution": [
+            0.011154609540718202,
+            0.011154609540486162,
+            0.011154609542692878,
+            0.9553531543948794,
+            0.011183016981223384
+          ],
+          "proposal_2_topic_distribution": [
+            0.011452462579075852,
+            0.011452462574593867,
+            0.01145246258171751,
+            0.01147922841818494,
+            0.9541633838464277
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "support",
+                "new",
+                "using",
+                "project",
+                "large"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "support",
+                "new",
+                "using",
+                "project",
+                "large"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "support",
+                "new",
+                "using",
+                "project",
+                "large"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data",
+                "te",
+                "regulatory",
+                "transcription",
+                "repeat aware"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "proteins",
+                "protein",
+                "interactions",
+                "complex"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_10",
+      "proposal_2_id": "human_12",
+      "proposal_1_title": "Transposable elements and the emergence of genomic innovation",
+      "proposal_2_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry-based proteomics data",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.316775",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.16870066445378049,
+        "embedding_cosine_similarity": 0.7458667245751878,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "datasets"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "aware",
+            "elements",
+            "genomic",
+            "multi",
+            "phase",
+            "reads",
+            "regions",
+            "regulatory",
+            "repeat",
+            "repeat aware"
+          ],
+          "proposal_2_unique": [
+            "automated",
+            "based",
+            "challenge",
+            "community",
+            "extraction",
+            "group",
+            "integration",
+            "metadata",
+            "open",
+            "pride"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.026161667767488378,
+          "proposal_1_topic_distribution": [
+            0.01131594143504728,
+            0.011335628484007607,
+            0.01131594143749883,
+            0.01131594143253121,
+            0.9547165472109151
+          ],
+          "proposal_2_topic_distribution": [
+            0.0130619094065892,
+            0.9477209314710169,
+            0.01306190941933876,
+            0.013061909410232346,
+            0.013093340292822742
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "support",
+                "using",
+                "project",
+                "large",
+                "resources"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "metadata",
+                "data",
+                "proteomics",
+                "pride",
+                "open"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "support",
+                "using",
+                "project",
+                "large",
+                "resources"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "support",
+                "using",
+                "project",
+                "large",
+                "resources"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "te",
+                "regulatory",
+                "transcription",
+                "tes"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_11",
+      "proposal_2_id": "human_1",
+      "proposal_1_title": "Searching the crosslinking mass spectrometry universe for new protein-protein interactions",
+      "proposal_2_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.333860",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.11204702080351764,
+        "embedding_cosine_similarity": 0.6788328680744977,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "datasets"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "complex",
+            "complex portal",
+            "complexes",
+            "human",
+            "interaction",
+            "interactions",
+            "large",
+            "large scale",
+            "ms",
+            "portal"
+          ],
+          "proposal_2_unique": [
+            "aim",
+            "analysis",
+            "cell",
+            "cytokinesis",
+            "cytokinetic",
+            "genes",
+            "heat",
+            "heat stress",
+            "identify",
+            "networks"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9999993446947568,
+          "proposal_1_topic_distribution": [
+            0.013044139241473282,
+            0.013044139240283081,
+            0.013044139241970282,
+            0.9478234430321488,
+            0.013044139244124505
+          ],
+          "proposal_2_topic_distribution": [
+            0.013557665069270239,
+            0.013557665070046824,
+            0.01355766507675445,
+            0.9457693397135648,
+            0.013557665070363649
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "susceptible",
+                "maize",
+                "responses",
+                "38",
+                "genetic"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "susceptible",
+                "maize",
+                "responses",
+                "38",
+                "genetic"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "susceptible",
+                "maize",
+                "responses",
+                "38",
+                "genetic"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data",
+                "heat",
+                "cytokinetic",
+                "stress",
+                "protein"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "susceptible",
+                "maize",
+                "responses",
+                "38",
+                "genetic"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_11",
+      "proposal_2_id": "human_2",
+      "proposal_1_title": "Searching the crosslinking mass spectrometry universe for new protein-protein interactions",
+      "proposal_2_title": "Elucidating genome structure-function relationships in human brain cells",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.348717",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.11502851289803212,
+        "embedding_cosine_similarity": 0.73231481217088,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "complex",
+            "complex portal",
+            "complexes",
+            "datasets",
+            "human",
+            "interaction",
+            "interactions",
+            "large",
+            "large scale",
+            "ms"
+          ],
+          "proposal_2_unique": [
+            "accessibility",
+            "brain",
+            "cell",
+            "cell types",
+            "cells",
+            "chromatin",
+            "chromatin organization",
+            "dna",
+            "embeddings",
+            "expression"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.029716645947670435,
+          "proposal_1_topic_distribution": [
+            0.012961841855452128,
+            0.01294672765390964,
+            0.012946727658700401,
+            0.9481979751774832,
+            0.012946727654454688
+          ],
+          "proposal_2_topic_distribution": [
+            0.9419430653598907,
+            0.01450408878524916,
+            0.01450408878677349,
+            0.014544668280530424,
+            0.014504088787556197
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "chromatin",
+                "gene",
+                "cell",
+                "organization",
+                "expression"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "using",
+                "provide",
+                "human",
+                "datasets",
+                "structural"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "using",
+                "provide",
+                "human",
+                "datasets",
+                "structural"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "protein",
+                "data",
+                "proteins",
+                "xl ms",
+                "xl"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "using",
+                "provide",
+                "human",
+                "datasets",
+                "structural"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_11",
+      "proposal_2_id": "human_4",
+      "proposal_1_title": "Searching the crosslinking mass spectrometry universe for new protein-protein interactions",
+      "proposal_2_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.375920",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.10329103640790095,
+        "embedding_cosine_similarity": 0.690719229841704,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "datasets"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "complex",
+            "complex portal",
+            "complexes",
+            "human",
+            "interaction",
+            "interactions",
+            "large",
+            "large scale",
+            "ms",
+            "portal"
+          ],
+          "proposal_2_unique": [
+            "atlas",
+            "bacterial",
+            "bacterial cell",
+            "bacterial gene",
+            "cell",
+            "cell states",
+            "community",
+            "expression",
+            "gene",
+            "gene expression"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.027942060888804465,
+          "proposal_1_topic_distribution": [
+            0.9503273984979155,
+            0.012430604141372713,
+            0.01241399912010626,
+            0.012413999114563914,
+            0.012413999126041662
+          ],
+          "proposal_2_topic_distribution": [
+            0.013547883718122553,
+            0.945902690626172,
+            0.013516475221768324,
+            0.013516475216831646,
+            0.013516475217105507
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "protein",
+                "data",
+                "proteins",
+                "interactions",
+                "complex"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "states",
+                "bacterial",
+                "expression",
+                "cell",
+                "gene"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "project",
+                "using",
+                "resources",
+                "analyses",
+                "thousands"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "project",
+                "using",
+                "resources",
+                "analyses",
+                "thousands"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "project",
+                "using",
+                "resources",
+                "analyses",
+                "thousands"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_11",
+      "proposal_2_id": "human_5",
+      "proposal_1_title": "Searching the crosslinking mass spectrometry universe for new protein-protein interactions",
+      "proposal_2_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.390060",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.2871810002629508,
+        "embedding_cosine_similarity": 0.8103818337711456,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "interaction",
+            "interactions",
+            "protein",
+            "proteins"
+          ],
+          "num_overlapping": 5,
+          "jaccard_similarity": 0.14285714285714285,
+          "proposal_1_unique": [
+            "complex",
+            "complex portal",
+            "complexes",
+            "datasets",
+            "human",
+            "large",
+            "large scale",
+            "ms",
+            "portal",
+            "pride"
+          ],
+          "proposal_2_unique": [
+            "based",
+            "binding",
+            "chaperone",
+            "disordered",
+            "disordered proteins",
+            "evolutionary",
+            "hubs",
+            "interaction networks",
+            "network",
+            "networks"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.025533436006142253,
+          "proposal_1_topic_distribution": [
+            0.012136770340493888,
+            0.01213677034038665,
+            0.9514053909532323,
+            0.012184298025127443,
+            0.012136770340759684
+          ],
+          "proposal_2_topic_distribution": [
+            0.01165543449212384,
+            0.011655434492147601,
+            0.011702041558955165,
+            0.9533316549645668,
+            0.011655434492206398
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "support",
+                "using",
+                "resources",
+                "new",
+                "analyses"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "support",
+                "using",
+                "resources",
+                "new",
+                "analyses"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "data",
+                "protein",
+                "proteins",
+                "xl ms",
+                "ms"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "proteins",
+                "stability",
+                "protein",
+                "chaperone",
+                "network"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "support",
+                "using",
+                "resources",
+                "new",
+                "analyses"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_11",
+      "proposal_2_id": "human_7",
+      "proposal_1_title": "Searching the crosslinking mass spectrometry universe for new protein-protein interactions",
+      "proposal_2_title": "Oceans of Disorder: Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.421300",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.14493760616800935,
+        "embedding_cosine_similarity": 0.6934152528404623,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "protein",
+            "proteins"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "complex",
+            "complex portal",
+            "complexes",
+            "datasets",
+            "human",
+            "interaction",
+            "interactions",
+            "large",
+            "large scale",
+            "ms"
+          ],
+          "proposal_2_unique": [
+            "adaptation",
+            "biophysical",
+            "biophysical properties",
+            "conditions",
+            "diverse",
+            "environmental",
+            "environmental conditions",
+            "features",
+            "idr",
+            "idrs"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.027023695388602394,
+          "proposal_1_topic_distribution": [
+            0.012809451484796414,
+            0.948825513513763,
+            0.012788345003884396,
+            0.012788344999063183,
+            0.012788344998492986
+          ],
+          "proposal_2_topic_distribution": [
+            0.9506595501133395,
+            0.01237590332499133,
+            0.012321515520779064,
+            0.012321515518310748,
+            0.012321515522579433
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "environmental",
+                "idrs",
+                "idr",
+                "conditions",
+                "biophysical"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "data",
+                "protein",
+                "complex",
+                "proteins",
+                "xl ms"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "using",
+                "metadata",
+                "project",
+                "dataset",
+                "structural"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "using",
+                "metadata",
+                "project",
+                "dataset",
+                "structural"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "using",
+                "metadata",
+                "project",
+                "dataset",
+                "structural"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_11",
+      "proposal_2_id": "human_10",
+      "proposal_1_title": "Searching the crosslinking mass spectrometry universe for new protein-protein interactions",
+      "proposal_2_title": "Transposable elements and the emergence of genomic innovation",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.448392",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.19748528921623554,
+        "embedding_cosine_similarity": 0.7159830273313796,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "datasets"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "complex",
+            "complex portal",
+            "complexes",
+            "human",
+            "interaction",
+            "interactions",
+            "large",
+            "large scale",
+            "ms",
+            "portal"
+          ],
+          "proposal_2_unique": [
+            "aware",
+            "elements",
+            "genomic",
+            "multi",
+            "phase",
+            "reads",
+            "regions",
+            "regulatory",
+            "repeat",
+            "repeat aware"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.024143179320750593,
+          "proposal_1_topic_distribution": [
+            0.011452462579075852,
+            0.011452462574593867,
+            0.01145246258171751,
+            0.01147922841818494,
+            0.9541633838464277
+          ],
+          "proposal_2_topic_distribution": [
+            0.011154609540718202,
+            0.011154609540486162,
+            0.011154609542692878,
+            0.9553531543948794,
+            0.011183016981223384
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "support",
+                "new",
+                "using",
+                "project",
+                "large"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "support",
+                "new",
+                "using",
+                "project",
+                "large"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "support",
+                "new",
+                "using",
+                "project",
+                "large"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data",
+                "te",
+                "regulatory",
+                "transcription",
+                "repeat aware"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "proteins",
+                "protein",
+                "interactions",
+                "complex"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_11",
+      "proposal_2_id": "human_12",
+      "proposal_1_title": "Searching the crosslinking mass spectrometry universe for new protein-protein interactions",
+      "proposal_2_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry-based proteomics data",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.461648",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.2780073069482517,
+        "embedding_cosine_similarity": 0.8083368392180746,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "datasets",
+            "pride"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "complex",
+            "complex portal",
+            "complexes",
+            "human",
+            "interaction",
+            "interactions",
+            "large",
+            "large scale",
+            "ms",
+            "portal"
+          ],
+          "proposal_2_unique": [
+            "automated",
+            "based",
+            "challenge",
+            "community",
+            "extraction",
+            "group",
+            "integration",
+            "metadata",
+            "open",
+            "project"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.024952632519358506,
+          "proposal_1_topic_distribution": [
+            0.9539337987478046,
+            0.011501239174833325,
+            0.011501239176286,
+            0.011562483724723613,
+            0.011501239176352426
+          ],
+          "proposal_2_topic_distribution": [
+            0.011815155618107868,
+            0.011775589615165399,
+            0.011775589621449492,
+            0.9528580755295024,
+            0.01177558961577479
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "proteins",
+                "protein",
+                "interactions",
+                "structural"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "resources",
+                "support",
+                "using",
+                "project",
+                "large"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "resources",
+                "support",
+                "using",
+                "project",
+                "large"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "metadata",
+                "data",
+                "proteomics",
+                "open",
+                "workflows"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "resources",
+                "support",
+                "using",
+                "project",
+                "large"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_12",
+      "proposal_2_id": "human_1",
+      "proposal_1_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry-based proteomics data",
+      "proposal_2_title": "CYTOKINETIC BOTTLENECKS OF HEAT WAVES",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.478018",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.08149416810946641,
+        "embedding_cosine_similarity": 0.655196102878292,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "datasets"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "automated",
+            "based",
+            "challenge",
+            "community",
+            "extraction",
+            "group",
+            "integration",
+            "metadata",
+            "open",
+            "pride"
+          ],
+          "proposal_2_unique": [
+            "aim",
+            "analysis",
+            "cell",
+            "cytokinesis",
+            "cytokinetic",
+            "genes",
+            "heat",
+            "heat stress",
+            "identify",
+            "networks"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9999964650413709,
+          "proposal_1_topic_distribution": [
+            0.9400770974455257,
+            0.014980725628691696,
+            0.014980725659718185,
+            0.014980725636807815,
+            0.014980725629256661
+          ],
+          "proposal_2_topic_distribution": [
+            0.9448047764965888,
+            0.013798805855910845,
+            0.013798805879194137,
+            0.013798805856858236,
+            0.013798805911448112
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "metadata",
+                "data",
+                "heat",
+                "cytokinetic",
+                "stress"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "sdrf",
+                "workflow",
+                "integrated",
+                "querying",
+                "ensure"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "sdrf",
+                "workflow",
+                "integrated",
+                "querying",
+                "ensure"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "sdrf",
+                "workflow",
+                "integrated",
+                "querying",
+                "ensure"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "sdrf",
+                "workflow",
+                "integrated",
+                "querying",
+                "ensure"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_12",
+      "proposal_2_id": "human_2",
+      "proposal_1_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry-based proteomics data",
+      "proposal_2_title": "Elucidating genome structure-function relationships in human brain cells",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.492732",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.10445806268036582,
+        "embedding_cosine_similarity": 0.7160083092029967,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "automated",
+            "based",
+            "challenge",
+            "community",
+            "datasets",
+            "extraction",
+            "group",
+            "integration",
+            "metadata",
+            "open"
+          ],
+          "proposal_2_unique": [
+            "accessibility",
+            "brain",
+            "cell",
+            "cell types",
+            "cells",
+            "chromatin",
+            "chromatin organization",
+            "dna",
+            "embeddings",
+            "expression"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0315166394775476,
+          "proposal_1_topic_distribution": [
+            0.014995862931565513,
+            0.9401039870142973,
+            0.014966716697471672,
+            0.014966716680353783,
+            0.014966716676311716
+          ],
+          "proposal_2_topic_distribution": [
+            0.9438829866176804,
+            0.014050402878465911,
+            0.014022203502270188,
+            0.014022203499683162,
+            0.014022203501900237
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "chromatin",
+                "gene",
+                "cell",
+                "gene expression",
+                "organization"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "metadata",
+                "data",
+                "proteomics",
+                "pride",
+                "open"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "using",
+                "learning",
+                "datasets",
+                "approach",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "using",
+                "learning",
+                "datasets",
+                "approach",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "using",
+                "learning",
+                "datasets",
+                "approach",
+                "research"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_12",
+      "proposal_2_id": "human_4",
+      "proposal_1_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry-based proteomics data",
+      "proposal_2_title": "Synthesizing gene expression data to create an atlas of bacterial cell states",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.519919",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.14783032923188788,
+        "embedding_cosine_similarity": 0.7281492423757414,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "community",
+            "data",
+            "datasets"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "automated",
+            "based",
+            "challenge",
+            "extraction",
+            "group",
+            "integration",
+            "metadata",
+            "open",
+            "pride",
+            "project"
+          ],
+          "proposal_2_unique": [
+            "atlas",
+            "bacterial",
+            "bacterial cell",
+            "bacterial gene",
+            "cell",
+            "cell states",
+            "expression",
+            "gene",
+            "gene expression",
+            "growth"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.027961182928449863,
+          "proposal_1_topic_distribution": [
+            0.012120492137576763,
+            0.01212049213677426,
+            0.9514975575991743,
+            0.012140965986851833,
+            0.012120492139622737
+          ],
+          "proposal_2_topic_distribution": [
+            0.013776620316411374,
+            0.01377662031631039,
+            0.013855810493694635,
+            0.9448143285568337,
+            0.013776620316749972
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "community",
+                "project",
+                "include",
+                "resources",
+                "using"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "community",
+                "project",
+                "include",
+                "resources",
+                "using"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "metadata",
+                "data",
+                "pride",
+                "proteomics",
+                "workflows"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "states",
+                "bacterial",
+                "cell",
+                "gene",
+                "gene expression"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "community",
+                "project",
+                "include",
+                "resources",
+                "using"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_12",
+      "proposal_2_id": "human_5",
+      "proposal_1_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry-based proteomics data",
+      "proposal_2_title": "Energetic Origins of Connectivity within Protein Interaction Networks",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.533990",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.07576124230042568,
+        "embedding_cosine_similarity": 0.7195201688458686,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "based",
+            "data"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "automated",
+            "challenge",
+            "community",
+            "datasets",
+            "extraction",
+            "group",
+            "integration",
+            "metadata",
+            "open",
+            "pride"
+          ],
+          "proposal_2_unique": [
+            "binding",
+            "chaperone",
+            "disordered",
+            "disordered proteins",
+            "evolutionary",
+            "hubs",
+            "interaction",
+            "interaction networks",
+            "interactions",
+            "network"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.029281825855822147,
+          "proposal_1_topic_distribution": [
+            0.014044361033889506,
+            0.014029320403368715,
+            0.01402932044127242,
+            0.9438676777133779,
+            0.014029320408091461
+          ],
+          "proposal_2_topic_distribution": [
+            0.9477144653150971,
+            0.01306536491827619,
+            0.01306536493357849,
+            0.013089439883715255,
+            0.013065364949332997
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "proteins",
+                "network",
+                "networks",
+                "interactions",
+                "stability"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "based",
+                "support",
+                "using",
+                "resources",
+                "biological"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "based",
+                "support",
+                "using",
+                "resources",
+                "biological"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "metadata",
+                "data",
+                "proteomics",
+                "pride",
+                "open"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "based",
+                "support",
+                "using",
+                "resources",
+                "biological"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_12",
+      "proposal_2_id": "human_7",
+      "proposal_1_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry-based proteomics data",
+      "proposal_2_title": "Oceans of Disorder: Elucidating the Role of Disordered Proteins in Cellular Adaptation",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.564901",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.12739098740345503,
+        "embedding_cosine_similarity": 0.712199607231375,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "automated",
+            "based",
+            "challenge",
+            "community",
+            "datasets",
+            "extraction",
+            "group",
+            "integration",
+            "metadata",
+            "open"
+          ],
+          "proposal_2_unique": [
+            "adaptation",
+            "biophysical",
+            "biophysical properties",
+            "conditions",
+            "diverse",
+            "environmental",
+            "environmental conditions",
+            "features",
+            "idr",
+            "idrs"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0279381441719261,
+          "proposal_1_topic_distribution": [
+            0.013467356919473194,
+            0.9461034198570533,
+            0.013467356943931063,
+            0.013467356927747334,
+            0.013494509351795166
+          ],
+          "proposal_2_topic_distribution": [
+            0.012413522282772718,
+            0.012484660956198063,
+            0.012413522285999429,
+            0.012413522283141982,
+            0.9502747721918879
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "using",
+                "learning",
+                "project",
+                "machine learning",
+                "machine"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "metadata",
+                "data",
+                "proteomics",
+                "pride",
+                "workflows"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "using",
+                "learning",
+                "project",
+                "machine learning",
+                "machine"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "using",
+                "learning",
+                "project",
+                "machine learning",
+                "machine"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "environmental",
+                "idrs",
+                "idr",
+                "biophysical",
+                "features"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_12",
+      "proposal_2_id": "human_10",
+      "proposal_1_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry-based proteomics data",
+      "proposal_2_title": "Transposable elements and the emergence of genomic innovation",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.590855",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.16870066445377985,
+        "embedding_cosine_similarity": 0.7458667245751878,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "datasets"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "automated",
+            "based",
+            "challenge",
+            "community",
+            "extraction",
+            "group",
+            "integration",
+            "metadata",
+            "open",
+            "pride"
+          ],
+          "proposal_2_unique": [
+            "aware",
+            "elements",
+            "genomic",
+            "multi",
+            "phase",
+            "reads",
+            "regions",
+            "regulatory",
+            "repeat",
+            "repeat aware"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.026161667767488378,
+          "proposal_1_topic_distribution": [
+            0.0130619094065892,
+            0.9477209314710169,
+            0.01306190941933876,
+            0.013061909410232346,
+            0.013093340292822742
+          ],
+          "proposal_2_topic_distribution": [
+            0.01131594143504728,
+            0.011335628484007607,
+            0.01131594143749883,
+            0.01131594143253121,
+            0.9547165472109151
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "support",
+                "using",
+                "project",
+                "large",
+                "resources"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "metadata",
+                "data",
+                "proteomics",
+                "pride",
+                "open"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "support",
+                "using",
+                "project",
+                "large",
+                "resources"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "support",
+                "using",
+                "project",
+                "large",
+                "resources"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "data",
+                "te",
+                "regulatory",
+                "transcription",
+                "tes"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "human_12",
+      "proposal_2_id": "human_11",
+      "proposal_1_title": "Intelligent metadata compilation to enhance the reusability and discoverability of mass spectrometry-based proteomics data",
+      "proposal_2_title": "Searching the crosslinking mass spectrometry universe for new protein-protein interactions",
+      "proposal_1_who": "human",
+      "proposal_2_who": "human",
+      "proposal_1_role": "human",
+      "proposal_2_role": "human",
+      "timestamp": "2025-11-07T10:35:32.603450",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.2780073069482514,
+        "embedding_cosine_similarity": 0.8083368392180746,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "datasets",
+            "pride"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "automated",
+            "based",
+            "challenge",
+            "community",
+            "extraction",
+            "group",
+            "integration",
+            "metadata",
+            "open",
+            "project"
+          ],
+          "proposal_2_unique": [
+            "complex",
+            "complex portal",
+            "complexes",
+            "human",
+            "interaction",
+            "interactions",
+            "large",
+            "large scale",
+            "ms",
+            "portal"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.024952632519358506,
+          "proposal_1_topic_distribution": [
+            0.011815155618107868,
+            0.011775589615165399,
+            0.011775589621449492,
+            0.9528580755295024,
+            0.01177558961577479
+          ],
+          "proposal_2_topic_distribution": [
+            0.9539337987478046,
+            0.011501239174833325,
+            0.011501239176286,
+            0.011562483724723613,
+            0.011501239176352426
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "proteins",
+                "protein",
+                "interactions",
+                "structural"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "resources",
+                "support",
+                "using",
+                "project",
+                "large"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "resources",
+                "support",
+                "using",
+                "project",
+                "large"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "metadata",
+                "data",
+                "proteomics",
+                "open",
+                "workflows"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "resources",
+                "support",
+                "using",
+                "project",
+                "large"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

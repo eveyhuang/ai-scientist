@@ -1,0 +1,88 @@
+{
+  "selected_proposals": [
+    "ai_generate_ideas_no_role_gpt_08",
+    "ai_generate_diverse_ideas_claude_03",
+    "ai_generate_diverse_ideas_gpt_05",
+    "ai_generate_diverse_ideas_llama_08_2",
+    "ai_generate_diverse_ideas_gpt_04",
+    "ai_generate_ideas_no_role_qwen_04",
+    "ai_generate_diverse_ideas_llama_04_2",
+    "ai_generate_ideas_no_role_llama_10"
+  ],
+  "selection_info": {
+    "selected_proposals": [
+      "ai_generate_ideas_no_role_gpt_08",
+      "ai_generate_diverse_ideas_claude_03",
+      "ai_generate_diverse_ideas_gpt_05",
+      "ai_generate_diverse_ideas_llama_08_2",
+      "ai_generate_diverse_ideas_gpt_04",
+      "ai_generate_ideas_no_role_qwen_04",
+      "ai_generate_diverse_ideas_llama_04_2",
+      "ai_generate_ideas_no_role_llama_10"
+    ],
+    "n_selected": 8,
+    "criterion": "min",
+    "metric": "embedding_similarity",
+    "selection_history": [
+      {
+        "iteration": 0,
+        "selected": "ai_generate_ideas_no_role_gpt_08",
+        "score": 0.5157909507260123
+      },
+      {
+        "iteration": 0,
+        "selected": "ai_generate_diverse_ideas_claude_03",
+        "score": 0.5157909507260123
+      },
+      {
+        "iteration": 1,
+        "selected": "ai_generate_diverse_ideas_gpt_05",
+        "score": 0.3690835849861327,
+        "min_distance": 0.3690835849861327,
+        "max_distance": 0.4823663896315781,
+        "avg_distance": 0.42572498730885533
+      },
+      {
+        "iteration": 2,
+        "selected": "ai_generate_diverse_ideas_llama_08_2",
+        "score": 0.3517856779335756,
+        "min_distance": 0.3517856779335756,
+        "max_distance": 0.45231338575594393,
+        "avg_distance": 0.39331464091628554
+      },
+      {
+        "iteration": 3,
+        "selected": "ai_generate_diverse_ideas_gpt_04",
+        "score": 0.3171726181749711,
+        "min_distance": 0.3171726181749711,
+        "max_distance": 0.42481936333352155,
+        "avg_distance": 0.35112367041220677
+      },
+      {
+        "iteration": 4,
+        "selected": "ai_generate_ideas_no_role_qwen_04",
+        "score": 0.30480057751759404,
+        "min_distance": 0.30480057751759404,
+        "max_distance": 0.45527610200355606,
+        "avg_distance": 0.356372554362428
+      },
+      {
+        "iteration": 5,
+        "selected": "ai_generate_diverse_ideas_llama_04_2",
+        "score": 0.30198540991413836,
+        "min_distance": 0.30198540991413836,
+        "max_distance": 0.4824194026240429,
+        "avg_distance": 0.3504510810101397
+      },
+      {
+        "iteration": 6,
+        "selected": "ai_generate_ideas_no_role_llama_10",
+        "score": 0.2884457575777122,
+        "min_distance": 0.2884457575777122,
+        "max_distance": 0.46975590330023487,
+        "avg_distance": 0.32286089709387694
+      }
+    ]
+  },
+  "note": "Filtered to top 8 to match Y1 accepted proposal count"
+}

@@ -1,0 +1,6552 @@
+{
+  "metadata": {
+    "comparison_type": "ai-ai",
+    "role_filter": null,
+    "model_filter": null,
+    "total_analyses": 56,
+    "generation_timestamp": "2025-11-10T11:39:48.808700",
+    "methods": {
+      "tfidf": "TF-IDF based cosine similarity",
+      "embeddings": "Nomic-Embed",
+      "keywords": "TF-IDF top-20 keywords with Jaccard similarity",
+      "topics": "Latent Dirichlet Allocation (LDA) with 5 topics"
+    },
+    "note": "Filtered to top 8 proposals for fair comparison with Y1"
+  },
+  "results": [
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_2_id": "ai_generate_ideas_no_role_gpt_08",
+      "proposal_1_title": "Community-Scale Identification of Non-Coding RNAs in Human Diseases",
+      "proposal_2_title": "Synthetic Biology: Data Synthesis for Gene Therapy",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:46.292327",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.16370163572993293,
+        "embedding_cosine_similarity": 0.6999267302882203,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "project"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "analysis",
+            "associated",
+            "associated ncrnas",
+            "budget",
+            "computational",
+            "disease",
+            "disease associated",
+            "diseases",
+            "expression",
+            "functional"
+          ],
+          "proposal_2_unique": [
+            "000",
+            "biology",
+            "engineering",
+            "engineering viruses",
+            "existing",
+            "gene",
+            "gene therapy",
+            "molecular",
+            "molecular cellular",
+            "synthesis"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.024120570926968767,
+          "proposal_1_topic_distribution": [
+            0.010394623564550787,
+            0.01036235466812744,
+            0.010362354666883315,
+            0.9585183124350425,
+            0.010362354665396055
+          ],
+          "proposal_2_topic_distribution": [
+            0.9511107049562725,
+            0.012215157734272834,
+            0.012215157738177815,
+            0.012243821842139149,
+            0.012215157729137867
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "synthetic",
+                "project",
+                "data",
+                "synthetic biology",
+                "gene therapy"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "resources",
+                "used",
+                "000",
+                "computational",
+                "using"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "resources",
+                "used",
+                "000",
+                "computational",
+                "using"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "disease",
+                "ncrnas",
+                "functional",
+                "expression",
+                "associated"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "resources",
+                "used",
+                "000",
+                "computational",
+                "using"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_2_id": "ai_generate_ideas_no_role_qwen_04",
+      "proposal_1_title": "Community-Scale Identification of Non-Coding RNAs in Human Diseases",
+      "proposal_2_title": "Cross-Disciplinary Analysis of Host-Microbiome Interactions in Chronic Inflammatory Diseases",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:46.395204",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.2425999499855926,
+        "embedding_cosine_similarity": 0.6984152823734,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "data",
+            "diseases",
+            "potential",
+            "research"
+          ],
+          "num_overlapping": 5,
+          "jaccard_similarity": 0.14285714285714285,
+          "proposal_1_unique": [
+            "associated",
+            "associated ncrnas",
+            "budget",
+            "computational",
+            "disease",
+            "disease associated",
+            "expression",
+            "functional",
+            "functional roles",
+            "human"
+          ],
+          "proposal_2_unique": [
+            "000",
+            "chronic",
+            "chronic inflammatory",
+            "host",
+            "host microbiome",
+            "inflammatory",
+            "inflammatory diseases",
+            "interactions",
+            "microbial",
+            "microbiome"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.023379017882601147,
+          "proposal_1_topic_distribution": [
+            0.011258604238963462,
+            0.01129751433683094,
+            0.01125860423919792,
+            0.011258604238874847,
+            0.9549266729461329
+          ],
+          "proposal_2_topic_distribution": [
+            0.01064100376709263,
+            0.9573854568998509,
+            0.010641003767958943,
+            0.01064100376734473,
+            0.010691531797752774
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "identify",
+                "months",
+                "000",
+                "development",
+                "therapeutic"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "inflammatory",
+                "inflammatory diseases",
+                "chronic",
+                "chronic inflammatory",
+                "microbiome"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "identify",
+                "months",
+                "000",
+                "development",
+                "therapeutic"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "identify",
+                "months",
+                "000",
+                "development",
+                "therapeutic"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "ncrnas",
+                "disease",
+                "expression",
+                "analysis",
+                "data"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_2_id": "ai_generate_diverse_ideas_gpt_04",
+      "proposal_1_title": "Community-Scale Identification of Non-Coding RNAs in Human Diseases",
+      "proposal_2_title": "Synthesis of Proteomic Data for Drug Discovery",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:46.557588",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.20088906061368542,
+        "embedding_cosine_similarity": 0.7083089309644011,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "data",
+            "research"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "associated",
+            "associated ncrnas",
+            "budget",
+            "computational",
+            "disease",
+            "disease associated",
+            "diseases",
+            "expression",
+            "functional",
+            "functional roles"
+          ],
+          "proposal_2_unique": [
+            "approach",
+            "development",
+            "discovery",
+            "drug",
+            "drug discovery",
+            "drug targets",
+            "interactions",
+            "novel",
+            "novel drug",
+            "protein"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.026360117676228065,
+          "proposal_1_topic_distribution": [
+            0.010294698941200968,
+            0.9587932992562948,
+            0.010322603920367561,
+            0.010294698940985406,
+            0.010294698941151271
+          ],
+          "proposal_2_topic_distribution": [
+            0.014215593828745009,
+            0.014265540155766969,
+            0.9430876783578624,
+            0.014215593828610013,
+            0.01421559382901552
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "identification",
+                "resources",
+                "development",
+                "outcomes",
+                "expected"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "ncrnas",
+                "disease",
+                "functional",
+                "expression",
+                "associated"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "drug",
+                "data",
+                "research",
+                "discovery",
+                "drug discovery"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "identification",
+                "resources",
+                "development",
+                "outcomes",
+                "expected"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "identification",
+                "resources",
+                "development",
+                "outcomes",
+                "expected"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_2_id": "ai_generate_diverse_ideas_gpt_05",
+      "proposal_1_title": "Community-Scale Identification of Non-Coding RNAs in Human Diseases",
+      "proposal_2_title": "Integration of Epigenetic Data for Understanding Aging",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:46.633126",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.190203771052363,
+        "embedding_cosine_similarity": 0.7115542424222878,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "data",
+            "diseases",
+            "project",
+            "research"
+          ],
+          "num_overlapping": 5,
+          "jaccard_similarity": 0.14285714285714285,
+          "proposal_1_unique": [
+            "associated",
+            "associated ncrnas",
+            "budget",
+            "computational",
+            "disease",
+            "disease associated",
+            "expression",
+            "functional",
+            "functional roles",
+            "human"
+          ],
+          "proposal_2_unique": [
+            "age",
+            "age related",
+            "aging",
+            "changes",
+            "contribute",
+            "development",
+            "epigenetic",
+            "epigenetic changes",
+            "epigenetic data",
+            "epigenetics"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.02449795313775827,
+          "proposal_1_topic_distribution": [
+            0.010239735700157009,
+            0.010239735699437291,
+            0.010239735693685784,
+            0.9590107507905665,
+            0.01027004211615342
+          ],
+          "proposal_2_topic_distribution": [
+            0.01265332119876914,
+            0.012653321198606356,
+            0.012653321197771607,
+            0.012698702223925636,
+            0.9493413341809273
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "000",
+                "outcomes",
+                "novel",
+                "therapeutic",
+                "development"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "000",
+                "outcomes",
+                "novel",
+                "therapeutic",
+                "development"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "000",
+                "outcomes",
+                "novel",
+                "therapeutic",
+                "development"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "ncrnas",
+                "disease",
+                "functional",
+                "analysis",
+                "data"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "aging",
+                "changes",
+                "epigenetic",
+                "data",
+                "project"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_2_id": "ai_generate_diverse_ideas_llama_04_2",
+      "proposal_1_title": "Community-Scale Identification of Non-Coding RNAs in Human Diseases",
+      "proposal_2_title": "Synthetic Biology for Biological Timekeeping: Design and Construction of Novel Biological Clocks",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:46.891584",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.14967330599888576,
+        "embedding_cosine_similarity": 0.68440220887542,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "budget",
+            "research"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "analysis",
+            "associated",
+            "associated ncrnas",
+            "computational",
+            "data",
+            "disease",
+            "disease associated",
+            "diseases",
+            "expression",
+            "functional"
+          ],
+          "proposal_2_unique": [
+            "applications",
+            "approaches",
+            "biological",
+            "biological clocks",
+            "biological timekeeping",
+            "clocks",
+            "construction",
+            "development",
+            "features",
+            "including"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.026290034304895564,
+          "proposal_1_topic_distribution": [
+            0.010738338352099414,
+            0.010712970327737185,
+            0.01071297033103385,
+            0.9571227506610921,
+            0.010712970328037436
+          ],
+          "proposal_2_topic_distribution": [
+            0.9449843680008787,
+            0.013739570857116825,
+            0.013739570858110584,
+            0.01379691942596341,
+            0.013739570857930388
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "biological",
+                "clocks",
+                "biological clocks",
+                "timekeeping",
+                "biological timekeeping"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "approaches",
+                "000",
+                "total budget",
+                "total",
+                "molecular"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "approaches",
+                "000",
+                "total budget",
+                "total",
+                "molecular"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "disease",
+                "ncrnas",
+                "functional",
+                "diseases",
+                "expression"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "approaches",
+                "000",
+                "total budget",
+                "total",
+                "molecular"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_2_id": "ai_generate_diverse_ideas_llama_08_2",
+      "proposal_1_title": "Community-Scale Identification of Non-Coding RNAs in Human Diseases",
+      "proposal_2_title": "Computational Analysis of Topological Features in Biological Networks",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:46.974518",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.15584164223438382,
+        "embedding_cosine_similarity": 0.707122228719367,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "computational",
+            "data",
+            "project"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "analysis",
+            "associated",
+            "associated ncrnas",
+            "budget",
+            "disease",
+            "disease associated",
+            "diseases",
+            "expression",
+            "functional",
+            "functional roles"
+          ],
+          "proposal_2_unique": [
+            "analyze",
+            "analyzing",
+            "behavior",
+            "biological",
+            "biological network",
+            "biological networks",
+            "computational methods",
+            "features",
+            "methods",
+            "network"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.027152729533181246,
+          "proposal_1_topic_distribution": [
+            0.010486884780200345,
+            0.010453745660621518,
+            0.010453745666167179,
+            0.9581518782315537,
+            0.010453745661457405
+          ],
+          "proposal_2_topic_distribution": [
+            0.941015879627873,
+            0.014731951351312543,
+            0.014731951355236741,
+            0.014788266307690291,
+            0.014731951357887267
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "biological",
+                "biological network",
+                "networks",
+                "network",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "tools",
+                "months",
+                "development",
+                "new",
+                "resources"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "tools",
+                "months",
+                "development",
+                "new",
+                "resources"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "disease",
+                "ncrnas",
+                "functional",
+                "potential",
+                "expression"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "tools",
+                "months",
+                "development",
+                "new",
+                "resources"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_2_id": "ai_generate_diverse_ideas_claude_03",
+      "proposal_1_title": "Community-Scale Identification of Non-Coding RNAs in Human Diseases",
+      "proposal_2_title": "Deciphering the Glycan Code: Integrating Glycomics Data to Understand Carbohydrate-Mediated Cellular Communication",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:47.591867",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.18940481458323938,
+        "embedding_cosine_similarity": 0.5302440966997651,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "data",
+            "project"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "associated",
+            "associated ncrnas",
+            "budget",
+            "computational",
+            "disease",
+            "disease associated",
+            "diseases",
+            "expression",
+            "functional",
+            "functional roles"
+          ],
+          "proposal_2_unique": [
+            "000",
+            "binding",
+            "biology",
+            "cell",
+            "community",
+            "glycan",
+            "glycan protein",
+            "glycomics",
+            "integration",
+            "learning"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.02907433484525429,
+          "proposal_1_topic_distribution": [
+            0.014200680795595493,
+            0.9433140497402432,
+            0.014161756493736282,
+            0.014161756486284264,
+            0.014161756484140723
+          ],
+          "proposal_2_topic_distribution": [
+            0.9491989249642616,
+            0.012759280979788658,
+            0.012680598019746412,
+            0.0126805980181968,
+            0.012680598018006577
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "glycan",
+                "data",
+                "binding",
+                "cell",
+                "protein"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "ncrnas",
+                "disease",
+                "potential",
+                "analysis",
+                "data"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "resources",
+                "tools",
+                "computational",
+                "000",
+                "development"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "resources",
+                "tools",
+                "computational",
+                "000",
+                "development"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "resources",
+                "tools",
+                "computational",
+                "000",
+                "development"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_gpt_08",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_1_title": "Synthetic Biology: Data Synthesis for Gene Therapy",
+      "proposal_2_title": "Community-Scale Identification of Non-Coding RNAs in Human Diseases",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:47.601536",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.16370163572993282,
+        "embedding_cosine_similarity": 0.6999267302882203,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "project"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "000",
+            "biology",
+            "engineering",
+            "engineering viruses",
+            "existing",
+            "gene",
+            "gene therapy",
+            "molecular",
+            "molecular cellular",
+            "synthesis"
+          ],
+          "proposal_2_unique": [
+            "analysis",
+            "associated",
+            "associated ncrnas",
+            "budget",
+            "computational",
+            "disease",
+            "disease associated",
+            "diseases",
+            "expression",
+            "functional"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.024120570926968767,
+          "proposal_1_topic_distribution": [
+            0.9511107049562725,
+            0.012215157734272834,
+            0.012215157738177815,
+            0.012243821842139149,
+            0.012215157729137867
+          ],
+          "proposal_2_topic_distribution": [
+            0.010394623564550787,
+            0.01036235466812744,
+            0.010362354666883315,
+            0.9585183124350425,
+            0.010362354665396055
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "synthetic",
+                "project",
+                "data",
+                "synthetic biology",
+                "gene therapy"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "resources",
+                "used",
+                "000",
+                "computational",
+                "using"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "resources",
+                "used",
+                "000",
+                "computational",
+                "using"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "disease",
+                "ncrnas",
+                "functional",
+                "expression",
+                "associated"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "resources",
+                "used",
+                "000",
+                "computational",
+                "using"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_gpt_08",
+      "proposal_2_id": "ai_generate_ideas_no_role_qwen_04",
+      "proposal_1_title": "Synthetic Biology: Data Synthesis for Gene Therapy",
+      "proposal_2_title": "Cross-Disciplinary Analysis of Host-Microbiome Interactions in Chronic Inflammatory Diseases",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:47.611437",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.14687965388858343,
+        "embedding_cosine_similarity": 0.6535702062802592,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "000",
+            "data"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "biology",
+            "engineering",
+            "engineering viruses",
+            "existing",
+            "gene",
+            "gene therapy",
+            "molecular",
+            "molecular cellular",
+            "project",
+            "synthesis"
+          ],
+          "proposal_2_unique": [
+            "analysis",
+            "chronic",
+            "chronic inflammatory",
+            "diseases",
+            "host",
+            "host microbiome",
+            "inflammatory",
+            "inflammatory diseases",
+            "interactions",
+            "microbial"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.02495713461243565,
+          "proposal_1_topic_distribution": [
+            0.9475248611882272,
+            0.0131410025687472,
+            0.01311137874776646,
+            0.01311137874641305,
+            0.013111378748846172
+          ],
+          "proposal_2_topic_distribution": [
+            0.010226733612755206,
+            0.9591691303400726,
+            0.010201378683445587,
+            0.010201378681929534,
+            0.010201378681797066
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "gene",
+                "synthetic",
+                "project",
+                "data",
+                "gene therapy"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "diseases",
+                "inflammatory",
+                "inflammatory diseases",
+                "chronic",
+                "chronic inflammatory"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "field",
+                "000",
+                "hypotheses",
+                "collaboration",
+                "expected"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "field",
+                "000",
+                "hypotheses",
+                "collaboration",
+                "expected"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "field",
+                "000",
+                "hypotheses",
+                "collaboration",
+                "expected"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_gpt_08",
+      "proposal_2_id": "ai_generate_diverse_ideas_gpt_04",
+      "proposal_1_title": "Synthetic Biology: Data Synthesis for Gene Therapy",
+      "proposal_2_title": "Synthesis of Proteomic Data for Drug Discovery",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:47.629720",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.15148666054921206,
+        "embedding_cosine_similarity": 0.6756783225830767,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "synthesis"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "000",
+            "biology",
+            "engineering",
+            "engineering viruses",
+            "existing",
+            "gene",
+            "gene therapy",
+            "molecular",
+            "molecular cellular",
+            "project"
+          ],
+          "proposal_2_unique": [
+            "analysis",
+            "approach",
+            "development",
+            "discovery",
+            "drug",
+            "drug discovery",
+            "drug targets",
+            "interactions",
+            "novel",
+            "novel drug"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.999994258022869,
+          "proposal_1_topic_distribution": [
+            0.9488568318233399,
+            0.012785792044299126,
+            0.012785792042718772,
+            0.012785792044688712,
+            0.012785792044953441
+          ],
+          "proposal_2_topic_distribution": [
+            0.9427888024446284,
+            0.014302799387449706,
+            0.014302799387334359,
+            0.014302799389654793,
+            0.01430279939093271
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "drug",
+                "research",
+                "project",
+                "gene"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "process",
+                "research include",
+                "costs",
+                "novel approach",
+                "bioinformatics"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "process",
+                "research include",
+                "costs",
+                "novel approach",
+                "bioinformatics"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "process",
+                "research include",
+                "costs",
+                "novel approach",
+                "bioinformatics"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "process",
+                "research include",
+                "costs",
+                "novel approach",
+                "bioinformatics"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_gpt_08",
+      "proposal_2_id": "ai_generate_diverse_ideas_gpt_05",
+      "proposal_1_title": "Synthetic Biology: Data Synthesis for Gene Therapy",
+      "proposal_2_title": "Integration of Epigenetic Data for Understanding Aging",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:47.638105",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.17988999236143313,
+        "embedding_cosine_similarity": 0.6309164150138673,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "project"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "000",
+            "biology",
+            "engineering",
+            "engineering viruses",
+            "existing",
+            "gene",
+            "gene therapy",
+            "molecular",
+            "molecular cellular",
+            "synthesis"
+          ],
+          "proposal_2_unique": [
+            "age",
+            "age related",
+            "aging",
+            "analysis",
+            "changes",
+            "contribute",
+            "development",
+            "diseases",
+            "epigenetic",
+            "epigenetic changes"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.027076783772908224,
+          "proposal_1_topic_distribution": [
+            0.9502511931699855,
+            0.012428592013455812,
+            0.01242859201336386,
+            0.012428592013416983,
+            0.01246303078977782
+          ],
+          "proposal_2_topic_distribution": [
+            0.01276866518641535,
+            0.012726584646060303,
+            0.012726584646278566,
+            0.012726584646148677,
+            0.9490515808750971
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "synthetic",
+                "project",
+                "data",
+                "therapy",
+                "gene therapy"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "research",
+                "000",
+                "existing",
+                "molecular",
+                "analysis"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "research",
+                "000",
+                "existing",
+                "molecular",
+                "analysis"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "research",
+                "000",
+                "existing",
+                "molecular",
+                "analysis"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "aging",
+                "changes",
+                "epigenetic",
+                "data",
+                "project"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_gpt_08",
+      "proposal_2_id": "ai_generate_diverse_ideas_llama_04_2",
+      "proposal_1_title": "Synthetic Biology: Data Synthesis for Gene Therapy",
+      "proposal_2_title": "Synthetic Biology for Biological Timekeeping: Design and Construction of Novel Biological Clocks",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:47.667518",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.15896879369486278,
+        "embedding_cosine_similarity": 0.6980145900858616,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "molecular"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "000",
+            "biology",
+            "data",
+            "engineering",
+            "engineering viruses",
+            "existing",
+            "gene",
+            "gene therapy",
+            "molecular cellular",
+            "project"
+          ],
+          "proposal_2_unique": [
+            "applications",
+            "approaches",
+            "biological",
+            "biological clocks",
+            "biological timekeeping",
+            "budget",
+            "clocks",
+            "construction",
+            "development",
+            "features"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.026681026063021307,
+          "proposal_1_topic_distribution": [
+            0.012240235714599933,
+            0.9509993151938728,
+            0.012279977662168666,
+            0.012240235714930766,
+            0.012240235714428008
+          ],
+          "proposal_2_topic_distribution": [
+            0.012549994844664623,
+            0.012609024541663863,
+            0.9497409909242898,
+            0.012549994844699501,
+            0.012549994844682433
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "strategies engineering",
+                "strategies",
+                "research",
+                "molecular",
+                "engineering"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "gene",
+                "project",
+                "data",
+                "therapy",
+                "gene therapy"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "biological",
+                "clocks",
+                "biological clocks",
+                "novel",
+                "timekeeping"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "strategies engineering",
+                "strategies",
+                "research",
+                "molecular",
+                "engineering"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "strategies engineering",
+                "strategies",
+                "research",
+                "molecular",
+                "engineering"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_gpt_08",
+      "proposal_2_id": "ai_generate_diverse_ideas_llama_08_2",
+      "proposal_1_title": "Synthetic Biology: Data Synthesis for Gene Therapy",
+      "proposal_2_title": "Computational Analysis of Topological Features in Biological Networks",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:47.678820",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.16204270781893637,
+        "embedding_cosine_similarity": 0.6482143220664244,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "project"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "000",
+            "biology",
+            "engineering",
+            "engineering viruses",
+            "existing",
+            "gene",
+            "gene therapy",
+            "molecular",
+            "molecular cellular",
+            "synthesis"
+          ],
+          "proposal_2_unique": [
+            "analyze",
+            "analyzing",
+            "behavior",
+            "biological",
+            "biological network",
+            "biological networks",
+            "computational",
+            "computational methods",
+            "features",
+            "methods"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.028558411424743992,
+          "proposal_1_topic_distribution": [
+            0.012455917406808887,
+            0.950303118962129,
+            0.012413654544106333,
+            0.012413654544109446,
+            0.012413654542846193
+          ],
+          "proposal_2_topic_distribution": [
+            0.9438971742039739,
+            0.014056120844364424,
+            0.014015568317989986,
+            0.01401556831709278,
+            0.014015568316578884
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "biological",
+                "network",
+                "networks",
+                "biological network",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "synthetic",
+                "project",
+                "data",
+                "synthetic biology",
+                "therapy"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "research",
+                "provide",
+                "resources",
+                "analysis",
+                "training"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "research",
+                "provide",
+                "resources",
+                "analysis",
+                "training"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "research",
+                "provide",
+                "resources",
+                "analysis",
+                "training"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_gpt_08",
+      "proposal_2_id": "ai_generate_diverse_ideas_claude_03",
+      "proposal_1_title": "Synthetic Biology: Data Synthesis for Gene Therapy",
+      "proposal_2_title": "Deciphering the Glycan Code: Integrating Glycomics Data to Understand Carbohydrate-Mediated Cellular Communication",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:47.701181",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.16898796013876458,
+        "embedding_cosine_similarity": 0.4842090492739876,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "000",
+            "biology",
+            "data",
+            "project",
+            "synthesis"
+          ],
+          "num_overlapping": 5,
+          "jaccard_similarity": 0.14285714285714285,
+          "proposal_1_unique": [
+            "engineering",
+            "engineering viruses",
+            "existing",
+            "gene",
+            "gene therapy",
+            "molecular",
+            "molecular cellular",
+            "synthetic",
+            "synthetic biology",
+            "therapy"
+          ],
+          "proposal_2_unique": [
+            "analysis",
+            "binding",
+            "cell",
+            "community",
+            "glycan",
+            "glycan protein",
+            "glycomics",
+            "integration",
+            "learning",
+            "pathogen"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.031933887424380275,
+          "proposal_1_topic_distribution": [
+            0.01685997600823602,
+            0.01681598111999183,
+            0.01681598112129541,
+            0.9326920806295387,
+            0.016815981120938083
+          ],
+          "proposal_2_topic_distribution": [
+            0.9500742956081499,
+            0.01246816353267716,
+            0.012468163534270191,
+            0.01252121378853767,
+            0.012468163536365066
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "glycan",
+                "data",
+                "binding",
+                "cell",
+                "protein"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "resources",
+                "databases",
+                "computational",
+                "budget",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "resources",
+                "databases",
+                "computational",
+                "budget",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "synthetic",
+                "project",
+                "data",
+                "therapy",
+                "synthetic biology"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "resources",
+                "databases",
+                "computational",
+                "budget",
+                "research"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_qwen_04",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_1_title": "Cross-Disciplinary Analysis of Host-Microbiome Interactions in Chronic Inflammatory Diseases",
+      "proposal_2_title": "Community-Scale Identification of Non-Coding RNAs in Human Diseases",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:47.713197",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.2425999499855924,
+        "embedding_cosine_similarity": 0.6984152823734,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "data",
+            "diseases",
+            "potential",
+            "research"
+          ],
+          "num_overlapping": 5,
+          "jaccard_similarity": 0.14285714285714285,
+          "proposal_1_unique": [
+            "000",
+            "chronic",
+            "chronic inflammatory",
+            "host",
+            "host microbiome",
+            "inflammatory",
+            "inflammatory diseases",
+            "interactions",
+            "microbial",
+            "microbiome"
+          ],
+          "proposal_2_unique": [
+            "associated",
+            "associated ncrnas",
+            "budget",
+            "computational",
+            "disease",
+            "disease associated",
+            "expression",
+            "functional",
+            "functional roles",
+            "human"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.023379017882601147,
+          "proposal_1_topic_distribution": [
+            0.01064100376709263,
+            0.9573854568998509,
+            0.010641003767958943,
+            0.01064100376734473,
+            0.010691531797752774
+          ],
+          "proposal_2_topic_distribution": [
+            0.011258604238963462,
+            0.01129751433683094,
+            0.01125860423919792,
+            0.011258604238874847,
+            0.9549266729461329
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "identify",
+                "months",
+                "000",
+                "development",
+                "therapeutic"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "inflammatory",
+                "inflammatory diseases",
+                "chronic",
+                "chronic inflammatory",
+                "microbiome"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "identify",
+                "months",
+                "000",
+                "development",
+                "therapeutic"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "identify",
+                "months",
+                "000",
+                "development",
+                "therapeutic"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "ncrnas",
+                "disease",
+                "expression",
+                "analysis",
+                "data"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_qwen_04",
+      "proposal_2_id": "ai_generate_ideas_no_role_gpt_08",
+      "proposal_1_title": "Cross-Disciplinary Analysis of Host-Microbiome Interactions in Chronic Inflammatory Diseases",
+      "proposal_2_title": "Synthetic Biology: Data Synthesis for Gene Therapy",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:47.722856",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.14687965388858373,
+        "embedding_cosine_similarity": 0.6535702062802592,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "000",
+            "data"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "analysis",
+            "chronic",
+            "chronic inflammatory",
+            "diseases",
+            "host",
+            "host microbiome",
+            "inflammatory",
+            "inflammatory diseases",
+            "interactions",
+            "microbial"
+          ],
+          "proposal_2_unique": [
+            "biology",
+            "engineering",
+            "engineering viruses",
+            "existing",
+            "gene",
+            "gene therapy",
+            "molecular",
+            "molecular cellular",
+            "project",
+            "synthesis"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.02495713461243565,
+          "proposal_1_topic_distribution": [
+            0.010226733612755206,
+            0.9591691303400726,
+            0.010201378683445587,
+            0.010201378681929534,
+            0.010201378681797066
+          ],
+          "proposal_2_topic_distribution": [
+            0.9475248611882272,
+            0.0131410025687472,
+            0.01311137874776646,
+            0.01311137874641305,
+            0.013111378748846172
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "gene",
+                "synthetic",
+                "project",
+                "data",
+                "gene therapy"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "diseases",
+                "inflammatory",
+                "inflammatory diseases",
+                "chronic",
+                "chronic inflammatory"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "field",
+                "000",
+                "hypotheses",
+                "collaboration",
+                "expected"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "field",
+                "000",
+                "hypotheses",
+                "collaboration",
+                "expected"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "field",
+                "000",
+                "hypotheses",
+                "collaboration",
+                "expected"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_qwen_04",
+      "proposal_2_id": "ai_generate_diverse_ideas_gpt_04",
+      "proposal_1_title": "Cross-Disciplinary Analysis of Host-Microbiome Interactions in Chronic Inflammatory Diseases",
+      "proposal_2_title": "Synthesis of Proteomic Data for Drug Discovery",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:47.743973",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.20587347162562655,
+        "embedding_cosine_similarity": 0.695199422482406,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "data",
+            "interactions",
+            "research",
+            "targets"
+          ],
+          "num_overlapping": 5,
+          "jaccard_similarity": 0.14285714285714285,
+          "proposal_1_unique": [
+            "000",
+            "chronic",
+            "chronic inflammatory",
+            "diseases",
+            "host",
+            "host microbiome",
+            "inflammatory",
+            "inflammatory diseases",
+            "microbial",
+            "microbiome"
+          ],
+          "proposal_2_unique": [
+            "approach",
+            "development",
+            "discovery",
+            "drug",
+            "drug discovery",
+            "drug targets",
+            "novel",
+            "novel drug",
+            "protein",
+            "protein drug"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.02687500713287905,
+          "proposal_1_topic_distribution": [
+            0.009925443902491626,
+            0.9603949705616274,
+            0.009893195180086113,
+            0.00989319517804682,
+            0.009893195177748126
+          ],
+          "proposal_2_topic_distribution": [
+            0.9397488944468563,
+            0.01509688969691865,
+            0.0150514052855822,
+            0.01505140528396419,
+            0.015051405286678645
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "drug",
+                "data",
+                "research",
+                "drug discovery",
+                "proteomic data"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "inflammatory",
+                "chronic",
+                "chronic inflammatory",
+                "inflammatory diseases",
+                "microbiome"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "findings",
+                "approach",
+                "development",
+                "field",
+                "targets"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "findings",
+                "approach",
+                "development",
+                "field",
+                "targets"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "findings",
+                "approach",
+                "development",
+                "field",
+                "targets"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_qwen_04",
+      "proposal_2_id": "ai_generate_diverse_ideas_gpt_05",
+      "proposal_1_title": "Cross-Disciplinary Analysis of Host-Microbiome Interactions in Chronic Inflammatory Diseases",
+      "proposal_2_title": "Integration of Epigenetic Data for Understanding Aging",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:47.753726",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1835771319210691,
+        "embedding_cosine_similarity": 0.6395692091617745,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "data",
+            "diseases",
+            "research"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "proposal_1_unique": [
+            "000",
+            "chronic",
+            "chronic inflammatory",
+            "host",
+            "host microbiome",
+            "inflammatory",
+            "inflammatory diseases",
+            "interactions",
+            "microbial",
+            "microbiome"
+          ],
+          "proposal_2_unique": [
+            "age",
+            "age related",
+            "aging",
+            "changes",
+            "contribute",
+            "development",
+            "epigenetic",
+            "epigenetic changes",
+            "epigenetic data",
+            "epigenetics"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.999971078628051,
+          "proposal_1_topic_distribution": [
+            0.009874459814898756,
+            0.009874459817693785,
+            0.009874459842808775,
+            0.009874459823795508,
+            0.9605021607008032
+          ],
+          "proposal_2_topic_distribution": [
+            0.013334244806099816,
+            0.013334244798727682,
+            0.01333424480895325,
+            0.013334244799131244,
+            0.946663020787088
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "researchers",
+                "changes associated",
+                "novel therapeutic",
+                "gene",
+                "expression"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "researchers",
+                "changes associated",
+                "novel therapeutic",
+                "gene",
+                "expression"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "researchers",
+                "changes associated",
+                "novel therapeutic",
+                "gene",
+                "expression"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "researchers",
+                "changes associated",
+                "novel therapeutic",
+                "gene",
+                "expression"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "aging",
+                "data",
+                "diseases",
+                "changes",
+                "inflammatory"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_qwen_04",
+      "proposal_2_id": "ai_generate_diverse_ideas_llama_04_2",
+      "proposal_1_title": "Cross-Disciplinary Analysis of Host-Microbiome Interactions in Chronic Inflammatory Diseases",
+      "proposal_2_title": "Synthetic Biology for Biological Timekeeping: Design and Construction of Novel Biological Clocks",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:47.786947",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.11388124383671105,
+        "embedding_cosine_similarity": 0.623236873007655,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "research"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "000",
+            "analysis",
+            "chronic",
+            "chronic inflammatory",
+            "data",
+            "diseases",
+            "host",
+            "host microbiome",
+            "inflammatory",
+            "inflammatory diseases"
+          ],
+          "proposal_2_unique": [
+            "applications",
+            "approaches",
+            "biological",
+            "biological clocks",
+            "biological timekeeping",
+            "budget",
+            "clocks",
+            "construction",
+            "development",
+            "features"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.02625171379198887,
+          "proposal_1_topic_distribution": [
+            0.01090757473733206,
+            0.956463353641215,
+            0.010876357212519373,
+            0.010876357205119676,
+            0.010876357203813544
+          ],
+          "proposal_2_topic_distribution": [
+            0.945723890456034,
+            0.013595830042362788,
+            0.013560093167856172,
+            0.01356009316451807,
+            0.013560093169228888
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "biological",
+                "clocks",
+                "biological clocks",
+                "timekeeping",
+                "biological timekeeping"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "diseases",
+                "inflammatory",
+                "inflammatory diseases",
+                "chronic inflammatory",
+                "chronic"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "project",
+                "000",
+                "hypotheses",
+                "provide",
+                "months"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "project",
+                "000",
+                "hypotheses",
+                "provide",
+                "months"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "project",
+                "000",
+                "hypotheses",
+                "provide",
+                "months"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_qwen_04",
+      "proposal_2_id": "ai_generate_diverse_ideas_llama_08_2",
+      "proposal_1_title": "Cross-Disciplinary Analysis of Host-Microbiome Interactions in Chronic Inflammatory Diseases",
+      "proposal_2_title": "Computational Analysis of Topological Features in Biological Networks",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:47.797661",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.12441998762001519,
+        "embedding_cosine_similarity": 0.6850744922669769,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "000",
+            "analysis",
+            "chronic",
+            "chronic inflammatory",
+            "diseases",
+            "host",
+            "host microbiome",
+            "inflammatory",
+            "inflammatory diseases",
+            "interactions"
+          ],
+          "proposal_2_unique": [
+            "analyze",
+            "analyzing",
+            "behavior",
+            "biological",
+            "biological network",
+            "biological networks",
+            "computational",
+            "computational methods",
+            "features",
+            "methods"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.027585541744553937,
+          "proposal_1_topic_distribution": [
+            0.010477866943386677,
+            0.9581983953138815,
+            0.010441245925060887,
+            0.010441245910497677,
+            0.010441245907173484
+          ],
+          "proposal_2_topic_distribution": [
+            0.939428630474802,
+            0.015166897132258859,
+            0.015134824132633028,
+            0.015134824129392417,
+            0.015134824130913655
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "biological",
+                "network",
+                "networks",
+                "biological network",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "diseases",
+                "inflammatory",
+                "chronic",
+                "chronic inflammatory",
+                "inflammatory diseases"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "months",
+                "development",
+                "provide",
+                "following",
+                "comprehensive"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "months",
+                "development",
+                "provide",
+                "following",
+                "comprehensive"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "months",
+                "development",
+                "provide",
+                "following",
+                "comprehensive"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_ideas_no_role_qwen_04",
+      "proposal_2_id": "ai_generate_diverse_ideas_claude_03",
+      "proposal_1_title": "Cross-Disciplinary Analysis of Host-Microbiome Interactions in Chronic Inflammatory Diseases",
+      "proposal_2_title": "Deciphering the Glycan Code: Integrating Glycomics Data to Understand Carbohydrate-Mediated Cellular Communication",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_ideas_no_role",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:47.817010",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.19348910709815922,
+        "embedding_cosine_similarity": 0.5447238979964439,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "000",
+            "analysis",
+            "data"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "chronic",
+            "chronic inflammatory",
+            "diseases",
+            "host",
+            "host microbiome",
+            "inflammatory",
+            "inflammatory diseases",
+            "interactions",
+            "microbial",
+            "microbiome"
+          ],
+          "proposal_2_unique": [
+            "binding",
+            "biology",
+            "cell",
+            "community",
+            "glycan",
+            "glycan protein",
+            "glycomics",
+            "integration",
+            "learning",
+            "pathogen"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.029920097748501694,
+          "proposal_1_topic_distribution": [
+            0.014820655733384668,
+            0.940660392300687,
+            0.01482065573473131,
+            0.014820655733648753,
+            0.01487764049754827
+          ],
+          "proposal_2_topic_distribution": [
+            0.012734674396329434,
+            0.01280692931566916,
+            0.012734674397000552,
+            0.012734674395882002,
+            0.9489890474951189
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "validation",
+                "project",
+                "patterns",
+                "specific",
+                "development"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "inflammatory",
+                "chronic inflammatory",
+                "inflammatory diseases",
+                "microbiome",
+                "diseases"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "validation",
+                "project",
+                "patterns",
+                "specific",
+                "development"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "validation",
+                "project",
+                "patterns",
+                "specific",
+                "development"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "glycan",
+                "data",
+                "binding",
+                "cell",
+                "protein"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_gpt_04",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_1_title": "Synthesis of Proteomic Data for Drug Discovery",
+      "proposal_2_title": "Community-Scale Identification of Non-Coding RNAs in Human Diseases",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:47.945626",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.20088906061368547,
+        "embedding_cosine_similarity": 0.7083089309644011,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "data",
+            "research"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "approach",
+            "development",
+            "discovery",
+            "drug",
+            "drug discovery",
+            "drug targets",
+            "interactions",
+            "novel",
+            "novel drug",
+            "protein"
+          ],
+          "proposal_2_unique": [
+            "associated",
+            "associated ncrnas",
+            "budget",
+            "computational",
+            "disease",
+            "disease associated",
+            "diseases",
+            "expression",
+            "functional",
+            "functional roles"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.026360117676228065,
+          "proposal_1_topic_distribution": [
+            0.014215593828745009,
+            0.014265540155766969,
+            0.9430876783578624,
+            0.014215593828610013,
+            0.01421559382901552
+          ],
+          "proposal_2_topic_distribution": [
+            0.010294698941200968,
+            0.9587932992562948,
+            0.010322603920367561,
+            0.010294698940985406,
+            0.010294698941151271
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "identification",
+                "resources",
+                "development",
+                "outcomes",
+                "expected"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "ncrnas",
+                "disease",
+                "functional",
+                "expression",
+                "associated"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "drug",
+                "data",
+                "research",
+                "discovery",
+                "drug discovery"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "identification",
+                "resources",
+                "development",
+                "outcomes",
+                "expected"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "identification",
+                "resources",
+                "development",
+                "outcomes",
+                "expected"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_gpt_04",
+      "proposal_2_id": "ai_generate_ideas_no_role_gpt_08",
+      "proposal_1_title": "Synthesis of Proteomic Data for Drug Discovery",
+      "proposal_2_title": "Synthetic Biology: Data Synthesis for Gene Therapy",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:47.953963",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.15148666054921167,
+        "embedding_cosine_similarity": 0.6756783225830767,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "synthesis"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "analysis",
+            "approach",
+            "development",
+            "discovery",
+            "drug",
+            "drug discovery",
+            "drug targets",
+            "interactions",
+            "novel",
+            "novel drug"
+          ],
+          "proposal_2_unique": [
+            "000",
+            "biology",
+            "engineering",
+            "engineering viruses",
+            "existing",
+            "gene",
+            "gene therapy",
+            "molecular",
+            "molecular cellular",
+            "project"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.999994258022869,
+          "proposal_1_topic_distribution": [
+            0.9427888024446284,
+            0.014302799387449706,
+            0.014302799387334359,
+            0.014302799389654793,
+            0.01430279939093271
+          ],
+          "proposal_2_topic_distribution": [
+            0.9488568318233399,
+            0.012785792044299126,
+            0.012785792042718772,
+            0.012785792044688712,
+            0.012785792044953441
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "data",
+                "drug",
+                "research",
+                "project",
+                "gene"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "process",
+                "research include",
+                "costs",
+                "novel approach",
+                "bioinformatics"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "process",
+                "research include",
+                "costs",
+                "novel approach",
+                "bioinformatics"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "process",
+                "research include",
+                "costs",
+                "novel approach",
+                "bioinformatics"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "process",
+                "research include",
+                "costs",
+                "novel approach",
+                "bioinformatics"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_gpt_04",
+      "proposal_2_id": "ai_generate_ideas_no_role_qwen_04",
+      "proposal_1_title": "Synthesis of Proteomic Data for Drug Discovery",
+      "proposal_2_title": "Cross-Disciplinary Analysis of Host-Microbiome Interactions in Chronic Inflammatory Diseases",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:47.965407",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.20587347162562633,
+        "embedding_cosine_similarity": 0.695199422482406,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "data",
+            "interactions",
+            "research",
+            "targets"
+          ],
+          "num_overlapping": 5,
+          "jaccard_similarity": 0.14285714285714285,
+          "proposal_1_unique": [
+            "approach",
+            "development",
+            "discovery",
+            "drug",
+            "drug discovery",
+            "drug targets",
+            "novel",
+            "novel drug",
+            "protein",
+            "protein drug"
+          ],
+          "proposal_2_unique": [
+            "000",
+            "chronic",
+            "chronic inflammatory",
+            "diseases",
+            "host",
+            "host microbiome",
+            "inflammatory",
+            "inflammatory diseases",
+            "microbial",
+            "microbiome"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.02687500713287905,
+          "proposal_1_topic_distribution": [
+            0.9397488944468563,
+            0.01509688969691865,
+            0.0150514052855822,
+            0.01505140528396419,
+            0.015051405286678645
+          ],
+          "proposal_2_topic_distribution": [
+            0.009925443902491626,
+            0.9603949705616274,
+            0.009893195180086113,
+            0.00989319517804682,
+            0.009893195177748126
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "drug",
+                "data",
+                "research",
+                "drug discovery",
+                "proteomic data"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "inflammatory",
+                "chronic",
+                "chronic inflammatory",
+                "inflammatory diseases",
+                "microbiome"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "findings",
+                "approach",
+                "development",
+                "field",
+                "targets"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "findings",
+                "approach",
+                "development",
+                "field",
+                "targets"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "findings",
+                "approach",
+                "development",
+                "field",
+                "targets"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_gpt_04",
+      "proposal_2_id": "ai_generate_diverse_ideas_gpt_05",
+      "proposal_1_title": "Synthesis of Proteomic Data for Drug Discovery",
+      "proposal_2_title": "Integration of Epigenetic Data for Understanding Aging",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:47.984862",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.19507796430865168,
+        "embedding_cosine_similarity": 0.6618189772765888,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "data",
+            "development",
+            "research"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "proposal_1_unique": [
+            "approach",
+            "discovery",
+            "drug",
+            "drug discovery",
+            "drug targets",
+            "interactions",
+            "novel",
+            "novel drug",
+            "protein",
+            "protein drug"
+          ],
+          "proposal_2_unique": [
+            "age",
+            "age related",
+            "aging",
+            "changes",
+            "contribute",
+            "diseases",
+            "epigenetic",
+            "epigenetic changes",
+            "epigenetic data",
+            "epigenetics"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9999944190156889,
+          "proposal_1_topic_distribution": [
+            0.014293688188535162,
+            0.014293688182220859,
+            0.0142936881833787,
+            0.9428252472635169,
+            0.014293688182348309
+          ],
+          "proposal_2_topic_distribution": [
+            0.012798118533680045,
+            0.012798118533986236,
+            0.012798118536726485,
+            0.9488075258597206,
+            0.012798118535886756
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "novel approach",
+                "research include",
+                "approach synthesis",
+                "processes",
+                "analysis proteomic"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "novel approach",
+                "research include",
+                "approach synthesis",
+                "processes",
+                "analysis proteomic"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "novel approach",
+                "research include",
+                "approach synthesis",
+                "processes",
+                "analysis proteomic"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data",
+                "drug",
+                "aging",
+                "research",
+                "changes"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "novel approach",
+                "research include",
+                "approach synthesis",
+                "processes",
+                "analysis proteomic"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_gpt_04",
+      "proposal_2_id": "ai_generate_diverse_ideas_llama_04_2",
+      "proposal_1_title": "Synthesis of Proteomic Data for Drug Discovery",
+      "proposal_2_title": "Synthetic Biology for Biological Timekeeping: Design and Construction of Novel Biological Clocks",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.010526",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.11376821917644435,
+        "embedding_cosine_similarity": 0.6883310255651104,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "development",
+            "novel",
+            "research"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "analysis",
+            "approach",
+            "data",
+            "discovery",
+            "drug",
+            "drug discovery",
+            "drug targets",
+            "interactions",
+            "novel drug",
+            "protein"
+          ],
+          "proposal_2_unique": [
+            "applications",
+            "approaches",
+            "biological",
+            "biological clocks",
+            "biological timekeeping",
+            "budget",
+            "clocks",
+            "construction",
+            "features",
+            "including"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.029478595784771362,
+          "proposal_1_topic_distribution": [
+            0.01413584697169472,
+            0.014115612461750606,
+            0.9435173156407197,
+            0.014115612463621573,
+            0.014115612462213366
+          ],
+          "proposal_2_topic_distribution": [
+            0.9474611614398573,
+            0.013123232176190117,
+            0.013169142032695837,
+            0.013123232175237885,
+            0.01312323217601881
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "biological",
+                "clocks",
+                "biological clocks",
+                "timekeeping",
+                "biological timekeeping"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "budget",
+                "costs",
+                "development",
+                "outcomes",
+                "expected"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "drug",
+                "data",
+                "research",
+                "drug discovery",
+                "discovery"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "budget",
+                "costs",
+                "development",
+                "outcomes",
+                "expected"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "budget",
+                "costs",
+                "development",
+                "outcomes",
+                "expected"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_gpt_04",
+      "proposal_2_id": "ai_generate_diverse_ideas_llama_08_2",
+      "proposal_1_title": "Synthesis of Proteomic Data for Drug Discovery",
+      "proposal_2_title": "Computational Analysis of Topological Features in Biological Networks",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.019404",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1298912749189504,
+        "embedding_cosine_similarity": 0.6828273818250289,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "novel"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "analysis",
+            "approach",
+            "development",
+            "discovery",
+            "drug",
+            "drug discovery",
+            "drug targets",
+            "interactions",
+            "novel drug",
+            "protein"
+          ],
+          "proposal_2_unique": [
+            "analyze",
+            "analyzing",
+            "behavior",
+            "biological",
+            "biological network",
+            "biological networks",
+            "computational",
+            "computational methods",
+            "features",
+            "methods"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.03152996497647832,
+          "proposal_1_topic_distribution": [
+            0.014172688090234618,
+            0.014199070262085717,
+            0.014172688088841099,
+            0.014172688095091828,
+            0.9432828654637467
+          ],
+          "proposal_2_topic_distribution": [
+            0.014800334563952688,
+            0.9407373342868418,
+            0.014800334559008217,
+            0.014800334561719244,
+            0.014861662028478075
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "development",
+                "resources",
+                "processes",
+                "tools",
+                "novel"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "biological",
+                "network",
+                "project",
+                "biological network",
+                "networks"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "development",
+                "resources",
+                "processes",
+                "tools",
+                "novel"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "development",
+                "resources",
+                "processes",
+                "tools",
+                "novel"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "drug",
+                "data",
+                "research",
+                "drug discovery",
+                "discovery"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_gpt_04",
+      "proposal_2_id": "ai_generate_diverse_ideas_claude_03",
+      "proposal_1_title": "Synthesis of Proteomic Data for Drug Discovery",
+      "proposal_2_title": "Deciphering the Glycan Code: Integrating Glycomics Data to Understand Carbohydrate-Mediated Cellular Communication",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.043988",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.18760786500530238,
+        "embedding_cosine_similarity": 0.5751806366664785,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "data",
+            "protein",
+            "synthesis"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "proposal_1_unique": [
+            "approach",
+            "development",
+            "discovery",
+            "drug",
+            "drug discovery",
+            "drug targets",
+            "interactions",
+            "novel",
+            "novel drug",
+            "protein drug"
+          ],
+          "proposal_2_unique": [
+            "000",
+            "binding",
+            "biology",
+            "cell",
+            "community",
+            "glycan",
+            "glycan protein",
+            "glycomics",
+            "integration",
+            "learning"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.03566190155043734,
+          "proposal_1_topic_distribution": [
+            0.02000511389717708,
+            0.9201848585550005,
+            0.01993667585031971,
+            0.01993667584888231,
+            0.019936675848620397
+          ],
+          "proposal_2_topic_distribution": [
+            0.9503047537024909,
+            0.012466600462439408,
+            0.012409548611785599,
+            0.012409548611465331,
+            0.012409548611818779
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "glycan",
+                "data",
+                "binding",
+                "cell",
+                "000"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "drug",
+                "data",
+                "research",
+                "drug discovery",
+                "proteomic data"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "resources",
+                "synthesis",
+                "budget",
+                "development",
+                "include"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "resources",
+                "synthesis",
+                "budget",
+                "development",
+                "include"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "resources",
+                "synthesis",
+                "budget",
+                "development",
+                "include"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_gpt_05",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_1_title": "Integration of Epigenetic Data for Understanding Aging",
+      "proposal_2_title": "Community-Scale Identification of Non-Coding RNAs in Human Diseases",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:48.055465",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1902037710523628,
+        "embedding_cosine_similarity": 0.7115542424222878,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "data",
+            "diseases",
+            "project",
+            "research"
+          ],
+          "num_overlapping": 5,
+          "jaccard_similarity": 0.14285714285714285,
+          "proposal_1_unique": [
+            "age",
+            "age related",
+            "aging",
+            "changes",
+            "contribute",
+            "development",
+            "epigenetic",
+            "epigenetic changes",
+            "epigenetic data",
+            "epigenetics"
+          ],
+          "proposal_2_unique": [
+            "associated",
+            "associated ncrnas",
+            "budget",
+            "computational",
+            "disease",
+            "disease associated",
+            "expression",
+            "functional",
+            "functional roles",
+            "human"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.02449795313775827,
+          "proposal_1_topic_distribution": [
+            0.01265332119876914,
+            0.012653321198606356,
+            0.012653321197771607,
+            0.012698702223925636,
+            0.9493413341809273
+          ],
+          "proposal_2_topic_distribution": [
+            0.010239735700157009,
+            0.010239735699437291,
+            0.010239735693685784,
+            0.9590107507905665,
+            0.01027004211615342
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "000",
+                "outcomes",
+                "novel",
+                "therapeutic",
+                "development"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "000",
+                "outcomes",
+                "novel",
+                "therapeutic",
+                "development"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "000",
+                "outcomes",
+                "novel",
+                "therapeutic",
+                "development"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "ncrnas",
+                "disease",
+                "functional",
+                "analysis",
+                "data"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "aging",
+                "changes",
+                "epigenetic",
+                "data",
+                "project"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_gpt_05",
+      "proposal_2_id": "ai_generate_ideas_no_role_gpt_08",
+      "proposal_1_title": "Integration of Epigenetic Data for Understanding Aging",
+      "proposal_2_title": "Synthetic Biology: Data Synthesis for Gene Therapy",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:48.063687",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1798899923614329,
+        "embedding_cosine_similarity": 0.6309164150138673,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "project"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "age",
+            "age related",
+            "aging",
+            "analysis",
+            "changes",
+            "contribute",
+            "development",
+            "diseases",
+            "epigenetic",
+            "epigenetic changes"
+          ],
+          "proposal_2_unique": [
+            "000",
+            "biology",
+            "engineering",
+            "engineering viruses",
+            "existing",
+            "gene",
+            "gene therapy",
+            "molecular",
+            "molecular cellular",
+            "synthesis"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.027076783772908224,
+          "proposal_1_topic_distribution": [
+            0.01276866518641535,
+            0.012726584646060303,
+            0.012726584646278566,
+            0.012726584646148677,
+            0.9490515808750971
+          ],
+          "proposal_2_topic_distribution": [
+            0.9502511931699855,
+            0.012428592013455812,
+            0.01242859201336386,
+            0.012428592013416983,
+            0.01246303078977782
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "synthetic",
+                "project",
+                "data",
+                "therapy",
+                "gene therapy"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "research",
+                "000",
+                "existing",
+                "molecular",
+                "analysis"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "research",
+                "000",
+                "existing",
+                "molecular",
+                "analysis"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "research",
+                "000",
+                "existing",
+                "molecular",
+                "analysis"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "aging",
+                "changes",
+                "epigenetic",
+                "data",
+                "project"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_gpt_05",
+      "proposal_2_id": "ai_generate_ideas_no_role_qwen_04",
+      "proposal_1_title": "Integration of Epigenetic Data for Understanding Aging",
+      "proposal_2_title": "Cross-Disciplinary Analysis of Host-Microbiome Interactions in Chronic Inflammatory Diseases",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:48.073892",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1835771319210691,
+        "embedding_cosine_similarity": 0.6395692091617745,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "data",
+            "diseases",
+            "research"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "proposal_1_unique": [
+            "age",
+            "age related",
+            "aging",
+            "changes",
+            "contribute",
+            "development",
+            "epigenetic",
+            "epigenetic changes",
+            "epigenetic data",
+            "epigenetics"
+          ],
+          "proposal_2_unique": [
+            "000",
+            "chronic",
+            "chronic inflammatory",
+            "host",
+            "host microbiome",
+            "inflammatory",
+            "inflammatory diseases",
+            "interactions",
+            "microbial",
+            "microbiome"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.999971078628051,
+          "proposal_1_topic_distribution": [
+            0.013334244806099816,
+            0.013334244798727682,
+            0.01333424480895325,
+            0.013334244799131244,
+            0.946663020787088
+          ],
+          "proposal_2_topic_distribution": [
+            0.009874459814898756,
+            0.009874459817693785,
+            0.009874459842808775,
+            0.009874459823795508,
+            0.9605021607008032
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "researchers",
+                "changes associated",
+                "novel therapeutic",
+                "gene",
+                "expression"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "researchers",
+                "changes associated",
+                "novel therapeutic",
+                "gene",
+                "expression"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "researchers",
+                "changes associated",
+                "novel therapeutic",
+                "gene",
+                "expression"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "researchers",
+                "changes associated",
+                "novel therapeutic",
+                "gene",
+                "expression"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "aging",
+                "data",
+                "diseases",
+                "changes",
+                "inflammatory"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_gpt_05",
+      "proposal_2_id": "ai_generate_diverse_ideas_gpt_04",
+      "proposal_1_title": "Integration of Epigenetic Data for Understanding Aging",
+      "proposal_2_title": "Synthesis of Proteomic Data for Drug Discovery",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.091253",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.19507796430865157,
+        "embedding_cosine_similarity": 0.6618189772765888,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "data",
+            "development",
+            "research"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "proposal_1_unique": [
+            "age",
+            "age related",
+            "aging",
+            "changes",
+            "contribute",
+            "diseases",
+            "epigenetic",
+            "epigenetic changes",
+            "epigenetic data",
+            "epigenetics"
+          ],
+          "proposal_2_unique": [
+            "approach",
+            "discovery",
+            "drug",
+            "drug discovery",
+            "drug targets",
+            "interactions",
+            "novel",
+            "novel drug",
+            "protein",
+            "protein drug"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9999944190156889,
+          "proposal_1_topic_distribution": [
+            0.012798118533680045,
+            0.012798118533986236,
+            0.012798118536726485,
+            0.9488075258597206,
+            0.012798118535886756
+          ],
+          "proposal_2_topic_distribution": [
+            0.014293688188535162,
+            0.014293688182220859,
+            0.0142936881833787,
+            0.9428252472635169,
+            0.014293688182348309
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "novel approach",
+                "research include",
+                "approach synthesis",
+                "processes",
+                "analysis proteomic"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "novel approach",
+                "research include",
+                "approach synthesis",
+                "processes",
+                "analysis proteomic"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "novel approach",
+                "research include",
+                "approach synthesis",
+                "processes",
+                "analysis proteomic"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "data",
+                "drug",
+                "aging",
+                "research",
+                "changes"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "novel approach",
+                "research include",
+                "approach synthesis",
+                "processes",
+                "analysis proteomic"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_gpt_05",
+      "proposal_2_id": "ai_generate_diverse_ideas_llama_04_2",
+      "proposal_1_title": "Integration of Epigenetic Data for Understanding Aging",
+      "proposal_2_title": "Synthetic Biology for Biological Timekeeping: Design and Construction of Novel Biological Clocks",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.117611",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.11959123411565913,
+        "embedding_cosine_similarity": 0.6786515136789979,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "development",
+            "research"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "age",
+            "age related",
+            "aging",
+            "analysis",
+            "changes",
+            "contribute",
+            "data",
+            "diseases",
+            "epigenetic",
+            "epigenetic changes"
+          ],
+          "proposal_2_unique": [
+            "applications",
+            "approaches",
+            "biological",
+            "biological clocks",
+            "biological timekeeping",
+            "budget",
+            "clocks",
+            "construction",
+            "features",
+            "including"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0267422627885385,
+          "proposal_1_topic_distribution": [
+            0.012407303901653876,
+            0.01244323887623882,
+            0.012407303901427065,
+            0.012407303901782142,
+            0.9503348494188981
+          ],
+          "proposal_2_topic_distribution": [
+            0.012465183272262077,
+            0.9501074815366573,
+            0.012465183271550757,
+            0.01246518327097845,
+            0.0124969686485516
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "underlying",
+                "molecular",
+                "hypotheses",
+                "costs",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "biological",
+                "clocks",
+                "biological clocks",
+                "biological timekeeping",
+                "timekeeping"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "underlying",
+                "molecular",
+                "hypotheses",
+                "costs",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "underlying",
+                "molecular",
+                "hypotheses",
+                "costs",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "aging",
+                "epigenetic",
+                "changes",
+                "data",
+                "project"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_gpt_05",
+      "proposal_2_id": "ai_generate_diverse_ideas_llama_08_2",
+      "proposal_1_title": "Integration of Epigenetic Data for Understanding Aging",
+      "proposal_2_title": "Computational Analysis of Topological Features in Biological Networks",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.126754",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1405081557311385,
+        "embedding_cosine_similarity": 0.6241551409406629,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "project"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "age",
+            "age related",
+            "aging",
+            "analysis",
+            "changes",
+            "contribute",
+            "development",
+            "diseases",
+            "epigenetic",
+            "epigenetic changes"
+          ],
+          "proposal_2_unique": [
+            "analyze",
+            "analyzing",
+            "behavior",
+            "biological",
+            "biological network",
+            "biological networks",
+            "computational",
+            "computational methods",
+            "features",
+            "methods"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.02875990148882019,
+          "proposal_1_topic_distribution": [
+            0.012619759388404825,
+            0.01261975938808801,
+            0.012664915467205247,
+            0.9494758063674213,
+            0.012619759388880481
+          ],
+          "proposal_2_topic_distribution": [
+            0.013990209906263082,
+            0.013990209906153723,
+            0.9440080685761503,
+            0.014021301699775052,
+            0.013990209911657848
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "development",
+                "research",
+                "contribute",
+                "analysis",
+                "novel"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "development",
+                "research",
+                "contribute",
+                "analysis",
+                "novel"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "biological",
+                "network",
+                "biological network",
+                "networks",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "aging",
+                "changes",
+                "epigenetic",
+                "data",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "development",
+                "research",
+                "contribute",
+                "analysis",
+                "novel"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_gpt_05",
+      "proposal_2_id": "ai_generate_diverse_ideas_claude_03",
+      "proposal_1_title": "Integration of Epigenetic Data for Understanding Aging",
+      "proposal_2_title": "Deciphering the Glycan Code: Integrating Glycomics Data to Understand Carbohydrate-Mediated Cellular Communication",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.149423",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.15157950836405565,
+        "embedding_cosine_similarity": 0.5176336103684219,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "data",
+            "project"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "age",
+            "age related",
+            "aging",
+            "changes",
+            "contribute",
+            "development",
+            "diseases",
+            "epigenetic",
+            "epigenetic changes",
+            "epigenetic data"
+          ],
+          "proposal_2_unique": [
+            "000",
+            "binding",
+            "biology",
+            "cell",
+            "community",
+            "glycan",
+            "glycan protein",
+            "glycomics",
+            "integration",
+            "learning"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.03257529019963198,
+          "proposal_1_topic_distribution": [
+            0.9303147296607001,
+            0.017408121184714524,
+            0.017460906783353554,
+            0.017408121185375457,
+            0.01740812118585642
+          ],
+          "proposal_2_topic_distribution": [
+            0.012457134150430718,
+            0.012399329523982138,
+            0.9503448772738751,
+            0.012399329524124864,
+            0.012399329527587136
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "aging",
+                "epigenetic",
+                "changes",
+                "data",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "budget",
+                "000",
+                "development",
+                "analysis",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "glycan",
+                "data",
+                "binding",
+                "cell",
+                "protein"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "budget",
+                "000",
+                "development",
+                "analysis",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "budget",
+                "000",
+                "development",
+                "analysis",
+                "research"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_llama_04_2",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_1_title": "Synthetic Biology for Biological Timekeeping: Design and Construction of Novel Biological Clocks",
+      "proposal_2_title": "Community-Scale Identification of Non-Coding RNAs in Human Diseases",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:48.372254",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.14967330599888584,
+        "embedding_cosine_similarity": 0.68440220887542,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "budget",
+            "research"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "applications",
+            "approaches",
+            "biological",
+            "biological clocks",
+            "biological timekeeping",
+            "clocks",
+            "construction",
+            "development",
+            "features",
+            "including"
+          ],
+          "proposal_2_unique": [
+            "analysis",
+            "associated",
+            "associated ncrnas",
+            "computational",
+            "data",
+            "disease",
+            "disease associated",
+            "diseases",
+            "expression",
+            "functional"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.026290034304895564,
+          "proposal_1_topic_distribution": [
+            0.9449843680008787,
+            0.013739570857116825,
+            0.013739570858110584,
+            0.01379691942596341,
+            0.013739570857930388
+          ],
+          "proposal_2_topic_distribution": [
+            0.010738338352099414,
+            0.010712970327737185,
+            0.01071297033103385,
+            0.9571227506610921,
+            0.010712970328037436
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "biological",
+                "clocks",
+                "biological clocks",
+                "timekeeping",
+                "biological timekeeping"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "approaches",
+                "000",
+                "total budget",
+                "total",
+                "molecular"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "approaches",
+                "000",
+                "total budget",
+                "total",
+                "molecular"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "disease",
+                "ncrnas",
+                "functional",
+                "diseases",
+                "expression"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "approaches",
+                "000",
+                "total budget",
+                "total",
+                "molecular"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_llama_04_2",
+      "proposal_2_id": "ai_generate_ideas_no_role_gpt_08",
+      "proposal_1_title": "Synthetic Biology for Biological Timekeeping: Design and Construction of Novel Biological Clocks",
+      "proposal_2_title": "Synthetic Biology: Data Synthesis for Gene Therapy",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:48.384793",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.15896879369486291,
+        "embedding_cosine_similarity": 0.6980145900858616,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "molecular"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "applications",
+            "approaches",
+            "biological",
+            "biological clocks",
+            "biological timekeeping",
+            "budget",
+            "clocks",
+            "construction",
+            "development",
+            "features"
+          ],
+          "proposal_2_unique": [
+            "000",
+            "biology",
+            "data",
+            "engineering",
+            "engineering viruses",
+            "existing",
+            "gene",
+            "gene therapy",
+            "molecular cellular",
+            "project"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.026681026063021307,
+          "proposal_1_topic_distribution": [
+            0.012549994844664623,
+            0.012609024541663863,
+            0.9497409909242898,
+            0.012549994844699501,
+            0.012549994844682433
+          ],
+          "proposal_2_topic_distribution": [
+            0.012240235714599933,
+            0.9509993151938728,
+            0.012279977662168666,
+            0.012240235714930766,
+            0.012240235714428008
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "strategies engineering",
+                "strategies",
+                "research",
+                "molecular",
+                "engineering"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "gene",
+                "project",
+                "data",
+                "therapy",
+                "gene therapy"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "biological",
+                "clocks",
+                "biological clocks",
+                "novel",
+                "timekeeping"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "strategies engineering",
+                "strategies",
+                "research",
+                "molecular",
+                "engineering"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "strategies engineering",
+                "strategies",
+                "research",
+                "molecular",
+                "engineering"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_llama_04_2",
+      "proposal_2_id": "ai_generate_ideas_no_role_qwen_04",
+      "proposal_1_title": "Synthetic Biology for Biological Timekeeping: Design and Construction of Novel Biological Clocks",
+      "proposal_2_title": "Cross-Disciplinary Analysis of Host-Microbiome Interactions in Chronic Inflammatory Diseases",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:48.396982",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.11388124383671101,
+        "embedding_cosine_similarity": 0.623236873007655,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "research"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "applications",
+            "approaches",
+            "biological",
+            "biological clocks",
+            "biological timekeeping",
+            "budget",
+            "clocks",
+            "construction",
+            "development",
+            "features"
+          ],
+          "proposal_2_unique": [
+            "000",
+            "analysis",
+            "chronic",
+            "chronic inflammatory",
+            "data",
+            "diseases",
+            "host",
+            "host microbiome",
+            "inflammatory",
+            "inflammatory diseases"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.02625171379198887,
+          "proposal_1_topic_distribution": [
+            0.945723890456034,
+            0.013595830042362788,
+            0.013560093167856172,
+            0.01356009316451807,
+            0.013560093169228888
+          ],
+          "proposal_2_topic_distribution": [
+            0.01090757473733206,
+            0.956463353641215,
+            0.010876357212519373,
+            0.010876357205119676,
+            0.010876357203813544
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "biological",
+                "clocks",
+                "biological clocks",
+                "timekeeping",
+                "biological timekeeping"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "diseases",
+                "inflammatory",
+                "inflammatory diseases",
+                "chronic inflammatory",
+                "chronic"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "project",
+                "000",
+                "hypotheses",
+                "provide",
+                "months"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "project",
+                "000",
+                "hypotheses",
+                "provide",
+                "months"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "project",
+                "000",
+                "hypotheses",
+                "provide",
+                "months"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_llama_04_2",
+      "proposal_2_id": "ai_generate_diverse_ideas_gpt_04",
+      "proposal_1_title": "Synthetic Biology for Biological Timekeeping: Design and Construction of Novel Biological Clocks",
+      "proposal_2_title": "Synthesis of Proteomic Data for Drug Discovery",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.416705",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.11376821917644438,
+        "embedding_cosine_similarity": 0.6883310255651104,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "development",
+            "novel",
+            "research"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "applications",
+            "approaches",
+            "biological",
+            "biological clocks",
+            "biological timekeeping",
+            "budget",
+            "clocks",
+            "construction",
+            "features",
+            "including"
+          ],
+          "proposal_2_unique": [
+            "analysis",
+            "approach",
+            "data",
+            "discovery",
+            "drug",
+            "drug discovery",
+            "drug targets",
+            "interactions",
+            "novel drug",
+            "protein"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.029478595784771362,
+          "proposal_1_topic_distribution": [
+            0.9474611614398573,
+            0.013123232176190117,
+            0.013169142032695837,
+            0.013123232175237885,
+            0.01312323217601881
+          ],
+          "proposal_2_topic_distribution": [
+            0.01413584697169472,
+            0.014115612461750606,
+            0.9435173156407197,
+            0.014115612463621573,
+            0.014115612462213366
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "biological",
+                "clocks",
+                "biological clocks",
+                "timekeeping",
+                "biological timekeeping"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "budget",
+                "costs",
+                "development",
+                "outcomes",
+                "expected"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "drug",
+                "data",
+                "research",
+                "drug discovery",
+                "discovery"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "budget",
+                "costs",
+                "development",
+                "outcomes",
+                "expected"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "budget",
+                "costs",
+                "development",
+                "outcomes",
+                "expected"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_llama_04_2",
+      "proposal_2_id": "ai_generate_diverse_ideas_gpt_05",
+      "proposal_1_title": "Synthetic Biology for Biological Timekeeping: Design and Construction of Novel Biological Clocks",
+      "proposal_2_title": "Integration of Epigenetic Data for Understanding Aging",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.425460",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.11959123411565885,
+        "embedding_cosine_similarity": 0.6786515136789979,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "development",
+            "research"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "applications",
+            "approaches",
+            "biological",
+            "biological clocks",
+            "biological timekeeping",
+            "budget",
+            "clocks",
+            "construction",
+            "features",
+            "including"
+          ],
+          "proposal_2_unique": [
+            "age",
+            "age related",
+            "aging",
+            "analysis",
+            "changes",
+            "contribute",
+            "data",
+            "diseases",
+            "epigenetic",
+            "epigenetic changes"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.0267422627885385,
+          "proposal_1_topic_distribution": [
+            0.012465183272262077,
+            0.9501074815366573,
+            0.012465183271550757,
+            0.01246518327097845,
+            0.0124969686485516
+          ],
+          "proposal_2_topic_distribution": [
+            0.012407303901653876,
+            0.01244323887623882,
+            0.012407303901427065,
+            0.012407303901782142,
+            0.9503348494188981
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "underlying",
+                "molecular",
+                "hypotheses",
+                "costs",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "biological",
+                "clocks",
+                "biological clocks",
+                "biological timekeeping",
+                "timekeeping"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "underlying",
+                "molecular",
+                "hypotheses",
+                "costs",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "underlying",
+                "molecular",
+                "hypotheses",
+                "costs",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "aging",
+                "epigenetic",
+                "changes",
+                "data",
+                "project"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_llama_04_2",
+      "proposal_2_id": "ai_generate_diverse_ideas_llama_08_2",
+      "proposal_1_title": "Synthetic Biology for Biological Timekeeping: Design and Construction of Novel Biological Clocks",
+      "proposal_2_title": "Computational Analysis of Topological Features in Biological Networks",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.454620",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.2632218525483989,
+        "embedding_cosine_similarity": 0.6914789142255802,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "biological",
+            "features",
+            "novel"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "applications",
+            "approaches",
+            "biological clocks",
+            "biological timekeeping",
+            "budget",
+            "clocks",
+            "construction",
+            "development",
+            "including",
+            "mechanisms"
+          ],
+          "proposal_2_unique": [
+            "analyze",
+            "analyzing",
+            "behavior",
+            "biological network",
+            "biological networks",
+            "computational",
+            "computational methods",
+            "data",
+            "methods",
+            "network"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9999948209714837,
+          "proposal_1_topic_distribution": [
+            0.012577046186791929,
+            0.012577046199464552,
+            0.012577046180402247,
+            0.9496918152398798,
+            0.01257704619346154
+          ],
+          "proposal_2_topic_distribution": [
+            0.0140207197056632,
+            0.014020719705868157,
+            0.014020719705680867,
+            0.9439171211750379,
+            0.014020719707749837
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "contribute",
+                "development new",
+                "complex biological",
+                "framework",
+                "comprehensive framework"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "contribute",
+                "development new",
+                "complex biological",
+                "framework",
+                "comprehensive framework"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "contribute",
+                "development new",
+                "complex biological",
+                "framework",
+                "comprehensive framework"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "biological",
+                "clocks",
+                "network",
+                "biological clocks",
+                "novel"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "contribute",
+                "development new",
+                "complex biological",
+                "framework",
+                "comprehensive framework"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_llama_04_2",
+      "proposal_2_id": "ai_generate_diverse_ideas_claude_03",
+      "proposal_1_title": "Synthetic Biology for Biological Timekeeping: Design and Construction of Novel Biological Clocks",
+      "proposal_2_title": "Deciphering the Glycan Code: Integrating Glycomics Data to Understand Carbohydrate-Mediated Cellular Communication",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.473529",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.10135377381464124,
+        "embedding_cosine_similarity": 0.5175805973759571,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "proposal_1_unique": [
+            "applications",
+            "approaches",
+            "biological",
+            "biological clocks",
+            "biological timekeeping",
+            "budget",
+            "clocks",
+            "construction",
+            "development",
+            "features"
+          ],
+          "proposal_2_unique": [
+            "000",
+            "analysis",
+            "binding",
+            "biology",
+            "cell",
+            "community",
+            "data",
+            "glycan",
+            "glycan protein",
+            "glycomics"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.03189081929506835,
+          "proposal_1_topic_distribution": [
+            0.01669013352749911,
+            0.016636153749461684,
+            0.016636153752634376,
+            0.016636153749989342,
+            0.9334014052204155
+          ],
+          "proposal_2_topic_distribution": [
+            0.9495034408569879,
+            0.012612866581249512,
+            0.012612866590604406,
+            0.01261286658325206,
+            0.012657959387906257
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "glycan",
+                "data",
+                "binding",
+                "cell",
+                "protein"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "biology",
+                "project",
+                "computational",
+                "budget",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "biology",
+                "project",
+                "computational",
+                "budget",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "biology",
+                "project",
+                "computational",
+                "budget",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "biological",
+                "clocks",
+                "biological clocks",
+                "biological timekeeping",
+                "timekeeping"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_llama_08_2",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_1_title": "Computational Analysis of Topological Features in Biological Networks",
+      "proposal_2_title": "Community-Scale Identification of Non-Coding RNAs in Human Diseases",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:48.483136",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1558416422343837,
+        "embedding_cosine_similarity": 0.707122228719367,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "computational",
+            "data",
+            "project"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "analyze",
+            "analyzing",
+            "behavior",
+            "biological",
+            "biological network",
+            "biological networks",
+            "computational methods",
+            "features",
+            "methods",
+            "network"
+          ],
+          "proposal_2_unique": [
+            "analysis",
+            "associated",
+            "associated ncrnas",
+            "budget",
+            "disease",
+            "disease associated",
+            "diseases",
+            "expression",
+            "functional",
+            "functional roles"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.027152729533181246,
+          "proposal_1_topic_distribution": [
+            0.941015879627873,
+            0.014731951351312543,
+            0.014731951355236741,
+            0.014788266307690291,
+            0.014731951357887267
+          ],
+          "proposal_2_topic_distribution": [
+            0.010486884780200345,
+            0.010453745660621518,
+            0.010453745666167179,
+            0.9581518782315537,
+            0.010453745661457405
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "biological",
+                "biological network",
+                "networks",
+                "network",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "tools",
+                "months",
+                "development",
+                "new",
+                "resources"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "tools",
+                "months",
+                "development",
+                "new",
+                "resources"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "disease",
+                "ncrnas",
+                "functional",
+                "potential",
+                "expression"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "tools",
+                "months",
+                "development",
+                "new",
+                "resources"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_llama_08_2",
+      "proposal_2_id": "ai_generate_ideas_no_role_gpt_08",
+      "proposal_1_title": "Computational Analysis of Topological Features in Biological Networks",
+      "proposal_2_title": "Synthetic Biology: Data Synthesis for Gene Therapy",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:48.493525",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1620427078189365,
+        "embedding_cosine_similarity": 0.6482143220664244,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "project"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "analyze",
+            "analyzing",
+            "behavior",
+            "biological",
+            "biological network",
+            "biological networks",
+            "computational",
+            "computational methods",
+            "features",
+            "methods"
+          ],
+          "proposal_2_unique": [
+            "000",
+            "biology",
+            "engineering",
+            "engineering viruses",
+            "existing",
+            "gene",
+            "gene therapy",
+            "molecular",
+            "molecular cellular",
+            "synthesis"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.028558411424743992,
+          "proposal_1_topic_distribution": [
+            0.9438971742039739,
+            0.014056120844364424,
+            0.014015568317989986,
+            0.01401556831709278,
+            0.014015568316578884
+          ],
+          "proposal_2_topic_distribution": [
+            0.012455917406808887,
+            0.950303118962129,
+            0.012413654544106333,
+            0.012413654544109446,
+            0.012413654542846193
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "biological",
+                "network",
+                "networks",
+                "biological network",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "synthetic",
+                "project",
+                "data",
+                "synthetic biology",
+                "therapy"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "research",
+                "provide",
+                "resources",
+                "analysis",
+                "training"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "research",
+                "provide",
+                "resources",
+                "analysis",
+                "training"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "research",
+                "provide",
+                "resources",
+                "analysis",
+                "training"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_llama_08_2",
+      "proposal_2_id": "ai_generate_ideas_no_role_qwen_04",
+      "proposal_1_title": "Computational Analysis of Topological Features in Biological Networks",
+      "proposal_2_title": "Cross-Disciplinary Analysis of Host-Microbiome Interactions in Chronic Inflammatory Diseases",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:48.503840",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.12441998762001519,
+        "embedding_cosine_similarity": 0.6850744922669769,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data"
+          ],
+          "num_overlapping": 1,
+          "jaccard_similarity": 0.02564102564102564,
+          "proposal_1_unique": [
+            "analyze",
+            "analyzing",
+            "behavior",
+            "biological",
+            "biological network",
+            "biological networks",
+            "computational",
+            "computational methods",
+            "features",
+            "methods"
+          ],
+          "proposal_2_unique": [
+            "000",
+            "analysis",
+            "chronic",
+            "chronic inflammatory",
+            "diseases",
+            "host",
+            "host microbiome",
+            "inflammatory",
+            "inflammatory diseases",
+            "interactions"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.027585541744553937,
+          "proposal_1_topic_distribution": [
+            0.939428630474802,
+            0.015166897132258859,
+            0.015134824132633028,
+            0.015134824129392417,
+            0.015134824130913655
+          ],
+          "proposal_2_topic_distribution": [
+            0.010477866943386677,
+            0.9581983953138815,
+            0.010441245925060887,
+            0.010441245910497677,
+            0.010441245907173484
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "biological",
+                "network",
+                "networks",
+                "biological network",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "diseases",
+                "inflammatory",
+                "chronic",
+                "chronic inflammatory",
+                "inflammatory diseases"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "months",
+                "development",
+                "provide",
+                "following",
+                "comprehensive"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "months",
+                "development",
+                "provide",
+                "following",
+                "comprehensive"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "months",
+                "development",
+                "provide",
+                "following",
+                "comprehensive"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_llama_08_2",
+      "proposal_2_id": "ai_generate_diverse_ideas_gpt_04",
+      "proposal_1_title": "Computational Analysis of Topological Features in Biological Networks",
+      "proposal_2_title": "Synthesis of Proteomic Data for Drug Discovery",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.523638",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.12989127491895044,
+        "embedding_cosine_similarity": 0.6828273818250289,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "novel"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "analyze",
+            "analyzing",
+            "behavior",
+            "biological",
+            "biological network",
+            "biological networks",
+            "computational",
+            "computational methods",
+            "features",
+            "methods"
+          ],
+          "proposal_2_unique": [
+            "analysis",
+            "approach",
+            "development",
+            "discovery",
+            "drug",
+            "drug discovery",
+            "drug targets",
+            "interactions",
+            "novel drug",
+            "protein"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.03152996497647832,
+          "proposal_1_topic_distribution": [
+            0.014800334563952688,
+            0.9407373342868418,
+            0.014800334559008217,
+            0.014800334561719244,
+            0.014861662028478075
+          ],
+          "proposal_2_topic_distribution": [
+            0.014172688090234618,
+            0.014199070262085717,
+            0.014172688088841099,
+            0.014172688095091828,
+            0.9432828654637467
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "development",
+                "resources",
+                "processes",
+                "tools",
+                "novel"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "biological",
+                "network",
+                "project",
+                "biological network",
+                "networks"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "development",
+                "resources",
+                "processes",
+                "tools",
+                "novel"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "development",
+                "resources",
+                "processes",
+                "tools",
+                "novel"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "drug",
+                "data",
+                "research",
+                "drug discovery",
+                "discovery"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_llama_08_2",
+      "proposal_2_id": "ai_generate_diverse_ideas_gpt_05",
+      "proposal_1_title": "Computational Analysis of Topological Features in Biological Networks",
+      "proposal_2_title": "Integration of Epigenetic Data for Understanding Aging",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.532374",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.14050815573113842,
+        "embedding_cosine_similarity": 0.6241551409406629,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "project"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "analyze",
+            "analyzing",
+            "behavior",
+            "biological",
+            "biological network",
+            "biological networks",
+            "computational",
+            "computational methods",
+            "features",
+            "methods"
+          ],
+          "proposal_2_unique": [
+            "age",
+            "age related",
+            "aging",
+            "analysis",
+            "changes",
+            "contribute",
+            "development",
+            "diseases",
+            "epigenetic",
+            "epigenetic changes"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.02875990148882019,
+          "proposal_1_topic_distribution": [
+            0.013990209906263082,
+            0.013990209906153723,
+            0.9440080685761503,
+            0.014021301699775052,
+            0.013990209911657848
+          ],
+          "proposal_2_topic_distribution": [
+            0.012619759388404825,
+            0.01261975938808801,
+            0.012664915467205247,
+            0.9494758063674213,
+            0.012619759388880481
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "development",
+                "research",
+                "contribute",
+                "analysis",
+                "novel"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "development",
+                "research",
+                "contribute",
+                "analysis",
+                "novel"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "biological",
+                "network",
+                "biological network",
+                "networks",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "aging",
+                "changes",
+                "epigenetic",
+                "data",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "development",
+                "research",
+                "contribute",
+                "analysis",
+                "novel"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_llama_08_2",
+      "proposal_2_id": "ai_generate_diverse_ideas_llama_04_2",
+      "proposal_1_title": "Computational Analysis of Topological Features in Biological Networks",
+      "proposal_2_title": "Synthetic Biology for Biological Timekeeping: Design and Construction of Novel Biological Clocks",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.559799",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.2632218525483987,
+        "embedding_cosine_similarity": 0.6914789142255802,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "biological",
+            "features",
+            "novel"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "analyze",
+            "analyzing",
+            "behavior",
+            "biological network",
+            "biological networks",
+            "computational",
+            "computational methods",
+            "data",
+            "methods",
+            "network"
+          ],
+          "proposal_2_unique": [
+            "applications",
+            "approaches",
+            "biological clocks",
+            "biological timekeeping",
+            "budget",
+            "clocks",
+            "construction",
+            "development",
+            "including",
+            "mechanisms"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.9999948209714837,
+          "proposal_1_topic_distribution": [
+            0.0140207197056632,
+            0.014020719705868157,
+            0.014020719705680867,
+            0.9439171211750379,
+            0.014020719707749837
+          ],
+          "proposal_2_topic_distribution": [
+            0.012577046186791929,
+            0.012577046199464552,
+            0.012577046180402247,
+            0.9496918152398798,
+            0.01257704619346154
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "contribute",
+                "development new",
+                "complex biological",
+                "framework",
+                "comprehensive framework"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "contribute",
+                "development new",
+                "complex biological",
+                "framework",
+                "comprehensive framework"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "contribute",
+                "development new",
+                "complex biological",
+                "framework",
+                "comprehensive framework"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "biological",
+                "clocks",
+                "network",
+                "biological clocks",
+                "novel"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "contribute",
+                "development new",
+                "complex biological",
+                "framework",
+                "comprehensive framework"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_llama_08_2",
+      "proposal_2_id": "ai_generate_diverse_ideas_claude_03",
+      "proposal_1_title": "Computational Analysis of Topological Features in Biological Networks",
+      "proposal_2_title": "Deciphering the Glycan Code: Integrating Glycomics Data to Understand Carbohydrate-Mediated Cellular Communication",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.584500",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1471406098171421,
+        "embedding_cosine_similarity": 0.5476866142440561,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "project"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "analyze",
+            "analyzing",
+            "behavior",
+            "biological",
+            "biological network",
+            "biological networks",
+            "computational",
+            "computational methods",
+            "features",
+            "methods"
+          ],
+          "proposal_2_unique": [
+            "000",
+            "analysis",
+            "binding",
+            "biology",
+            "cell",
+            "community",
+            "glycan",
+            "glycan protein",
+            "glycomics",
+            "integration"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.03374033145764607,
+          "proposal_1_topic_distribution": [
+            0.018351086078719107,
+            0.018290595562287085,
+            0.018290595564254445,
+            0.9267771272311197,
+            0.018290595563619692
+          ],
+          "proposal_2_topic_distribution": [
+            0.9500191335970338,
+            0.012480344309520565,
+            0.012480344311331307,
+            0.012539833468499182,
+            0.012480344313615277
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "glycan",
+                "data",
+                "binding",
+                "cell",
+                "pathogen"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "tools",
+                "development",
+                "community",
+                "resources",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "tools",
+                "development",
+                "community",
+                "resources",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "biological",
+                "biological network",
+                "project",
+                "network",
+                "computational methods"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "tools",
+                "development",
+                "community",
+                "resources",
+                "research"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_claude_03",
+      "proposal_2_id": "ai_generate_ideas_no_role_llama_10",
+      "proposal_1_title": "Deciphering the Glycan Code: Integrating Glycomics Data to Understand Carbohydrate-Mediated Cellular Communication",
+      "proposal_2_title": "Community-Scale Identification of Non-Coding RNAs in Human Diseases",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:48.604446",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1894048145832394,
+        "embedding_cosine_similarity": 0.5302440966997651,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "data",
+            "project"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "000",
+            "binding",
+            "biology",
+            "cell",
+            "community",
+            "glycan",
+            "glycan protein",
+            "glycomics",
+            "integration",
+            "learning"
+          ],
+          "proposal_2_unique": [
+            "associated",
+            "associated ncrnas",
+            "budget",
+            "computational",
+            "disease",
+            "disease associated",
+            "diseases",
+            "expression",
+            "functional",
+            "functional roles"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.02907433484525429,
+          "proposal_1_topic_distribution": [
+            0.9491989249642616,
+            0.012759280979788658,
+            0.012680598019746412,
+            0.0126805980181968,
+            0.012680598018006577
+          ],
+          "proposal_2_topic_distribution": [
+            0.014200680795595493,
+            0.9433140497402432,
+            0.014161756493736282,
+            0.014161756486284264,
+            0.014161756484140723
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "glycan",
+                "data",
+                "binding",
+                "cell",
+                "protein"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "ncrnas",
+                "disease",
+                "potential",
+                "analysis",
+                "data"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "resources",
+                "tools",
+                "computational",
+                "000",
+                "development"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "resources",
+                "tools",
+                "computational",
+                "000",
+                "development"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "resources",
+                "tools",
+                "computational",
+                "000",
+                "development"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_claude_03",
+      "proposal_2_id": "ai_generate_ideas_no_role_gpt_08",
+      "proposal_1_title": "Deciphering the Glycan Code: Integrating Glycomics Data to Understand Carbohydrate-Mediated Cellular Communication",
+      "proposal_2_title": "Synthetic Biology: Data Synthesis for Gene Therapy",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:48.624696",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.168987960138764,
+        "embedding_cosine_similarity": 0.4842090492739876,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "000",
+            "biology",
+            "data",
+            "project",
+            "synthesis"
+          ],
+          "num_overlapping": 5,
+          "jaccard_similarity": 0.14285714285714285,
+          "proposal_1_unique": [
+            "analysis",
+            "binding",
+            "cell",
+            "community",
+            "glycan",
+            "glycan protein",
+            "glycomics",
+            "integration",
+            "learning",
+            "pathogen"
+          ],
+          "proposal_2_unique": [
+            "engineering",
+            "engineering viruses",
+            "existing",
+            "gene",
+            "gene therapy",
+            "molecular",
+            "molecular cellular",
+            "synthetic",
+            "synthetic biology",
+            "therapy"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.031933887424380275,
+          "proposal_1_topic_distribution": [
+            0.9500742956081499,
+            0.01246816353267716,
+            0.012468163534270191,
+            0.01252121378853767,
+            0.012468163536365066
+          ],
+          "proposal_2_topic_distribution": [
+            0.01685997600823602,
+            0.01681598111999183,
+            0.01681598112129541,
+            0.9326920806295387,
+            0.016815981120938083
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "glycan",
+                "data",
+                "binding",
+                "cell",
+                "protein"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "resources",
+                "databases",
+                "computational",
+                "budget",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "resources",
+                "databases",
+                "computational",
+                "budget",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "synthetic",
+                "project",
+                "data",
+                "therapy",
+                "synthetic biology"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "resources",
+                "databases",
+                "computational",
+                "budget",
+                "research"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_claude_03",
+      "proposal_2_id": "ai_generate_ideas_no_role_qwen_04",
+      "proposal_1_title": "Deciphering the Glycan Code: Integrating Glycomics Data to Understand Carbohydrate-Mediated Cellular Communication",
+      "proposal_2_title": "Cross-Disciplinary Analysis of Host-Microbiome Interactions in Chronic Inflammatory Diseases",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_ideas_no_role",
+      "timestamp": "2025-11-10T11:39:48.646256",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.1934891070981586,
+        "embedding_cosine_similarity": 0.5447238979964439,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "000",
+            "analysis",
+            "data"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "binding",
+            "biology",
+            "cell",
+            "community",
+            "glycan",
+            "glycan protein",
+            "glycomics",
+            "integration",
+            "learning",
+            "pathogen"
+          ],
+          "proposal_2_unique": [
+            "chronic",
+            "chronic inflammatory",
+            "diseases",
+            "host",
+            "host microbiome",
+            "inflammatory",
+            "inflammatory diseases",
+            "interactions",
+            "microbial",
+            "microbiome"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.029920097748501694,
+          "proposal_1_topic_distribution": [
+            0.012734674396329434,
+            0.01280692931566916,
+            0.012734674397000552,
+            0.012734674395882002,
+            0.9489890474951189
+          ],
+          "proposal_2_topic_distribution": [
+            0.014820655733384668,
+            0.940660392300687,
+            0.01482065573473131,
+            0.014820655733648753,
+            0.01487764049754827
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "validation",
+                "project",
+                "patterns",
+                "specific",
+                "development"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "inflammatory",
+                "chronic inflammatory",
+                "inflammatory diseases",
+                "microbiome",
+                "diseases"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "validation",
+                "project",
+                "patterns",
+                "specific",
+                "development"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "validation",
+                "project",
+                "patterns",
+                "specific",
+                "development"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "glycan",
+                "data",
+                "binding",
+                "cell",
+                "protein"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_claude_03",
+      "proposal_2_id": "ai_generate_diverse_ideas_gpt_04",
+      "proposal_1_title": "Deciphering the Glycan Code: Integrating Glycomics Data to Understand Carbohydrate-Mediated Cellular Communication",
+      "proposal_2_title": "Synthesis of Proteomic Data for Drug Discovery",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.687207",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.18760786500530224,
+        "embedding_cosine_similarity": 0.5751806366664785,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "data",
+            "protein",
+            "synthesis"
+          ],
+          "num_overlapping": 4,
+          "jaccard_similarity": 0.1111111111111111,
+          "proposal_1_unique": [
+            "000",
+            "binding",
+            "biology",
+            "cell",
+            "community",
+            "glycan",
+            "glycan protein",
+            "glycomics",
+            "integration",
+            "learning"
+          ],
+          "proposal_2_unique": [
+            "approach",
+            "development",
+            "discovery",
+            "drug",
+            "drug discovery",
+            "drug targets",
+            "interactions",
+            "novel",
+            "novel drug",
+            "protein drug"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.03566190155043734,
+          "proposal_1_topic_distribution": [
+            0.9503047537024909,
+            0.012466600462439408,
+            0.012409548611785599,
+            0.012409548611465331,
+            0.012409548611818779
+          ],
+          "proposal_2_topic_distribution": [
+            0.02000511389717708,
+            0.9201848585550005,
+            0.01993667585031971,
+            0.01993667584888231,
+            0.019936675848620397
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "glycan",
+                "data",
+                "binding",
+                "cell",
+                "000"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "drug",
+                "data",
+                "research",
+                "drug discovery",
+                "proteomic data"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "resources",
+                "synthesis",
+                "budget",
+                "development",
+                "include"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "resources",
+                "synthesis",
+                "budget",
+                "development",
+                "include"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "resources",
+                "synthesis",
+                "budget",
+                "development",
+                "include"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_claude_03",
+      "proposal_2_id": "ai_generate_diverse_ideas_gpt_05",
+      "proposal_1_title": "Deciphering the Glycan Code: Integrating Glycomics Data to Understand Carbohydrate-Mediated Cellular Communication",
+      "proposal_2_title": "Integration of Epigenetic Data for Understanding Aging",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.705459",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.15157950836405584,
+        "embedding_cosine_similarity": 0.5176336103684219,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "analysis",
+            "data",
+            "project"
+          ],
+          "num_overlapping": 3,
+          "jaccard_similarity": 0.08108108108108109,
+          "proposal_1_unique": [
+            "000",
+            "binding",
+            "biology",
+            "cell",
+            "community",
+            "glycan",
+            "glycan protein",
+            "glycomics",
+            "integration",
+            "learning"
+          ],
+          "proposal_2_unique": [
+            "age",
+            "age related",
+            "aging",
+            "changes",
+            "contribute",
+            "development",
+            "diseases",
+            "epigenetic",
+            "epigenetic changes",
+            "epigenetic data"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.03257529019963198,
+          "proposal_1_topic_distribution": [
+            0.012457134150430718,
+            0.012399329523982138,
+            0.9503448772738751,
+            0.012399329524124864,
+            0.012399329527587136
+          ],
+          "proposal_2_topic_distribution": [
+            0.9303147296607001,
+            0.017408121184714524,
+            0.017460906783353554,
+            0.017408121185375457,
+            0.01740812118585642
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "aging",
+                "epigenetic",
+                "changes",
+                "data",
+                "project"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "budget",
+                "000",
+                "development",
+                "analysis",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "glycan",
+                "data",
+                "binding",
+                "cell",
+                "protein"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "budget",
+                "000",
+                "development",
+                "analysis",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "budget",
+                "000",
+                "development",
+                "analysis",
+                "research"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_claude_03",
+      "proposal_2_id": "ai_generate_diverse_ideas_llama_04_2",
+      "proposal_1_title": "Deciphering the Glycan Code: Integrating Glycomics Data to Understand Carbohydrate-Mediated Cellular Communication",
+      "proposal_2_title": "Synthetic Biology for Biological Timekeeping: Design and Construction of Novel Biological Clocks",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.787792",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.10135377381464113,
+        "embedding_cosine_similarity": 0.5175805973759571,
+        "keyword_overlap": {
+          "overlapping_keywords": [],
+          "num_overlapping": 0,
+          "jaccard_similarity": 0.0,
+          "proposal_1_unique": [
+            "000",
+            "analysis",
+            "binding",
+            "biology",
+            "cell",
+            "community",
+            "data",
+            "glycan",
+            "glycan protein",
+            "glycomics"
+          ],
+          "proposal_2_unique": [
+            "applications",
+            "approaches",
+            "biological",
+            "biological clocks",
+            "biological timekeeping",
+            "budget",
+            "clocks",
+            "construction",
+            "development",
+            "features"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.03189081929506835,
+          "proposal_1_topic_distribution": [
+            0.9495034408569879,
+            0.012612866581249512,
+            0.012612866590604406,
+            0.01261286658325206,
+            0.012657959387906257
+          ],
+          "proposal_2_topic_distribution": [
+            0.01669013352749911,
+            0.016636153749461684,
+            0.016636153752634376,
+            0.016636153749989342,
+            0.9334014052204155
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "glycan",
+                "data",
+                "binding",
+                "cell",
+                "protein"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "biology",
+                "project",
+                "computational",
+                "budget",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "biology",
+                "project",
+                "computational",
+                "budget",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "biology",
+                "project",
+                "computational",
+                "budget",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "biological",
+                "clocks",
+                "biological clocks",
+                "biological timekeeping",
+                "timekeeping"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "proposal_1_id": "ai_generate_diverse_ideas_claude_03",
+      "proposal_2_id": "ai_generate_diverse_ideas_llama_08_2",
+      "proposal_1_title": "Deciphering the Glycan Code: Integrating Glycomics Data to Understand Carbohydrate-Mediated Cellular Communication",
+      "proposal_2_title": "Computational Analysis of Topological Features in Biological Networks",
+      "proposal_1_who": "ai",
+      "proposal_2_who": "ai",
+      "proposal_1_role": "generate_diverse_ideas",
+      "proposal_2_role": "generate_diverse_ideas",
+      "timestamp": "2025-11-10T11:39:48.808526",
+      "similarity_metrics": {
+        "tfidf_cosine_similarity": 0.14714060981714222,
+        "embedding_cosine_similarity": 0.5476866142440561,
+        "keyword_overlap": {
+          "overlapping_keywords": [
+            "data",
+            "project"
+          ],
+          "num_overlapping": 2,
+          "jaccard_similarity": 0.05263157894736842,
+          "proposal_1_unique": [
+            "000",
+            "analysis",
+            "binding",
+            "biology",
+            "cell",
+            "community",
+            "glycan",
+            "glycan protein",
+            "glycomics",
+            "integration"
+          ],
+          "proposal_2_unique": [
+            "analyze",
+            "analyzing",
+            "behavior",
+            "biological",
+            "biological network",
+            "biological networks",
+            "computational",
+            "computational methods",
+            "features",
+            "methods"
+          ]
+        },
+        "topic_analysis": {
+          "topic_similarity": 0.03374033145764607,
+          "proposal_1_topic_distribution": [
+            0.9500191335970338,
+            0.012480344309520565,
+            0.012480344311331307,
+            0.012539833468499182,
+            0.012480344313615277
+          ],
+          "proposal_2_topic_distribution": [
+            0.018351086078719107,
+            0.018290595562287085,
+            0.018290595564254445,
+            0.9267771272311197,
+            0.018290595563619692
+          ],
+          "topics": [
+            {
+              "topic_id": 0,
+              "top_words": [
+                "glycan",
+                "data",
+                "binding",
+                "cell",
+                "pathogen"
+              ]
+            },
+            {
+              "topic_id": 1,
+              "top_words": [
+                "tools",
+                "development",
+                "community",
+                "resources",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 2,
+              "top_words": [
+                "tools",
+                "development",
+                "community",
+                "resources",
+                "research"
+              ]
+            },
+            {
+              "topic_id": 3,
+              "top_words": [
+                "biological",
+                "biological network",
+                "project",
+                "network",
+                "computational methods"
+              ]
+            },
+            {
+              "topic_id": 4,
+              "top_words": [
+                "tools",
+                "development",
+                "community",
+                "resources",
+                "research"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
